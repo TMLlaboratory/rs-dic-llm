@@ -1,0 +1,31 @@
+{
+  "model": "wordnet",
+  "n_nodes": 2750,
+  "n_edges": 4582,
+  "n_sccs": 2567,
+  "largest_scc": 160,
+  "n_nontrivial_sccs": 21,
+  "circulation_rate": 0.07418181818181818,
+  "kernel_size": 425,
+  "kernel_ratio": 0.15454545454545454,
+  "core_size": 99,
+  "core_kernel_ratio": 0.23294117647058823,
+  "cycle_length_dist": {
+    "2": 27,
+    "3": 3,
+    "4": 4,
+    "5": 2,
+    "6": 2,
+    "7": 1
+  },
+  "minset_size": 34,
+  "minset_ratio": 0.012363636363636363,
+  "minset_optimal": true,
+  "nsm_n_primitives": 65,
+  "nsm_kernel_hits": 14,
+  "nsm_core_hits": 0,
+  "nsm_kernel_coverage": 0.2153846153846154,
+  "nsm_core_coverage": 0.0,
+  "mean_out_degree": 1.6661818181818182,
+  "edge_density": 0.0006061046992294718
+}

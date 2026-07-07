@@ -1,0 +1,31 @@
+{
+  "model": "gemma-4-31b-8bit",
+  "n_nodes": 2750,
+  "n_edges": 5255,
+  "n_sccs": 2637,
+  "largest_scc": 85,
+  "n_nontrivial_sccs": 26,
+  "circulation_rate": 0.050545454545454546,
+  "edge_density": 0.0006951288071695492,
+  "mean_out_degree": 1.910909090909091,
+  "kernel_size": 222,
+  "kernel_ratio": 0.08072727272727273,
+  "core_size": 36,
+  "core_kernel_ratio": 0.16216216216216217,
+  "cycle_length_dist": {
+    "2": 41,
+    "3": 2,
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 3
+  },
+  "minset_size": 36,
+  "minset_ratio": 0.01309090909090909,
+  "minset_optimal": true,
+  "nsm_n_primitives": 65,
+  "nsm_kernel_hits": 12,
+  "nsm_core_hits": 3,
+  "nsm_kernel_coverage": 0.18461538461538463,
+  "nsm_core_coverage": 0.046153846153846156
+}

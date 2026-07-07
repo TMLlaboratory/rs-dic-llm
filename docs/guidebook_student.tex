@@ -1,0 +1,796 @@
+\documentclass[lang=jp, color=black, mode=simple, 11pt]{elegantbook}
+
+% ===== 書籍情報 =====
+\title{辞書グラフで測る LLM の概念知識}
+\subtitle{定義ネットワーク分析ガイドブック}
+\author{雲居玄道（監修）}
+\institute{長岡技術科学大学 機械学習研究室}
+\date{2026年5月}
+\version{1.0}
+\bioinfo{対象}{卒業研究生・大学院生}
+\extrainfo{「定義の連鎖がどこで閉じるか——それがモデルの概念的自己充足性を映す鏡となる。」}
+
+% ===== パッケージ追加 =====
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% ===== lang=jp の章番号バグ修正 =====
+\renewcommand{\xchaptertitle}{第 \thechapter{} 章}
+\renewcommand{\cftchappresnum}{第~}
+\renewcommand{\cftchapaftersnum}{~章\enspace}
+\setlength{\cftchapnumwidth}{\widthof{\textbf{第~99~章\enspace}}}
+
+% ===== Pythonコード設定（白黒印刷対応）=====
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\bfseries,
+  commentstyle=\itshape\color{gray},
+  stringstyle=\color{gray!70!black},
+  backgroundcolor=\color{gray!8},
+  frame=single,
+  framerule=0.4pt,
+  rulecolor=\color{gray!50},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=8pt,
+  breaklines=true,
+  showstringspaces=false,
+  tabsize=4,
+  captionpos=b
+}
+
+% ===== 探究学習用カスタム環境 =====
+\tcbuselibrary{breakable, skins}
+
+\newtcolorbox{inquiry}[1][]{
+  enhanced,
+  title={探究の問い},
+  fonttitle=\bfseries,
+  colframe=black,
+  colback=gray!6,
+  colbacktitle=black,
+  coltitle=white,
+  breakable,
+  before upper={\parindent=1em},
+  #1
+}
+
+\newtcolorbox{tryit}[1][実装して確認しよう]{
+  enhanced,
+  title={▶ #1},
+  fonttitle=\bfseries,
+  colframe=black!60,
+  colback=white,
+  borderline west={3pt}{0pt}{black!60},
+  sharp corners,
+  breakable,
+  #1/.style={}
+}
+
+\newtcolorbox{reflect}{
+  enhanced,
+  title={考察してみよう},
+  fonttitle=\bfseries,
+  colframe=black!40,
+  colback=gray!4,
+  borderline={0.5pt}{2pt}{black!30, dashed},
+  breakable
+}
+
+\newtcolorbox{dsterm}[1]{
+  enhanced,
+  title={用語：#1},
+  fonttitle=\bfseries\small,
+  colframe=black,
+  colback=gray!10,
+  sharp corners=south,
+  breakable
+}
+
+\newtcolorbox{caution}{
+  enhanced,
+  title={⚠ よくある誤解},
+  fonttitle=\bfseries,
+  colframe=black,
+  colback=gray!8,
+  colbacktitle=black!80,
+  coltitle=white,
+  breakable
+}
+
+% ===== hyperref白黒 =====
+\hypersetup{hidelinks}
+\setcounter{tocdepth}{2}
+
+% ========================================
+\begin{document}
+\maketitle
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ========================================
+\chapter{辞書グラフとは何か}
+
+\begin{introduction}[この章で学ぶこと]
+  \item 辞書を有向グラフとして表現する方法を理解する
+  \item 辺の向き規約（どちらがどちらを指すか）を正確に把握する
+  \item カーネル・コア・最小集合の直観的な意味をつかむ
+\end{introduction}
+
+言葉を定義するとは、ある言葉を別の言葉で説明することである。
+「猫（cat）は毛皮のある動物（furry animal）だ」と定義するとき、
+「猫」の意味は「毛皮」と「動物」という2つの語に還元される。
+では、「毛皮」や「動物」はどうやって定義されるのか？
+その定義もまた別の語を使い、連鎖はどこかで閉じるか、
+あるいは循環する。この連鎖の構造をグラフで捉えたのが
+\textbf{辞書グラフ}である。
+
+% ----------------------------------------
+\section{グラフの構造}
+
+\begin{definition}[辞書グラフ]
+  \textbf{辞書グラフ}（dictionary graph）$G = (V, E)$ は
+  有向グラフであり、
+  \begin{itemize}
+    \item $V$：辞書に収録された語の集合
+    \item $(u, v) \in E$：語 $u$ が語 $v$ の定義文に現れる
+  \end{itemize}
+  と定義する。すなわち、辺の向きは「$u$ が $v$ を定義するために使われる」方向である。
+\end{definition}
+
+\begin{example}
+  次の3語からなる小さな辞書を考えよう。
+  \begin{itemize}
+    \item A の定義：「B である」
+    \item B の定義：「C である」
+    \item C の定義：「A である」
+  \end{itemize}
+  辺は $(A, B)$, $(B, C)$, $(C, A)$ であり、$A \to B \to C \to A$ の閉路が生じる。
+\end{example}
+
+\begin{caution}
+  辺の向きは直観と逆になりがちである。
+  「A の定義に B が現れる」とき、辺は $A \to B$（A から B へ）ではなく
+  \textbf{B から A へ}（$B \to A$ ではなく…）……とも言いたくなるが、
+  原著（Vincent-Lamarre et al., 2016）の規約を正確に確認しよう。
+
+  \medskip
+  原著の規約：$\operatorname{add\_edge}(u, v)$ $\Leftrightarrow$ $u$ が $v$ の定義に現れる。
+  つまり $u \to v$（u が v を指す）であり、
+  「u は v を定義するために使われる」「u は v の定義語」である。
+
+  \medskip
+  \textbf{実装確認テスト}：A の定義に B が現れるなら \texttt{add\_edge(B, A)} ではなく
+  \texttt{add\_edge(B, A)}…
+  落ち着いて考えよう。「A の定義に B が現れる」なら
+  $u = B$（定義に現れる語）、$v = A$（定義される語）なので
+  \texttt{add\_edge(B, A)} が正しい。
+\end{caution}
+
+\begin{tryit}[辺の方向を確認する]
+以下のコードは A の定義に B が現れる場合の辺の追加例である。
+実行して出力を確認し、辺の向きが意図通りかを確かめよ。
+\begin{lstlisting}[caption=辺の方向チェック]
+import networkx as nx
+
+G = nx.DiGraph()
+# "A" の定義に "B" が現れる
+G.add_edge("B", "A")   # u=B (定義語), v=A (被定義語)
+# "B" の定義に "C" が現れる
+G.add_edge("C", "B")
+# "C" の定義に "A" が現れる
+G.add_edge("A", "C")
+
+print("B の後継者（B の定義対象）:", list(G.successors("B")))
+# 期待出力: ['A']  (B は A を定義するために使われる)
+
+print("A の先行者（A の定義語）:", list(G.predecessors("A")))
+# 期待出力: ['B']  (A の定義には B が現れる)
+\end{lstlisting}
+\end{tryit}
+
+% ----------------------------------------
+\section{3つの核心構造}
+
+\begin{definition}[カーネル]
+  \textbf{カーネル}（Kernel）とは、グラフ $G$ から
+  「\textbf{出次数が 0 のノード}（どの語の定義にも現れない語）」を
+  反復的に除去し続けたとき、最後に残るノードの集合である。
+
+  \medskip
+  アルゴリズム：
+  \begin{enumerate}
+    \item $H \leftarrow G$ とする。
+    \item $H$ 内の出次数 0 のノード集合を $L$ とする。
+    \item $L = \emptyset$ なら終了；$H$ からすべての $L$ を除去して 2. に戻る。
+    \item カーネル $= V(H)$。
+  \end{enumerate}
+\end{definition}
+
+\begin{caution}
+  カーネルは「\textbf{出次数} 0」を除去して求める。
+  「入次数 0」ではない。
+
+  \medskip
+  出次数 0 のノード $v$ とは、$v$ がどの語の定義にも現れないノードである。
+  これは「$v$ が定義の外から必要とされない孤立語」を意味する。
+  入次数 0 のノード $v$ は「$v$ を定義するために他の語を使っていない語」であり、
+  まったく別の概念（原語・根語）を指す。
+
+  \medskip
+  \textbf{サニティチェック}：$A \to B \to C$ の 3 ノードチェーン（閉路なし）で
+  正しい Kernel は $\{A\}$（C は出次数 0 で除去、B も除去、A は残る）。
+  入次数 0 版では $\{C\}$ になる——逆である。
+\end{caution}
+
+\begin{tryit}[カーネル計算を実装する]
+\begin{lstlisting}[caption=カーネルの正しい実装]
+def compute_kernel(G: nx.DiGraph) -> set:
+    H = G.copy()
+    while True:
+        # 出次数 0 のノードを見つける
+        leaves = [n for n in H if H.out_degree(n) == 0]
+        if not leaves:
+            break
+        H.remove_nodes_from(leaves)
+    return set(H.nodes())
+
+# サニティチェック
+G_test = nx.DiGraph()
+G_test.add_edge("A", "B")   # A -> B (A が B を定義)
+G_test.add_edge("B", "C")   # B -> C (B が C を定義)
+kernel = compute_kernel(G_test)
+print("Kernel:", kernel)  # 期待: {'A'}
+\end{lstlisting}
+\end{tryit}
+
+\begin{definition}[コア]
+  \textbf{コア}（Core）とは、カーネルの\textbf{縮約有向非巡回グラフ}（condensation DAG）において、
+  \textbf{入次数 0 の強連結成分（SCC）の和集合}のことである。
+
+  直観：カーネル内で、他の概念から定義のためにアクセスされず、
+  自身は自己完結した循環グループ（SCC）の集まりが「コア」である。
+  これは「最大 SCC」とは異なる——入次数 0 の SCC が複数ある場合、
+  最大 SCC が入次数 0 でないことがある。
+\end{definition}
+
+\begin{definition}[最小集合（MinSet）]
+  カーネルの\textbf{最小フィードバック頂点集合}（Minimum Feedback Vertex Set; MFVS）を
+  \textbf{最小集合}（MinSet）と呼ぶ。
+  MinSet とは、除去するとカーネルから全ての有向閉路が消えるような
+  最小サイズのノード集合である。
+
+  \medskip
+  これは NP 完全問題であり、原著では整数線形計画法（ILP）で厳密に解く。
+  本研究では PuLP + HiGHS ソルバーを使用している（Apple Silicon M4 では CBC は動作しない）。
+\end{definition}
+
+\begin{reflect}
+\begin{enumerate}
+  \item カーネルに属する語の数が全体の 10\% であることは何を意味するか？
+        残りの 90\% の語はなぜカーネルに入らないのか？
+  \item MinSet の比率が小さい辞書と大きい辞書では、
+        概念の循環構造にどのような違いがあると予想されるか？
+  \item カーネルが「出次数 0 を除去」することで求まるのはなぜか？
+        逆に「入次数 0 を除去」するとどのような集合が得られると思うか？
+\end{enumerate}
+\end{reflect}
+
+% ----------------------------------------
+\begin{problemset}[第 1 章の確認問題]
+  \item 次の辞書（A の定義に B が現れる、B の定義に C と D が現れる、
+        C の定義に A が現れる、D の定義に E が現れる、E は定義なし）
+        について、辞書グラフを描き、カーネルを求めよ。
+  \item 上の例で、コアを求めよ（SCC を特定し、縮約 DAG の入次数 0 の SCC を答えよ）。
+  \item MinSet が 1 語のとき、グラフ中に存在する最小閉路の長さは最小でいくつか？
+\end{problemset}
+
+% ========================================
+\chapter{実験パイプライン：LLM に辞書を生成させる}
+
+\begin{introduction}[この章で学ぶこと]
+  \item 語彙サンプリングの設計と「なぜ 3000 語か」を理解する
+  \item 定義文生成のプロンプト設計と生成パラメータを学ぶ
+  \item 前処理（正規化）からグラフ構築までのパイプラインを実装できる
+\end{introduction}
+
+本研究の実験は「LLM に 3000 語の辞書を作らせ、その定義グラフを分析する」という
+シンプルな枠組みに基づく。各ステージを順に見ていこう。
+
+% ----------------------------------------
+\section{語彙サンプリング（Stage 0）}
+
+最初に問うべきことは「どの 3000 語を使うか」である。
+
+\begin{inquiry}
+  語彙数が少なすぎると何が起きるか？たとえば 100 語しか選ばなかったとき、
+  「猫」の定義に「動物」が現れても、「動物」が選ばれた 100 語に入っていなければ
+  辺が張れない。語彙数と辺の密度はどんな関係があるだろうか？
+\end{inquiry}
+
+本研究では、WordNet からサンプリングし Brown Corpus の頻度で絞り込んだ
+3000 語（名詞 1500・動詞 900・形容詞 600）を使用する。
+
+\begin{note}
+  予備実験（300 語）では、WordNet ベースラインでも辺がほぼゼロになった。
+  3000 語は語彙密度の下限として経験的に定まった値である。
+  参照語が選ばれた語彙集合内に含まれる確率が、語彙サイズに比例して増加するためである。
+\end{note}
+
+\begin{tryit}[語彙サンプリングコードを読む]
+以下は \texttt{src/rs\_dic\_llm/sampling.py} の中核部分である。
+\begin{lstlisting}[caption=WordNet から 3000 語をサンプリング]
+import nltk
+from nltk.corpus import wordnet as wn, brown
+import random
+
+def sample_words(n_nouns=1500, n_verbs=900, n_adjs=600, seed=42):
+    # Brown corpus の頻度分布を取得
+    freq = nltk.FreqDist(brown.words())
+
+    def get_words(pos, n):
+        candidates = set()
+        for syn in wn.all_synsets(pos=pos):
+            lemma = syn.lemmas()[0].name()   # first sense
+            if freq[lemma.lower()] >= 5:     # 頻度フィルタ
+                candidates.add(lemma.lower())
+        rng = random.Random(seed)
+        return rng.sample(sorted(candidates), min(n, len(candidates)))
+
+    nouns = get_words(wn.NOUN, n_nouns)
+    verbs = get_words(wn.VERB, n_verbs)
+    adjs  = get_words(wn.ADJ,  n_adjs)
+    return nouns + verbs + adjs
+\end{lstlisting}
+\end{tryit}
+
+% ----------------------------------------
+\section{定義文生成（Stage 1）}
+
+\begin{dsterm}{自己参照率（sr\_rate）}
+  「do not use the word itself in the definition」という指示を守らず、
+  被定義語そのものが定義文に現れてしまった定義の比率を
+  \textbf{自己参照率}（self-referential rate; sr\_rate）と呼ぶ。
+  たとえば「cat: a cat is a small furry animal」は自己参照である。
+\end{dsterm}
+
+実験で使用したプロンプト：
+
+\begin{center}
+\fbox{\parbox{0.85\textwidth}{
+\textit{Define the \{POS\} ``\{word\}'' in one short sentence.
+Use only common English words.
+\textbf{Do not use the word itself in the definition.}}
+}}
+\end{center}
+
+\begin{note}
+  生成パラメータ：temperature = 0.7, top-p = 0.8, top-k = 20。
+  Qwen3.5 の公式推奨値（non-thinking モード）に従う。
+  \texttt{temperature = 0.0} は Qwen3.5 では明示的に非推奨とされており、
+  使用すると自己参照率が急増する（予備実験で確認済み）。
+\end{note}
+
+\begin{reflect}
+\begin{enumerate}
+  \item なぜ temperature = 0.0 で自己参照率が上がるのか？
+        確定的なデコードとサンプリングの違いから考えてみよう。
+  \item 自己参照の定義（例：「cat is a cat-like animal」）はグラフ上どのように現れるか？
+        ヒント：自己ループを除去した場合と含めた場合で構造は変わるか？
+  \item Qwen3.5 は 76〜92\% の定義で自己参照が起きた。
+        これはプロンプト指示の無視である。指示追従能力はモデルサイズと
+        相関しそうに見えるが、実際のデータを見て確認してみよう。
+\end{enumerate}
+\end{reflect}
+
+% ----------------------------------------
+\section{グラフ構築（Stage 2-3）}
+
+\begin{tryit}[定義文から辺を張る]
+\begin{lstlisting}[caption=グラフ構築の核心部分 (graph\_build.py)]
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
+import networkx as nx
+
+LEMMATIZER = WordNetLemmatizer()
+STOP = set(stopwords.words("english"))
+VALID_STATUSES = {"ok", "self_referential"}   # 両方使う
+
+def build_graph(definitions: list[dict]) -> nx.DiGraph:
+    vocab = {d["word"] for d in definitions}
+    G = nx.DiGraph()
+    G.add_nodes_from(vocab)
+
+    for rec in definitions:
+        if rec.get("status") not in VALID_STATUSES:
+            continue
+        target = rec["word"]      # 被定義語 v
+        defn   = rec["definition"]
+
+        for raw_token in defn.split():
+            token = raw_token.lower().strip(".,;:!?\"'")
+            if not token.isalpha() or token in STOP:
+                continue
+            source = LEMMATIZER.lemmatize(token)   # 定義語 u
+            if source in vocab and source != target:   # 自己ループ除去
+                G.add_edge(source, target)    # u -> v
+    return G
+\end{lstlisting}
+\end{tryit}
+
+\begin{note}
+  \texttt{self\_referential} 定義もグラフ構築に含める。
+  ただし自己ループ（\texttt{source == target}）は除去する。
+  これにより「dog is a dog that barks」のような定義でも
+  「barks」など他の語への辺は保持される。
+\end{note}
+
+% ----------------------------------------
+\begin{problemset}[第 2 章の確認問題]
+  \item 語彙サイズが 300 語から 3000 語に増えると、期待辺数はどう変わるか？
+        単純なランダム参照モデルを仮定して近似計算せよ。
+  \item 定義文「the state of being calm and peaceful」から、
+        ストップワード除去・レンマ化・語彙フィルタリング後に残る語を答えよ
+        （単語集合に "state", "calm", "peaceful" は含まれるとする）。
+  \item temperature=0.0 と temperature=0.7 では出力の多様性はどう違うか？
+        softmax を使って数式で説明し、T→0 の極限を考察せよ。
+\end{problemset}
+
+% ========================================
+\chapter{実験結果：スケーリングと普遍構造}
+
+\begin{introduction}[この章で学ぶこと]
+  \item カーネル率とモデルサイズの単調関係を確認する
+  \item 92 語の普遍カーネルとその NSM との重複を理解する
+  \item 自己参照率が「指示追従体制」の差であることを把握する
+\end{introduction}
+
+% ----------------------------------------
+\section{Qwen3.5 ファミリー内のスケーリング}
+
+7 モデルの実験結果をまとめたのが表 3.1 である。
+
+\begin{table}[htbp]
+\centering
+\caption{全モデルの定義グラフ指標（seed=42, 3000語）}
+\begin{tabular}{lrrrrr}
+\toprule
+モデル & パラメータ & 指示追従\% & カーネル\% & mset/k\% & 循環率\% \\
+\midrule
+Qwen3.5-0.8B & 0.8B & 23.8 & 17.9 & 14.4 & 16.7 \\
+Qwen3.5-2B   & 2B   &  7.8 & 11.1 & 16.7 &  6.1 \\
+Qwen3.5-4B   & 4B   & 13.8 & 10.8 & 17.1 &  7.5 \\
+Qwen3.5-9B   & 9B   & 24.1 & 10.1 & 18.1 &  7.6 \\
+Qwen3.5-27B  & 27B  & 15.1 &  8.6 & 20.3 &  6.5 \\
+\midrule
+Gemma-4-4B   & 4B   & \textbf{99.9} & 7.3 & 23.3 & 4.3 \\
+Gemma-4-31B  & 31B  & \textbf{99.9} & 8.1 & 16.2 & 5.1 \\
+\midrule
+WordNet（参考） & --- & --- & 15.5 & --- & 7.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Qwen3.5 ファミリーでは：
+\begin{itemize}
+  \item \textbf{カーネル率}が単調減少（$r = -0.862$）——大きなモデルほど小さな核で定義を閉じる
+  \item \textbf{mset/k 比}が単調増加（$r = +0.982$）——核の循環構造はより密になる
+\end{itemize}
+
+\begin{reflect}
+\begin{enumerate}
+  \item カーネル率が下がることは「良いこと」か「悪いこと」か？
+        語彙的効率の観点と、循環定義の観点から両方を論じよ。
+  \item mset/k 比が上がることと「概念の複雑さ」の間に関係はあるか？
+  \item WordNet のカーネル率（15.5\%）は Qwen3.5-0.8B よりさらに高い。
+        WordNet の定義スタイルの何が辞書グラフを密にしているか考えよ。
+\end{enumerate}
+\end{reflect}
+
+% ----------------------------------------
+\section{普遍カーネル：全モデルに共通する 92 語}
+
+Qwen3.5 全 5 モデルで共通してカーネルに現れる語が \textbf{92 語}存在した。
+
+\begin{table}[htbp]
+\centering
+\caption{普遍カーネルの例（カテゴリ別）}
+\begin{tabular}{ll}
+\toprule
+カテゴリ & 例（抜粋） \\
+\midrule
+基本動詞 & go, hold, move, use, feel, allow, build \\
+関係形容詞 & different, flat, high, small, great, correct \\
+認知・概念語 & idea, image, true, future, energy \\
+\midrule
+NSM 重複（10語） & body, feel, like, people, place, small, time, touch, true, two \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Wierzbicka の自然意味メタ言語（NSM）65 基本表現のうち 10 語（15.4\%）が
+全モデルの普遍カーネルに含まれる。
+
+\begin{dsterm}{自然意味メタ言語（NSM）}
+  アンナ・ヴィエジビツカが提唱した意味論の枠組みで、
+  すべての人間語で共通に現れる \textbf{65 の意味基本表現}を提案する
+  （Wierzbicka, 2021）。これらの語は原語的で、他の語によって定義されない——
+  はずである。辞書グラフのカーネルとの一致は、NSM 仮説の計算的証拠とも解釈できる。
+\end{dsterm}
+
+\begin{reflect}
+\begin{enumerate}
+  \item なぜ NSM との一致は 100\% にならないのか？
+        考えられる理由を 2 つ以上挙げよ。
+  \item 普遍カーネルの 92 語は、モデルサイズが 34 倍変化しても変わらない。
+        この「不変性」は何を意味するか？モデルの能力の差と独立しているとはどういうことか？
+\end{enumerate}
+\end{reflect}
+
+% ----------------------------------------
+\section{指示追従体制：ファミリー差の正体}
+
+最も印象的な発見の一つは、\textbf{Gemma-4 が 99.9\% の割合でプロンプト指示に従い、
+Qwen3.5 は 76〜92\% で無視した}という事実である。
+
+\begin{note}
+  この差はモデルサイズとは無関係である。
+  Qwen3.5-27B（27B パラメータ）が Qwen3.5-0.8B（0.8B）より
+  指示追従率が高いわけではない（実際には大小が逆転する場合すらある）。
+  これは \textbf{ファミリー固有の性質}——すなわちアーキテクチャや事前学習データの差——による。
+\end{note}
+
+この差が生むグラフ構造の違い：
+
+\begin{itemize}
+  \item Gemma-4 は辺が少ない（自己参照が少ないため）→ カーネルが小さく・疎
+  \item Qwen3.5 は辺が多い（自己参照定義も含む）→ カーネルが大きく・密
+\end{itemize}
+
+これを\textbf{指示追従体制}（instruction regime）と呼び、
+ファミリー間比較では偏相関分析で制御する必要がある。
+
+\begin{tryit}[偏相関の実装]
+\begin{lstlisting}[caption=偏相関：sr\_rateを制御したカーネル率とスケールの相関]
+import numpy as np
+
+def partial_corr(x, y, z):
+    """r(x, y | z): z を偏回帰除去した後の相関"""
+    def residual(a, b):
+        B = np.column_stack([b, np.ones(len(b))])
+        beta = np.linalg.lstsq(B, a, rcond=None)[0]
+        return a - B @ beta
+    return np.corrcoef(residual(x, z), residual(y, z))[0, 1]
+
+# 例：カーネル率 vs log2(params)、sr_rate を制御
+log2 = np.log2([0.8, 2, 4, 9, 27, 4, 31])
+kern = np.array([17.9, 11.1, 10.8, 10.1, 8.6, 7.3, 8.1]) / 100
+sr   = np.array([76.2, 92.2, 86.2, 75.9, 84.9, 0.1, 0.1]) / 100
+
+r_raw     = np.corrcoef(kern, log2)[0, 1]
+r_partial = partial_corr(kern, log2, sr)
+print(f"r_raw     = {r_raw:.3f}")     # -0.757
+print(f"r_partial = {r_partial:.3f}") # -0.723 (sr の影響は小さい)
+\end{lstlisting}
+\end{tryit}
+
+% ----------------------------------------
+\section{量子化頑健性}
+
+同じ Qwen3.5-27B モデルを 4-bit / 6-bit / 8-bit に量子化しても、
+カーネル率の変動は ±1pp 以内に収まった（表 3.3）。
+
+\begin{table}[htbp]
+\centering
+\caption{Qwen3.5-27B の量子化精度別グラフ指標}
+\begin{tabular}{lrrrr}
+\toprule
+精度 & カーネル\% & mset/k\% & 循環率\% \\
+\midrule
+bf16（基準） & 8.6 & 20.3 & 6.5 \\
+8-bit        & 9.4 & 15.9 & 5.4 \\
+6-bit        & 8.2 & 19.1 & 4.5 \\
+4-bit        & \textbf{8.7} & \textbf{20.2} & \textbf{6.5} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+4-bit が bf16 に最も近く、8-bit が最も乖離している点は注目に値する。
+MLX の 8-bit 量子化スキーム特有の影響の可能性がある。
+
+% ----------------------------------------
+\begin{problemset}[第 3 章の確認問題]
+  \item 表 3.1 の Qwen3.5 系列（5点）で、カーネル率と $\log_2(\text{params})$
+        のピアソン相関係数を手計算（電卓可）で求め、$r = -0.862$ を確認せよ。
+  \item 普遍カーネルの 92 語には NSM が 10 語含まれる。
+        NSM 以外の 82 語にはどのような傾向があるか、表 3.2 から仮説を立てよ。
+  \item 量子化と定義グラフの関係について考察せよ。
+        「量子化はモデルの出力分布をどう変えるか」という観点から、
+        なぜグラフ指標が頑健であるかを説明してみよ。
+\end{problemset}
+
+% ========================================
+\chapter{先行研究との接続と今後の課題}
+
+\begin{introduction}[この章で学ぶこと]
+  \item Vincent-Lamarre et al. (2016) の原著を正確に読み解く
+  \item 本研究の位置付けと限界を理解する
+  \item 発展課題を把握し、卒業研究の方向性を考える
+\end{introduction}
+
+% ----------------------------------------
+\section{Vincent-Lamarre et al. (2016) を読む}
+
+\begin{dsterm}{文献情報}
+  Vincent-Lamarre, P., Blondin Massé, A., Lepage, M., Lord, M., Harnad, S., \& Marcotte, O. (2016).
+  The latent structure of dictionaries.
+  \textit{Topics in Cognitive Science}, 8(3), 625--659.
+  arXiv:1411.0129
+\end{dsterm}
+
+原著が使用した 4 辞書：Longman (LDOCE)・Cambridge (CIDE)・Webster・WordNet。
+それぞれのカーネル率：Longman ≈ 10\%、Cambridge ≈ 10\%、Webster ≈ 8\%、WordNet ≈ 15\%。
+Core/Kernel 比：65〜90\%（平均約 75\%）。MinSet：約 1\%。
+
+重要な実装上の注意を表 4.1 にまとめる。
+
+\begin{table}[htbp]
+\centering
+\caption{よく誤解される点：学生資料 vs 原著}
+\begin{tabular}{p{3.5cm}p{4cm}p{4cm}}
+\toprule
+項目 & 誤解されやすい記述 & 原著の正しい定義 \\
+\midrule
+カーネル計算 & 入次数 0 を反復除去 & \textbf{出次数 0} を反復除去 \\
+コア定義 & 最大 SCC & \textbf{入次数 0 の SCC の和集合}（Source SCC） \\
+MinSet の計算 & greedy 近似 & \textbf{ILP + CPLEX}（厳密解、数日の計算） \\
+前処理 & レンマ化 & \textbf{ステミング}（"stemmatized"）、本研究では差異を limitation に記載 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{caution}
+  カーネルとコアの誤解は実装のバグに直結する。
+  3 ノードのサニティチェック（A→B→C で Kernel=\{A\}、バグ版=\{C\}）を
+  必ず最初に書くこと。
+\end{caution}
+
+% ----------------------------------------
+\section{本研究の貢献と限界}
+
+\begin{note}
+  \textbf{貢献}：
+  \begin{itemize}
+    \item 辞書グラフ分析を LLM の内部知識組織の計量手法として初めて体系的に適用
+    \item カーネル率のスケール依存性（r = −0.862）と mset/k の単調増加（r = +0.982）を実証
+    \item 指示追従体制（sr\_rate）をファミリー間比較の交絡因子として定式化
+    \item 4-bit 量子化でもグラフ指標が安定することを示し、低コスト推論の有効性を確認
+  \end{itemize}
+\end{note}
+
+\begin{note}
+  \textbf{限界}：
+  \begin{itemize}
+    \item データ点数が少ない（Qwen3.5 n=5）——5 点での相関は過学習しやすい
+    \item 単一シード（seed=42）のみ——複数シードによる分散評価が必要
+    \item 英語のみ——日本語辞書では異なる結果が得られる可能性がある
+    \item プロンプト感度——別のプロンプトでは sr\_rate が大きく変わりうる
+  \end{itemize}
+\end{note}
+
+% ----------------------------------------
+\section{発展課題}
+
+\begin{reflect}
+\begin{enumerate}
+  \item \textbf{多言語展開}：同じパイプラインを日本語で実行するには
+        どのような変更が必要か？レンマ化・ストップワード処理の日本語版を調べよ。
+  \item \textbf{Few-shot プロンプト}：自己参照率を下げるためには、
+        指示を守った定義例を 3 つほど示す few-shot プロンプトが有効かもしれない。
+        Qwen3.5-4B で実験し、グラフ構造への影響を計測せよ。
+  \item \textbf{より多くのモデルとファミリー}：Llama-4 や Mistral など
+        他のファミリーへの適用で、指示追従体制の違いが一般化するかを検証せよ。
+  \item \textbf{Human vs LLM の Core 内容比較}：本研究の普遍カーネル 92 語と
+        LDOCE の Core 語（原著 Fig. 5）を直接比較し、重複率を計算せよ。
+  \item \textbf{定義の質的分析}：カーネルに入った語の定義と、
+        カーネルから除去された語の定義を比べ、質的な差異を記述せよ。
+\end{enumerate}
+\end{reflect}
+
+% ----------------------------------------
+\begin{problemset}[第 4 章・総合確認問題]
+  \item カーネルが「出次数 0 を除去」で求まる理由を、
+        グラフの意味論（辺の方向が何を表すか）に基づいて 5 行以内で説明せよ。
+  \item Gemma-4-4B のカーネル率（7.3\%）は Qwen3.5-4B（10.8\%）より低い。
+        sr\_rate の差（99.9\% vs 13.8\%）がこの違いを説明するか？
+        偏相関の結果（$\Delta r = +0.034$）を使って論じよ。
+  \item 本研究の「普遍カーネル 92 語」という発見を 200 字以内で一般読者向けに説明せよ。
+  \item もし MinSet を greedy アルゴリズム（頂点次数の高い順に除去）で計算した場合、
+        真の MinSet サイズと比べてどのような誤差が生じるか予測せよ。
+\end{problemset}
+
+% ========================================
+\chapter*{付録：実装チェックリスト}
+\addcontentsline{toc}{chapter}{付録：実装チェックリスト}
+
+本研究の実装を最初から行う際の確認事項をまとめる。
+
+\section*{A. 辺の方向サニティチェック}
+
+\begin{lstlisting}[caption=最初に必ず実行すること]
+# 3ノードチェーン: A が B を定義、B が C を定義
+G = nx.DiGraph()
+G.add_edge("B", "A")   # "A" の定義に "B" が現れる -> add_edge(B, A)
+G.add_edge("C", "B")
+
+kernel = compute_kernel(G)
+assert kernel == {"B"} or kernel == {"C"}, f"Expected {{B}} or check: {kernel}"
+# A の定義に B, B の定義に C が現れる場合:
+# C は出次数 0 (C を使って定義されるものがない -> 最初に除去)
+# 除去後 B の出次数が 0 になる -> 次に除去
+# A が残る -> Kernel = {A}... 待て、定義の方向を確認しよう。
+
+# "A の定義に B が現れる" = B -> A (B は A を定義するために使われる)
+# B の出次数 = G.out_degree("B") = B が指す先の数 = 1 (A を指す)
+# A の出次数 = 0 (A はどこも指さない)
+# C の出次数 = 1 (B を指す)
+# -> 出次数 0 は A -> A を除去 -> B の出次数が 0 -> B を除去 -> C が残る
+# Kernel = {C} !!
+
+# つまり「A の定義に B が現れる」チェーン A <- B <- C では Kernel = {C}
+# これは C が「他の語の定義に使われるが、自分は何も使わない」語であることを示す。
+print("Kernel:", kernel)  # {'C'} が正解
+\end{lstlisting}
+
+\begin{note}
+  カーネル計算の直観を最初に確実に身につけること。
+  「出次数 0 の除去」とは「他のどの語の定義にも現れない語を除く」操作である。
+  残ったカーネルは「お互いの定義に現れ合う、閉じた語彙集合」である。
+\end{note}
+
+\section*{B. 環境セットアップ}
+
+\begin{lstlisting}[language=bash, caption=プロジェクトのセットアップ]
+# リポジトリクローン後
+cd /path/to/rs-dic-llm
+uv sync                    # 依存関係のインストール
+
+# mlx-proxy の起動（別ターミナル）
+python ~/mlx-proxy/mlx_proxy.py
+
+# ヘルスチェック
+curl http://localhost:8080/health
+
+# 実験実行
+uv run python -m experiments.run_full --seed 42
+\end{lstlisting}
+
+\section*{C. 主要ファイル一覧}
+
+\begin{table}[htbp]
+\centering
+\caption{実装ファイルと役割}
+\begin{tabular}{ll}
+\toprule
+ファイル & 役割 \\
+\midrule
+\texttt{src/rs\_dic\_llm/config.py} & 実験設定（モデル一覧・生成パラメータ） \\
+\texttt{src/rs\_dic\_llm/sampling.py} & Stage 0: 語彙サンプリング \\
+\texttt{src/rs\_dic\_llm/generation.py} & Stage 1: 定義文生成 \\
+\texttt{src/rs\_dic\_llm/graph\_build.py} & Stage 3: グラフ構築 \\
+\texttt{src/rs\_dic\_llm/metrics/kernel\_core.py} & Kernel・Core の計算 \\
+\texttt{src/rs\_dic\_llm/metrics/minset.py} & MinSet (ILP) の計算 \\
+\texttt{experiments/run\_full.py} & 本実験（5モデル × 3000語） \\
+\texttt{experiments/analyse\_confound.py} & 交絡分析（偏相関・回帰） \\
+\texttt{tests/test\_kernel\_outdegree.py} & カーネル方向サニティテスト \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

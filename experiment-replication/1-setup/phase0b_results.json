@@ -1,0 +1,473 @@
+[
+  {
+    "model": "openai/gpt-oss-20b",
+    "usable": true,
+    "winning_attempt": "switch+80tok",
+    "winning_switch": {
+      "reasoning_effort": "low"
+    },
+    "definition": "A flat surface used for eating or working.",
+    "reasoning_len": 119,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A flat surface used for eating or working.",
+        "reasoning_len": 119,
+        "usage": {
+          "prompt_tokens": 94,
+          "total_tokens": 139,
+          "completion_tokens": 45,
+          "reasoning_tokens": 0
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls",
+          "reasoning"
+        ],
+        "attempt": "switch+80tok",
+        "switch": {
+          "reasoning_effort": "low"
+        }
+      }
+    ]
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "usable": true,
+    "winning_attempt": "plain+1024tok",
+    "winning_switch": null,
+    "definition": "A piece of furniture with a flat surface supported by legs.",
+    "reasoning_len": 503,
+    "protocol_80tok_ok": false,
+    "attempts": [
+      {
+        "error": "http_503: Service unavailable",
+        "attempt": "switch+80tok",
+        "switch": {
+          "reasoning_effort": "low"
+        }
+      },
+      {
+        "error": "http_503: Service unavailable",
+        "attempt": "switch+1024tok",
+        "switch": {
+          "reasoning_effort": "low"
+        }
+      },
+      {
+        "content": "A piece of furniture with a flat surface supported by legs.",
+        "reasoning_len": 503,
+        "usage": {
+          "prompt_tokens": 96,
+          "completion_tokens": 129,
+          "total_tokens": 225,
+          "prompt_tokens_details": {
+            "cached_tokens": 66
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 108
+          }
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls",
+          "reasoning"
+        ],
+        "attempt": "plain+1024tok",
+        "switch": null
+      }
+    ]
+  },
+  {
+    "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "usable": true,
+    "winning_attempt": "plain+80tok",
+    "winning_switch": null,
+    "definition": "A piece of furniture with a flat surface and legs, used for holding objects.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A piece of furniture with a flat surface and legs, used for holding objects.",
+        "reasoning_len": 0,
+        "usage": {
+          "prompt_tokens": 62,
+          "completion_tokens": 17,
+          "total_tokens": 79,
+          "cached_tokens": 0
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls"
+        ],
+        "attempt": "plain+80tok",
+        "switch": null
+      }
+    ]
+  },
+  {
+    "model": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+    "usable": true,
+    "winning_attempt": "plain+80tok",
+    "winning_switch": null,
+    "definition": "A flat surface supported by legs for eating, writing, or placing objects.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A flat surface supported by legs for eating, writing, or placing objects.",
+        "reasoning_len": 0,
+        "usage": {
+          "prompt_tokens": 56,
+          "completion_tokens": 16,
+          "total_tokens": 72,
+          "cached_tokens": 0
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls"
+        ],
+        "attempt": "plain+80tok",
+        "switch": null
+      }
+    ]
+  },
+  {
+    "model": "Qwen/Qwen3.5-9B",
+    "usable": true,
+    "winning_attempt": "switch+80tok",
+    "winning_switch": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "definition": "A table is a flat surface supported by legs used for placing objects or working on.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A table is a flat surface supported by legs used for placing objects or working on.",
+        "reasoning_len": 0,
+        "usage": {
+          "prompt_tokens": 39,
+          "total_tokens": 57,
+          "completion_tokens": 18,
+          "reasoning_tokens": 0
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls"
+        ],
+        "attempt": "switch+80tok",
+        "switch": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model": "Qwen/Qwen3.6-Plus",
+    "usable": true,
+    "winning_attempt": "switch+80tok",
+    "winning_switch": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "definition": "A table is a piece of furniture with a flat top and legs.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A table is a piece of furniture with a flat top and legs.",
+        "reasoning_len": 0,
+        "usage": null,
+        "attempt": "switch+80tok",
+        "switch": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model": "google/gemma-4-31B-it",
+    "usable": true,
+    "winning_attempt": "switch+80tok",
+    "winning_switch": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "definition": "A piece of furniture with a flat top and legs.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A piece of furniture with a flat top and legs.",
+        "reasoning_len": 0,
+        "usage": {
+          "prompt_tokens": 40,
+          "total_tokens": 52,
+          "completion_tokens": 12
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls"
+        ],
+        "attempt": "switch+80tok",
+        "switch": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model": "google/gemma-3n-E4B-it",
+    "usable": true,
+    "winning_attempt": "plain+80tok",
+    "winning_switch": null,
+    "definition": "It's a flat piece of furniture with legs, used for placing things on.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "It's a flat piece of furniture with legs, used for placing things on.",
+        "reasoning_len": 0,
+        "usage": {
+          "prompt_tokens": 43,
+          "total_tokens": 62,
+          "completion_tokens": 19
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls"
+        ],
+        "attempt": "plain+80tok",
+        "switch": null
+      }
+    ]
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "usable": true,
+    "winning_attempt": "switch+80tok",
+    "winning_switch": {
+      "chat_template_kwargs": {
+        "thinking": false
+      }
+    },
+    "definition": "A flat surface with legs used for eating, working, or placing things on.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A flat surface with legs used for eating, working, or placing things on.",
+        "reasoning_len": 0,
+        "usage": {
+          "prompt_tokens": 31,
+          "completion_tokens": 17,
+          "total_tokens": 48,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls"
+        ],
+        "attempt": "switch+80tok",
+        "switch": {
+          "chat_template_kwargs": {
+            "thinking": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model": "MiniMaxAI/MiniMax-M2.7",
+    "usable": true,
+    "winning_attempt": "switch+1024tok",
+    "winning_switch": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "definition": "A flat surface raised on legs, used for meals or work.",
+    "reasoning_len": 1899,
+    "protocol_80tok_ok": false,
+    "attempts": [
+      {
+        "content": "",
+        "reasoning_len": 351,
+        "usage": {
+          "prompt_tokens": 65,
+          "completion_tokens": 80,
+          "total_tokens": 145,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 80
+          }
+        },
+        "finish_reason": "length",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls",
+          "reasoning"
+        ],
+        "attempt": "switch+80tok",
+        "switch": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        }
+      },
+      {
+        "content": "",
+        "reasoning_len": 356,
+        "usage": {
+          "prompt_tokens": 65,
+          "completion_tokens": 80,
+          "total_tokens": 145,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 80
+          }
+        },
+        "finish_reason": "length",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls",
+          "reasoning"
+        ],
+        "attempt": "switch+80tok",
+        "switch": {
+          "reasoning_effort": "none"
+        }
+      },
+      {
+        "content": "A flat surface raised on legs, used for meals or work.",
+        "reasoning_len": 1899,
+        "usage": {
+          "prompt_tokens": 65,
+          "completion_tokens": 489,
+          "total_tokens": 554,
+          "prompt_tokens_details": {
+            "cached_tokens": 32
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 473
+          }
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls",
+          "reasoning"
+        ],
+        "attempt": "switch+1024tok",
+        "switch": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model": "moonshotai/Kimi-K2.6",
+    "usable": true,
+    "winning_attempt": "switch+80tok",
+    "winning_switch": {
+      "chat_template_kwargs": {
+        "thinking": false
+      }
+    },
+    "definition": "A flat surface with legs, used for placing things on or for people to sit around.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A flat surface with legs, used for placing things on or for people to sit around.",
+        "reasoning_len": 0,
+        "usage": {
+          "prompt_tokens": 36,
+          "completion_tokens": 19,
+          "total_tokens": 55,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls"
+        ],
+        "attempt": "switch+80tok",
+        "switch": {
+          "chat_template_kwargs": {
+            "thinking": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model": "deepcogito/cogito-v2-1-671b",
+    "usable": true,
+    "winning_attempt": "plain+80tok",
+    "winning_switch": null,
+    "definition": "A flat surface with legs, used for putting things on or eating from.",
+    "reasoning_len": 0,
+    "protocol_80tok_ok": true,
+    "attempts": [
+      {
+        "content": "A flat surface with legs, used for putting things on or eating from.",
+        "reasoning_len": 0,
+        "usage": {
+          "prompt_tokens": 55,
+          "total_tokens": 71,
+          "completion_tokens": 16
+        },
+        "finish_reason": "stop",
+        "raw_message_keys": [
+          "role",
+          "content",
+          "tool_calls"
+        ],
+        "attempt": "plain+80tok",
+        "switch": null
+      }
+    ]
+  }
+]

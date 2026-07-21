@@ -1,0 +1,275 @@
+[
+  {
+    "model": "openai/gpt-oss-20b",
+    "verdict": "WORKS",
+    "latency_s": 3.95,
+    "usage": {
+      "prompt_tokens": 94,
+      "total_tokens": 174,
+      "completion_tokens": 80,
+      "reasoning_tokens": 0
+    },
+    "definition": "",
+    "family": "gpt-oss",
+    "params_B": 20,
+    "prior_hint": "verified both"
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "verdict": "http_503",
+    "detail": "Service unavailable",
+    "latency_s": 1.36,
+    "family": "gpt-oss",
+    "params_B": 120,
+    "prior_hint": "verified both"
+  },
+  {
+    "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "verdict": "http_503",
+    "detail": "Service unavailable",
+    "latency_s": 0.87,
+    "family": "llama",
+    "params_B": 70,
+    "prior_hint": "verified both"
+  },
+  {
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct-Lite",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model meta-llama/Meta-Llama-3-8B-Instruct-Lite. Please visit https://api.together.ai/models/meta-llama/Meta-Llama-3-8B-Instruct-Lite to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.97,
+    "family": "llama",
+    "params_B": 8,
+    "prior_hint": "docs only, untested"
+  },
+  {
+    "model": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+    "verdict": "WORKS",
+    "latency_s": 1.33,
+    "usage": {
+      "prompt_tokens": 56,
+      "completion_tokens": 11,
+      "total_tokens": 67,
+      "cached_tokens": 0
+    },
+    "definition": "A flat surface supported by legs for placing objects.",
+    "family": "qwen2.5",
+    "params_B": 7,
+    "prior_hint": "verified both"
+  },
+  {
+    "model": "Qwen/Qwen3.5-9B",
+    "verdict": "WORKS",
+    "latency_s": 1.78,
+    "usage": {
+      "prompt_tokens": 37,
+      "total_tokens": 117,
+      "completion_tokens": 80,
+      "reasoning_tokens": 0
+    },
+    "definition": "",
+    "family": "qwen3.5",
+    "params_B": 9,
+    "prior_hint": "verified both"
+  },
+  {
+    "model": "Qwen/Qwen3.5-397B-A17B",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model Qwen/Qwen3.5-397B-A17B. Please visit https://api.together.ai/models/Qwen/Qwen3.5-397B-A17B to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.7,
+    "family": "qwen3.5",
+    "params_B": 397,
+    "prior_hint": "docs yes / live 400 - CONFLICT"
+  },
+  {
+    "model": "Qwen/Qwen3.6-Plus",
+    "verdict": "http_400",
+    "detail": "This model only supports streaming. Set \"stream\": true.",
+    "latency_s": 0.61,
+    "family": "qwen3.6",
+    "params_B": null,
+    "prior_hint": "docs only, params undisclosed"
+  },
+  {
+    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507-tput",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model Qwen/Qwen3-235B-A22B-Instruct-2507-tput. Please visit https://api.together.ai/models/Qwen/Qwen3-235B-A22B-Instruct-2507-tput to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.54,
+    "family": "qwen3",
+    "params_B": 235,
+    "prior_hint": "live said nonexistent"
+  },
+  {
+    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model Qwen/Qwen3-235B-A22B-Instruct-2507-FP8. Please visit https://api.together.ai/models/Qwen/Qwen3-235B-A22B-Instruct-2507-FP8 to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.5,
+    "family": "qwen3",
+    "params_B": 235,
+    "prior_hint": "live said -FP8 exists"
+  },
+  {
+    "model": "google/gemma-4-31B-it",
+    "verdict": "WORKS",
+    "latency_s": 18.33,
+    "usage": {
+      "prompt_tokens": 42,
+      "total_tokens": 122,
+      "completion_tokens": 80
+    },
+    "definition": "",
+    "family": "gemma4",
+    "params_B": 31,
+    "prior_hint": "verified both"
+  },
+  {
+    "model": "google/gemma-3n-E4B-it",
+    "verdict": "WORKS",
+    "latency_s": 3.39,
+    "usage": {
+      "prompt_tokens": 43,
+      "total_tokens": 62,
+      "completion_tokens": 19
+    },
+    "definition": "It's a flat piece of furniture with legs, used for placing things on.",
+    "family": "gemma3n",
+    "params_B": 4,
+    "prior_hint": "verified both"
+  },
+  {
+    "model": "zai-org/GLM-5.1",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model zai-org/GLM-5.1. Please visit https://api.together.ai/models/zai-org/GLM-5.1 to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.78,
+    "family": "glm",
+    "params_B": null,
+    "prior_hint": "docs yes / live 400 - CONFLICT"
+  },
+  {
+    "model": "zai-org/GLM-5",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model zai-org/GLM-5. Please visit https://api.together.ai/models/zai-org/GLM-5 to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.58,
+    "family": "glm",
+    "params_B": null,
+    "prior_hint": "docs only, untested"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-V3.1",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model deepseek-ai/DeepSeek-V3.1. Please visit https://api.together.ai/models/deepseek-ai/DeepSeek-V3.1 to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.65,
+    "family": "deepseek",
+    "params_B": 671,
+    "prior_hint": "docs yes / live 400 - CONFLICT"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-R1",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model deepseek-ai/DeepSeek-R1. Please visit https://api.together.ai/models/deepseek-ai/DeepSeek-R1 to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.9,
+    "family": "deepseek",
+    "params_B": 671,
+    "prior_hint": "docs yes / live 400 - CONFLICT"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "verdict": "WORKS",
+    "latency_s": 1.79,
+    "usage": {
+      "prompt_tokens": 31,
+      "completion_tokens": 80,
+      "total_tokens": 111,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    },
+    "definition": "",
+    "family": "deepseek",
+    "params_B": null,
+    "prior_hint": "docs only, untested"
+  },
+  {
+    "model": "MiniMaxAI/MiniMax-M2.7",
+    "verdict": "WORKS",
+    "latency_s": 4.77,
+    "usage": {
+      "prompt_tokens": 65,
+      "completion_tokens": 80,
+      "total_tokens": 145,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    },
+    "definition": "",
+    "family": "minimax",
+    "params_B": null,
+    "prior_hint": "docs only, untested"
+  },
+  {
+    "model": "moonshotai/Kimi-K2.6",
+    "verdict": "WORKS",
+    "latency_s": 1.03,
+    "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 80,
+      "total_tokens": 115,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    },
+    "definition": "",
+    "family": "kimi",
+    "params_B": null,
+    "prior_hint": "docs only, untested"
+  },
+  {
+    "model": "moonshotai/Kimi-K2.5",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model moonshotai/Kimi-K2.5. Please visit https://api.together.ai/models/moonshotai/Kimi-K2.5 to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.74,
+    "family": "kimi",
+    "params_B": null,
+    "prior_hint": "docs yes / live nonexistent - CONFLICT"
+  },
+  {
+    "model": "deepcogito/cogito-v2-1-671b",
+    "verdict": "WORKS",
+    "latency_s": 0.75,
+    "usage": {
+      "prompt_tokens": 55,
+      "total_tokens": 66,
+      "completion_tokens": 11
+    },
+    "definition": "A flat surface with legs for holding things up.",
+    "family": "cogito",
+    "params_B": 671,
+    "prior_hint": "docs only, untested"
+  },
+  {
+    "model": "LiquidAI/LFM2-24B-A2B",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model LiquidAI/LFM2-24B-A2B. Please visit https://api.together.ai/models/LiquidAI/LFM2-24B-A2B to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.7,
+    "family": "lfm",
+    "params_B": 24,
+    "prior_hint": "docs only, untested"
+  },
+  {
+    "model": "essentialai/rnj-1-instruct",
+    "verdict": "dedicated_only",
+    "detail": "Unable to access non-serverless model essentialai/rnj-1-instruct. Please visit https://api.together.ai/models/essentialai/rnj-1-instruct to create and start a new dedicated endpoint for the model.",
+    "latency_s": 0.73,
+    "family": "rnj",
+    "params_B": null,
+    "prior_hint": "docs only, untested"
+  }
+]

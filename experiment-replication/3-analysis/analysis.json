@@ -1,0 +1,277 @@
+{
+ "rows": [
+  {
+   "model": "Qwen__Qwen2.5-7B-Instruct-Turbo.seed42",
+   "family": "qwen2.5",
+   "params_B": 7,
+   "stack": "together-api",
+   "kernel_ratio": 0.1008,
+   "mset_k": 0.1964,
+   "circ": 0.0443,
+   "sr_rate": 0.1967
+  },
+  {
+   "model": "Qwen__Qwen3.5-9B.seed42",
+   "family": "qwen3.5",
+   "params_B": 9,
+   "stack": "together-api",
+   "kernel_ratio": 0.0864,
+   "mset_k": 0.1667,
+   "circ": 0.0371,
+   "sr_rate": 0.8043
+  },
+  {
+   "model": "Qwen__Qwen3.6-Plus.seed42",
+   "family": "qwen3.6",
+   "params_B": null,
+   "stack": "together-api",
+   "kernel_ratio": 0.0479,
+   "mset_k": 0.2331,
+   "circ": 0.0238,
+   "sr_rate": 0.3497
+  },
+  {
+   "model": "deepcogito__cogito-v2-1-671b.seed42",
+   "family": "cogito",
+   "params_B": 671,
+   "stack": "together-api",
+   "kernel_ratio": 0.0695,
+   "mset_k": 0.2124,
+   "circ": 0.0382,
+   "sr_rate": 0.0013
+  },
+  {
+   "model": "deepseek-ai__DeepSeek-V4-Pro.seed42",
+   "family": "deepseek",
+   "params_B": null,
+   "stack": "together-api",
+   "kernel_ratio": 0.0915,
+   "mset_k": 0.1496,
+   "circ": 0.0583,
+   "sr_rate": 0.0037
+  },
+  {
+   "model": "google__gemma-3n-E4B-it.seed42",
+   "family": "gemma3n",
+   "params_B": 4,
+   "stack": "together-api",
+   "kernel_ratio": 0.0843,
+   "mset_k": 0.2051,
+   "circ": 0.0432,
+   "sr_rate": 0.0203
+  },
+  {
+   "model": "google__gemma-4-31B-it.seed42",
+   "family": "gemma4",
+   "params_B": 31,
+   "stack": "together-api",
+   "kernel_ratio": 0.0526,
+   "mset_k": 0.2055,
+   "circ": 0.0245,
+   "sr_rate": 0.0003
+  },
+  {
+   "model": "meta-llama__Llama-3.3-70B-Instruct-Turbo.seed42",
+   "family": "llama",
+   "params_B": 70,
+   "stack": "together-api",
+   "kernel_ratio": 0.1088,
+   "mset_k": 0.2152,
+   "circ": 0.0843,
+   "sr_rate": 0.005
+  },
+  {
+   "model": "moonshotai__Kimi-K2.6.seed42",
+   "family": "kimi",
+   "params_B": null,
+   "stack": "together-api",
+   "kernel_ratio": 0.0922,
+   "mset_k": 0.1758,
+   "circ": 0.0508,
+   "sr_rate": 0.0423
+  },
+  {
+   "model": "openai__gpt-oss-120b.seed42",
+   "family": "gpt-oss",
+   "params_B": 120,
+   "stack": "together-api",
+   "kernel_ratio": 0.0972,
+   "mset_k": 0.1852,
+   "circ": 0.0551,
+   "sr_rate": 0.0293
+  },
+  {
+   "model": "openai__gpt-oss-20b.seed42",
+   "family": "gpt-oss",
+   "params_B": 20,
+   "stack": "together-api",
+   "kernel_ratio": 0.0868,
+   "mset_k": 0.2033,
+   "circ": 0.0508,
+   "sr_rate": 0.0822
+  },
+  {
+   "model": "local/Qwen3.5-0.8B",
+   "family": "qwen3.5",
+   "params_B": 0.8,
+   "kernel_ratio": 0.179,
+   "mset_k": 0.144,
+   "circ": 0.167,
+   "sr_rate": 0.762,
+   "stack": "mlx"
+  },
+  {
+   "model": "local/Qwen3.5-2B",
+   "family": "qwen3.5",
+   "params_B": 2,
+   "kernel_ratio": 0.111,
+   "mset_k": 0.167,
+   "circ": 0.061,
+   "sr_rate": 0.922,
+   "stack": "mlx"
+  },
+  {
+   "model": "local/Qwen3.5-4B",
+   "family": "qwen3.5",
+   "params_B": 4,
+   "kernel_ratio": 0.108,
+   "mset_k": 0.171,
+   "circ": 0.075,
+   "sr_rate": 0.862,
+   "stack": "mlx"
+  },
+  {
+   "model": "local/Qwen3.5-9B",
+   "family": "qwen3.5",
+   "params_B": 9,
+   "kernel_ratio": 0.101,
+   "mset_k": 0.181,
+   "circ": 0.076,
+   "sr_rate": 0.759,
+   "stack": "mlx"
+  },
+  {
+   "model": "local/Qwen3.5-27B",
+   "family": "qwen3.5",
+   "params_B": 27,
+   "kernel_ratio": 0.086,
+   "mset_k": 0.203,
+   "circ": 0.065,
+   "sr_rate": 0.849,
+   "stack": "mlx"
+  },
+  {
+   "model": "local/gemma-4-4B",
+   "family": "gemma4",
+   "params_B": 4,
+   "kernel_ratio": 0.073,
+   "mset_k": 0.233,
+   "circ": 0.043,
+   "sr_rate": 0.001,
+   "stack": "mlx"
+  },
+  {
+   "model": "local/gemma-4-31B",
+   "family": "gemma4",
+   "params_B": 31,
+   "kernel_ratio": 0.081,
+   "mset_k": 0.162,
+   "circ": 0.051,
+   "sr_rate": 0.001,
+   "stack": "mlx"
+  }
+ ],
+ "correlations": {
+  "pooled_all_known_params": {
+   "kernel_ratio": {
+    "r": -0.55,
+    "r_partial_sr": -0.384,
+    "n": 15
+   },
+   "mset_k": {
+    "r": 0.439,
+    "r_partial_sr": 0.161,
+    "n": 15
+   },
+   "circ": {
+    "r": -0.447,
+    "r_partial_sr": -0.277,
+    "n": 15
+   }
+  },
+  "within_gemma4": {
+   "kernel_ratio": {
+    "r": -0.244,
+    "r_partial_sr": 1.0,
+    "n": 3
+   },
+   "mset_k": {
+    "r": -0.794,
+    "r_partial_sr": -1.0,
+    "n": 3
+   },
+   "circ": {
+    "r": -0.223,
+    "r_partial_sr": 1.0,
+    "n": 3
+   }
+  },
+  "within_qwen3.5": {
+   "kernel_ratio": {
+    "r": -0.865,
+    "r_partial_sr": -0.917,
+    "n": 6
+   },
+   "mset_k": {
+    "r": 0.914,
+    "r_partial_sr": 0.938,
+    "n": 6
+   },
+   "circ": {
+    "r": -0.693,
+    "r_partial_sr": -0.776,
+    "n": 6
+   }
+  }
+ },
+ "universal_kernel_api": [
+  "activity",
+  "animal",
+  "break",
+  "close",
+  "enjoyment",
+  "even",
+  "eye",
+  "fill",
+  "fix",
+  "flat",
+  "grasp",
+  "hand",
+  "hold",
+  "level",
+  "look",
+  "material",
+  "mean",
+  "object",
+  "one",
+  "penalty",
+  "people",
+  "point",
+  "punishment",
+  "put",
+  "relate",
+  "right",
+  "separate",
+  "set",
+  "shape",
+  "show",
+  "single",
+  "someone",
+  "sound",
+  "state",
+  "take",
+  "top",
+  "understand",
+  "wrong"
+ ]
+}

@@ -1,6 +1,6 @@
 """
 Stage 6: analysis — scaling correlations, partial correlation vs sr_rate,
-universal kernel, and comparison with the prior local (MLX) results.
+universal kernel, and comparison with the prior local (RunPod) results.
 
 Usage:
     python analyse.py --metrics metrics.json

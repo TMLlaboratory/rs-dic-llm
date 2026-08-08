@@ -1,4 +1,4 @@
-"""Stage 1: Generate definitions for a list of words via mlx-proxy."""
+"""Stage 1: Generate definitions for a list of words via HuggingFace transformers."""
 
 import json
 import re
@@ -8,7 +8,7 @@ from pathlib import Path
 
 from tqdm import tqdm
 
-from . import mlx_client
+from . import hf_client
 from .config import ExperimentConfig
 
 _POS_LABEL = {"n": "noun", "v": "verb", "a": "adjective"}
@@ -21,7 +21,6 @@ _PROMPT_TEMPLATE = (
 
 
 def _first_sentence(text: str) -> str:
-    """Return the first sentence of text (split on '. ' or '\n')."""
     text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
     for sep in (".\n", "\n", ". "):
         idx = text.find(sep)
@@ -31,7 +30,25 @@ def _first_sentence(text: str) -> str:
 
 
 def _is_self_referential(definition: str, word: str) -> bool:
-    return word.lower() in definition.lower().split()
+    # re.findall strips punctuation so "happiness." correctly matches "happiness"
+    tokens = re.findall(r"[a-zA-Z'-]+", definition.lower())
+    return word.lower() in tokens
+
+
+def _write_manifest(path: str, model_id: str, config: ExperimentConfig) -> None:
+    """Save generation parameters beside the JSONL file for full reproducibility."""
+    manifest = {
+        "model_id": model_id,
+        "generation_seed": config.generation_seed,
+        "temperature": config.temperature,
+        "top_p": config.top_p,
+        "top_k": config.top_k,
+        "max_tokens": config.max_tokens,
+        "n_words": config.n_words,
+        "word_list_path": config.word_list_path,
+        "seed_formula": "generation_seed + word_index",
+    }
+    Path(path).write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
 
 
 def generate_definitions(
@@ -40,40 +57,50 @@ def generate_definitions(
     config: ExperimentConfig,
     output_path: str | None = None,
 ) -> list[dict]:
-    """Generate definitions for each word using the loaded mlx-proxy model.
+    """Generate definitions for each word using the loaded HF model.
+
+    Per-word seed = config.generation_seed + word_index, so any individual
+    word's output is reproducible independently of list order.
 
     Writes results incrementally to output_path (JSONL) if provided.
+    Also writes a companion .manifest.json with all generation parameters.
+
     Returns list of result dicts with keys:
-        word, pos, model, definition, status, tokens_approx, latency_ms
+        word, pos, model, definition, status, tokens_approx, latency_ms,
+        generation_seed (the per-word seed used)
     """
-    mlx_client.load_model(model_id)
+    hf_client.load_model(model_id)
 
     out_file = None
     if output_path:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         out_file = open(output_path, "w", encoding="utf-8")
+        manifest_path = output_path.replace(".jsonl", ".manifest.json")
+        _write_manifest(manifest_path, model_id, config)
 
     results: list[dict] = []
     n_failed = 0
 
     try:
-        for entry in tqdm(words, desc=f"generate [{model_id.split('/')[-1]}]"):
+        for i, entry in enumerate(tqdm(words, desc=f"generate [{model_id.split('/')[-1]}]")):
             word = entry["lemma"]
             pos = entry["pos"]
             pos_label = _POS_LABEL.get(pos, pos)
             prompt = _PROMPT_TEMPLATE.format(word=word, pos=pos_label)
+            word_seed = config.generation_seed + i
 
             status = "ok"
             definition = ""
             t0 = time.time()
 
             try:
-                raw = mlx_client.generate(
+                raw = hf_client.generate(
                     prompt,
                     temperature=config.temperature,
                     top_p=config.top_p,
                     top_k=config.top_k,
                     max_tokens=config.max_tokens,
+                    seed=word_seed,
                     max_retries=config.max_retries,
                 )
                 definition = _first_sentence(raw)
@@ -100,6 +127,7 @@ def generate_definitions(
                 "status": status,
                 "tokens_approx": len(definition.split()),
                 "latency_ms": latency_ms,
+                "generation_seed": word_seed,
             }
             results.append(record)
 
@@ -114,13 +142,14 @@ def generate_definitions(
     ok = sum(1 for r in results if r["status"] == "ok")
     print(f"  [generation] done: {ok}/{len(results)} ok, {n_failed} failed")
     if n_failed / max(len(results), 1) > 0.2:
-        print("  [generation] WARNING: failure rate > 20% — consider few-shot prompt",
-              file=sys.stderr)
+        print(
+            "  [generation] WARNING: failure rate > 20% — check model loading",
+            file=sys.stderr,
+        )
 
     return results
 
 
 def load_definitions(path: str) -> list[dict]:
-    """Load a JSONL definition file."""
     with open(path, encoding="utf-8") as f:
         return [json.loads(line) for line in f if line.strip()]

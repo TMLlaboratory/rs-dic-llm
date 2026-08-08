@@ -8,13 +8,16 @@ dependencies = [
     "networkx>=3.6.1",
     "nltk>=3.9",
     "pulp>=2.9",
-    "requests>=2.32",
     "tqdm>=4.67",
     "pandas>=2.2",
     "matplotlib>=3.9",
     "seaborn>=0.13",
     "scipy>=1.14",
     "highspy>=1.14.0",
+    # HuggingFace stack — on RunPod these are pre-installed; install manually
+    # if running locally: pip install transformers>=4.40 accelerate>=0.30
+    "transformers>=4.40",
+    "accelerate>=0.30",
 ]
 
 [project.optional-dependencies]

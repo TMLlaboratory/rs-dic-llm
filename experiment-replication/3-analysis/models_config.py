@@ -34,7 +34,7 @@ MODELS = {
         family="gemma3n", params_B=4, active_B=None,   # ~4B effective (8B raw)
         switch=None, stream=False, max_tokens=80, tier=1),
 
-    # ---- Tier 1b: cross-stack validation vs local MLX runs ----
+    # ---- Tier 1b: cross-stack validation vs local RunPod runs ----
     "Qwen/Qwen3.5-9B": dict(
         family="qwen3.5", params_B=9, active_B=None,
         switch={"chat_template_kwargs": {"enable_thinking": False}},
@@ -73,21 +73,19 @@ PROMPT_TEMPLATE = (
     "Do not use the word itself in the definition."
 )
 
-# Prior local MLX results (from "current state of the investigation.pdf", Table 1)
-# for pooled analysis alongside the new API runs.
+# Local RunPod results — loaded from results/full_summary.json after the experiment.
+# Fill these in from full_summary.json once the RunPod run is complete,
+# then pool with the API runs in analyse.py.
+# Values below are STALE (old runs, different model families) — update before use.
 PRIOR_RESULTS = [
     dict(model="local/Qwen3.5-0.8B", family="qwen3.5", params_B=0.8,
-         kernel_ratio=0.179, mset_k=0.144, circ=0.167, sr_rate=0.762, stack="mlx"),
+         kernel_ratio=None, mset_k=None, circ=None, sr_rate=None, stack="hf_bf16"),
     dict(model="local/Qwen3.5-2B", family="qwen3.5", params_B=2,
-         kernel_ratio=0.111, mset_k=0.167, circ=0.061, sr_rate=0.922, stack="mlx"),
+         kernel_ratio=None, mset_k=None, circ=None, sr_rate=None, stack="hf_bf16"),
     dict(model="local/Qwen3.5-4B", family="qwen3.5", params_B=4,
-         kernel_ratio=0.108, mset_k=0.171, circ=0.075, sr_rate=0.862, stack="mlx"),
+         kernel_ratio=None, mset_k=None, circ=None, sr_rate=None, stack="hf_bf16"),
     dict(model="local/Qwen3.5-9B", family="qwen3.5", params_B=9,
-         kernel_ratio=0.101, mset_k=0.181, circ=0.076, sr_rate=0.759, stack="mlx"),
+         kernel_ratio=None, mset_k=None, circ=None, sr_rate=None, stack="hf_bf16"),
     dict(model="local/Qwen3.5-27B", family="qwen3.5", params_B=27,
-         kernel_ratio=0.086, mset_k=0.203, circ=0.065, sr_rate=0.849, stack="mlx"),
-    dict(model="local/gemma-4-4B", family="gemma4", params_B=4,
-         kernel_ratio=0.073, mset_k=0.233, circ=0.043, sr_rate=0.001, stack="mlx"),
-    dict(model="local/gemma-4-31B", family="gemma4", params_B=31,
-         kernel_ratio=0.081, mset_k=0.162, circ=0.051, sr_rate=0.001, stack="mlx"),
+         kernel_ratio=None, mset_k=None, circ=None, sr_rate=None, stack="hf_bf16"),
 ]

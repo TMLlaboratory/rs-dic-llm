@@ -31,7 +31,6 @@ def compute_all_metrics(
     minset_result = {"size": None, "optimal": None, "scc_count": None}
     if run_minset:
         minset_result = compute_minset(G, timeout_s=minset_timeout_s)
-        minset_result["size"] = minset_result["size"]
         minset_result["minset_ratio"] = (
             minset_result["size"] / n_nodes if minset_result["size"] is not None else None
         )

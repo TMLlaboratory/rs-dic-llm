@@ -12,12 +12,12 @@ MODEL_REGISTRY: list[tuple[str, str, float, str]] = [
     ("Qwen2.5-14B",   "Qwen/Qwen2.5-14B-Instruct",   14.0,  "Qwen2.5"),
     ("Qwen2.5-32B",   "Qwen/Qwen2.5-32B-Instruct",   32.0,  "Qwen2.5"),
     ("Qwen2.5-72B",   "Qwen/Qwen2.5-72B-Instruct",   72.0,  "Qwen2.5"),
-    # Qwen3.5 — 5 sizes
-    ("Qwen3.5-0.8B",  "Qwen/Qwen3.5-0.8B-Instruct",   0.8,  "Qwen3.5"),
-    ("Qwen3.5-2B",    "Qwen/Qwen3.5-2B-Instruct",     2.0,  "Qwen3.5"),
-    ("Qwen3.5-4B",    "Qwen/Qwen3.5-4B-Instruct",     4.0,  "Qwen3.5"),
-    ("Qwen3.5-9B",    "Qwen/Qwen3.5-9B-Instruct",     9.0,  "Qwen3.5"),
-    ("Qwen3.5-27B",   "Qwen/Qwen3.5-27B-Instruct",   27.0,  "Qwen3.5"),
+    # Qwen3 — 5 sizes
+    ("Qwen3-0.6B",    "Qwen/Qwen3-0.6B",               0.6,  "Qwen3"),
+    ("Qwen3-1.7B",    "Qwen/Qwen3-1.7B",               1.7,  "Qwen3"),
+    ("Qwen3-4B",      "Qwen/Qwen3-4B",                 4.0,  "Qwen3"),
+    ("Qwen3-8B",      "Qwen/Qwen3-8B",                 8.0,  "Qwen3"),
+    ("Qwen3-14B",     "Qwen/Qwen3-14B",               14.0,  "Qwen3"),
     # Gemma 3 — 5 sizes
     ("Gemma3-270M",   "google/gemma-3-270m-it",        0.27, "Gemma3"),
     ("Gemma3-1B",     "google/gemma-3-1b-it",          1.0,  "Gemma3"),
@@ -37,7 +37,7 @@ FULL_MODELS: list[str] = [hf for _, hf, _, _ in MODEL_REGISTRY]
 # Smoke-test subset: one small model from each family
 SMOKE_MODELS: list[str] = [
     "Qwen/Qwen2.5-0.5B-Instruct",
-    "Qwen/Qwen3.5-0.8B-Instruct",
+    "Qwen/Qwen3-0.6B",
     "google/gemma-3-1b-it",
 ]
 

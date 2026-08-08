@@ -32,7 +32,7 @@ NSM_PATH = "data/nsm_primes_65.json"
 
 
 def _short(display: str) -> str:
-    return display.replace("Qwen2.5-", "Q2.5-").replace("Qwen3.5-", "Q3.5-").replace("Gemma3-", "G3-")
+    return display.replace("Qwen2.5-", "Q2.5-").replace("Qwen3-", "Q3-").replace("Gemma3-", "G3-")
 
 
 def jaccard(a: set, b: set) -> float:

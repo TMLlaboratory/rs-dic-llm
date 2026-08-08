@@ -1,7 +1,7 @@
 """Quantization side study: does precision level affect definition-graph metrics?
 
 Design justification:
-    Models : Qwen2.5-27B and Qwen2.5-72B
+    Models : Qwen2.5-32B and Qwen2.5-72B
     Why    : Same family — isolates precision from family/architecture effects.
              Two sizes — checks whether the precision effect is consistent across
              scales (quantization error may differ for larger models).
@@ -26,7 +26,7 @@ Interpretation:
 Usage:
     python experiments/quantization_study.py
     python experiments/quantization_study.py --n-words 500
-    python experiments/quantization_study.py --model-size 27B   # one model only
+    python experiments/quantization_study.py --model-size 32B   # one model only
 """
 
 import argparse
@@ -45,7 +45,7 @@ from rs_dic_llm import hf_client
 
 # The two models chosen for the side study (see justification above)
 STUDY_MODELS = {
-    "27B": "Qwen/Qwen2.5-27B-Instruct",
+    "32B": "Qwen/Qwen2.5-32B-Instruct",
     "72B": "Qwen/Qwen2.5-72B-Instruct",
 }
 PRECISIONS = ["bf16", "int8", "int4"]

@@ -60,7 +60,11 @@ def load_model(model_id: str, quantization: str = "bf16") -> None:
     if quantization == "bf16":
         load_kwargs["torch_dtype"] = torch.bfloat16
     elif quantization == "int8":
-        load_kwargs["load_in_8bit"] = True
+        try:
+            from transformers import BitsAndBytesConfig
+        except ImportError:
+            raise ImportError("bitsandbytes is required for int8. Run: pip install bitsandbytes")
+        load_kwargs["quantization_config"] = BitsAndBytesConfig(load_in_8bit=True)
     elif quantization == "int4":
         try:
             from transformers import BitsAndBytesConfig

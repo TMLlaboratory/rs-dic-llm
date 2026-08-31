@@ -1,9 +1,11 @@
+from __future__ import annotations
 from dataclasses import dataclass, field
+from typing import List, Tuple
 
 # Central model registry — (display_name, hf_model_id, param_b, family)
 # All instruct variants, all bf16, no quantization, no exceptions.
 # VERIFY these HuggingFace IDs before running: search each on hf.co/models
-MODEL_REGISTRY: list[tuple[str, str, float, str]] = [
+MODEL_REGISTRY: List[Tuple[str, str, float, str]] = [
     # Qwen2.5 — 7 sizes
     ("Qwen2.5-0.5B",  "Qwen/Qwen2.5-0.5B-Instruct",   0.5,  "Qwen2.5"),
     ("Qwen2.5-1.5B",  "Qwen/Qwen2.5-1.5B-Instruct",   1.5,  "Qwen2.5"),
@@ -40,10 +42,10 @@ MODEL_PARAM_B = {hf: pb     for _d,    hf, pb, _f in MODEL_REGISTRY}
 MODEL_FAMILY  = {hf: fam    for _d,    hf, _p, fam in MODEL_REGISTRY}
 
 # Ordered list of all 17 HF model IDs for sequential runs
-FULL_MODELS: list[str] = [hf for _, hf, _, _ in MODEL_REGISTRY]
+FULL_MODELS: List[str] = [hf for _, hf, _, _ in MODEL_REGISTRY]
 
 # Smoke-test subset: one small model from each family
-SMOKE_MODELS: list[str] = [
+SMOKE_MODELS: List[str] = [
     "Qwen/Qwen2.5-0.5B-Instruct",
     "Qwen/Qwen3-0.6B",
     "google/gemma-3-1b-it",
@@ -52,7 +54,7 @@ SMOKE_MODELS: list[str] = [
 
 @dataclass
 class ExperimentConfig:
-    models: list[str] = field(default_factory=lambda: FULL_MODELS)
+    models: List[str] = field(default_factory=lambda: FULL_MODELS)
     n_words: int = 3000
     seed: int = 42              # word-sampling seed (fixed, never changes)
     generation_seed: int = 0    # base seed for generation; per-word = generation_seed + word_index

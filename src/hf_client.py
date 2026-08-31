@@ -99,6 +99,27 @@ def unload_model() -> None:
         torch.cuda.empty_cache()
 
 
+def _format_prompt(prompt: str) -> str:
+    """Apply chat template, or return raw text for base models with no template."""
+    messages = [{"role": "user", "content": prompt}]
+    try:
+        return _tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
+    except TypeError:
+        try:
+            return _tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+        except Exception:
+            return messages[-1]["content"]
+
+
 def generate(
     prompt: str,
     *,
@@ -109,37 +130,11 @@ def generate(
     seed: int = 0,
     max_retries: int = 3,
 ) -> str:
-    """Generate one completion for the loaded model.
-
-    seed is set per-call via torch.manual_seed so every word is independently
-    reproducible: same model + same word_index → same output across runs.
-    """
+    """Generate one completion for the loaded model."""
     if _model is None or _tokenizer is None:
         raise RuntimeError("No model loaded — call load_model() first")
 
-    messages = [{"role": "user", "content": prompt}]
-
-    # Apply chat template.
-    # Qwen3-series reasoning models need enable_thinking=False to suppress
-    # <think> tokens. Qwen2.5 and Gemma3 tokenizers don't accept that kwarg,
-    # so we fall back silently.
-    try:
-        text = _tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-            enable_thinking=False,
-        )
-    except TypeError:
-        try:
-            text = _tokenizer.apply_chat_template(
-                messages,
-                tokenize=False,
-                add_generation_prompt=True,
-            )
-        except Exception:
-            # Base model with no chat template — feed prompt as plain text
-            text = messages[-1]["content"]
+    text = _format_prompt(prompt)
 
     for attempt in range(max_retries):
         try:
@@ -166,6 +161,59 @@ def generate(
                 time.sleep(2 ** attempt)
 
     raise RuntimeError(f"hf generation failed after {max_retries} retries")
+
+
+def generate_batch(
+    prompts: "list[str]",
+    *,
+    temperature: float = 0.7,
+    top_p: float = 0.8,
+    top_k: int = 20,
+    max_tokens: int = 200,
+    seed: int = 0,
+) -> "list[str]":
+    """Generate completions for a batch of prompts in one GPU call.
+
+    Uses left-padding so all sequences start generating at the same position.
+    Returns one decoded string per prompt in the same order.
+    """
+    if _model is None or _tokenizer is None:
+        raise RuntimeError("No model loaded — call load_model() first")
+
+    texts = [_format_prompt(p) for p in prompts]
+
+    orig_padding_side = _tokenizer.padding_side
+    _tokenizer.padding_side = "left"
+    if _tokenizer.pad_token_id is None:
+        _tokenizer.pad_token_id = _tokenizer.eos_token_id
+
+    try:
+        torch.manual_seed(seed)
+        inputs = _tokenizer(
+            texts, return_tensors="pt", padding=True, truncation=True
+        ).to(_model.device)
+        input_len = inputs["input_ids"].shape[1]
+
+        with torch.no_grad():
+            outputs = _model.generate(
+                **inputs,
+                max_new_tokens=max_tokens,
+                temperature=temperature,
+                top_p=top_p,
+                top_k=top_k,
+                do_sample=temperature > 0,
+                pad_token_id=_tokenizer.eos_token_id,
+            )
+
+        results = []
+        for i in range(len(prompts)):
+            new_tokens = outputs[i][input_len:]
+            results.append(
+                _tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
+            )
+        return results
+    finally:
+        _tokenizer.padding_side = orig_padding_side
 
 
 def health() -> dict:

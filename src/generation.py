@@ -12,6 +12,7 @@ from . import hf_client
 from .config import ExperimentConfig
 
 _POS_LABEL = {"n": "noun", "v": "verb", "a": "adjective"}
+_BATCH_SIZE = 16
 
 _PROMPT_TEMPLATE = (
     'Define the {pos} "{word}" in one short sentence. '
@@ -80,60 +81,72 @@ def generate_definitions(
 
     results: list[dict] = []
     n_failed = 0
+    short_name = model_id.split("/")[-1]
 
     try:
-        for i, entry in enumerate(tqdm(words, desc=f"generate [{model_id.split('/')[-1]}]")):
-            word = entry["lemma"]
-            pos = entry["pos"]
-            pos_label = _POS_LABEL.get(pos, pos)
-            prompt = _PROMPT_TEMPLATE.format(word=word, pos=pos_label)
-            word_seed = config.generation_seed + i
+        with tqdm(total=len(words), desc=f"generate [{short_name}]") as pbar:
+            for batch_start in range(0, len(words), _BATCH_SIZE):
+                batch = words[batch_start: batch_start + _BATCH_SIZE]
+                batch_seed = config.generation_seed + batch_start
 
-            status = "ok"
-            definition = ""
-            t0 = time.time()
+                prompts = []
+                for entry in batch:
+                    pos_label = _POS_LABEL.get(entry["pos"], entry["pos"])
+                    prompts.append(_PROMPT_TEMPLATE.format(word=entry["lemma"], pos=pos_label))
 
-            try:
-                raw = hf_client.generate(
-                    prompt,
-                    temperature=config.temperature,
-                    top_p=config.top_p,
-                    top_k=config.top_k,
-                    max_tokens=config.max_tokens,
-                    seed=word_seed,
-                    max_retries=config.max_retries,
-                )
-                definition = _first_sentence(raw)
+                t0 = time.time()
+                try:
+                    raws = hf_client.generate_batch(
+                        prompts,
+                        temperature=config.temperature,
+                        top_p=config.top_p,
+                        top_k=config.top_k,
+                        max_tokens=config.max_tokens,
+                        seed=batch_seed,
+                    )
+                except Exception as e:
+                    print(f"  [generation] batch failed at {batch_start}: {e}", file=sys.stderr)
+                    raws = [""] * len(batch)
+                    n_failed += len(batch)
 
-                if not definition:
-                    status = "empty"
-                elif "<think>" in raw:
-                    status = "thinking_leak"
-                elif _is_self_referential(definition, word):
-                    status = "self_referential"
+                batch_latency_ms = int((time.time() - t0) * 1000)
 
-            except Exception as e:
-                print(f"  [generation] failed for '{word}': {e}", file=sys.stderr)
-                status = "failed"
-                n_failed += 1
+                for j, (entry, raw) in enumerate(zip(batch, raws)):
+                    word = entry["lemma"]
+                    word_seed = config.generation_seed + batch_start + j
+                    definition = _first_sentence(raw) if raw else ""
 
-            latency_ms = int((time.time() - t0) * 1000)
-            record = {
-                "word": word,
-                "lemma": word,
-                "pos": pos,
-                "model": model_id,
-                "definition": definition,
-                "status": status,
-                "tokens_approx": len(definition.split()),
-                "latency_ms": latency_ms,
-                "generation_seed": word_seed,
-            }
-            results.append(record)
+                    if not raw:
+                        status = "failed"
+                    elif not definition:
+                        status = "empty"
+                    elif "<think>" in raw:
+                        status = "thinking_leak"
+                    elif _is_self_referential(definition, word):
+                        status = "self_referential"
+                    else:
+                        status = "ok"
 
-            if out_file:
-                out_file.write(json.dumps(record, ensure_ascii=False) + "\n")
-                out_file.flush()
+                    record = {
+                        "word": word,
+                        "lemma": word,
+                        "pos": entry["pos"],
+                        "model": model_id,
+                        "definition": definition,
+                        "status": status,
+                        "tokens_approx": len(definition.split()),
+                        "latency_ms": batch_latency_ms // len(batch),
+                        "generation_seed": word_seed,
+                    }
+                    results.append(record)
+
+                    if out_file:
+                        out_file.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+                if out_file:
+                    out_file.flush()
+
+                pbar.update(len(batch))
 
     finally:
         if out_file:

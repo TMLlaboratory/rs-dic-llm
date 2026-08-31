@@ -64,7 +64,7 @@ def main(family_filter: str | None = None) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--family", default=None,
-                        choices=["Qwen2.5", "Qwen3", "Gemma3"],
+                        choices=["Qwen2.5", "Qwen3", "Qwen3-Instruct", "Gemma3", "Gemma3-pt"],
                         help="Download only one model family")
     args = parser.parse_args()
     main(args.family)

@@ -24,6 +24,14 @@ MODEL_REGISTRY: list[tuple[str, str, float, str]] = [
     ("Gemma3-4B",     "google/gemma-3-4b-it",          4.0,  "Gemma3"),
     ("Gemma3-12B",    "google/gemma-3-12b-it",        12.0,  "Gemma3"),
     ("Gemma3-27B",    "google/gemma-3-27b-it",        27.0,  "Gemma3"),
+    # Gemma 3 base / pre-trained (無印) — 5 sizes 
+    ("Gemma3-270M-pt", "google/gemma-3-270m",          0.27, "Gemma3-pt"),
+    ("Gemma3-1B-pt",   "google/gemma-3-1b-pt",         1.0,  "Gemma3-pt"),
+    ("Gemma3-4B-pt",   "google/gemma-3-4b-pt",         4.0,  "Gemma3-pt"),
+    ("Gemma3-12B-pt",  "google/gemma-3-12b-pt",       12.0,  "Gemma3-pt"),
+    ("Gemma3-27B-pt",  "google/gemma-3-27b-pt",       27.0,  "Gemma3-pt"),
+    # Qwen3 Instruct-2507 — 4B only 
+    ("Qwen3-4B-Instruct-2507", "Qwen/Qwen3-4B-Instruct-2507", 4.0, "Qwen3-Instruct"),
 ]
 
 # Convenient lookups keyed by hf_model_id

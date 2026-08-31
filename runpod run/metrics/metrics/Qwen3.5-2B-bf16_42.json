@@ -1,0 +1,31 @@
+{
+  "model": "mlx-community/Qwen3.5-2B-bf16",
+  "n_nodes": 2750,
+  "n_edges": 7306,
+  "n_sccs": 2620,
+  "largest_scc": 77,
+  "n_nontrivial_sccs": 37,
+  "circulation_rate": 0.06072727272727273,
+  "edge_density": 0.0009664340752008995,
+  "mean_out_degree": 2.656727272727273,
+  "kernel_size": 305,
+  "kernel_ratio": 0.11090909090909092,
+  "core_size": 28,
+  "core_kernel_ratio": 0.09180327868852459,
+  "cycle_length_dist": {
+    "2": 51,
+    "3": 8,
+    "4": 5,
+    "5": 4,
+    "6": 6,
+    "7": 9
+  },
+  "minset_size": 51,
+  "minset_ratio": 0.018545454545454546,
+  "minset_optimal": true,
+  "nsm_n_primitives": 65,
+  "nsm_kernel_hits": 13,
+  "nsm_core_hits": 1,
+  "nsm_kernel_coverage": 0.2,
+  "nsm_core_coverage": 0.015384615384615385
+}

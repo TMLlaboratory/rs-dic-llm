@@ -1,0 +1,31 @@
+{
+  "model": "Qwen3.5-27B-4bit",
+  "n_nodes": 2750,
+  "n_edges": 6670,
+  "n_sccs": 2601,
+  "largest_scc": 109,
+  "n_nontrivial_sccs": 30,
+  "circulation_rate": 0.06509090909090909,
+  "edge_density": 0.0008823043090049274,
+  "mean_out_degree": 2.4254545454545453,
+  "kernel_size": 238,
+  "kernel_ratio": 0.08654545454545455,
+  "core_size": 15,
+  "core_kernel_ratio": 0.06302521008403361,
+  "cycle_length_dist": {
+    "2": 49,
+    "3": 9,
+    "4": 5,
+    "5": 8,
+    "6": 7,
+    "7": 12
+  },
+  "minset_size": 48,
+  "minset_ratio": 0.017454545454545455,
+  "minset_optimal": true,
+  "nsm_n_primitives": 65,
+  "nsm_kernel_hits": 15,
+  "nsm_core_hits": 1,
+  "nsm_kernel_coverage": 0.23076923076923078,
+  "nsm_core_coverage": 0.015384615384615385
+}

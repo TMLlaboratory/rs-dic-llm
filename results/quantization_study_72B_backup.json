@@ -1,0 +1,51 @@
+{
+  "design": {
+    "models": {
+      "32B": "Qwen/Qwen2.5-32B-Instruct",
+      "72B": "Qwen/Qwen2.5-72B-Instruct"
+    },
+    "precisions": [
+      "bf16",
+      "int8",
+      "int4"
+    ],
+    "n_words": 500,
+    "gen_seed": 0,
+    "hypothesis": {
+      "H0": "quantization does not change kernel_ratio by >= 1pp vs bf16",
+      "H1": "lower precision causes >= 1pp change in kernel_ratio"
+    }
+  },
+  "results": [
+    {
+      "model": "Qwen2.5-72B-Instruct",
+      "size": "72B",
+      "precision": "bf16",
+      "kernel_ratio": 0.010121457489878543,
+      "circulation_rate": 0.008097165991902834,
+      "mean_out_degree": 0.2611336032388664,
+      "sr_rate": 0.112,
+      "n_ok": 500
+    },
+    {
+      "model": "Qwen2.5-72B-Instruct",
+      "size": "72B",
+      "precision": "int8",
+      "kernel_ratio": 0.010121457489878543,
+      "circulation_rate": 0.008097165991902834,
+      "mean_out_degree": 0.2611336032388664,
+      "sr_rate": 0.112,
+      "n_ok": 500
+    },
+    {
+      "model": "Qwen2.5-72B-Instruct",
+      "size": "72B",
+      "precision": "int4",
+      "kernel_ratio": 0.010121457489878543,
+      "circulation_rate": 0.008097165991902834,
+      "mean_out_degree": 0.2611336032388664,
+      "sr_rate": 0.112,
+      "n_ok": 500
+    }
+  ]
+}

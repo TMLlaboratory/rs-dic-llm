@@ -1,0 +1,70 @@
+{
+  "models": [
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "n_nodes": 2750,
+      "n_edges": 5906,
+      "n_sccs": 2654,
+      "largest_scc": 66,
+      "n_nontrivial_sccs": 17,
+      "circulation_rate": 0.04109090909090909,
+      "edge_density": 0.000781242765964483,
+      "mean_out_degree": 2.1476363636363636,
+      "kernel_size": 183,
+      "kernel_ratio": 0.06654545454545455,
+      "core_size": 23,
+      "core_kernel_ratio": 0.12568306010928962,
+      "cycle_length_dist": {
+        "2": 33,
+        "3": 6,
+        "4": 4,
+        "5": 4,
+        "6": 1,
+        "7": 3
+      },
+      "minset_size": 30,
+      "minset_ratio": 0.01090909090909091,
+      "minset_optimal": true,
+      "nsm_n_primitives": 65,
+      "nsm_kernel_hits": 13,
+      "nsm_core_hits": 0,
+      "nsm_kernel_coverage": 0.2,
+      "nsm_core_coverage": 0.0,
+      "display": "Qwen3-4B-Instruct-2507",
+      "param_b": 4.0,
+      "family": "Qwen3-Instruct",
+      "sr_rate": 0.03933333333333333
+    }
+  ],
+  "wordnet": {
+    "model": "wordnet",
+    "n_nodes": 2750,
+    "n_edges": 4582,
+    "n_sccs": 2567,
+    "largest_scc": 160,
+    "n_nontrivial_sccs": 21,
+    "circulation_rate": 0.07418181818181818,
+    "kernel_size": 425,
+    "kernel_ratio": 0.15454545454545454,
+    "core_size": 99,
+    "core_kernel_ratio": 0.23294117647058823,
+    "cycle_length_dist": {
+      "2": 27,
+      "3": 3,
+      "4": 4,
+      "5": 2,
+      "6": 2,
+      "7": 1
+    },
+    "minset_size": 34,
+    "minset_ratio": 0.012363636363636363,
+    "minset_optimal": true,
+    "nsm_n_primitives": 65,
+    "nsm_kernel_hits": 14,
+    "nsm_core_hits": 0,
+    "nsm_kernel_coverage": 0.2153846153846154,
+    "nsm_core_coverage": 0.0,
+    "mean_out_degree": 1.6661818181818182,
+    "edge_density": 0.0006061046992294718
+  }
+}

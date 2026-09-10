@@ -1,0 +1,32 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "n_nodes": 2750,
+  "n_edges": 3709,
+  "n_sccs": 2699,
+  "largest_scc": 4,
+  "n_nontrivial_sccs": 42,
+  "circulation_rate": 0.03381818181818182,
+  "edge_density": 0.0004906246899699065,
+  "mean_out_degree": 1.3487272727272728,
+  "kernel_size": 242,
+  "kernel_ratio": 0.088,
+  "core_size": 63,
+  "core_kernel_ratio": 0.2603305785123967,
+  "reciprocity_excess": 23.943951747593108,
+  "cycle_length_dist": {
+    "2": 46,
+    "3": 4
+  },
+  "minset_size": null,
+  "minset_ratio": null,
+  "minset_optimal": null,
+  "nsm_n_primitives": 65,
+  "nsm_kernel_hits": 12,
+  "nsm_core_hits": 2,
+  "nsm_kernel_coverage": 0.18461538461538463,
+  "nsm_core_coverage": 0.03076923076923077,
+  "display": "Qwen2.5-3B",
+  "experiment": "e4_length",
+  "sr_rate": 0.024,
+  "mean_def_words": 4.703333333333333
+}

@@ -1,0 +1,33 @@
+{
+  "model": "google/gemma-3-4b-it",
+  "n_nodes": 2750,
+  "n_edges": 4551,
+  "n_sccs": 2599,
+  "largest_scc": 87,
+  "n_nontrivial_sccs": 52,
+  "circulation_rate": 0.07381818181818182,
+  "edge_density": 0.0006020040345249512,
+  "mean_out_degree": 1.6549090909090909,
+  "kernel_size": 351,
+  "kernel_ratio": 0.12763636363636363,
+  "core_size": 62,
+  "core_kernel_ratio": 0.17663817663817663,
+  "reciprocity_excess": 28.015880619221967,
+  "cycle_length_dist": {
+    "2": 89,
+    "3": 19,
+    "4": 2
+  },
+  "minset_size": null,
+  "minset_ratio": null,
+  "minset_optimal": null,
+  "nsm_n_primitives": 65,
+  "nsm_kernel_hits": 15,
+  "nsm_core_hits": 2,
+  "nsm_kernel_coverage": 0.23076923076923078,
+  "nsm_core_coverage": 0.03076923076923077,
+  "display": "Gemma3-4B",
+  "experiment": "e4_length",
+  "sr_rate": 0.0026666666666666666,
+  "mean_def_words": 6.58
+}

@@ -3,7 +3,7 @@ name = "rs-dic-llm"
 version = "0.1.0"
 description = "Dictionary-graph cycle metrics for LLM concept understanding evaluation"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 dependencies = [
     "networkx>=3.6.1",
     "nltk>=3.9",

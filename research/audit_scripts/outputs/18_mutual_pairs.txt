@@ -1,0 +1,47 @@
+1. MUTUAL PAIRS PER GRAPH, and how many are also WordNet pairs
+   Qwen2.5-72B                  82 pairs; also in WordNet: 2
+   Qwen2.5-7B                   80 pairs; also in WordNet: 4
+   Gemma3-12B                   78 pairs; also in WordNet: 3
+   Gemma3-27B                   71 pairs; also in WordNet: 1
+   Qwen2.5-3B                   61 pairs; also in WordNet: 2
+   Qwen3-1.7B                   53 pairs; also in WordNet: 3
+   Qwen2.5-0.5B                 52 pairs; also in WordNet: 4
+   Qwen3-8B                     51 pairs; also in WordNet: 1
+   Qwen3-14B                    50 pairs; also in WordNet: 4
+   Gemma3-4B                    47 pairs; also in WordNet: 1
+   Qwen2.5-14B                  47 pairs; also in WordNet: 1
+   Qwen2.5-1.5B                 46 pairs; also in WordNet: 2
+   Qwen3-4B                     43 pairs; also in WordNet: 2
+   Qwen2.5-32B                  36 pairs; also in WordNet: 1
+   Gemma3-1B                    34 pairs; also in WordNet: 1
+   Qwen3-4B-Instruct-2507       33 pairs; also in WordNet: 1
+   wordnet                      27 pairs; also in WordNet: 27
+   Qwen3-0.6B                   17 pairs; also in WordNet: 1
+   Gemma3-27B-pt                14 pairs; also in WordNet: 2
+   Gemma3-4B-pt                 11 pairs; also in WordNet: 0
+   Gemma3-12B-pt                 7 pairs; also in WordNet: 0
+   Gemma3-270M-pt                4 pairs; also in WordNet: 0
+   Gemma3-1B-pt                  3 pairs; also in WordNet: 0
+
+2. WORDNET'S 27 PAIRS
+   [('accent', 'stress'), ('apartment', 'suite'), ('articulate', 'express'), ('baseball', 'bat'), ('begin', 'start'), ('bench', 'seat'), ('brief', 'summary'), ('buddha', 'buddhism'), ('campaign', 'war'), ('clash', 'conflict'), ('condition', 'conditioner'), ('desperate', 'desperation'), ('eden', 'eve'), ('establishment', 'residence'), ('europe', 'european'), ('fear', 'frighten'), ('fifteenth', 'sixteenth'), ('fill', 'plug'), ('floor', 'room'), ('guard', 'watch'), ('inference', 'reason'), ('knot', 'tie'), ('like', 'resemble'), ('misfortune', 'unfortunate'), ('open', 'public'), ('past', 'time'), ('pursue', 'pursuit')]
+
+3. Gemma3-27B: 71 pairs, the first 40 alphabetically
+   [('acting', 'person'), ('aid', 'help'), ('allow', 'permission'), ('allow', 'permit'), ('assign', 'task'), ('bad', 'quality'), ('begin', 'start'), ('believe', 'true'), ('belt', 'waist'), ('bicycle', 'ride'), ('big', 'size'), ('bother', 'disturb'), ('branch', 'tree'), ('brief', 'note'), ('camp', 'tent'), ('capable', 'person'), ('choose', 'decide'), ('clean', 'dirt'), ('complete', 'finish'), ('contact', 'touch'), ('correct', 'right'), ('count', 'number'), ('cover', 'hide'), ('destroy', 'ruin'), ('direct', 'point'), ('dirt', 'ground'), ('dispatch', 'send'), ('doubt', 'question'), ('drop', 'fall'), ('eat', 'mouth'), ('edge', 'line'), ('eleven', 'ten'), ('even', 'flat'), ('even', 'smooth'), ('experience', 'feel'), ('fake', 'genuine'), ('feel', 'mind'), ('feel', 'sense'), ('fifteen', 'fourteen'), ('fifteen', 'sixteen')]
+
+3. Qwen2.5-72B: 82 pairs, the first 40 alphabetically
+   [('acknowledge', 'admit'), ('alive', 'dead'), ('apply', 'use'), ('assign', 'task'), ('attempt', 'try'), ('bad', 'quality'), ('begin', 'start'), ('big', 'large'), ('big', 'size'), ('bother', 'disturb'), ('brief', 'short'), ('brief', 'summary'), ('category', 'group'), ('choose', 'pick'), ('clean', 'dirt'), ('clock', 'time'), ('collect', 'gather'), ('command', 'order'), ('complete', 'finish'), ('concern', 'worry'), ('contact', 'touch'), ('correct', 'right'), ('defense', 'protection'), ('dependence', 'reliance'), ('dig', 'hole'), ('distribute', 'spread'), ('doubt', 'question'), ('draw', 'pull'), ('drop', 'fall'), ('eat', 'mouth'), ('election', 'vote'), ('eleven', 'ten'), ('encourage', 'support'), ('energy', 'power'), ('even', 'smooth'), ('examination', 'test'), ('exchange', 'trade'), ('external', 'outside'), ('fake', 'genuine'), ('feel', 'sense')]
+
+   shared by Gemma3-27B and Qwen2.5-72B: 31 (44 % of Gemma3-27B's, 38 % of Qwen2.5-72B's)
+
+4. SHARING AMONG THE 17 INSTRUCT MODELS: 363 different pairs, 881 pair occurrences
+   pairs found in at least 2 models: 163 of 363; occurrences that are shared with another model: 681 of 881 (77 %)
+   most common pairs (number of instruct models): [(('begin', 'start'), 17), (('complete', 'finish'), 13), (('flavor', 'taste'), 13), (('collect', 'gather'), 13), (('location', 'place'), 12), (('correct', 'right'), 12), (('get', 'obtain'), 11), (('image', 'picture'), 11), (('big', 'size'), 10), (('count', 'number'), 10), (('greet', 'hello'), 10), (('grasp', 'understand'), 9), (('allow', 'permit'), 9), (('place', 'position'), 9), (('big', 'large'), 9)]
+   pairs of the instruct models that WordNet also has: 10 of 363 different pairs
+
+5. THE BASE MODELS' PAIRS
+   Gemma3-12B-pt      7 pairs, 6 of them also found in an instruct model: [('assess', 'evaluate'), ('bicycle', 'ride'), ('consequence', 'result'), ('device', 'tool'), ('enroll', 'register'), ('remove', 'take'), ('rip', 'tear')]
+   Gemma3-1B-pt       3 pairs, 0 of them also found in an instruct model: [('cloud', 'mist'), ('passage', 'time'), ('solid', 'volume')]
+   Gemma3-270M-pt     4 pairs, 1 of them also found in an instruct model: [('car', 'drive'), ('door', 'open'), ('japan', 'japanese'), ('steal', 'thief')]
+   Gemma3-27B-pt     14 pairs, 9 of them also found in an instruct model: [('aid', 'support'), ('allow', 'permission'), ('assign', 'task'), ('consequence', 'result'), ('curve', 'line'), ('device', 'tool'), ('earth', 'ground'), ('globe', 'sphere'), ('grasp', 'take'), ('ground', 'surface'), ('hint', 'indication'), ('horizontal', 'level'), ('knot', 'tie'), ('past', 'time')]
+   Gemma3-4B-pt      11 pairs, 4 of them also found in an instruct model: [('burial', 'bury'), ('condition', 'fit'), ('evaluate', 'value'), ('experience', 'memory'), ('flow', 'liquid'), ('horizontal', 'level'), ('japan', 'japanese'), ('leaf', 'tree'), ('location', 'place'), ('rip', 'tear'), ('seize', 'take')]

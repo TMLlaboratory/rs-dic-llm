@@ -1,0 +1,89 @@
+{
+ "key": "d029__fsR2_27B",
+ "meta": {
+  "dataset": "d029",
+  "model": "fsR2_27B",
+  "kind": "fsR2",
+  "size": "27B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-27B-pt_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "0979d2000e386053d68b088b7fc79ab72bc93556a70e13b5c603b797fbfbb459",
+  "n_records_with_text": 1296,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "2f22321d44e3a62d54f86c81f2c2685c40e11d84ac20afd4a7912c2d2b3435d1",
+  "n_nodes": 2750,
+  "n_edges": 2672
+ },
+ "n_nodes": 2750,
+ "n_edges": 2672,
+ "observed": {
+  "kernel_ratio": 0.024363636363636365,
+  "circulation_rate": 0.008727272727272728,
+  "cycles_total": 12,
+  "cycles_2": 12,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.016396363636363636,
+  "circulation_rate": 0.005912727272727273,
+  "cycles_total": 7.44,
+  "cycles_2": 6.34,
+  "cycles_long": 0.12
+ },
+ "null_sd": {
+  "kernel_ratio": 0.005938771890740368,
+  "circulation_rate": 0.0013267695185569725,
+  "cycles_total": 1.3661625086350453,
+  "cycles_2": 1.226539848516957,
+  "cycles_long": 0.4069397989875161
+ },
+ "z": {
+  "kernel_ratio": 1.3415690775554394,
+  "circulation_rate": 2.1213522131610505,
+  "cycles_total": 3.3378166734761066,
+  "cycles_2": 4.614607513032423,
+  "cycles_long": -0.29488391230979427
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 1.8927444794952681,
+ "R_ci95": [
+  1.8237082066869301,
+  1.9672131147540985
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 12,
+   "null_mean": 6.34
+  },
+  "3": {
+   "observed": 0,
+   "null_mean": 0.87
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.11
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.08
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.02
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.02
+  }
+ },
+ "R_analytic_rs_dic_llm": 23.75968704605621,
+ "R_complete_replicates_only": 1.8927444794952681
+}

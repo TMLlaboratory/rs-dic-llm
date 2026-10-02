@@ -1,0 +1,32 @@
+entries 3000; with any SemCor count 2661; none 339
+  requested POS has share < 0.05: 389 entries (14.6% of entries with counts; by POS {'n': 119, 'v': 233, 'a': 37})
+  requested POS has share < 0.10: 455 entries (17.1% of entries with counts; by POS {'n': 140, 'v': 270, 'a': 45})
+  requested POS has share < 0.20: 559 entries (21.0% of entries with counts; by POS {'n': 179, 'v': 324, 'a': 56})
+  share exactly 0 (lemma is used only under other POS in SemCor): 327 (12.3%)
+
+the sampled 100 words: flagged wrong-pos 26 entries, not flagged 83
+  mean share   flagged 0.47 (n=25)   not flagged 0.76 (n=74)
+  share < 0.05: flagged 10/25, not flagged 4/74
+  share < 0.10: flagged 10/25, not flagged 5/74
+  share < 0.20: flagged 11/25, not flagged 7/74
+
+lowest shares among flagged entries (word, POS asked, share, SemCor total):
+  branch         verb   share=0.00 total=39
+  distress       verb   share=0.00 total=7
+  take           noun   share=0.00 total=732
+  sue            noun   share=0.00 total=8
+  conjugate      adj    share=0.00 total=23
+  bias           verb   share=0.00 total=1
+  group          verb   share=0.00 total=1351
+  regiment       verb   share=0.01 total=146
+  blanket        verb   share=0.04 total=24
+  burn           noun   share=0.04 total=47
+  pack           noun   share=0.14 total=21
+  counterpoint   verb   share=0.33 total=3
+
+unflagged entries with share < 0.10 (the labeler did not note a POS problem for these):
+  slick          adj/noun/verb share=0.00 total=1
+  interchange    verb   share=0.00 total=6
+  partition      verb   share=0.00 total=2
+  slick          verb   share=0.00 total=1
+  commission     verb   share=0.06 total=31

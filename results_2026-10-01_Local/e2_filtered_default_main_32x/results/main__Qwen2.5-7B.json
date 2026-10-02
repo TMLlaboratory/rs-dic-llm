@@ -1,0 +1,99 @@
+{
+ "key": "main__Qwen2.5-7B",
+ "meta": {
+  "dataset": "main",
+  "model": "Qwen2.5-7B",
+  "is_base": false,
+  "source": "data/definitions/Qwen2.5-7B_42.jsonl",
+  "source_sha256": "025b1b39921e81469190456311a9257aaf2387b7654ee3c7d0fd6802522cfa2d",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 9,
+   "dropped_share": 0.003,
+   "by_reason": {
+    "fragment": 9
+   },
+   "by_rule": {
+    "non_latin_text": 9
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "faf6ab2eb1714967f77d2a1550e05d439d3e40f4e4d979eb7025ac3344e295d2",
+  "n_nodes": 2750,
+  "n_edges": 5054
+ },
+ "n_nodes": 2750,
+ "n_edges": 5054,
+ "observed": {
+  "kernel_ratio": 0.13490909090909092,
+  "circulation_rate": 0.08509090909090909,
+  "cycles_total": 105,
+  "cycles_2": 80,
+  "cycles_long": 9
+ },
+ "null_mean": {
+  "kernel_ratio": 0.1273490909090909,
+  "circulation_rate": 0.09921454545454546,
+  "cycles_total": 31.52,
+  "cycles_2": 3.88,
+  "cycles_long": 21.78
+ },
+ "null_sd": {
+  "kernel_ratio": 0.010143602959093752,
+  "circulation_rate": 0.00883923933752875,
+  "cycles_total": 8.559766351951437,
+  "cycles_2": 1.3059862173851606,
+  "cycles_long": 7.298739617221592
+ },
+ "z": {
+  "kernel_ratio": 0.7452973100866948,
+  "circulation_rate": -1.5978339113040707,
+  "cycles_total": 8.58434646212606,
+  "cycles_2": 58.285454307785194,
+  "cycles_long": -1.7509872485168827
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 20.61855670103093,
+ "R_ci95": [
+  19.32367149758454,
+  22.03856749311295
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 80,
+   "null_mean": 3.88
+  },
+  "3": {
+   "observed": 10,
+   "null_mean": 2.57
+  },
+  "4": {
+   "observed": 6,
+   "null_mean": 3.29
+  },
+  "5": {
+   "observed": 3,
+   "null_mean": 4.56
+  },
+  "6": {
+   "observed": 3,
+   "null_mean": 6.53
+  },
+  "7": {
+   "observed": 3,
+   "null_mean": 10.69
+  }
+ },
+ "R_analytic_rs_dic_llm": 23.705301200447344,
+ "R_complete_replicates_only": 20.61855670103093
+}

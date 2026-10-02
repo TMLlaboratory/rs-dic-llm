@@ -1,0 +1,87 @@
+1. THE KEY GRAPHS UNDER BOTH NULLS (default filter, first sentence)
+   old = networkx directed_edge_swap (the paper's null); d = directed double-edge swap (D032); R with the floor of 0.5
+
+   graph                       obs  null old   null d   R old     R d  R d / R old  kept d
+   main__Gemma3-1B              34      0.80     0.88    42.5    38.6         0.91    0.00
+   main__Gemma3-4B              47      1.68     1.61    28.0    29.2         1.04    0.00
+   main__Gemma3-12B             78      3.04     2.78    25.7    28.1         1.09    0.01
+   main__Gemma3-27B             71      2.79     2.87    25.4    24.7         0.97    0.01
+   main__Qwen2.5-0.5B           52      2.70     2.67    19.3    19.5         1.01    0.00
+   main__Qwen2.5-1.5B           46      2.68     1.49    17.2    30.9         1.80    0.00
+   main__Qwen2.5-3B             61      3.93     1.17    15.5    52.1         3.36    0.00
+   main__Qwen2.5-7B             80      3.88     1.66    20.6    48.2         2.34    0.01
+   main__Qwen2.5-14B            47      3.02     1.54    15.6    30.5         1.96    0.00
+   main__Qwen2.5-32B            36      1.10     1.08    32.7    33.3         1.02    0.00
+   main__Qwen2.5-72B            82      6.65     1.59    12.3    51.6         4.18    0.00
+   main__Qwen3-0.6B             17      1.94     0.94     8.8    18.1         2.06    0.00
+   main__Qwen3-1.7B             53      3.04     2.92    17.4    18.2         1.04    0.01
+   main__Qwen3-4B-Instruct-2507   33      1.80     1.75    18.3    18.9         1.03    0.02
+   main__Qwen3-4B               43      3.42     1.53    12.6    28.1         2.24    0.00
+   main__Qwen3-8B               51      1.74     1.95    29.3    26.2         0.89    0.02
+   main__Qwen3-14B              50      2.58     1.49    19.4    33.6         1.73    0.02
+   main__wordnet                27      1.72     1.49    15.7    18.1         1.15    0.00
+   main__Gemma3-12B-pt           7      3.33     0.44     2.1    14.0         6.66    0.00
+   main__Gemma3-1B-pt            3      0.45     0.44     6.0     6.0         1.00    0.00
+   main__Gemma3-270M-pt          4      1.32     0.40     3.0     8.0         2.64    0.00
+   main__Gemma3-27B-pt          14      2.85     0.42     4.9    28.0         5.70    0.00
+   main__Gemma3-4B-pt           11      1.31     0.38     8.4    22.0         2.62    0.00
+   e3__Gemma3-12B-pt           114      3.69     2.39    30.9    47.7         1.54    0.03
+   e3__Gemma3-1B-pt             29      1.30     1.59    22.3    18.2         0.82    0.02
+   e3__Gemma3-270M-pt           11      2.37     0.77     4.6    14.3         3.08    0.00
+   e3__Gemma3-27B-pt            78      2.74     2.54    28.5    30.7         1.08    0.00
+   e3__Gemma3-4B-pt             92      3.92     1.87    23.5    49.2         2.10    0.00
+   17 instruct: R d / R old median 1.09, range 0.89-4.18; R d range 18.1-52.1 (old 8.8-42.5)
+   5 zero-shot pretrained: R d / R old median 2.64, range 1.00-6.66; R d range 6.0-28.0 (old 2.1-8.4)
+   5 few-shot pretrained: R d / R old median 1.54, range 0.82-3.08; R d range 14.3-49.2 (old 4.6-30.9)
+   WordNet: R old 15.7 (null 1.72), R d 18.1 (null 1.49), range of R d [11.9, 26.4]
+   rank correlation of R old and R d over the 17 instruct models: +0.07
+
+2. (r1) COVERAGE under the double-edge swap null: rho_k = R'_d(half k) / R'_d(whole few-shot graph)
+   size whole R_d_prime         entry-level halves (D029): rho 1..5  median          closed halves (D030): rho 1..5  median
+     1B            18.2                1.41  1.24  1.22  0.73  0.78    1.22            0.95  1.00  1.04  1.61  1.07    1.04   invariant / invariant
+     4B            49.2                0.82  0.90  0.65  1.52  0.68    0.82            0.65  1.00  0.86  0.88  1.09    0.88   invariant / invariant
+    12B            47.7                0.87  0.89  1.13  0.89  1.20    0.89            0.96  0.73  0.84  0.78  1.37    0.84   invariant / invariant
+    27B            30.7                1.41  1.40  0.80  0.74  1.21    1.21            1.73  0.64  1.73  0.74  1.40    1.40   invariant / invariant
+   entry-level halves: invariant, invariant, invariant, invariant -> R DOES NOT DEPEND ON COVERAGE
+   closed halves:      invariant, invariant, invariant, invariant -> R DOES NOT DEPEND ON COVERAGE
+   for comparison, the same median rho under the paper's null: entry-level 0.30, 0.16, 0.15, 0.24; closed 0.20, 0.14, 0.28, 0.18
+
+3. (r2) THE ZERO-SHOT GAP AS BUILT: instruct R_d / pretrained R_d, exact conditional range (rule of D024: at least 2 for three of four pairs)
+   size  instruct R_d  pretrained R_d           ratio d [range]  ratio old
+     1B          38.6             6.0           6.4 [2.0, 32.8]        7.1
+     4B          29.2            22.0            1.3 [0.7, 2.8]        3.3
+    12B          28.1            14.0            2.0 [0.9, 5.1]       12.2
+    27B          24.7            28.0            0.9 [0.5, 1.7]        5.2
+   pairs at 2 or more: 2 of 4; below 2: 2 of 4  ->  THE GAP IS ABSENT
+
+4. (r3) EQUAL COVERAGE: R_d(itS) / R_d(zero-shot), exact conditional range (rule of D029)
+   size  zero-shot R_d  fsS R_d  itS R_d           itS / zero-shot  includes 1           fsS / zero-shot               itS / fsS
+     1B            6.0     12.0     18.0        3.00 [0.75, 17.23]         yes        2.00 [0.43, 12.36]       1.50 [0.48, 5.12]
+     4B           22.0     36.0     24.0         1.09 [0.44, 2.73]         yes         1.64 [0.73, 3.83]       0.67 [0.29, 1.46]
+    12B           14.0     42.0     34.0         2.43 [0.96, 6.93]         yes         3.00 [1.23, 8.35]       0.81 [0.40, 1.61]
+    27B           28.0     42.0     28.3         1.01 [0.45, 2.26]         yes         1.50 [0.73, 3.19]       0.67 [0.32, 1.37]
+   range of itS / zero-shot excludes 1 at 0 of 4 sizes, includes 1 at 4 of 4  ->  A DIFFERENCE IS NOT SHOWN
+
+5. (r4) FEW-SHOT: is the few-shot pretrained R_d within a factor 2 of the instruct R_d?
+     1B  few-shot   18.2  instruct   38.6  factor  2.12  instruct / few-shot 2.12 [1.25, 3.60]  (paper's null: 22.3 / 42.5)
+     4B  few-shot   49.2  instruct   29.2  factor  1.69  instruct / few-shot 0.59 [0.41, 0.85]  (paper's null: 23.5 / 28.0)
+    12B  few-shot   47.7  instruct   28.1  factor  1.70  instruct / few-shot 0.59 [0.44, 0.79]  (paper's null: 30.9 / 25.7)
+    27B  few-shot   30.7  instruct   24.7  factor  1.24  instruct / few-shot 0.81 [0.58, 1.13]  (paper's null: 28.5 / 25.4)
+   within a factor 2 at 3 of 4 sizes  ->  THE FEW-SHOT R REACHES THE INSTRUCT RANGE
+
+6. (r5) SCALE (D031 with R_d): distance |ln R_d - ln R_d(WordNet)| and Jaccard overlap of the pairs with WordNet's, rank correlation with size within families
+   family     n  S1 rho (d)   label  S2 rho (J)   label  pairs rho  null rho
+   Gemma3     4       -1.00  toward       -0.40    none      +0.80     +1.00
+   Qwen2.5    7       +0.43    none       -0.75    away      +0.18     -0.29
+   Qwen3      5       +0.80    away       +0.30    none      +0.30     +0.10
+   S1 labels ['toward', 'none', 'away'], S2 labels ['none', 'away', 'none']  ->  NO CONSISTENT APPROACH
+
+   sensitivity, Qwen3-4B-Instruct-2507 included (descriptive):
+   Gemma3     4       -1.00  toward       -0.40    none
+   Qwen2.5    7       +0.43    none       -0.75    away
+   Qwen3      6       +0.84    away       +0.09    none
+
+7. (r6) WORDNET: the exact Poisson range of each instruct model's R_d against R_d of WordNet
+   R_d of WordNet 18.1 [11.9, 26.4]; instruct models entirely above: 13, entirely below: 0, containing it: 4; point estimates above: 16 of 17
+   (paper's null: R of WordNet 15.7; above 7, below 2, containing 8; point estimates above 12 of 17)
+   instruct R_d median 29.2 (paper's null 19.3); zero-shot pretrained R_d median 14.0 (4.9)

@@ -1,0 +1,40 @@
+{"key": "main__Gemma3-4B", "idx": 0, "swap_failure": null, "pairs": [["mean", "refer"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 1, "swap_failure": null, "pairs": [["back", "believe"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 2, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 3, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 4, "swap_failure": null, "pairs": [["cup", "go"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 5, "swap_failure": null, "pairs": [["condition", "take"], ["people", "small"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 7, "swap_failure": null, "pairs": [["mean", "surface"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 6, "swap_failure": null, "pairs": [["drug", "style"], ["get", "people"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 8, "swap_failure": null, "pairs": [["freight", "object"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 9, "swap_failure": null, "pairs": [["experience", "place"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 10, "swap_failure": null, "pairs": [["clean", "shelter"], ["detail", "tell"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 11, "swap_failure": null, "pairs": [["forward", "match"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 12, "swap_failure": null, "pairs": [["flow", "reserve"], ["like", "star"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 13, "swap_failure": null, "pairs": [["group", "special"], ["number", "watch"], ["people", "tool"]], "n_pairs": 3, "stored_cycles_2": 3, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 14, "swap_failure": null, "pairs": [["mean", "people"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 15, "swap_failure": null, "pairs": [["go", "mean"], ["group", "touch"], ["mean", "rough"], ["respect", "time"]], "n_pairs": 4, "stored_cycles_2": 4, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 16, "swap_failure": null, "pairs": [["challenge", "fourteen"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 17, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 18, "swap_failure": null, "pairs": [["music", "place"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 19, "swap_failure": null, "pairs": [["clean", "mean"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 20, "swap_failure": null, "pairs": [["firm", "mean"], ["genuine", "vegetable"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 21, "swap_failure": null, "pairs": [["feel", "humor"], ["gather", "mark"], ["mean", "place"]], "n_pairs": 3, "stored_cycles_2": 3, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 22, "swap_failure": null, "pairs": [["europe", "try"], ["official", "place"], ["pole", "position"]], "n_pairs": 3, "stored_cycles_2": 3, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 23, "swap_failure": null, "pairs": [["help", "surface"], ["investigate", "size"], ["large", "problem"]], "n_pairs": 3, "stored_cycles_2": 3, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 24, "swap_failure": null, "pairs": [["experience", "feel"], ["flat", "impressive"], ["project", "world"]], "n_pairs": 3, "stored_cycles_2": 3, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 25, "swap_failure": null, "pairs": [["mean", "take"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 27, "swap_failure": null, "pairs": [["daily", "experience"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 26, "swap_failure": null, "pairs": [["experience", "get"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 28, "swap_failure": null, "pairs": [["leaf", "mind"], ["respect", "water"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 29, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 30, "swap_failure": null, "pairs": [["feel", "surface"], ["large", "stay"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 31, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 32, "swap_failure": null, "pairs": [["back", "stag"], ["city", "skin"], ["count", "mean"], ["point", "record"]], "n_pairs": 4, "stored_cycles_2": 4, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 33, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 35, "swap_failure": null, "pairs": [["get", "thought"], ["large", "number"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 34, "swap_failure": null, "pairs": [["brand", "pool"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 36, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 37, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 38, "swap_failure": null, "pairs": [["flavor", "large"], ["rice", "routine"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-4B", "idx": 39, "swap_failure": null, "pairs": [["greet", "people"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}

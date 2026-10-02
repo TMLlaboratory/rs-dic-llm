@@ -1,0 +1,106 @@
+{
+ "key": "e5__Qwen3-0.6B",
+ "meta": {
+  "dataset": "e5",
+  "model": "Qwen3-0.6B",
+  "is_base": false,
+  "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen3-0.6B_42.jsonl",
+  "source_sha256": "244373c21b9200a41961f7e2fbd5609c82abedfe36d81232da14102363927a9e",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 2595,
+   "dropped_share": 0.865,
+   "by_reason": {
+    "echo": 2330,
+    "question": 262,
+    "offtopic": 3
+   },
+   "by_rule": {
+    "instruction": 768,
+    "task_start": 1176,
+    "task_phrase": 109,
+    "task_rule": 244,
+    "prompt_span": 33,
+    "question": 262,
+    "meta_usage": 3
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "d116a96da3b4a836447077e7ba9db845195e3ae12e2352a16f4b7016ea87f83f",
+  "n_nodes": 2750,
+  "n_edges": 556
+ },
+ "n_nodes": 2750,
+ "n_edges": 556,
+ "observed": {
+  "kernel_ratio": 0.0,
+  "circulation_rate": 0.0,
+  "cycles_total": 0,
+  "cycles_2": 0,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.0,
+  "circulation_rate": 0.0,
+  "cycles_total": 0,
+  "cycles_2": 0,
+  "cycles_long": 0
+ },
+ "null_sd": {
+  "kernel_ratio": 0.0,
+  "circulation_rate": 0.0,
+  "cycles_total": 0.0,
+  "cycles_2": 0.0,
+  "cycles_long": 0.0
+ },
+ "z": {
+  "kernel_ratio": 0.0,
+  "circulation_rate": 0.0,
+  "cycles_total": 0.0,
+  "cycles_2": 0.0,
+  "cycles_long": 0.0
+ },
+ "replicates": 100,
+ "swap_failures": 100,
+ "nswap_mult": 32,
+ "reciprocity_excess": 0.0,
+ "R_ci95": [
+  0.0,
+  0.0
+ ],
+ "R_floor_applied": true,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 0,
+   "null_mean": 0
+  },
+  "3": {
+   "observed": 0,
+   "null_mean": 0
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0
+  }
+ },
+ "R_analytic_rs_dic_llm": 0.0
+}

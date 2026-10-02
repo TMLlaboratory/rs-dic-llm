@@ -1,0 +1,32 @@
+{
+ "key": "e4__Qwen3-4B-Instruct-2507",
+ "n_nodes": 2750,
+ "n_edges": 4754,
+ "snapshot_sha256": "1f602229746d8f3b8b7aeb9f8b5bd6832a15f010be29f848c2067c2b3e8bd27a",
+ "observed": {
+  "cycles_2": 70
+ },
+ "null_mean": {
+  "cycles_2": 1.78
+ },
+ "null_sd": {
+  "cycles_2": 1.3826062346163495
+ },
+ "reciprocity_excess": 39.325842696629216,
+ "R_prime": 39.325842696629216,
+ "R_floor_applied": false,
+ "R_ci95": [
+  33.980582524271846,
+  46.35761589403973
+ ],
+ "R_poisson_range": [
+  30.65642365614915,
+  49.68583642249379
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0,
+ "accepted_mean": 304256,
+ "tries_mean": 311993.9
+}

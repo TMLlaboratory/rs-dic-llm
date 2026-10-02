@@ -1,0 +1,78 @@
+{
+ "1B": {
+  "covered_lemmas": 1506,
+  "covered_sha256": "ed267c337a34390f6fc578739e34337ada5c66d703433ee71747f7d91a0bd526",
+  "lemma_pool": 2750,
+  "snapshots": {
+   "zs": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_main_32x/graphs/main__Gemma3-1B-pt.json",
+    "sha256": "41b387027280d78588798322897b89ef4d7c3ce373a02935c6f4edb56ceb76c3"
+   },
+   "fs": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_controls_32x/graphs/e3__Gemma3-1B-pt.json",
+    "sha256": "53ff3297ef108b07a656cde4031e1f684f78681a7955c74aaa64a29dfd7e7a82"
+   },
+   "it": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_main_32x/graphs/main__Gemma3-1B.json",
+    "sha256": "43b7e845002006042a1f8328f0a4ea691bf297def743af825107e16a63fff59c"
+   }
+  }
+ },
+ "4B": {
+  "covered_lemmas": 1265,
+  "covered_sha256": "a8eb3f0a32a299638c49666ba57e2ad0f87f130590f244372975d3ee7fc24d70",
+  "lemma_pool": 2750,
+  "snapshots": {
+   "zs": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_main_32x/graphs/main__Gemma3-4B-pt.json",
+    "sha256": "780d2727a8f4212ef799b689f525d625d6ed9791f66c2e80c61a73454f4e0431"
+   },
+   "fs": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_controls_32x/graphs/e3__Gemma3-4B-pt.json",
+    "sha256": "da3b117364616e81fa2a5c505e7f0fa67068d4b6a88e6c8594fa93e2e8847fe0"
+   },
+   "it": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_main_32x/graphs/main__Gemma3-4B.json",
+    "sha256": "6bf3b2bb5a343cf186a16a464b27ccd7da9c4ba8992537b4087e3d3f5cd649e5"
+   }
+  }
+ },
+ "12B": {
+  "covered_lemmas": 1434,
+  "covered_sha256": "e0bf98e49f27673cdf957f9620fad10311bd2196d3a88b61ce37568987e2ce8d",
+  "lemma_pool": 2750,
+  "snapshots": {
+   "zs": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_main_32x/graphs/main__Gemma3-12B-pt.json",
+    "sha256": "75e363edad583465bba2c16c690803340fcdf8f60ce8f5a39f4ae15f91866ba4"
+   },
+   "fs": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_controls_32x/graphs/e3__Gemma3-12B-pt.json",
+    "sha256": "05111bebb214b761bde5bd82820cfab06500f273816ae0202cd608cb8e542204"
+   },
+   "it": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_main_32x/graphs/main__Gemma3-12B.json",
+    "sha256": "2c8fe9f537c347ea636eef9794f9ea11a8359c24f5ea56b3582c9d5a0fc7a2de"
+   }
+  }
+ },
+ "27B": {
+  "covered_lemmas": 1251,
+  "covered_sha256": "32d074d78244a3d2823a3c3ebf50fd81122186d1954c2641f4976ac345066b27",
+  "lemma_pool": 2750,
+  "snapshots": {
+   "zs": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_main_32x/graphs/main__Gemma3-27B-pt.json",
+    "sha256": "2e62fc540a2493b550587a45142ded3234c78f34d67a202ecaac46d76d653b1f"
+   },
+   "fs": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_controls_32x/graphs/e3__Gemma3-27B-pt.json",
+    "sha256": "b2ac9ac121a57c9469be1966c1bae0d04cbbaae2c26858fccf9a08287f85683b"
+   },
+   "it": {
+    "path": "results_2026-10-01_Local/e2_filtered_default_main_32x/graphs/main__Gemma3-27B.json",
+    "sha256": "ccf526dc851a5fffbe43bfd64686d53907d9cc528ae82110fe630d63adb85f58"
+   }
+  }
+ }
+}

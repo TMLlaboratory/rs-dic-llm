@@ -1,0 +1,285 @@
+[e1c] 180 chains to run (0 done), checkpoints [1, 2, 4, 8, 16, 24, 32, 48, 64, 96, 128], 12 workers
+[e1c]      98s  chain 1/180  main__wordnet            rep  1  reached 128 x E  mutual pairs 0  94.8s
+[e1c]      98s  chain 2/180  main__wordnet            rep  0  reached 128 x E  mutual pairs 3  95.0s
+[e1c]     186s  chain 3/180  main__wordnet            rep  2  reached 128 x E  mutual pairs 2  88.4s
+[e1c]     188s  chain 4/180  main__Qwen2.5-72B        rep  1  reached 128 x E  mutual pairs 5  184.9s
+[e1c]     190s  chain 5/180  main__Qwen2.5-72B        rep  0  reached 128 x E  mutual pairs 5  187.2s
+[e1c]     226s  chain 6/180  main__Gemma3-1B          rep  0  reached 128 x E  mutual pairs 1  223.7s
+[e1c]     227s  chain 7/180  main__Gemma3-1B          rep  1  reached 128 x E  mutual pairs 1  223.8s
+[e1c]     274s  chain 8/180  main__Gemma3-27B-pt      rep  1  reached 128 x E  mutual pairs 3  270.9s
+[e1c]     276s  chain 9/180  main__Gemma3-27B-pt      rep  0  reached 128 x E  mutual pairs 0  272.9s
+[e1c]     276s  chain 10/180  main__Qwen3-14B          rep  1  reached 128 x E  mutual pairs 3  272.9s
+[e1c]     277s  chain 11/180  main__Qwen3-14B          rep  0  reached 128 x E  mutual pairs 4  274.7s
+[e1c]     289s  chain 12/180  main__Qwen2.5-32B        rep  1  reached 128 x E  mutual pairs 3  286.2s
+[e1c]     290s  chain 13/180  main__Gemma3-1B          rep  2  reached 128 x E  mutual pairs 2  191.8s
+[e1c]     290s  chain 14/180  main__wordnet            rep  3  reached 128 x E  mutual pairs 1  63.7s
+[e1c]     290s  chain 15/180  main__Qwen2.5-32B        rep  0  reached 128 x E  mutual pairs 2  287.8s
+[e1c]     360s  chain 16/180  main__wordnet            rep  4  reached 128 x E  mutual pairs 0  70.6s
+[e1c]     366s  chain 17/180  main__Qwen2.5-72B        rep  2  reached 128 x E  mutual pairs 8  139.3s
+[e1c]     426s  chain 18/180  main__Gemma3-27B-pt      rep  2  reached 128 x E  mutual pairs 4  235.9s
+[e1c]     430s  chain 19/180  main__Qwen3-14B          rep  2  reached 128 x E  mutual pairs 1  241.7s
+[e1c]     460s  chain 20/180  main__Gemma3-1B          rep  3  reached 128 x E  mutual pairs 2  186.5s
+[e1c]     462s  chain 21/180  main__Qwen2.5-72B        rep  3  reached 128 x E  mutual pairs 8  172.6s
+[e1c]     469s  chain 22/180  main__Qwen2.5-32B        rep  2  reached 128 x E  mutual pairs 1  282.5s
+[e1c]     490s  chain 23/180  main__Gemma3-1B          rep  4  reached 128 x E  mutual pairs 0  200.0s
+[e1c]     512s  chain 24/180  main__Gemma3-27B-pt      rep  3  reached 128 x E  mutual pairs 1  234.3s
+[e1c]     514s  chain 25/180  main__Qwen3-14B          rep  3  reached 128 x E  mutual pairs 6  238.5s
+[e1c]     516s  chain 26/180  main__wordnet            rep  5  reached 128 x E  mutual pairs 0  86.2s
+[e1c]     543s  chain 27/180  main__Qwen2.5-32B        rep  3  reached 128 x E  mutual pairs 0  267.8s
+[e1c]     573s  chain 28/180  main__Qwen2.5-32B        rep  4  reached 128 x E  mutual pairs 2  282.6s
+[e1c]     598s  chain 29/180  main__wordnet            rep  6  reached 128 x E  mutual pairs 2  83.5s
+[e1c]     602s  chain 30/180  main__Qwen2.5-72B        rep  4  reached 128 x E  mutual pairs 7  176.4s
+[e1c]     632s  chain 31/180  main__Gemma3-27B-pt      rep  4  reached 128 x E  mutual pairs 2  266.6s
+[e1c]     639s  chain 32/180  main__Qwen3-14B          rep  4  reached 128 x E  mutual pairs 5  279.3s
+[e1c]     661s  chain 33/180  main__Gemma3-1B          rep  5  reached 128 x E  mutual pairs 2  201.1s
+[e1c]     671s  chain 34/180  main__Qwen2.5-72B        rep  5  reached 128 x E  mutual pairs 8  159.1s
+[e1c]     684s  chain 35/180  main__wordnet            rep  7  reached 128 x E  mutual pairs 0  51.6s
+[e1c]     685s  chain 36/180  main__Gemma3-1B          rep  6  reached 128 x E  mutual pairs 2  169.3s
+[e1c]     689s  chain 37/180  main__Qwen3-14B          rep  5  reached 128 x E  mutual pairs 1  220.0s
+[e1c]     697s  chain 38/180  main__Qwen2.5-32B        rep  5  reached 128 x E  mutual pairs 1  235.0s
+[e1c]     698s  chain 39/180  main__Gemma3-27B-pt      rep  5  reached 128 x E  mutual pairs 2  207.7s
+[e1c]     708s  chain 40/180  main__Qwen2.5-72B        rep  6  reached 128 x E  mutual pairs 10  105.8s
+[e1c]     725s  chain 41/180  main__wordnet            rep  8  reached 128 x E  mutual pairs 1  36.2s
+[e1c]     732s  chain 42/180  main__Qwen2.5-32B        rep  6  reached 128 x E  mutual pairs 2  189.0s
+[e1c]     733s  chain 43/180  main__Qwen3-14B          rep  6  reached 128 x E  mutual pairs 2  160.1s
+[e1c]     734s  chain 44/180  main__Gemma3-1B          rep  7  reached 128 x E  mutual pairs 0  94.5s
+[e1c]     737s  chain 45/180  main__Gemma3-27B-pt      rep  6  reached 128 x E  mutual pairs 4  138.9s
+[e1c]     755s  chain 46/180  main__Qwen2.5-72B        rep  7  reached 128 x E  mutual pairs 7  70.0s
+[e1c]     768s  chain 47/180  main__wordnet            rep  9  reached 128 x E  mutual pairs 0  34.9s
+[e1c]     774s  chain 48/180  main__Qwen3-14B          rep  7  reached 128 x E  mutual pairs 3  103.2s
+[e1c]     776s  chain 49/180  main__Qwen2.5-32B        rep  7  reached 128 x E  mutual pairs 0  114.3s
+[e1c]     779s  chain 50/180  main__Gemma3-1B          rep  8  reached 128 x E  mutual pairs 1  82.3s
+[e1c]     787s  chain 51/180  main__Gemma3-27B-pt      rep  7  reached 128 x E  mutual pairs 3  103.0s
+[e1c]     803s  chain 52/180  main__Qwen2.5-72B        rep  8  reached 128 x E  mutual pairs 6  70.8s
+[e1c]     811s  chain 53/180  main__wordnet            rep 10  reached 128 x E  mutual pairs 1  34.9s
+[e1c]     813s  chain 54/180  main__Qwen2.5-32B        rep  8  reached 128 x E  mutual pairs 2  114.4s
+[e1c]     814s  chain 55/180  main__Qwen3-14B          rep  8  reached 128 x E  mutual pairs 6  106.2s
+[e1c]     820s  chain 56/180  main__Gemma3-1B          rep  9  reached 128 x E  mutual pairs 0  85.5s
+[e1c]     827s  chain 57/180  main__Gemma3-27B-pt      rep  8  reached 128 x E  mutual pairs 1  102.1s
+[e1c]     845s  chain 58/180  main__Qwen2.5-72B        rep  9  reached 128 x E  mutual pairs 6  70.4s
+[e1c]     849s  chain 59/180  main__wordnet            rep 11  reached 128 x E  mutual pairs 1  34.8s
+[e1c]     856s  chain 60/180  main__Qwen2.5-32B        rep  9  reached 128 x E  mutual pairs 0  118.6s
+[e1c]     860s  chain 61/180  main__Qwen3-14B          rep  9  reached 128 x E  mutual pairs 3  104.4s
+[e1c]     865s  chain 62/180  main__Gemma3-1B          rep 10  reached 128 x E  mutual pairs 3  85.7s
+[e1c]     870s  chain 63/180  main__Gemma3-27B-pt      rep  9  reached 128 x E  mutual pairs 2  102.2s
+[e1c]     885s  chain 64/180  main__Qwen2.5-72B        rep 10  reached 128 x E  mutual pairs 8  72.5s
+[e1c]     897s  chain 65/180  main__wordnet            rep 12  reached 128 x E  mutual pairs 0  37.2s
+[e1c]     906s  chain 66/180  main__Gemma3-1B          rep 11  reached 128 x E  mutual pairs 0  86.7s
+[e1c]     908s  chain 67/180  main__Qwen2.5-32B        rep 10  reached 128 x E  mutual pairs 2  121.0s
+[e1c]     911s  chain 68/180  main__Qwen3-14B          rep 10  reached 128 x E  mutual pairs 2  107.3s
+[e1c]     911s  chain 69/180  main__Gemma3-27B-pt      rep 10  reached 128 x E  mutual pairs 4  100.5s
+[e1c]     931s  chain 70/180  main__Qwen2.5-72B        rep 11  reached 128 x E  mutual pairs 8  74.9s
+[e1c]     944s  chain 71/180  main__wordnet            rep 13  reached 128 x E  mutual pairs 3  36.0s
+[e1c]     950s  chain 72/180  main__Qwen2.5-32B        rep 11  reached 128 x E  mutual pairs 0  122.8s
+[e1c]     953s  chain 73/180  main__Gemma3-1B          rep 12  reached 128 x E  mutual pairs 2  87.8s
+[e1c]     953s  chain 74/180  main__Qwen3-14B          rep 11  reached 128 x E  mutual pairs 3  108.2s
+[e1c]     954s  chain 75/180  main__Gemma3-27B-pt      rep 11  reached 128 x E  mutual pairs 2  104.8s
+[e1c]     980s  chain 76/180  main__Qwen2.5-72B        rep 12  reached 128 x E  mutual pairs 6  74.1s
+[e1c]     988s  chain 77/180  main__wordnet            rep 14  reached 128 x E  mutual pairs 2  35.9s
+[e1c]     991s  chain 78/180  main__Qwen2.5-32B        rep 12  reached 128 x E  mutual pairs 1  120.7s
+[e1c]     997s  chain 79/180  main__Qwen3-14B          rep 12  reached 128 x E  mutual pairs 4  112.1s
+[e1c]     999s  chain 80/180  main__Gemma3-1B          rep 13  reached 128 x E  mutual pairs 2  88.5s
+[e1c]    1002s  chain 81/180  main__Gemma3-27B-pt      rep 12  reached 128 x E  mutual pairs 4  105.3s
+[e1c]    1026s  chain 82/180  main__Qwen2.5-72B        rep 13  reached 128 x E  mutual pairs 5  75.7s
+[e1c]    1033s  chain 83/180  main__wordnet            rep 15  reached 128 x E  mutual pairs 2  35.7s
+[e1c]    1033s  chain 84/180  main__Qwen2.5-32B        rep 13  reached 128 x E  mutual pairs 0  122.1s
+[e1c]    1039s  chain 85/180  main__Qwen3-14B          rep 13  reached 128 x E  mutual pairs 1  108.3s
+[e1c]    1041s  chain 86/180  main__Gemma3-1B          rep 14  reached 128 x E  mutual pairs 1  88.3s
+[e1c]    1047s  chain 87/180  main__Gemma3-27B-pt      rep 13  reached 128 x E  mutual pairs 2  102.8s
+[e1c]    1065s  chain 88/180  main__Qwen2.5-72B        rep 14  reached 128 x E  mutual pairs 5  73.8s
+[e1c]    1075s  chain 89/180  main__wordnet            rep 16  reached 128 x E  mutual pairs 1  36.1s
+[e1c]    1075s  chain 90/180  main__Qwen2.5-32B        rep 14  reached 128 x E  mutual pairs 1  121.2s
+[e1c]    1085s  chain 91/180  main__Gemma3-1B          rep 15  reached 128 x E  mutual pairs 1  85.9s
+[e1c]    1088s  chain 92/180  main__Qwen3-14B          rep 14  reached 128 x E  mutual pairs 2  108.1s
+[e1c]    1090s  chain 93/180  main__Gemma3-27B-pt      rep 14  reached 128 x E  mutual pairs 3  101.9s
+[e1c]    1106s  chain 94/180  main__Qwen2.5-72B        rep 15  reached 128 x E  mutual pairs 8  73.0s
+[e1c]    1121s  chain 95/180  main__wordnet            rep 17  reached 128 x E  mutual pairs 1  36.2s
+[e1c]    1127s  chain 96/180  main__Qwen2.5-32B        rep 15  reached 128 x E  mutual pairs 2  124.5s
+[e1c]    1128s  chain 97/180  main__Gemma3-1B          rep 16  reached 128 x E  mutual pairs 0  87.2s
+[e1c]    1134s  chain 98/180  main__Qwen3-14B          rep 15  reached 128 x E  mutual pairs 2  108.6s
+[e1c]    1139s  chain 99/180  main__Gemma3-27B-pt      rep 15  reached 128 x E  mutual pairs 2  106.1s
+[e1c]    1150s  chain 100/180  main__Qwen2.5-72B        rep 16  reached 128 x E  mutual pairs 8  74.6s
+[e1c]    1163s  chain 101/180  main__wordnet            rep 18  reached 128 x E  mutual pairs 0  34.7s
+[e1c]    1171s  chain 102/180  main__Qwen2.5-32B        rep 16  reached 128 x E  mutual pairs 2  124.1s
+[e1c]    1173s  chain 103/180  main__Qwen3-14B          rep 16  reached 128 x E  mutual pairs 1  107.9s
+[e1c]    1177s  chain 104/180  main__Gemma3-1B          rep 17  reached 128 x E  mutual pairs 1  88.7s
+[e1c]    1179s  chain 105/180  main__Gemma3-27B-pt      rep 16  reached 128 x E  mutual pairs 6  104.2s
+[e1c]    1201s  chain 106/180  main__Qwen2.5-72B        rep 17  reached 128 x E  mutual pairs 5  74.2s
+[e1c]    1208s  chain 107/180  main__Qwen2.5-32B        rep 17  reached 128 x E  mutual pairs 2  117.6s
+[e1c]    1210s  chain 108/180  main__wordnet            rep 19  reached 128 x E  mutual pairs 0  36.8s
+[e1c]    1215s  chain 109/180  main__Qwen3-14B          rep 17  reached 128 x E  mutual pairs 5  108.2s
+[e1c]    1219s  chain 110/180  main__Gemma3-1B          rep 18  reached 128 x E  mutual pairs 0  84.6s
+[e1c]    1224s  chain 111/180  main__Gemma3-27B-pt      rep 17  reached 128 x E  mutual pairs 1  102.2s
+[e1c]    1244s  chain 112/180  main__Qwen2.5-72B        rep 18  reached 128 x E  mutual pairs 8  72.7s
+[e1c]    1251s  chain 113/180  main__wordnet            rep 20  reached 128 x E  mutual pairs 1  36.9s
+[e1c]    1259s  chain 114/180  main__Qwen3-14B          rep 18  reached 128 x E  mutual pairs 7  109.3s
+[e1c]    1263s  chain 115/180  main__Qwen2.5-32B        rep 18  reached 128 x E  mutual pairs 1  123.7s
+[e1c]    1265s  chain 116/180  main__Gemma3-1B          rep 19  reached 128 x E  mutual pairs 4  87.7s
+[e1c]    1270s  chain 117/180  main__Gemma3-27B-pt      rep 18  reached 128 x E  mutual pairs 2  106.5s
+[e1c]    1281s  chain 118/180  main__Qwen2.5-72B        rep 19  reached 128 x E  mutual pairs 7  71.6s
+[e1c]    1299s  chain 119/180  main__wordnet            rep 21  reached 128 x E  mutual pairs 1  36.3s
+[e1c]    1300s  chain 120/180  main__Qwen2.5-32B        rep 19  reached 128 x E  mutual pairs 2  120.8s
+[e1c]    1304s  chain 121/180  main__Gemma3-1B          rep 20  reached 128 x E  mutual pairs 1  85.1s
+[e1c]    1308s  chain 122/180  main__Gemma3-27B-pt      rep 19  reached 128 x E  mutual pairs 1  99.6s
+[e1c]    1308s  chain 123/180  main__Qwen3-14B          rep 19  reached 128 x E  mutual pairs 2  106.5s
+[e1c]    1330s  chain 124/180  main__Qwen2.5-72B        rep 20  reached 128 x E  mutual pairs 7  70.9s
+[e1c]    1339s  chain 125/180  main__wordnet            rep 22  reached 128 x E  mutual pairs 1  35.4s
+[e1c]    1342s  chain 126/180  main__Qwen2.5-32B        rep 20  reached 128 x E  mutual pairs 0  118.5s
+[e1c]    1349s  chain 127/180  main__Gemma3-1B          rep 21  reached 128 x E  mutual pairs 1  84.6s
+[e1c]    1353s  chain 128/180  main__Qwen3-14B          rep 20  reached 128 x E  mutual pairs 3  108.6s
+[e1c]    1354s  chain 129/180  main__Gemma3-27B-pt      rep 20  reached 128 x E  mutual pairs 2  102.6s
+[e1c]    1373s  chain 130/180  main__Qwen2.5-72B        rep 21  reached 128 x E  mutual pairs 6  72.4s
+[e1c]    1386s  chain 131/180  main__wordnet            rep 23  reached 128 x E  mutual pairs 1  36.6s
+[e1c]    1390s  chain 132/180  main__Qwen3-14B          rep 21  reached 128 x E  mutual pairs 4  108.5s
+[e1c]    1390s  chain 133/180  main__Qwen2.5-32B        rep 21  reached 128 x E  mutual pairs 1  120.7s
+[e1c]    1396s  chain 134/180  main__Gemma3-1B          rep 22  reached 128 x E  mutual pairs 2  88.4s
+[e1c]    1404s  chain 135/180  main__Gemma3-27B-pt      rep 21  reached 128 x E  mutual pairs 2  104.6s
+[e1c]    1413s  chain 136/180  main__Qwen2.5-72B        rep 22  reached 128 x E  mutual pairs 6  71.1s
+[e1c]    1426s  chain 137/180  main__wordnet            rep 24  reached 128 x E  mutual pairs 0  35.6s
+[e1c]    1429s  chain 138/180  main__Qwen2.5-32B        rep 22  reached 128 x E  mutual pairs 0  121.4s
+[e1c]    1438s  chain 139/180  main__Gemma3-1B          rep 23  reached 128 x E  mutual pairs 1  85.5s
+[e1c]    1438s  chain 140/180  main__Qwen3-14B          rep 22  reached 128 x E  mutual pairs 1  108.0s
+[e1c]    1445s  chain 141/180  main__Gemma3-27B-pt      rep 22  reached 128 x E  mutual pairs 2  106.0s
+[e1c]    1464s  chain 142/180  main__Qwen2.5-72B        rep 23  reached 128 x E  mutual pairs 8  74.2s
+[e1c]    1474s  chain 143/180  main__wordnet            rep 25  reached 128 x E  mutual pairs 0  35.9s
+[e1c]    1476s  chain 144/180  main__Qwen2.5-32B        rep 23  reached 128 x E  mutual pairs 0  121.8s
+[e1c]    1479s  chain 145/180  main__Qwen3-14B          rep 23  reached 128 x E  mutual pairs 2  106.7s
+[e1c]    1484s  chain 146/180  main__Gemma3-1B          rep 24  reached 128 x E  mutual pairs 1  88.3s
+[e1c]    1491s  chain 147/180  main__Gemma3-27B-pt      rep 23  reached 128 x E  mutual pairs 2  105.2s
+[e1c]    1502s  chain 148/180  main__Qwen2.5-72B        rep 24  reached 128 x E  mutual pairs 6  72.8s
+[e1c]    1517s  chain 149/180  main__wordnet            rep 26  reached 128 x E  mutual pairs 1  37.6s
+[e1c]    1524s  chain 150/180  main__Qwen3-14B          rep 24  reached 128 x E  mutual pairs 2  110.4s
+[e1c]    1526s  chain 151/180  main__Gemma3-1B          rep 25  reached 128 x E  mutual pairs 2  88.1s
+[e1c]    1528s  chain 152/180  main__Qwen2.5-32B        rep 24  reached 128 x E  mutual pairs 1  124.0s
+[e1c]    1530s  chain 153/180  main__Gemma3-27B-pt      rep 24  reached 128 x E  mutual pairs 3  104.0s
+[e1c]    1551s  chain 154/180  main__Qwen2.5-72B        rep 25  reached 128 x E  mutual pairs 6  75.0s
+[e1c]    1562s  chain 155/180  main__wordnet            rep 27  reached 128 x E  mutual pairs 1  36.0s
+[e1c]    1569s  chain 156/180  main__Qwen2.5-32B        rep 25  reached 128 x E  mutual pairs 1  123.7s
+[e1c]    1574s  chain 157/180  main__Gemma3-1B          rep 26  reached 128 x E  mutual pairs 1  89.9s
+[e1c]    1575s  chain 158/180  main__Qwen3-14B          rep 25  reached 128 x E  mutual pairs 4  110.9s
+[e1c]    1578s  chain 159/180  main__Gemma3-27B-pt      rep 25  reached 128 x E  mutual pairs 4  103.9s
+[e1c]    1601s  chain 160/180  main__Qwen2.5-72B        rep 26  reached 128 x E  mutual pairs 7  77.3s
+[e1c]    1610s  chain 161/180  main__wordnet            rep 28  reached 128 x E  mutual pairs 2  36.2s
+[e1c]    1611s  chain 162/180  main__Gemma3-1B          rep 27  reached 128 x E  mutual pairs 0  83.1s
+[e1c]    1614s  chain 163/180  main__Qwen3-14B          rep 26  reached 128 x E  mutual pairs 4  112.6s
+[e1c]    1617s  chain 164/180  main__Qwen2.5-32B        rep 26  reached 128 x E  mutual pairs 1  125.2s
+[e1c]    1619s  chain 165/180  main__Gemma3-27B-pt      rep 26  reached 128 x E  mutual pairs 4  102.3s
+[e1c]    1644s  chain 166/180  main__Qwen2.5-72B        rep 27  reached 128 x E  mutual pairs 5  74.8s
+[e1c]    1652s  chain 167/180  main__wordnet            rep 29  reached 128 x E  mutual pairs 0  37.2s
+[e1c]    1656s  chain 168/180  main__Qwen2.5-32B        rep 27  reached 128 x E  mutual pairs 2  126.1s
+[e1c]    1661s  chain 169/180  main__Gemma3-1B          rep 28  reached 128 x E  mutual pairs 0  85.9s
+[e1c]    1663s  chain 170/180  main__Qwen3-14B          rep 27  reached 128 x E  mutual pairs 2  112.0s
+[e1c]    1666s  chain 171/180  main__Gemma3-27B-pt      rep 27  reached 128 x E  mutual pairs 2  104.0s
+[e1c]    1678s  chain 172/180  main__Qwen2.5-72B        rep 28  reached 128 x E  mutual pairs 7  67.4s
+[e1c]    1691s  chain 173/180  main__Qwen2.5-32B        rep 28  reached 128 x E  mutual pairs 2  113.5s
+[e1c]    1695s  chain 174/180  main__Gemma3-1B          rep 29  reached 128 x E  mutual pairs 4  78.2s
+[e1c]    1698s  chain 175/180  main__Gemma3-27B-pt      rep 28  reached 128 x E  mutual pairs 1  87.9s
+[e1c]    1699s  chain 176/180  main__Qwen3-14B          rep 28  reached 128 x E  mutual pairs 4  98.0s
+[e1c]    1708s  chain 177/180  main__Qwen2.5-72B        rep 29  reached 128 x E  mutual pairs 6  52.2s
+[e1c]    1714s  chain 178/180  main__Qwen2.5-32B        rep 29  reached 128 x E  mutual pairs 0  94.7s
+[e1c]    1721s  chain 179/180  main__Qwen3-14B          rep 29  reached 128 x E  mutual pairs 1  77.2s
+[e1c]    1722s  chain 180/180  main__Gemma3-27B-pt      rep 29  reached 128 x E  mutual pairs 1  70.2s
+
+main__wordnet  (E=4599, observed mutual pairs 27, 30 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         1     30       6.87   0.45     3.9     -0.12   -2.07     12.02
+         2     30       4.27   0.31     6.3     -0.15   -1.83     12.42
+         4     30       3.37   0.21     8.0      0.05   -2.17     12.57
+         8     30       2.63   0.26    10.3     -0.27   -1.84     12.57
+        16     30       2.07   0.24    13.1     -0.04   -2.33     12.61
+        24     30       2.07   0.23    13.1      0.23   -1.62     12.75
+        32     30       2.00   0.28    13.5     -0.02   -1.55     12.68
+        48     30       1.30   0.21    20.8     -0.23   -2.85     12.65
+        64     30       1.40   0.20    19.3      0.37   -1.55     12.68
+        96     30       1.97   0.21    13.7     -0.02   -2.33     12.67
+       128     30       0.93   0.16    28.9      0.19   -2.21     12.68
+  reference (mean of swaps/E >= 64): 1.43; mean within 5 % (or 2 SE) of it from swaps/E = None
+  exponential fit: limit 1.56 +/- 0.19, time constant 3.8 x E  ->  R(limit) = 17.3
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [128]
+
+main__Qwen2.5-72B  (E=5085, observed mutual pairs 82, 30 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         1     30      19.47   0.61     4.2     -0.47   -1.26      5.14
+         2     30      11.93   0.52     6.9      0.14   -1.01      5.65
+         4     30       7.60   0.24    10.8      0.42   -0.68      5.78
+         8     30       6.87   0.22    11.9      0.35   -1.21      5.82
+        16     30       6.70   0.17    12.2      0.84   -0.66      5.86
+        24     30       6.43   0.19    12.7      1.67   -0.42      5.88
+        32     30       6.53   0.20    12.6      0.68   -0.34      5.83
+        48     30       6.70   0.23    12.2      0.50   -0.60      5.80
+        64     30       6.67   0.24    12.3      0.89   -0.31      5.82
+        96     30       6.73   0.25    12.2      0.66   -0.47      5.80
+       128     30       6.73   0.23    12.2      0.82   -0.32      5.78
+  reference (mean of swaps/E >= 64): 6.71; mean within 5 % (or 2 SE) of it from swaps/E = 8
+  exponential fit: limit 6.65 +/- 0.04, time constant 1.1 x E  ->  R(limit) = 12.3
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [128]
+
+main__Gemma3-1B  (E=4448, observed mutual pairs 34, 30 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         1     30       6.50   0.47     5.2      0.57    0.04      3.77
+         2     30       3.33   0.30    10.2      0.99    0.10      3.98
+         4     30       1.57   0.27    21.7      1.66    0.38      4.01
+         8     30       1.03   0.17    32.9      1.28    0.15      4.07
+        16     30       1.43   0.19    23.7      1.80    0.68      4.02
+        24     30       1.03   0.19    32.9      1.43    0.18      4.02
+        32     30       1.13   0.21    30.0      1.66    0.54      4.00
+        48     30       0.83   0.18    40.8      2.18    0.57      3.99
+        64     30       1.03   0.17    32.9      1.76    0.54      3.97
+        96     30       1.10   0.14    30.9      1.42    0.44      4.00
+       128     30       1.27   0.20    26.8      1.49    0.09      3.99
+  reference (mean of swaps/E >= 64): 1.13; mean within 5 % (or 2 SE) of it from swaps/E = 4
+  exponential fit: limit 1.10 +/- 0.06, time constant 1.2 x E  ->  R(limit) = 31.0
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [128]
+
+main__Gemma3-27B-pt  (E=7108, observed mutual pairs 25, 30 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         1     30       5.60   0.31     4.5     -2.82   -2.64      6.55
+         2     30       3.63   0.28     6.9     -2.71   -2.36      7.03
+         4     30       3.60   0.26     6.9     -1.90   -1.53      7.16
+         8     30       3.33   0.23     7.5     -1.65   -1.53      7.19
+        16     30       3.17   0.25     7.9     -1.89   -2.24      7.27
+        24     30       2.93   0.25     8.5     -2.44   -1.49      7.31
+        32     30       3.13   0.36     8.0     -1.64   -1.40      7.30
+        48     30       2.20   0.28    11.4     -1.59   -1.68      7.24
+        64     30       2.77   0.26     9.0     -1.43   -1.74      7.16
+        96     30       2.33   0.27    10.7     -1.48   -1.33      7.15
+       128     30       2.40   0.23    10.4     -1.54   -2.29      7.11
+  reference (mean of swaps/E >= 64): 2.50; mean within 5 % (or 2 SE) of it from swaps/E = 24
+  exponential fit: limit 2.80 +/- 0.17, time constant 1.6 x E  ->  R(limit) = 8.9
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [128]
+
+main__Qwen3-14B  (E=5880, observed mutual pairs 50, 30 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         1     30      10.33   0.44     4.8     -0.03   -1.90      4.02
+         2     30       5.27   0.38     9.5      0.21   -1.58      4.32
+         4     30       3.43   0.25    14.6      0.45   -1.86      4.41
+         8     30       3.00   0.28    16.7      0.56   -1.22      4.42
+        16     30       2.77   0.21    18.1      0.41   -1.27      4.43
+        24     30       2.40   0.26    20.8      0.65   -1.42      4.41
+        32     30       2.53   0.20    19.7      0.57   -1.77      4.40
+        48     30       3.00   0.26    16.7      0.49   -1.16      4.38
+        64     30       2.30   0.22    21.7      0.85   -1.26      4.36
+        96     30       2.73   0.21    18.3      1.18   -0.60      4.35
+       128     30       3.00   0.30    16.7      0.64   -1.54      4.33
+  reference (mean of swaps/E >= 64): 2.68; mean within 5 % (or 2 SE) of it from swaps/E = 8
+  exponential fit: limit 2.70 +/- 0.10, time constant 1.0 x E  ->  R(limit) = 18.5
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [128]
+
+main__Qwen2.5-32B  (E=5104, observed mutual pairs 36, 30 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         1     30       6.17   0.38     5.8      1.75    0.20      3.23
+         2     30       3.43   0.20    10.5      1.84    0.25      3.42
+         4     30       2.43   0.25    14.8      2.65    0.44      3.43
+         8     30       1.17   0.22    30.9      2.56    0.79      3.46
+        16     30       0.87   0.14    41.5      2.39    0.83      3.46
+        24     30       1.07   0.14    33.8      3.65    0.75      3.44
+        32     30       0.90   0.18    40.0      2.11    0.50      3.45
+        48     30       0.70   0.17    51.4      2.12    0.50      3.43
+        64     30       1.00   0.18    36.0      1.99    0.63      3.42
+        96     30       0.97   0.19    37.2      2.09    0.48      3.45
+       128     30       1.13   0.16    31.8      2.40    0.63      3.43
+  reference (mean of swaps/E >= 64): 1.03; mean within 5 % (or 2 SE) of it from swaps/E = 8
+  exponential fit: limit 0.97 +/- 0.08, time constant 1.9 x E  ->  R(limit) = 37.2
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [128]
+
+RECOMMENDATION (indicative, for the researcher to decide): the null mean has settled by 24 x E on every graph listed; use 64 x E (a factor 2 margin, rounded to a power of 2) and a try limit of 93 x the requested swaps (3 / the lowest measured acceptance of 3.23 %).

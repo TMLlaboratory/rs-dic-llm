@@ -1,0 +1,25 @@
+1. THE DOUBLE-EDGE SWAP NULL: mean mutual pairs by accepted swaps per edge (30 chains per graph); independent-edge estimate; observed pairs still present
+   graph                   obs  indep.      1x      2x      4x      8x     16x     32x     64x    128x  kept at 32x
+   e3__Gemma3-4B-pt         92    2.01    3.70    2.10    1.90    1.97    1.90    1.77    1.93    2.00         0.00   V1 ok, V2 ok
+   main__Gemma3-1B          34    0.98    1.07    0.97    1.10    0.87    0.93    0.93    1.07    0.97         0.00   V1 ok, V2 ok
+   main__Gemma3-12B         78    2.54    3.90    2.63    2.93    2.53    2.93    2.23    2.73    3.23         0.00   V1 FAILS, V2 ok
+   main__wordnet            27    1.44    2.00    1.63    1.43    1.17    1.47    1.33    1.80    1.70         0.00   V1 ok, V2 ok
+   main__Gemma3-12B-pt       7    0.36    0.53    0.40    0.23    0.33    0.50    0.17    0.27    0.30         0.00   V1 ok, V2 ok
+   d029__fsS_4B             18    0.31    0.47    0.23    0.40    0.43    0.20    0.37    0.30    0.20         0.00   V1 ok, V2 ok
+   d030c__fsRC3_4B          14    0.33    0.67    0.33    0.27    0.37    0.40    0.53    0.57    0.30         0.00   V1 ok, V2 ok
+   d030c__itC_1B            12    0.40    0.47    0.63    0.30    0.27    0.53    0.20    0.27    0.47         0.00   V1 ok, V2 ok
+
+   V1 (settled at 32 x edges): NOT met on main__Gemma3-12B
+   V2 (the null can break the observed pairs): met on all eight graphs
+   smallest checkpoint that passes V1 on all graphs: 64 x edges
+
+2. THE PAPER'S NULL (networkx directed_edge_swap, 32 x edges, stored seeds): observed pairs still present in a replicate
+   graph                   obs  null pairs (mean)  observed pairs kept (mean)  kept / null  reps  equal stored
+   e3__Gemma3-4B-pt         92               4.05                        1.60         0.40    20            20
+   main__Gemma3-1B          34               0.70                        0.00         0.00    20            20
+   main__Gemma3-12B         78               3.10                        0.15         0.05    20            20
+   main__wordnet            27               2.00                        0.10         0.05    20            20
+   main__Gemma3-12B-pt       7               3.10                        1.00         0.32    20            20
+   d029__fsS_4B             18               2.95                        2.20         0.75    20            20
+   d030c__fsRC3_4B          14              12.40                       10.40         0.84    20            20
+   d030c__itC_1B            12               2.85                        1.05         0.37    20            20

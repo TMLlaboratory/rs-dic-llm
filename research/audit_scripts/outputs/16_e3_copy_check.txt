@@ -1,0 +1,28 @@
+model            records  exact copy  6-word run  repeated text  records in repeats  dropped by filter
+Gemma3-270M-pt      3000          11          42             24                  65                 24
+Gemma3-1B-pt        3000          12          29             14                  41                  0
+Gemma3-4B-pt        3000           2           3              7                  14                  0
+Gemma3-12B-pt       3000           1           2              4                   9                  0
+Gemma3-27B-pt       3000           2           4              6                  13                  1
+
+most repeated texts (number of different words that received the same text):
+   Gemma3-270M-pt   x8   'to move from one place to another'
+   Gemma3-270M-pt   x8   'to move forward by placing one foot in front of the other at a steady pace'
+   Gemma3-270M-pt   x5   'having a size or amount that is less than normal or average'
+   Gemma3-270M-pt   x3   'having the ability to do something'
+   Gemma3-1B-pt     x7   'to move forward by placing one foot in front of the other at a steady pace'
+   Gemma3-1B-pt     x5   'having a size or amount that is larger than normal or average'
+   Gemma3-1B-pt     x5   'having a size or amount that is greater than normal or average'
+   Gemma3-1B-pt     x3   'to increase in size or amount'
+   Gemma3-4B-pt     x2   'a connection or association between two or more things'
+   Gemma3-4B-pt     x2   'to hide or conceal something'
+   Gemma3-4B-pt     x2   'to divide or separate into parts or sections'
+   Gemma3-4B-pt     x2   'a connection or relationship between two or more things'
+   Gemma3-12B-pt    x3   'a person s name'
+   Gemma3-12B-pt    x2   'extremely large or great in size amount or degree'
+   Gemma3-12B-pt    x2   'to make use of or employ something for a particular purpose'
+   Gemma3-12B-pt    x2   'a male given name'
+   Gemma3-27B-pt    x3   'a male given name'
+   Gemma3-27B-pt    x2   'the state of being behind in payments or obligations'
+   Gemma3-27B-pt    x2   'a round shape with no corners or edges'
+   Gemma3-27B-pt    x2   'to make a hole or opening in something'

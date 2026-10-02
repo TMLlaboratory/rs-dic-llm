@@ -1,0 +1,81 @@
+{
+ "key": "main__Qwen3-0.6B",
+ "meta": {
+  "dataset": "main",
+  "model": "Qwen3-0.6B",
+  "is_base": false,
+  "source": "data/definitions/Qwen3-0.6B_42.jsonl",
+  "source_sha256": "da7fe2c9ac6f60eaf2c1e81d7ea3e0d0cec6803c801765cf4a6211f8e7774e0e",
+  "n_records": 3000,
+  "graph_sha256": "d73214491756faafda07d687e498c81457891b7d30e9712e18a8cc4cbd8ffb78",
+  "n_nodes": 2750,
+  "n_edges": 4942
+ },
+ "n_nodes": 2750,
+ "n_edges": 4942,
+ "observed": {
+  "kernel_ratio": 0.03418181818181818,
+  "circulation_rate": 0.014909090909090908,
+  "cycles_total": 21,
+  "cycles_2": 17,
+  "cycles_long": 3
+ },
+ "null_mean": {
+  "kernel_ratio": 0.033781818181818184,
+  "circulation_rate": 0.01747272727272727,
+  "cycles_total": 8.1,
+  "cycles_2": 2.19,
+  "cycles_long": 3.64
+ },
+ "null_sd": {
+  "kernel_ratio": 0.009539686568997471,
+  "circulation_rate": 0.008631194625378171,
+  "cycles_total": 3.395585369269929,
+  "cycles_2": 1.083466658462548,
+  "cycles_long": 2.674023186137323
+ },
+ "z": {
+  "kernel_ratio": 0.041930098762357315,
+  "circulation_rate": -0.29701987672697616,
+  "cycles_total": 3.799050413146755,
+  "cycles_2": 13.669086985118273,
+  "cycles_long": -0.23933973471804193
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 5,
+ "reciprocity_excess": 7.762557077625571,
+ "R_ci95": [
+  7.053941908713693,
+  8.585858585858587
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 17,
+   "null_mean": 2.19
+  },
+  "3": {
+   "observed": 0,
+   "null_mean": 1.05
+  },
+  "4": {
+   "observed": 1,
+   "null_mean": 1.22
+  },
+  "5": {
+   "observed": 2,
+   "null_mean": 0.95
+  },
+  "6": {
+   "observed": 1,
+   "null_mean": 1.3
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 1.39
+  }
+ },
+ "R_analytic_rs_dic_llm": 8.678345279167662,
+ "R_complete_replicates_only": 7.762557077625571
+}

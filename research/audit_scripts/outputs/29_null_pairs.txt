@@ -1,0 +1,130 @@
+1. NULL PAIRS BY NODE (replicates 0-39 of the stored null; every rerun replicate equals the stored one)
+   'null' = mean pairs per replicate over these 40; 'stored' = the 100-replicate mean of the run that made the graph; share = the five most frequent nodes' share of the null pair endpoints
+
+     1B zs    null  0.42 (stored  0.45)  top-5 share  0.41  describe 0.10, define 0.07, person 0.07, light 0.05, body 0.05   | observed   3 pairs, top-5 share  0.83: cloud 1, mist 1, passage 1, time 1, solid 1
+     1B fs    null  1.48 (stored  1.30)  top-5 share  0.19  place 0.17, position 0.10, color 0.10, small 0.10, object 0.07   | observed  29 pairs, top-5 share  0.14: place 3, object 2, age 1, old 1, alert 1
+     1B it    null  0.68 (stored  0.80)  top-5 share  0.22  person 0.10, group 0.07, small 0.05, people 0.05, store 0.03   | observed  34 pairs, top-5 share  0.12: size 3, person 2, acknowledge 1, admit 1, allow 1
+     1B fsS   null  1.12 (stored  1.11)  top-5 share  0.58  woman 0.47, girl 0.42, female 0.25, process 0.07, time 0.07   | observed   6 pairs, top-5 share  0.42: color 1, light 1, device 1, tool 1, forward 1
+     1B itS   null  3.08 (stored  3.05)  top-5 share  0.61  permission 1.00, right 1.00, service 0.65, force 0.60, trade 0.47   | observed   9 pairs, top-5 share  0.33: size 2, big 1, describe 1, detail 1, exchange 1
+     1B fsR1  null  1.52 (stored  1.44)  top-5 share  0.72  contact 1.00, touch 1.00, place 0.07, average 0.07, time 0.05   | observed   9 pairs, top-5 share  0.33: place 2, apply 1, paint 1, compete 1, contest 1
+     1B fsR2  null  0.95 (stored  1.05)  top-5 share  0.47  number 0.42, phrase 0.17, count 0.12, fifty 0.10, flat 0.07   | observed   7 pairs, top-5 share  0.36: collect 1, gather 1, count 1, number 1, earth 1
+     1B fsR3  null  0.60 (stored  0.71)  top-5 share  0.27  picture 0.10, object 0.07, light 0.05, less 0.05, film 0.05   | observed   8 pairs, top-5 share  0.31: age 1, old 1, begin 1, start 1, contact 1
+     1B fsR4  null  0.90 (stored  0.87)  top-5 share  0.64  string 0.47, knot 0.28, tie 0.25, substance 0.07, light 0.07   | observed   4 pairs, top-5 share  0.62: bicycle 1, ride 1, complete 1, finish 1, contact 1
+     1B fsR5  null  0.97 (stored  0.93)  top-5 share  0.37  head 0.23, neck 0.20, uniform 0.12, place 0.10, hold 0.07   | observed  10 pairs, top-5 share  0.25: age 1, old 1, bicycle 1, ride 1, collect 1
+
+     4B zs    null  1.38 (stored  1.31)  top-5 share  0.82  rip 1.00, tear 1.00, mean 0.12, time 0.07, tool 0.05   | observed  11 pairs, top-5 share  0.23: burial 1, bury 1, condition 1, fit 1, evaluate 1
+     4B fs    null  4.08 (stored  3.92)  top-5 share  0.44  scent 1.00, smell 1.00, fight 0.78, battle 0.60, victory 0.17   | observed  92 pairs, top-5 share  0.06: place 3, recognize 2, process 2, allow 2, task 2
+     4B it    null  1.43 (stored  1.68)  top-5 share  0.24  mean 0.25, people 0.12, experience 0.10, place 0.10, large 0.10   | observed  47 pairs, top-5 share  0.11: size 2, right 2, taste 2, grasp 2, greet 2
+     4B fsS   null  2.85 (stored  2.91)  top-5 share  0.76  battle 1.00, fight 1.00, initiate 1.00, start 1.00, true 0.35   | observed  18 pairs, top-5 share  0.14: battle 1, fight 1, chart 1, graph 1, compete 1
+     4B itS   null  2.73 (stored  2.66)  top-5 share  0.76  identify 1.00, recognize 1.00, rip 1.00, tear 1.00, mean 0.15   | observed  12 pairs, top-5 share  0.25: grasp 2, brown 1, tan 1, describe 1, detail 1
+     4B fsR1  null  6.00 (stored  6.00)  top-5 share  0.42  attempt 1.00, try 1.00, enroll 1.00, register 1.00, extend 1.00   | observed  15 pairs, top-5 share  0.17: allow 1, permission 1, attempt 1, try 1, chart 1
+     4B fsR2  null  5.88 (stored  6.21)  top-5 share  0.51  allow 2.00, permission 1.00, permit 1.00, bicycle 1.00, ride 1.00   | observed  23 pairs, top-5 share  0.20: allow 2, begin 2, initiate 2, start 2, action 1
+     4B fsR3  null  1.82 (stored  1.84)  top-5 share  0.66  bicycle 1.00, ride 1.00, weather 0.15, element 0.15, winter 0.12   | observed  16 pairs, top-5 share  0.19: take 2, admire 1, respect 1, allow 1, permission 1
+     4B fsR4  null  4.92 (stored  4.91)  top-5 share  0.61  allow 2.00, permission 1.00, permit 1.00, compete 1.00, contest 1.00   | observed  18 pairs, top-5 share  0.17: allow 2, permission 1, permit 1, chart 1, graph 1
+     4B fsR5  null  4.67 (stored  4.50)  top-5 share  0.52  fifteen 1.00, fourteen 1.00, taste 1.00, tongue 1.00, tie 0.88   | observed  12 pairs, top-5 share  0.21: admire 1, respect 1, comic 1, humor 1, fifteen 1
+
+    12B zs    null  3.17 (stored  3.33)  top-5 share  0.59  enroll 1.00, register 1.00, ride 0.75, journey 0.65, value 0.38   | observed   7 pairs, top-5 share  0.36: assess 1, evaluate 1, bicycle 1, ride 1, consequence 1
+    12B fs    null  3.80 (stored  3.69)  top-5 share  0.33  destroy 1.00, ruin 1.00, surface 0.17, group 0.17, place 0.12   | observed 114 pairs, top-5 share  0.07: group 5, smooth 3, place 3, acknowledge 2, recognize 2
+    12B it    null  3.05 (stored  3.04)  top-5 share  0.15  mean 0.38, number 0.15, use 0.15, like 0.12, people 0.12   | observed  78 pairs, top-5 share  0.08: size 3, grasp 3, start 2, border 2, complete 2
+    12B fsS   null  6.53 (stored  6.29)  top-5 share  0.38  asleep 1.00, awake 1.00, election 1.00, vote 1.00, greet 1.00   | observed  21 pairs, top-5 share  0.19: right 2, eighteenth 2, smooth 2, asleep 1, awake 1
+    12B itS   null  2.70 (stored  2.68)  top-5 share  0.76  asleep 1.00, awake 1.00, bond 1.00, link 1.00, surface 0.10   | observed  17 pairs, top-5 share  0.18: take 2, asleep 1, awake 1, bond 1, link 1
+    12B fsR1  null  3.27 (stored  3.50)  top-5 share  0.76  discover 1.00, new 1.00, fake 1.00, genuine 1.00, grasp 1.00   | observed  22 pairs, top-5 share  0.16: greet 2, spring 2, acknowledge 1, admit 1, assign 1
+    12B fsR2  null  5.30 (stored  5.48)  top-5 share  0.47  allow 1.00, permission 1.00, discover 1.00, new 1.00, election 1.00   | observed  26 pairs, top-5 share  0.17: recognize 2, female 2, place 2, surface 2, acknowledge 1
+    12B fsR3  null  7.28 (stored  7.29)  top-5 share  0.41  allow 2.00, acknowledge 1.00, admit 1.00, permission 1.00, permit 1.00   | observed  27 pairs, top-5 share  0.15: allow 2, taste 2, place 2, acknowledge 1, admit 1
+    12B fsR4  null  5.62 (stored  5.61)  top-5 share  0.44  grief 1.00, sorrow 1.00, scent 1.00, smell 1.00, fifteen 0.97   | observed  25 pairs, top-5 share  0.18: smooth 3, size 2, fifteen 2, acknowledge 1, admit 1
+    12B fsR5  null  6.25 (stored  6.45)  top-5 share  0.48  eleven 2.00, ten 1.00, twelve 1.00, fifteen 1.00, fourteen 1.00   | observed  40 pairs, top-5 share  0.12: action 2, result 2, consequence 2, eighteenth 2, eleven 2
+
+    27B zs    null  2.90 (stored  2.85)  top-5 share  0.60  hint 1.00, indication 1.00, motivation 0.60, reason 0.47, motive 0.42   | observed  14 pairs, top-5 share  0.21: ground 2, aid 1, support 1, allow 1, permission 1
+    27B fs    null  2.85 (stored  2.74)  top-5 share  0.17  evaluate 0.33, assess 0.20, use 0.15, place 0.15, cover 0.15   | observed  78 pairs, top-5 share  0.07: place 3, allow 2, bat 2, start 2, complete 2
+    27B it    null  2.73 (stored  2.79)  top-5 share  0.16  like 0.28, person 0.23, time 0.15, feel 0.10, surface 0.10   | observed  71 pairs, top-5 share  0.09: person 3, feel 3, place 3, help 2, allow 2
+    27B fsS   null  3.95 (stored  3.71)  top-5 share  0.60  mention 1.00, refer 1.00, naval 1.00, navy 1.00, seventeenth 0.72   | observed  21 pairs, top-5 share  0.14: female 2, allow 1, permission 1, assign 1, task 1
+    27B itS   null  1.70 (stored  1.70)  top-5 share  0.68  mention 1.00, refer 1.00, feel 0.12, like 0.12, material 0.07   | observed  15 pairs, top-5 share  0.27: feel 3, help 2, aid 1, allow 1, permission 1
+    27B fsR1  null  1.38 (stored  1.32)  top-5 share  0.79  king 1.00, kingdom 1.00, expect 0.07, take 0.05, surface 0.05   | observed  13 pairs, top-5 share  0.19: command 1, order 1, correct 1, right 1, count 1
+    27B fsR2  null  6.53 (stored  6.34)  top-5 share  0.38  allow 1.00, permit 1.00, fake 1.00, genuine 1.00, green 1.00   | observed  12 pairs, top-5 share  0.21: allow 1, permit 1, battle 1, fight 1, complete 1
+    27B fsR3  null  4.80 (stored  5.04)  top-5 share  0.52  distress 1.00, suffer 1.00, female 1.00, girl 1.00, fifteen 1.00   | observed  12 pairs, top-5 share  0.21: border 1, edge 1, camp 1, tent 1, compete 1
+    27B fsR4  null  1.32 (stored  1.20)  top-5 share  0.66  evaluate 0.80, assess 0.55, judge 0.25, large 0.07, small 0.07   | observed  12 pairs, top-5 share  0.21: apply 1, use 1, assess 1, evaluate 1, border 1
+    27B fsR5  null  2.40 (stored  2.33)  top-5 share  0.67  greet 1.00, welcome 1.00, victory 0.42, contest 0.42, battle 0.35   | observed  16 pairs, top-5 share  0.16: action 1, process 1, apply 1, use 1, assign 1
+
+2. READING (a): is the null mean hub-driven?  share of null pair endpoints carried by the five most frequent nodes, fsS graphs
+   fsS: 1B 0.58, 4B 0.76, 12B 0.38, 27B 0.60
+   at least one half: 3 of 4; below one third: 0 of 4  ->  HUB-DRIVEN
+   for comparison, the same share in the other graphs: zs 0.41, 0.82, 0.59, 0.60; fs 0.19, 0.44, 0.33, 0.17; it 0.22, 0.24, 0.15, 0.16; itS 0.61, 0.76, 0.76, 0.68
+
+3. DESCRIPTIVE: null mean of the random halves against how many of the ten largest hubs they cover
+   size         hubs (largest d_out x d_in in the whole few-shot graph)
+     1B  place, small, substance, object, position, process, piece, time, forward, liquid
+        half 1: covers  7 of the 10 hubs; null mean  1.44 =  1.11 x the whole graph's
+        half 2: covers  4 of the 10 hubs; null mean  1.05 =  0.81 x the whole graph's
+        half 3: covers  7 of the 10 hubs; null mean  0.71 =  0.55 x the whole graph's
+        half 4: covers  4 of the 10 hubs; null mean  0.87 =  0.67 x the whole graph's
+        half 5: covers  8 of the 10 hubs; null mean  0.93 =  0.72 x the whole graph's
+     4B  place, group, small, large, process, time, person, number, object, feel
+        half 1: covers  3 of the 10 hubs; null mean  6.00 =  1.53 x the whole graph's
+        half 2: covers  4 of the 10 hubs; null mean  6.21 =  1.58 x the whole graph's
+        half 3: covers  2 of the 10 hubs; null mean  1.84 =  0.47 x the whole graph's
+        half 4: covers  4 of the 10 hubs; null mean  4.91 =  1.25 x the whole graph's
+        half 5: covers  4 of the 10 hubs; null mean  4.50 =  1.15 x the whole graph's
+    12B  group, surface, person, place, people, small, time, process, device, large
+        half 1: covers  4 of the 10 hubs; null mean  3.50 =  0.95 x the whole graph's
+        half 2: covers  4 of the 10 hubs; null mean  5.48 =  1.49 x the whole graph's
+        half 3: covers  4 of the 10 hubs; null mean  7.29 =  1.98 x the whole graph's
+        half 4: covers  3 of the 10 hubs; null mean  5.61 =  1.52 x the whole graph's
+        half 5: covers  6 of the 10 hubs; null mean  6.45 =  1.75 x the whole graph's
+    27B  use, place, small, large, person, surface, time, liquid, feel, process
+        half 1: covers  5 of the 10 hubs; null mean  1.32 =  0.48 x the whole graph's
+        half 2: covers  4 of the 10 hubs; null mean  6.34 =  2.31 x the whole graph's
+        half 3: covers  6 of the 10 hubs; null mean  5.04 =  1.84 x the whole graph's
+        half 4: covers  6 of the 10 hubs; null mean  1.20 =  0.44 x the whole graph's
+        half 5: covers  6 of the 10 hubs; null mean  2.33 =  0.85 x the whole graph's
+
+   Spearman correlation over the 20 halves between hubs covered and null mean / whole null mean: -0.21 (p = 0.37)
+
+4. POST HOC: OBSERVED PAIRS THAT THE NULL KEEPS (the 40 replicates of each graph)
+   kept = mean number of the observed pairs that a replicate contains; never broken = observed pairs present in all 40 replicates; share = kept / mean null pairs
+
+   size graph observed   null   kept  share  never broken  present in some
+     1B zs           3   0.42   0.00   0.00             0                0
+     1B fs          29   1.48   0.03   0.02             0                1
+     1B it          34   0.68   0.00   0.00             0                0
+     1B fsS          6   1.12   0.00   0.00             0                0
+     1B itS          9   3.08   1.02   0.33             1                2
+     1B fsR1         9   1.52   1.00   0.66             1                1
+     1B fsR2         7   0.95   0.12   0.13             0                1
+     1B fsR3         8   0.60   0.00   0.00             0                0
+     1B fsR4         4   0.90   0.00   0.00             0                0
+     1B fsR5        10   0.97   0.07   0.08             0                1
+
+     4B zs          11   1.38   1.00   0.73             1                1
+     4B fs          92   4.08   1.60   0.39             1                2
+     4B it          47   1.43   0.03   0.02             0                1
+     4B fsS         18   2.85   2.23   0.78             2                4
+     4B itS         12   2.73   2.02   0.74             2                3
+     4B fsR1        15   6.00   5.00   0.83             5                5
+     4B fsR2        23   5.88   4.85   0.83             4                6
+     4B fsR3        16   1.82   1.00   0.55             1                1
+     4B fsR4        18   4.92   4.10   0.83             4                5
+     4B fsR5        12   4.67   2.23   0.48             2                4
+
+    12B zs           7   3.17   1.15   0.36             1                3
+    12B fs         114   3.80   1.15   0.30             1                3
+    12B it          78   3.05   0.10   0.03             0                1
+    12B fsS         21   6.53   5.45   0.84             5                6
+    12B itS         17   2.70   2.02   0.75             2                3
+    12B fsR1        22   3.27   3.00   0.92             3                3
+    12B fsR2        26   5.30   4.12   0.78             4                5
+    12B fsR3        27   7.28   6.05   0.83             6                7
+    12B fsR4        25   5.62   3.00   0.53             2                8
+    12B fsR5        40   6.25   4.58   0.73             4                7
+
+    27B zs          14   2.90   1.10   0.38             1                3
+    27B fs          78   2.85   0.15   0.05             0                1
+    27B it          71   2.73   0.00   0.00             0                0
+    27B fsS         21   3.95   2.33   0.59             2                4
+    27B itS         15   1.70   1.00   0.59             1                1
+    27B fsR1        13   1.38   1.00   0.73             1                1
+    27B fsR2        12   6.53   4.88   0.75             4                7
+    27B fsR3        12   4.80   3.00   0.62             3                3
+    27B fsR4        12   1.32   0.55   0.42             0                1
+    27B fsR5        16   2.40   1.02   0.43             1                2
+
+   summed over the four sizes: zs: 35 observed pairs, null 7.9, kept 3.2, never broken 3; fs: 313 observed pairs, null 12.2, kept 2.9, never broken 2; it: 230 observed pairs, null 7.9, kept 0.1, never broken 0; fsS: 66 observed pairs, null 14.4, kept 10.0, never broken 9; itS: 53 observed pairs, null 10.2, kept 6.1, never broken 6; fsR1: 59 observed pairs, null 12.2, kept 10.0, never broken 10; fsR2: 68 observed pairs, null 18.6, kept 14.0, never broken 12; fsR3: 63 observed pairs, null 14.5, kept 10.1, never broken 10; fsR4: 59 observed pairs, null 12.8, kept 7.6, never broken 6; fsR5: 78 observed pairs, null 14.3, kept 7.9, never broken 7

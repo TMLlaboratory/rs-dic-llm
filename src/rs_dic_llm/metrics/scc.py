@@ -27,16 +27,23 @@ def cycle_length_distribution(G: nx.DiGraph, max_length: int = 7) -> dict:
 
 
 def reciprocity_excess(G: nx.DiGraph) -> float:
-    """Compute reciprocity excess R = observed_2cycles / null_expected_2cycles.
+    """Analytic configuration-model estimate of reciprocity excess (R_analytic).
 
-    Uses the configuration-model (degree-preserving null) analytical approximation:
-        E[mutual_pairs] = (sum_i k_i^out * k_i^in)^2 / E^2   (leading term)
+    NOT the R reported in the paper. The paper's R is observed mutual pairs divided by
+    their mean over degree-preserving rewirings (experiments/null_model.py,
+    experiments/e1_full_null.py). This function is a cheap approximation that disagrees
+    with that R by a factor that varies between 0.5 and 2.4 across graphs
+    (research/RESEARCH_AUDIT.md F1): a factor 2 is missing (the denominator below counts
+    ordered pairs, the numerator unordered pairs), and the leading-order formula
+    underestimates the null for graphs with very large hubs. Kept for diagnostics only;
+    compute_all_metrics stores it as "R_analytic".
 
-    Observed 2-cycles: pairs (i,j) where both i→j and j→i exist.
-    In nx.simple_cycles each mutual pair contributes 2 directed cycles,
-    so observed_2cycles = 2 * number_of_mutual_pairs.
+        E[mutual_pairs] ~ ((sum_i k_i^out k_i^in)^2 - sum_i (k_i^out k_i^in)^2) / E^2
 
-    Returns float (1.0 = same as chance, >1 = more reciprocity than null).
+    Mutual pairs are counted once per pair (nx.simple_cycles also yields each mutual pair
+    as one 2-cycle).
+
+    Returns float (1.0 = same as the approximate null, >1 = more reciprocity).
     """
     E = G.number_of_edges()
     if E <= 1:

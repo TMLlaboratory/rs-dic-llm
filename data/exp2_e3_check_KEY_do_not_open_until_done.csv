@@ -1,0 +1,101 @@
+﻿id,model,word,stored,shown,filter_keep,filter_reason,filter_rule
+1,Gemma3-4B-pt,stare,"To look at someone or something for a long time in a fixed, often intense, gaze.","To look at someone or something for a long time in a fixed, often intense, gaze.",True,definition,default
+2,Gemma3-27B-pt,soloist,"A person who performs alone, especially in a musical or theatrical performance.","A person who performs alone, especially in a musical or theatrical performance.",True,definition,default
+3,Gemma3-1B-pt,unite,"To come together as one, especially in a political or social organization.","To come together as one, especially in a political or social organization.",True,definition,default
+4,Gemma3-4B-pt,suburban,"Relating to or situated in a suburban area, which is an area surrounding a city or town.","Relating to or situated in a suburban area, which is an area surrounding a city or town.",True,definition,default
+5,Gemma3-4B-pt,uneasy,Feeling anxious or uncomfortable about something.,Feeling anxious or uncomfortable about something.,True,definition,default
+6,Gemma3-1B-pt,compulsive,"Showing a strong desire to do something repeatedly, even when it is not necessary or useful.","Showing a strong desire to do something repeatedly, even when it is not necessary or useful.",True,definition,default
+7,Gemma3-1B-pt,mexican,Of or relating to Mexico or its people.,Of or relating to Mexico or its people.,True,definition,default
+8,Gemma3-4B-pt,spaced,Having a distance between things or people.,Having a distance between things or people.,True,definition,default
+9,Gemma3-27B-pt,theory,"An idea or set of ideas that is intended to explain something, especially one based on general principles rather than specific facts.","An idea or set of ideas that is intended to explain something, especially one based on general principles rather than specific facts.",True,definition,default
+10,Gemma3-12B-pt,even,Having a smooth and level surface without any irregularities or bumps.,Having a smooth and level surface without any irregularities or bumps.,True,definition,default
+11,Gemma3-27B-pt,left,The direction or position on the opposite side of the right side.,The direction or position on the opposite side of the right side.,True,definition,default
+12,Gemma3-1B-pt,theory,"An explanation of a phenomenon or event that has not been proven to be true, but is supported by a large number of observations.","An explanation of a phenomenon or event that has not been proven to be true, but is supported by a large number of observations.",True,definition,default
+13,Gemma3-12B-pt,uneasy,Feeling anxious or uncomfortable.,Feeling anxious or uncomfortable.,True,definition,default
+14,Gemma3-27B-pt,narrative,A spoken or written account of connected events; a story.,A spoken or written account of connected events; a story.,True,definition,default
+15,Gemma3-12B-pt,spokesman,A person who speaks on behalf of an organization or group.,A person who speaks on behalf of an organization or group.,True,definition,default
+16,Gemma3-27B-pt,compulsive,"Having an irresistible urge to do something, often repeatedly.","Having an irresistible urge to do something, often repeatedly.",True,definition,default
+17,Gemma3-27B-pt,wound,"An injury, especially one that is caused by a cut or a blow.","An injury, especially one that is caused by a cut or a blow.",True,definition,default
+18,Gemma3-4B-pt,left,Relating to or situated on the side opposite to the right.,Relating to or situated on the side opposite to the right.,True,definition,default
+19,Gemma3-12B-pt,stare,"To look at something with wide open eyes, often in a fixed or unblinking manner.","To look at something with wide open eyes, often in a fixed or unblinking manner.",True,definition,default
+20,Gemma3-12B-pt,righteousness,The quality of being morally right or justified.,The quality of being morally right or justified.,True,definition,default
+21,Gemma3-27B-pt,establish,"To set up or start something, such as a business, organization, or rule.","To set up or start something, such as a business, organization, or rule.",True,definition,default
+22,Gemma3-1B-pt,righteousness,The state of being morally right or acceptable to God.,The state of being morally right or acceptable to God.,True,definition,default
+23,Gemma3-4B-pt,even,Having the same amount or level on both sides or parts.,Having the same amount or level on both sides or parts.,True,definition,default
+24,Gemma3-4B-pt,consonantal,Consisting of consonants or having consonants as the main sound elements.,Consisting of consonants or having consonants as the main sound elements.,True,definition,default
+25,Gemma3-4B-pt,unite,To bring together or join as one.,To bring together or join as one.,True,definition,default
+26,Gemma3-4B-pt,tear,To pull or rip apart something with force.,To pull or rip apart something with force.,True,definition,default
+27,Gemma3-12B-pt,award,To give or present something as a prize or recognition.,To give or present something as a prize or recognition.,True,definition,default
+28,Gemma3-1B-pt,establish,To create or make something by arranging or joining parts.,To create or make something by arranging or joining parts.,True,definition,default
+29,Gemma3-4B-pt,award,To give or present something as a prize or honor.,To give or present something as a prize or honor.,True,definition,default
+30,Gemma3-1B-pt,noble,Having a high level of character or quality.,Having a high level of character or quality.,True,definition,default
+31,Gemma3-27B-pt,mexican,"Of, from, or relating to Mexico or its people.","Of, from, or relating to Mexico or its people.",True,definition,default
+32,Gemma3-27B-pt,tuberculosis,An infectious disease caused by bacteria that affects the lungs and can be spread through coughing or sneezing.,An infectious disease caused by bacteria that affects the lungs and can be spread through coughing or sneezing.,True,definition,default
+33,Gemma3-4B-pt,noble,Having high moral or ethical standards; of high social standing.,Having high moral or ethical standards; of high social standing.,True,definition,default
+34,Gemma3-1B-pt,uneasy,Feeling uneasy or worried about something or someone.,Feeling uneasy or worried about something or someone.,True,definition,default
+35,Gemma3-1B-pt,narrative,"A story or account of an event, experience, or series of events, especially one that is told in a narrative style.","A story or account of an event, experience, or series of events, especially one that is told in a narrative style.",True,definition,default
+36,Gemma3-27B-pt,spokesman,A person who speaks on behalf of a group or organization.,A person who speaks on behalf of a group or organization.,True,definition,default
+37,Gemma3-27B-pt,quarterly,Occurring or happening every three months.,Occurring or happening every three months.,True,definition,default
+38,Gemma3-1B-pt,stare,To look at someone or something with your eyes fixed on them.,To look at someone or something with your eyes fixed on them.,True,definition,default
+39,Gemma3-27B-pt,stare,To look at something or someone for a long time without blinking.,To look at something or someone for a long time without blinking.,True,definition,default
+40,Gemma3-1B-pt,tear,To cause to break or split into pieces or parts.,To cause to break or split into pieces or parts.,True,definition,default
+41,Gemma3-12B-pt,elect,To choose or select someone for a position or responsibility.,To choose or select someone for a position or responsibility.,True,definition,default
+42,Gemma3-12B-pt,spaced,Having a certain amount of space between things or people.,Having a certain amount of space between things or people.,True,definition,default
+43,Gemma3-1B-pt,even,Having the same amount of each side.,Having the same amount of each side.,True,definition,default
+44,Gemma3-4B-pt,soloist,A performer who plays or sings alone without accompaniment.,A performer who plays or sings alone without accompaniment.,True,definition,default
+45,Gemma3-12B-pt,unite,To bring together or join as one.,To bring together or join as one.,True,definition,default
+46,Gemma3-4B-pt,compulsive,Having an irresistible urge or need to do something repeatedly.,Having an irresistible urge or need to do something repeatedly.,True,definition,default
+47,Gemma3-4B-pt,spring,To jump or leap upward with a sudden movement.,To jump or leap upward with a sudden movement.,True,definition,default
+48,Gemma3-12B-pt,suburban,"Relating to or located in the suburbs, which are residential areas outside the city.","Relating to or located in the suburbs, which are residential areas outside the city.",True,definition,default
+49,Gemma3-12B-pt,noble,"Having a high moral character, worthy of admiration.","Having a high moral character, worthy of admiration.",True,definition,default
+50,Gemma3-4B-pt,frost,A layer of ice or frost crystals formed on a surface by the deposition of water vapor from the air.,A layer of ice or frost crystals formed on a surface by the deposition of water vapor from the air.,True,definition,default
+51,Gemma3-4B-pt,mexican,"Of, from, or relating to Mexico.","Of, from, or relating to Mexico.",True,definition,default
+52,Gemma3-27B-pt,award,To give or present something as a reward or recognition.,To give or present something as a reward or recognition.,True,definition,default
+53,Gemma3-12B-pt,frost,A layer of ice crystals that forms on objects when the temperature drops below freezing.,A layer of ice crystals that forms on objects when the temperature drops below freezing.,True,definition,default
+54,Gemma3-4B-pt,theory,A set of ideas or principles that explain or predict something.,A set of ideas or principles that explain or predict something.,True,definition,default
+55,Gemma3-4B-pt,elect,To choose or select someone or something for a particular position or role.,To choose or select someone or something for a particular position or role.,True,definition,default
+56,Gemma3-12B-pt,narrative,"A spoken or written account of events, experiences, or facts.","A spoken or written account of events, experiences, or facts.",True,definition,default
+57,Gemma3-27B-pt,noble,"Having high moral principles and qualities, especially those of unselfishness, honor, and courage.","Having high moral principles and qualities, especially those of unselfishness, honor, and courage.",True,definition,default
+58,Gemma3-1B-pt,spaced,In a way that is not regular or even.,In a way that is not regular or even.,True,definition,default
+59,Gemma3-4B-pt,quarterly,Occurring every three months.,Occurring every three months.,True,definition,default
+60,Gemma3-4B-pt,wound,"An injury to a body part caused by a cut, scrape, or other trauma.","An injury to a body part caused by a cut, scrape, or other trauma.",True,definition,default
+61,Gemma3-4B-pt,narrative,A spoken or written account of connected events; a story.,A spoken or written account of connected events; a story.,True,definition,default
+62,Gemma3-27B-pt,even,"Having a smooth, level surface without any irregularities or bumps.","Having a smooth, level surface without any irregularities or bumps.",True,definition,default
+63,Gemma3-12B-pt,spring,"To jump or leap upward or forward, usually with the use of elastic force.","To jump or leap upward or forward, usually with the use of elastic force.",True,definition,default
+64,Gemma3-12B-pt,establish,"To set up or create something, often a business or organization.","To set up or create something, often a business or organization.",True,definition,default
+65,Gemma3-1B-pt,wound,A break in the skin or a cut that results from a sharp object.,A break in the skin or a cut that results from a sharp object.,True,definition,default
+66,Gemma3-1B-pt,spring,"To move forward or upward, especially in a spring or a spring-like manner.","To move forward or upward, especially in a spring or a spring-like manner.",True,definition,default
+67,Gemma3-27B-pt,spaced,Having intervals or gaps between things.,Having intervals or gaps between things.,True,definition,default
+68,Gemma3-12B-pt,tear,To pull or rip something apart with force.,To pull or rip something apart with force.,True,definition,default
+69,Gemma3-27B-pt,elect,To choose or select someone for a position or office by voting.,To choose or select someone for a position or office by voting.,True,definition,default
+70,Gemma3-1B-pt,soloist,A performer who plays a musical instrument or sings solo.,A performer who plays a musical instrument or sings solo.,True,definition,default
+71,Gemma3-27B-pt,spring,"To move suddenly and quickly, especially upwards or forwards.","To move suddenly and quickly, especially upwards or forwards.",True,definition,default
+72,Gemma3-12B-pt,tuberculosis,A disease caused by bacteria that primarily affects the lungs and can lead to serious health problems if left untreated.,A disease caused by bacteria that primarily affects the lungs and can lead to serious health problems if left untreated.,True,definition,default
+73,Gemma3-27B-pt,unite,To bring together or join as one.,To bring together or join as one.,True,definition,default
+74,Gemma3-1B-pt,suburban,"Having characteristics of a city, but not in a city.","Having characteristics of a city, but not in a city.",True,definition,default
+75,Gemma3-12B-pt,soloist,A musician who performs alone without accompaniment.,A musician who performs alone without accompaniment.,True,definition,default
+76,Gemma3-12B-pt,mexican,A person or thing from Mexico or of Mexican descent.,A person or thing from Mexico or of Mexican descent.,True,definition,default
+77,Gemma3-27B-pt,consonantal,"Of or relating to consonants, the sounds produced by partially or completely stopping the flow of air through the mouth.","Of or relating to consonants, the sounds produced by partially or completely stopping the flow of air through the mouth.",True,definition,default
+78,Gemma3-12B-pt,left,The side of the body or object that is on the opposite side of the right.,The side of the body or object that is on the opposite side of the right.,True,definition,default
+79,Gemma3-27B-pt,suburban,Relating to or characteristic of a residential area located near a city but not within its boundaries.,Relating to or characteristic of a residential area located near a city but not within its boundaries.,True,definition,default
+80,Gemma3-1B-pt,consonantal,Having the sound of a consonant.,Having the sound of a consonant.,True,definition,default
+81,Gemma3-27B-pt,uneasy,Feeling anxious or uncomfortable.,Feeling anxious or uncomfortable.,True,definition,default
+82,Gemma3-4B-pt,spokesman,A person who speaks on behalf of a group or organization.,A person who speaks on behalf of a group or organization.,True,definition,default
+83,Gemma3-12B-pt,compulsive,"Having an irresistible urge to do something repeatedly, often to the point of obsession.","Having an irresistible urge to do something repeatedly, often to the point of obsession.",True,definition,default
+84,Gemma3-12B-pt,theory,An idea or set of ideas that is intended to explain something.,An idea or set of ideas that is intended to explain something.,True,definition,default
+85,Gemma3-27B-pt,righteousness,The quality of being morally right or justifiable.,The quality of being morally right or justifiable.,True,definition,default
+86,Gemma3-1B-pt,elect,Having the power to choose.,Having the power to choose.,True,definition,default
+87,Gemma3-27B-pt,tear,To pull apart or rip something by force.,To pull apart or rip something by force.,True,definition,default
+88,Gemma3-1B-pt,left,Opposite of right.,Opposite of right.,True,definition,default
+89,Gemma3-1B-pt,quarterly,Occurring or taking place every four weeks.,Occurring or taking place every four weeks.,True,definition,default
+90,Gemma3-27B-pt,frost,A thin layer of ice that forms on surfaces when the temperature drops below freezing.,A thin layer of ice that forms on surfaces when the temperature drops below freezing.,True,definition,default
+91,Gemma3-4B-pt,establish,"To set up or create something, typically a business or organization.","To set up or create something, typically a business or organization.",True,definition,default
+92,Gemma3-12B-pt,wound,An injury to a part of the body caused by violence or accident.,An injury to a part of the body caused by violence or accident.,True,definition,default
+93,Gemma3-12B-pt,consonantal,Consisting of consonants or having a consonant sound.,Consisting of consonants or having a consonant sound.,True,definition,default
+94,Gemma3-1B-pt,spokesman,A person who is given a public position to speak on behalf of someone or something.,A person who is given a public position to speak on behalf of someone or something.,True,definition,default
+95,Gemma3-4B-pt,tuberculosis,"A bacterial infection that primarily affects the lungs, causing coughing, chest pain, and weight loss.","A bacterial infection that primarily affects the lungs, causing coughing, chest pain, and weight loss.",True,definition,default
+96,Gemma3-4B-pt,righteousness,The quality of being morally right or just.,The quality of being morally right or just.,True,definition,default
+97,Gemma3-1B-pt,award,To give a prize or recognition to someone.,To give a prize or recognition to someone.,True,definition,default
+98,Gemma3-1B-pt,frost,A thin layer of ice that forms on a surface when the temperature drops below 32 degrees Fahrenheit.,A thin layer of ice that forms on a surface when the temperature drops below 32 degrees Fahrenheit.,True,definition,default
+99,Gemma3-12B-pt,quarterly,Occurring every three months.,Occurring every three months.,True,definition,default
+100,Gemma3-1B-pt,tuberculosis,A disease caused by a bacterium that is spread through the air by coughing or sneezing.,A disease caused by a bacterium that is spread through the air by coughing or sneezing.,True,definition,default

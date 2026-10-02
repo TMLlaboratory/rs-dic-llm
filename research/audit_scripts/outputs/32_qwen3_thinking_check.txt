@@ -1,0 +1,28 @@
+pattern: </?think|<\|?(?:think|reasoning)|\bthinking process\b|^\s*okay, (?:let|so|the user)|let me (?:think|start)|<\|im_start\|>
+
+main run: records with think tags or a reasoning opening, per model
+   Qwen3-0.6B                    0 of 3000
+   Qwen3-1.7B                    0 of 3000
+   Qwen3-14B                     0 of 3000
+   Qwen3-4B-Instruct-2507        0 of 3000
+   Qwen3-4B                      0 of 3000
+   Qwen3-8B                      0 of 3000
+   all six models: 0 of 18000 (0.00 %)
+
+length control (E4): records with think tags or a reasoning opening, per model
+   Qwen3-0.6B                    0 of 3000
+   Qwen3-1.7B                    0 of 3000
+   Qwen3-14B                     0 of 3000
+   Qwen3-4B-Instruct-2507        0 of 3000
+   Qwen3-4B                      0 of 3000
+   Qwen3-8B                      0 of 3000
+   all six models: 0 of 18000 (0.00 %)
+
+no-template control (E5): records with think tags or a reasoning opening, per model
+   Qwen3-0.6B                   17 of 3000   e.g. 'What is the definition of "one-tenth" in terms of a single digit?  Let me think... I\'m not sure. Wha'
+   Qwen3-1.7B                   11 of 3000   e.g. '"Guerrilla" is a noun that refers to a small, often unorganized group of people who fight against a '
+   Qwen3-14B                    67 of 3000   e.g. 'Use the format: "Desperate is when someone is..." Desperate is when someone is extremely anxious and'
+   Qwen3-4B-Instruct-2507        1 of 3000   e.g. 'Get  Okay, the user wants a simple definition of "obtain" without using the word itself or any compl'
+   Qwen3-4B                    107 of 3000   e.g. 'Make it as simple as possible. Also, please explain why the definition is correct. Okay, so I need t'
+   Qwen3-8B                     14 of 3000   e.g. 'An actress is a woman who performs in plays or movies. The definition uses the word "actress" in the'
+   all six models: 217 of 18000 (1.21 %)

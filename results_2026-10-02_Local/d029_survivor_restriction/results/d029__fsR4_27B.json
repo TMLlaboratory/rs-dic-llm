@@ -1,0 +1,89 @@
+{
+ "key": "d029__fsR4_27B",
+ "meta": {
+  "dataset": "d029",
+  "model": "fsR4_27B",
+  "kind": "fsR4",
+  "size": "27B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-27B-pt_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "9a427047275bb192faa1942b23275552dbeac034e707ecefa9c8e77fa5f61211",
+  "n_records_with_text": 1296,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "9b3e4dabe83c69f0bc04446fc42b6422ae9705dcd6624098994125dea48aad74",
+  "n_nodes": 2750,
+  "n_edges": 2658
+ },
+ "n_nodes": 2750,
+ "n_edges": 2658,
+ "observed": {
+  "kernel_ratio": 0.031636363636363636,
+  "circulation_rate": 0.00909090909090909,
+  "cycles_total": 13,
+  "cycles_2": 12,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.012807272727272728,
+  "circulation_rate": 0.002909090909090909,
+  "cycles_total": 2.53,
+  "cycles_2": 1.2,
+  "cycles_long": 0.42
+ },
+ "null_sd": {
+  "kernel_ratio": 0.009888312493390474,
+  "circulation_rate": 0.0021021830447701287,
+  "cycles_total": 1.6028412273210344,
+  "cycles_2": 0.8,
+  "cycles_long": 0.8738420909981391
+ },
+ "z": {
+  "kernel_ratio": 1.9041763619097403,
+  "circulation_rate": 2.9406659887194344,
+  "cycles_total": 6.5321504223468265,
+  "cycles_2": 13.5,
+  "cycles_long": -0.4806360374793326
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 10.0,
+ "R_ci95": [
+  8.888888888888888,
+  11.538461538461538
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 12,
+   "null_mean": 1.2
+  },
+  "3": {
+   "observed": 1,
+   "null_mean": 0.62
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.29
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.14
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.18
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.1
+  }
+ },
+ "R_analytic_rs_dic_llm": 13.264175279506604,
+ "R_complete_replicates_only": 10.0
+}

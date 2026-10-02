@@ -1,0 +1,138 @@
+split (seed 'e2-filter-split-2026-10-01'): 50 development words = 1150 rows, 50 test words = 1150 rows
+
+====================================================================================================
+ALL 100 WORDS (development words informed the rules): 2300 rows, 100 words
+====================================================================================================
+
+FIRST SENTENCE (primary): dropped 338 of 2300; true non-definitions 395
+   precision of a drop  97.6%   recall of non-definitions  83.5%   definitions wrongly dropped   0.4% (8 of 1905)   kappa vs labels 0.88
+   base models      n= 500  non-def  307  dropped  271  precision  97.0%  recall  85.7%  false drops   8  kappa 0.79
+   instruct models  n=1800  non-def   88  dropped   67  precision 100.0%  recall  76.1%  false drops   0  kappa 0.86
+
+STORED TEXT (sensitivity): dropped 338 of 2300; true non-definitions 378
+   precision of a drop  93.2%   recall of non-definitions  83.3%   definitions wrongly dropped   1.2% (23 of 1922)   kappa vs labels 0.86
+   base models      n= 500  non-def  290  dropped  271  precision  91.5%  recall  85.5%  false drops  23  kappa 0.74
+   instruct models  n=1800  non-def   88  dropped   67  precision 100.0%  recall  76.1%  false drops   0  kappa 0.86
+
+PER CLASS, first sentence (rows whose class was labeled; `inferred` rows are only in the binary tables)
+   label           n  dropped   recall   dropped with the matching reason
+   definition   1905        8     0.4%   (= false drops)
+   echo            9        8    88.9%   8 of 8
+   question       53       53   100.0%   52 of 53
+   offtopic      109       63    57.8%   16 of 63
+   restatement    74       73    98.6%   73 of 73
+   refusal         4        4   100.0%   4 of 4
+   unclear        24       16    66.7%   0 of 16
+
+PER REASON CODE, first sentence (precision: share of drops with this code that are truly non-definitions)
+   reason      drops  non-def  of the class   rules that fired
+   fragment      103      101            73   [('headword_only', 81), ('blank', 9), ('lead_in', 8), ('truncated', 4), ('non_latin_text', 1)]
+   question      120      120            52   [('question', 120)]
+   echo           76       74             8   [('task_start', 67), ('task_phrase', 7), ('instruction', 1), ('task_rule', 1)]
+   refusal         7        6             4   [('first_person', 7)]
+   offtopic       32       29            16   [('meta_usage', 19), ('first_person', 11), ('exam_marker', 2)]
+
+PER MODEL, first sentence: n / non-definitions / dropped / correct drops / false drops / missed
+   Gemma3-270M              100   73   65   65    0    8   precision 100.0%  recall  89.0%
+   Gemma3-270M-pt           100   81   63   62    1   19   precision  98.4%  recall  76.5%
+   Gemma3-1B                100    1    0    0    0    1   precision    n/a  recall   0.0%
+   Gemma3-1B-pt             100   49   43   41    2    8   precision  95.3%  recall  83.7%
+   Gemma3-4B                100    0    0    0    0    0   precision    n/a  recall    n/a
+   Gemma3-4B-pt             100   62   57   57    0    5   precision 100.0%  recall  91.9%
+   Gemma3-12B               100    0    0    0    0    0   precision    n/a  recall    n/a
+   Gemma3-12B-pt            100   54   48   45    3    9   precision  93.8%  recall  83.3%
+   Gemma3-27B               100    0    0    0    0    0   precision    n/a  recall    n/a
+   Gemma3-27B-pt            100   61   60   58    2    3   precision  96.7%  recall  95.1%
+   Qwen2.5-0.5B             100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-1.5B             100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-3B               100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-7B               100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-14B              100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-32B              100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-72B              100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-0.6B               100   13    2    2    0   11   precision 100.0%  recall  15.4%
+   Qwen3-1.7B               100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-4B                 100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-4B-Instruct-2507   100    1    0    0    0    1   precision    n/a  recall   0.0%
+   Qwen3-8B                 100    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-14B                100    0    0    0    0    0   precision    n/a  recall    n/a
+
+FALSE DROPS (first sentence; dropped, labeled definition): 8
+   [Gemma3-270M-pt frame       ] fragment/headword_only: 'Frame is a verb.'
+   [Gemma3-1B-pt   surprise    ] offtopic/meta_usage: 'For example, "surprise" can be defined as "to cause someone to be surprised."'
+   [Gemma3-1B-pt   bias        ] echo/task_phrase: 'The verb "bias" is defined as "to favor one side over another" in one short sentence.'
+   [Gemma3-12B-pt  directory   ] offtopic/first_person: 'I would say "a directory is a list of things"'
+   [Gemma3-12B-pt  y           ] offtopic/first_person: "I think it's a unit of measure."
+   [Gemma3-12B-pt  rehabilitati] fragment/headword_only: 'The noun "rehabilitation" means'
+   [Gemma3-27B-pt  send        ] echo/task_phrase: 'The answer is: The definition of the verb "send" in one short sentence is: "to cause something to go to a plac'
+   [Gemma3-27B-pt  considerable] refusal/first_person: 'I think it means "large", but I\'m not sure.'
+
+MISSED (first sentence; kept, labeled non-definition): 65
+   [Gemma3-270M    worldly     ] offtopic                        'The world is a beautiful place.'
+   [Gemma3-270M    tenth       ] offtopic                        'The tenth word in the sentence "The tenth word in the sentence is a new word" is "new".'
+   [Gemma3-270M    human       ] offtopic                        'The dog is a small, furry creature.'
+   [Gemma3-270M    thousand    ] offtopic                        'The sentence "The book is a thousand years old."'
+   [Gemma3-270M    comic       ] offtopic                        'The movie was a comedy.'
+   [Gemma3-270M    conjugate   ] offtopic                        'The dog is a fluffy dog.'
+   [Gemma3-270M    parish      ] offtopic                        'The town was a peaceful, quiet place.'
+   [Gemma3-270M    formed      ] offtopic                        'The sentence is: "The dog is a big dog."'
+   [Gemma3-270M-pt pinpoint    ] offtopic     imperative         'Pinpoint the location of a point.'
+   [Gemma3-270M-pt glare       ] offtopic     format             'The sun is shining brightly.'
+   [Gemma3-270M-pt sunlight    ] offtopic     format + wrong-wor 'The sun is a star.'
+   [Gemma3-270M-pt glad        ] offtopic                        '"The doctor said, \'It\'s time to go.\''
+   [Gemma3-270M-pt branch      ] offtopic     format             'branch of a tree'
+   [Gemma3-270M-pt devise      ] offtopic     format             'To devise a plan for a project.'
+   [Gemma3-270M-pt thousand    ] offtopic     format             'A thousand years ago, the earth was a sphere.'
+   [Gemma3-270M-pt interim     ] offtopic     wrong-word         'The government is the body of the government.'
+   [Gemma3-270M-pt port        ] offtopic                        'The "port" in the sentence is "the port".'
+   [Gemma3-270M-pt attract     ] offtopic     format             'The man who was the head of the family was the eldest son of the king.'
+   [Gemma3-270M-pt pack        ] offtopic                        'The following is a list of the most common nouns in the English language.'
+   [Gemma3-270M-pt formation   ] non-definiti                    'The form of a noun is the form of the noun itself.'
+   [Gemma3-270M-pt issue       ] offtopic                        'The following sentences are written in the first person.'
+   [Gemma3-270M-pt conjugate   ] offtopic     format             'The first verb in a sentence is conjugated to the third person singular.'
+   [Gemma3-270M-pt interchange ] non-definiti                    '"The man was a very good swimmer.'
+   [Gemma3-270M-pt draped      ] offtopic     format             "The queen's dress is draped over the king's shoulder."
+   [Gemma3-270M-pt efficient   ] non-definiti                    'In the last paragraph, the author uses a word that is not in common English, but that is very important t'
+   [Gemma3-270M-pt exploitation] offtopic     wrong-word         'A person who has been given a job by a company or organization is an employee.'
+   [Gemma3-270M-pt liston      ] offtopic                        'The list of the liston of a person, animal, or thing is called a.'
+   [Gemma3-1B      bobby       ] offtopic                        'A young man, often wearing a hat, is a popular figure.'
+   [Gemma3-1B-pt   branch      ] offtopic     format             'branch out (verb)'
+   [Gemma3-1B-pt   confirmed   ] offtopic                        'The weather is confirmed to be sunny.'
+   [Gemma3-1B-pt   birthplace  ] unclear      fragment "html"    'html'
+   [Gemma3-1B-pt   attract     ] offtopic                        'The man _ his sister.'
+   [Gemma3-1B-pt   take        ] offtopic     trailing-junk + wr 'The noun "take" can mean a number of things.'
+   [Gemma3-1B-pt   biography   ] non-definiti                    'The biography of the American writer James Fenimore Cooper, written by the American historian James Fenim'
+   [Gemma3-1B-pt   efficient   ] offtopic                        'In the last sentence, "efficient" means _.'
+   [Gemma3-1B-pt   eat         ] unclear      empty list         'The word "eat" is used in the following sentences: I ate my breakfast.'
+   [Gemma3-4B-pt   pinpoint    ] non-definiti                    'What is the value of $f(x)=2(x-3)^{2}-1$ when $x=-1 ?$'
+   [Gemma3-4B-pt   glad        ] offtopic                        'Use the following to answer question 1.'
+   [Gemma3-4B-pt   maxwell     ] offtopic     wrong-word; define 'The Maxwell equation is a set of four partial differential equations that, together, form the foundation '
+   [Gemma3-4B-pt   pink        ] offtopic                        'A noun is a person, place, thing, or idea.'
+   [Gemma3-4B-pt   conjugate   ] offtopic     wrong-word; about  'A conjugate acid is formed when a base accepts a proton from a stronger acid.'
+   [Gemma3-12B-pt  send        ] offtopic     format + trailing- 'The answer is "to transport."'
+   [Gemma3-12B-pt  awake       ] non-definiti                    'The word "awake" is an adjective, so it is used to describe a noun.'
+   [Gemma3-12B-pt  human       ] offtopic     task-meta          'The first person to give a good answer gets 10 points.'
+   [Gemma3-12B-pt  conquest    ] offtopic                        'The conquest of Mexico by Hernán Cortés in 1521 was a pivotal moment in world history.'
+   [Gemma3-12B-pt  thousand    ] offtopic     task-meta          'Scroll down for a clue and further down for the answer.'
+   [Gemma3-12B-pt  issue       ] non-definiti                    'The word "issue" has many meanings.'
+   [Gemma3-12B-pt  potato      ] echo         task-meta; reformu 'Write a program that reads in a string and outputs the definition of the string as a noun.'
+   [Gemma3-12B-pt  interchange ] non-definiti                    'In a 2009 interview with the New York Times, the writer and activist Naomi Klein said, “I think there’s a'
+   [Gemma3-12B-pt  nude        ] offtopic     task-meta          'Scroll down for a clue and further down for the answer.'
+   [Gemma3-27B-pt  maxwell     ] offtopic                        'The answer is in the question.'
+   [Gemma3-27B-pt  conquest    ] non-definiti                    'The conquest of the Aztecs by the Spanish in 1521 was a pivotal moment in history, marking the end of the'
+   [Gemma3-27B-pt  slick       ] offtopic                        'The answer to this question is a sentence that is 10 words long.'
+   [Qwen3-0.6B     glare       ] offtopic     example sentence u 'The sun glared brightly on the horizon.'
+   [Qwen3-0.6B     human       ] restatement  trivial variant "T 'The human being.'
+   [Qwen3-0.6B     flooring    ] unclear      usage-fragment; ph 'A flooring area in a building.'
+   [Qwen3-0.6B     devise      ] offtopic     imperative         'Devise a plan.'
+   [Qwen3-0.6B     wait        ] offtopic     imperative         'Wait for something.'
+   [Qwen3-0.6B     interim     ] unclear      usage-fragment; ph 'An interim period or stage in a project or activity.'
+   [Qwen3-0.6B     pack        ] unclear      usage-fragment; ph 'A pack of animals.'
+   [Qwen3-0.6B     issue       ] unclear      usage-fragment; ph 'The core issue in a debate.'
+   [Qwen3-0.6B     wear        ] offtopic     imperative         'Wear a shirt.'
+   [Qwen3-0.6B     interchange ] unclear      usage-fragment; ph 'Interchange between two things.'
+   [Qwen3-0.6B     acknowledge ] offtopic     imperative         "Acknowledge someone's actions or thoughts."
+   [Qwen3-4B-Instruct-2507 missouri    ] unclear      truncated after "A 'A U.S.'
+
+filter module hash at the test run: quality_filter.py sha256 b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b
+filter module hash now           : b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b

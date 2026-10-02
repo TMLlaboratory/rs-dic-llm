@@ -1,0 +1,37 @@
+[d034] 34 graphs x 100 replicates, 4 workers, 64 x edges accepted swaps
+[d034] 3400 replicates to run (0 already done)
+[d034]      63s  e4__Gemma3-12B               E=  4854 obs= 101 null=  1.68 R=  60.12 kept= 0.01 budget_not_met=0
+[d034]     142s  e4__Gemma3-1B                E=  4406 obs= 115 null=  1.89 R=  60.85 kept= 0.01 budget_not_met=0
+[d034]     236s  e4__Gemma3-27B               E=  5007 obs=  74 null=  1.64 R=  45.12 kept= 0.01 budget_not_met=0
+[d034]     321s  e4__Gemma3-4B                E=  4548 obs=  89 null=  1.70 R=  52.35 kept= 0.00 budget_not_met=0
+[d034]     416s  e4__Qwen2.5-0.5B             E=  4952 obs=  70 null=  1.68 R=  41.67 kept= 0.02 budget_not_met=0
+[d034]     491s  e4__Qwen2.5-1.5B             E=  4044 obs=  30 null=  0.93 R=  32.26 kept= 0.00 budget_not_met=0
+[d034]     584s  e4__Qwen2.5-14B              E=  4615 obs=  67 null=  1.35 R=  49.63 kept= 0.00 budget_not_met=0
+[d034]     666s  e4__Qwen2.5-32B              E=  4185 obs=  68 null=  1.26 R=  53.97 kept= 0.00 budget_not_met=0
+[d034]     714s  e4__Qwen2.5-3B               E=  3706 obs=  45 null=  1.16 R=  38.79 kept= 0.00 budget_not_met=0
+[d034]     797s  e4__Qwen2.5-72B              E=  4935 obs= 169 null=  2.49 R=  67.87 kept= 0.00 budget_not_met=0
+[d034]     864s  e4__Qwen2.5-7B               E=  4002 obs=  76 null=  0.94 R=  80.85 kept= 0.00 budget_not_met=0
+[d034]     935s  e4__Qwen3-0.6B               E=  3796 obs=  17 null=  0.68 R=  25.00 kept= 0.00 budget_not_met=0
+[d034]    1039s  e4__Qwen3-1.7B               E=  5266 obs=  94 null=  2.12 R=  44.34 kept= 0.01 budget_not_met=0
+[d034]    1124s  e4__Qwen3-14B                E=  4618 obs=  86 null=  1.82 R=  47.25 kept= 0.01 budget_not_met=0
+[d034]    1193s  e4__Qwen3-4B                 E=  3978 obs=  55 null=  1.25 R=  44.00 kept= 0.00 budget_not_met=0
+[d034]    1287s  e4__Qwen3-4B-Instruct-2507   E=  4754 obs=  70 null=  1.78 R=  39.33 kept= 0.00 budget_not_met=0
+[d034]    1396s  e4__Qwen3-8B                 E=  5242 obs=  69 null=  1.81 R=  38.12 kept= 0.01 budget_not_met=0
+[d034]    1521s  e5__Gemma3-12B               E=  6403 obs=  56 null=  2.17 R=  25.81 kept= 0.00 budget_not_met=0
+[d034]    1618s  e5__Gemma3-1B                E=  5024 obs=  25 null=  1.05 R=  23.81 kept= 0.00 budget_not_met=0
+[d034]    1729s  e5__Gemma3-27B               E=  6448 obs=  37 null=  1.81 R=  20.44 kept= 0.00 budget_not_met=0
+[d034]    1811s  e5__Gemma3-4B                E=  5514 obs=  49 null=  1.21 R=  40.50 kept= 0.00 budget_not_met=0
+[d034]    1880s  e5__Qwen2.5-0.5B             E=  8311 obs=  44 null=  3.33 R=  13.21 kept= 0.00 budget_not_met=0
+[d034]    1920s  e5__Qwen2.5-1.5B             E=  7474 obs=  65 null=  3.57 R=  18.21 kept= 0.00 budget_not_met=0
+[d034]    1945s  e5__Qwen2.5-14B              E=  4839 obs=  38 null=  1.20 R=  31.67 kept= 0.01 budget_not_met=0
+[d034]    1975s  e5__Qwen2.5-32B              E=  5531 obs=  58 null=  1.79 R=  32.40 kept= 0.00 budget_not_met=0
+[d034]    2003s  e5__Qwen2.5-3B               E=  5275 obs=  44 null=  1.50 R=  29.33 kept= 0.00 budget_not_met=0
+[d034]    2030s  e5__Qwen2.5-72B              E=  5168 obs=  69 null=  1.59 R=  43.40 kept= 0.00 budget_not_met=0
+[d034]    2055s  e5__Qwen2.5-7B               E=  4979 obs=  82 null=  1.50 R=  54.67 kept= 0.00 budget_not_met=0
+[d034]    2058s  e5__Qwen3-0.6B               E=   556 obs=   0 null=  0.14 R=   0.00 kept= 0.00 budget_not_met=0
+[d034]    2063s  e5__Qwen3-1.7B               E=  1033 obs=   0 null=  0.00 R=   0.00 kept= 0.00 budget_not_met=0
+[d034]    2070s  e5__Qwen3-14B                E=  1770 obs=   1 null=  0.06 R=   2.00 kept= 0.00 budget_not_met=0
+[d034]    2080s  e5__Qwen3-4B                 E=  2098 obs=   1 null=  0.08 R=   2.00 kept= 0.00 budget_not_met=0
+[d034]    2109s  e5__Qwen3-4B-Instruct-2507   E=  5446 obs=  30 null=  1.63 R=  18.40 kept= 0.01 budget_not_met=0
+[d034]    2134s  e5__Qwen3-8B                 E=  4796 obs=  22 null=  0.81 R=  27.16 kept= 0.00 budget_not_met=0
+[d034] done in 2134s -> results_2026-10-02_Local\d034_controls_double_swap

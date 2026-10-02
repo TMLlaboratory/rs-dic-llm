@@ -1,0 +1,61 @@
+{
+ "key": "main__Gemma3-12B-pt",
+ "n_nodes": 2750,
+ "n_edges": 3268,
+ "replicates": 20,
+ "observed": {
+  "kernel_ratio": 0.022545454545454546,
+  "circulation_rate": 0.0061818181818181816,
+  "cycles_total": 8,
+  "cycles_2": 7,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.011545454545454546,
+  "circulation_rate": 0.001490909090909091,
+  "cycles_total": 1.1,
+  "cycles_2": 0.7,
+  "cycles_long": 0.2
+ },
+ "null_sd": {
+  "kernel_ratio": 0.007367451312562249,
+  "circulation_rate": 0.0011721281062753598,
+  "cycles_total": 0.7681145747868608,
+  "cycles_2": 0.8426149773176359,
+  "cycles_long": 0.4
+ },
+ "z": {
+  "kernel_ratio": 1.4930536400347685,
+  "circulation_rate": 4.00204471319715,
+  "cycles_total": 8.983034857676847,
+  "cycles_2": 7.476724446621275,
+  "cycles_long": -0.5
+ },
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 7,
+   "null_mean": 0.7
+  },
+  "3": {
+   "observed": 1,
+   "null_mean": 0.1
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.1
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.15
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.05
+  }
+ },
+ "budget_not_met": 0
+}

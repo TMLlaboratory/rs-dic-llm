@@ -1,0 +1,32 @@
+{
+ "key": "main__Qwen2.5-0.5B",
+ "n_nodes": 2750,
+ "n_edges": 6999,
+ "snapshot_sha256": "45358684bb02c3bd30085f3769bcd87540e6df88cbb5e6820ba15cca1b73a9d9",
+ "observed": {
+  "cycles_2": 52
+ },
+ "null_mean": {
+  "cycles_2": 2.67
+ },
+ "null_sd": {
+  "cycles_2": 1.7381311803198285
+ },
+ "reciprocity_excess": 19.475655430711612,
+ "R_prime": 19.475655430711612,
+ "R_floor_applied": false,
+ "R_ci95": [
+  17.218543046357617,
+  22.317596566523605
+ ],
+ "R_poisson_range": [
+  14.5453510114087,
+  25.53973098909097
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0,
+ "accepted_mean": 447936,
+ "tries_mean": 463922.09
+}

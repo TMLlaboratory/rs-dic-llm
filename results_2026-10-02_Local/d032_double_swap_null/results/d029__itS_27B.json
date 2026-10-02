@@ -1,0 +1,32 @@
+{
+ "key": "d029__itS_27B",
+ "n_nodes": 2750,
+ "n_edges": 3494,
+ "snapshot_sha256": "fb23f2e03522df47edb72acf6e4488ee06584132fbe21c06d0c5427dc63a6c92",
+ "observed": {
+  "cycles_2": 15
+ },
+ "null_mean": {
+  "cycles_2": 0.53
+ },
+ "null_sd": {
+  "cycles_2": 0.6993568473962345
+ },
+ "reciprocity_excess": 28.30188679245283,
+ "R_prime": 28.30188679245283,
+ "R_floor_applied": false,
+ "R_ci95": [
+  22.388059701492537,
+  30.0
+ ],
+ "R_poisson_range": [
+  15.840351193930776,
+  46.6796582480865
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0,
+ "accepted_mean": 223616,
+ "tries_mean": 233928.17
+}

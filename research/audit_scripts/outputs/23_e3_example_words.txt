@@ -1,0 +1,19 @@
+1. THE EXAMPLES AND THE VOCABULARY (2750 lemmas)
+   book   headword in the vocabulary: yes | its definition has 3 words in the vocabulary: bound, cover, set
+   walk   headword in the vocabulary: no  | its definition has 4 words in the vocabulary: forward, front, place, steady
+   large  headword in the vocabulary: yes | its definition has 3 words in the vocabulary: average, great, size
+   headwords in the vocabulary: ['book', 'large']; all example words in the vocabulary (12): ['average', 'book', 'bound', 'cover', 'forward', 'front', 'great', 'large', 'place', 'set', 'size', 'steady']
+
+2. EDGES FROM THE EXAMPLE WORDS AND MUTUAL PAIRS THAT INVOLVE THEM (few-shot base model | matched Gemma3 instruct model)
+   Gemma3-270M E3 base: edges from the words 575 of 4475 (12.8 %); mutual pairs involving a word 2 of 11, a headword 1 | instruct: no graph
+   Gemma3-1B   E3 base: edges from the words 473 of 5465 (8.7 %); mutual pairs involving a word 4 of 29, a headword 0 | instruct: edges from the words 289 of 4448 (6.5 %); mutual pairs involving a word 4 of 34, a headword 1
+   Gemma3-4B   E3 base: edges from the words 324 of 5868 (5.5 %); mutual pairs involving a word 6 of 92, a headword 0 | instruct: edges from the words 297 of 5842 (5.1 %); mutual pairs involving a word 3 of 47, a headword 0
+   Gemma3-12B  E3 base: edges from the words 315 of 6201 (5.1 %); mutual pairs involving a word 6 of 114, a headword 0 | instruct: edges from the words 364 of 7052 (5.2 %); mutual pairs involving a word 10 of 78, a headword 1
+   Gemma3-27B  E3 base: edges from the words 335 of 6076 (5.5 %); mutual pairs involving a word 5 of 78, a headword 0 | instruct: edges from the words 443 of 7896 (5.6 %); mutual pairs involving a word 6 of 71, a headword 0
+
+   the mutual pairs of the few-shot base models that involve an example word:
+   Gemma3-270M-pt: forward-front, great-large
+   Gemma3-1B-pt: forward-steady, location-place, object-place, place-position
+   Gemma3-4B-pt: forward-front, great-high, location-place, measure-size, place-position, place-set
+   Gemma3-12B-pt: dimension-size, group-set, location-place, measure-size, place-position, place-set
+   Gemma3-27B-pt: forward-front, location-place, measure-size, place-position, place-set

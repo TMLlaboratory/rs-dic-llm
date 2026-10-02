@@ -4,6 +4,10 @@ Research question: Is reciprocity excess R a byproduct of definition verbosity
 (longer definitions reference more vocabulary words → more edges → more 2-cycles),
 or does it survive when definition length is constrained?
 
+Note (2026-10-01): R in the question is the paper's rewiring-null R (computed by
+experiments/e1_full_null.py). The value this script prints and stores is R_analytic,
+an approximation that is not comparable to the 8.9 threshold (research/RESEARCH_AUDIT.md F1).
+
 Design:
   - Models: all instruct models (same 17 as main experiment)
   - Prompt: hard word-count constraint — "in 8 words or fewer"
@@ -52,13 +56,13 @@ DEF_DIR = "data/definitions/e4_length"
 
 def _print_row(m: dict) -> None:
     display = m.get("display", m.get("model", "?"))
-    R = m.get("reciprocity_excess", 0.0)
+    R = m.get("R_analytic", m.get("reciprocity_excess", 0.0))  # old JSONs use the old key
     sr = m.get("sr_rate", 0.0)
     mean_len = m.get("mean_def_words", 0.0)
     print(
         f"  {display:22}  "
         f"edges={m.get('n_edges', 0):6}  "
-        f"R={R:6.2f}  "
+        f"R_anal={R:6.2f}  "
         f"kern={m.get('kernel_ratio', 0) * 100:.1f}%  "
         f"len={mean_len:.1f}w  "
         f"sr={sr:.0%}"
@@ -127,18 +131,18 @@ def run(smoke: bool = False, model_filter: str | None = None) -> None:
     # Summary
     print("\n" + "=" * 72)
     print("E4 SUMMARY — Length-controlled instruct models  (8-word constraint)")
-    print("Reference: main experiment R (same models, unconstrained)")
+    print("R_anal is an analytic approximation, NOT the paper's R and not comparable to 8.9 / 23.5;")
+    print("compute R with: python -m experiments.e1_full_null  (research/RESEARCH_AUDIT.md F1)")
     print("=" * 72)
-    print(f"  {'model':22}  {'R':>6}  {'kern%':>6}  {'mean_len':>8}  {'edges':>6}")
+    print(f"  {'model':22}  {'R_anal':>6}  {'kern%':>6}  {'mean_len':>8}  {'edges':>6}")
     print("  " + "-" * 62)
     for m in sorted(all_metrics, key=lambda x: (x.get("family", ""), x.get("param_b", 0))):
-        R = m.get("reciprocity_excess", 0.0)
-        tag = " ← ≥8.9" if R >= 8.9 else ""
+        R = m.get("R_analytic", m.get("reciprocity_excess", 0.0))
         print(
             f"  {m.get('display', '?'):22}  {R:6.2f}  "
             f"{m.get('kernel_ratio', 0) * 100:6.1f}  "
             f"{m.get('mean_def_words', 0):8.1f}  "
-            f"{m.get('n_edges', 0):6}{tag}"
+            f"{m.get('n_edges', 0):6}"
         )
 
     if not smoke:

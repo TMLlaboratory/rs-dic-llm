@@ -1,0 +1,91 @@
+1. R WITH ITS COUNT-BASED RANGE (default filter): observed pairs, null mean, R, 95 % Poisson range of R
+   Gemma3-1B                  obs  34  null  0.80  R  42.5   [ 29.4,  59.4]   null-only interval ['35.1', '54.0']
+   Qwen2.5-32B                obs  36  null  1.10  R  32.7   [ 22.9,  45.3]   null-only interval ['27.7', '39.1']
+   Qwen3-8B                   obs  51  null  1.74  R  29.3   [ 21.8,  38.5]   null-only interval ['25.5', '34.2']
+   Gemma3-4B                  obs  47  null  1.68  R  28.0   [ 20.6,  37.2]   null-only interval ['24.6', '32.2']
+   Gemma3-12B                 obs  78  null  3.04  R  25.7   [ 20.3,  32.0]   null-only interval ['23.2', '28.7']
+   Gemma3-27B                 obs  71  null  2.79  R  25.4   [ 19.9,  32.1]   null-only interval ['22.8', '28.7']
+   Qwen2.5-7B                 obs  80  null  3.88  R  20.6   [ 16.3,  25.7]   null-only interval ['19.3', '22.0']
+   Qwen3-14B                  obs  50  null  2.58  R  19.4   [ 14.4,  25.5]   null-only interval ['17.7', '21.3']
+   Qwen2.5-0.5B               obs  52  null  2.70  R  19.3   [ 14.4,  25.3]   null-only interval ['17.3', '21.7']
+   Qwen3-4B-Instruct-2507     obs  33  null  1.80  R  18.3   [ 12.6,  25.7]   null-only interval ['16.0', '21.3']
+   Qwen3-1.7B                 obs  53  null  3.04  R  17.4   [ 13.1,  22.8]   null-only interval ['15.7', '19.5']
+   Qwen2.5-1.5B               obs  46  null  2.68  R  17.2   [ 12.6,  22.9]   null-only interval ['15.6', '19.0']
+   wordnet                    obs  27  null  1.72  R  15.7   [ 10.3,  22.8]   null-only interval ['13.9', '17.9']
+   Qwen2.5-14B                obs  47  null  3.02  R  15.6   [ 11.4,  20.7]   null-only interval ['14.2', '17.2']
+   Qwen2.5-3B                 obs  61  null  3.93  R  15.5   [ 11.9,  19.9]   null-only interval ['14.5', '16.7']
+   Qwen3-4B                   obs  43  null  3.42  R  12.6   [  9.1,  16.9]   null-only interval ['11.7', '13.7']
+   Qwen2.5-72B                obs  82  null  6.65  R  12.3   [  9.8,  15.3]   null-only interval ['11.9', '12.7']
+   Qwen3-0.6B                 obs  17  null  1.94  R   8.8   [  5.1,  14.0]   null-only interval ['7.9', '9.8']
+   Gemma3-4B-pt               obs  11  null  1.31  R   8.4   [  4.2,  15.0]   null-only interval ['7.7', '9.1']
+   Gemma3-1B-pt               obs   3  null  0.45  R   6.0   [  1.2,  17.5]   null-only interval ['5.1', '6.0']
+   Gemma3-27B-pt              obs  14  null  2.85  R   4.9   [  2.7,   8.2]   null-only interval ['4.6', '5.3']
+   Gemma3-270M-pt             obs   4  null  1.32  R   3.0   [  0.8,   7.8]   null-only interval ['2.8', '3.3']
+   Gemma3-12B-pt              obs   7  null  3.33  R   2.1   [  0.8,   4.3]   null-only interval ['2.0', '2.2']
+
+2. MATCHED GEMMA3 PAIRS, instruct R / base R with the conservative count-based range of the ratio
+   variant     size  instruct R   base R   ratio        ratio range   range includes 2?
+   unfiltered    1B        42.5      3.1    13.9   [   5.6,    36.4]   no
+   unfiltered    4B        28.0      6.5     4.3   [   2.0,     9.5]   no
+   unfiltered   12B        25.7      5.2     4.9   [   2.4,    10.8]   no
+   unfiltered   27B        22.3      9.0     2.5   [   1.3,     4.8]   yes
+   default       1B        42.5      6.0     7.1   [   1.7,    48.0]   yes
+   default       4B        28.0      8.4     3.3   [   1.4,     8.9]   yes
+   default      12B        25.7      2.1    12.2   [   4.7,    37.9]   no
+   default      27B        25.4      4.9     5.2   [   2.4,    12.0]   no
+   strict        1B        34.9      6.0     5.8   [   1.3,    40.6]   yes
+   strict        4B        26.9      5.6     4.8   [   1.9,    13.4]   yes
+   strict       12B        25.7      2.2    11.7   [   4.5,    36.2]   no
+   strict       27B        21.4      5.6     3.8   [   1.8,     8.8]   yes
+   stored        1B        42.5      6.0     7.1   [   2.3,    27.0]   no
+   stored        4B        28.0     12.5     2.2   [   1.0,     5.6]   yes
+   stored       12B        25.7      2.6    10.0   [   4.0,    28.8]   no
+   stored       27B        21.8      6.4     3.4   [   1.6,     7.7]   yes
+   frame         1B        42.3      6.0     7.1   [   1.7,    48.0]   yes
+   frame         4B        39.0      4.0     9.7   [   4.0,    25.9]   no
+   frame        12B        24.7      1.9    12.9   [   4.9,    40.0]   no
+   frame        27B        21.9      3.3     6.7   [   3.1,    15.5]   no
+
+3. E3: few-shot base R against the instruct model of the same size, count-based ranges (default filter)
+     1B: few-shot base  22.3 [ 14.9,  32.0] (obs 29)   instruct  42.5 [ 29.4,  59.4] (obs 34)   base / instruct 0.52, range [0.25, 1.09]
+     4B: few-shot base  23.5 [ 18.9,  28.8] (obs 92)   instruct  28.0 [ 20.6,  37.2] (obs 47)   base / instruct 0.84, range [0.51, 1.40]
+    12B: few-shot base  30.9 [ 25.5,  37.1] (obs 114)   instruct  25.7 [ 20.3,  32.0] (obs 78)   base / instruct 1.20, range [0.80, 1.83]
+    27B: few-shot base  28.5 [ 22.5,  35.5] (obs 78)   instruct  25.4 [ 19.9,  32.1] (obs 71)   base / instruct 1.12, range [0.70, 1.79]
+   270M few-shot base: R 4.6 [2.3, 8.3] (obs 11); zero-shot 270M-pt default R 3.0
+
+4. MATCHED GEMMA3 PAIRS, exact conditional interval of the ratio instruct R / base R
+   variant     size  pairs i/b   ratio         95 % range   lower end below 2?
+   unfiltered    1B      34/13    13.9   [   7.1,    28.6]   no
+   unfiltered    4B      47/19     4.3   [   2.5,     7.8]   no
+   unfiltered   12B      78/16     4.9   [   2.9,     9.1]   no
+   unfiltered   27B      71/25     2.5   [   1.6,     4.1]   yes
+   default       1B       34/3     7.1   [   2.2,    36.0]   no
+   default       4B      47/11     3.3   [   1.7,     7.1]   yes
+   default      12B       78/7    12.2   [   5.7,    31.4]   no
+   default      27B      71/14     5.2   [   2.9,    10.0]   no
+   strict        1B       29/3     5.8   [   1.8,    29.9]   yes
+   strict        4B      47/10     4.8   [   2.4,    10.7]   no
+   strict       12B       78/7    11.7   [   5.4,    29.9]   no
+   strict       27B      70/14     3.8   [   2.1,     7.3]   no
+   stored        1B       34/6     7.1   [   2.9,    20.6]   no
+   stored        4B      47/13     2.2   [   1.2,     4.5]   yes
+   stored       12B       78/8    10.0   [   4.8,    23.9]   no
+   stored       27B      71/15     3.4   [   1.9,     6.4]   yes
+   frame         1B       33/3     7.1   [   2.2,    35.9]   no
+   frame         4B      46/11     9.7   [   4.9,    20.7]   no
+   frame        12B       77/7    12.9   [   6.0,    33.1]   no
+   frame        27B      70/14     6.7   [   3.7,    12.9]   no
+
+5. E3 (default filter): few-shot base R / instruct R of the same size, exact conditional interval
+     1B: pairs 29/34  base / instruct 0.52  [0.31, 0.89]
+     4B: pairs 92/47  base / instruct 0.84  [0.58, 1.22]
+    12B: pairs 114/78  base / instruct 1.20  [0.89, 1.63]
+    27B: pairs 78/71  base / instruct 1.12  [0.80, 1.57]
+
+6. E3 AS instruct R / few-shot base R (the direction of the zero-shot pairs), default filter, both interval methods
+   size pairs i/f  ratio     exact conditional (sections 4-5), inverted      conservative (sections 2-3), inverted
+     1B     34/29   1.91   [ 1.13,  3.24] excludes 1   [ 0.92,  3.98] includes 1   exact range allows instruct up to 3.24x
+     4B     47/92   1.19   [ 0.82,  1.71] includes 1   [ 0.71,  1.97] includes 1   exact range allows instruct up to 1.71x, base up to 1.22x
+    12B    78/114   0.83   [ 0.61,  1.12] includes 1   [ 0.55,  1.26] includes 1   exact range allows instruct up to 1.12x, base up to 1.63x
+    27B     71/78   0.89   [ 0.64,  1.25] includes 1   [ 0.56,  1.43] includes 1   exact range allows instruct up to 1.25x, base up to 1.57x
+   270M: few-shot base R 4.6 [2.3, 8.3] (obs 11); Gemma3-270M instruct has no cycles and no comparison (D011); the lowest of the 17 instruct models in the main run is Qwen3-0.6B, R 8.8 [5.1, 14.0]

@@ -1,0 +1,75 @@
+1. HOW OFTEN THE RULE CHANGES A RECORD (non-empty stored definitions)
+   group                     records  text differs  words removed  -> empty  words before   after
+   main instruct (18)          53921          0.7%           0.0%      0.0%          10.0    10.0
+   main base (5)               14991         47.8%          36.6%      1.0%          20.2    11.7
+   E3 few-shot (5 base)        15000          0.0%           0.0%      0.0%          10.6    10.6
+   E4 8-word cap (18)          53923          2.6%           0.3%      0.0%           6.1     6.1
+   E5 no template (18)         53768         17.1%          15.5%      0.0%          17.8    11.2
+
+   base models, share of records whose words are removed:
+     Gemma3-270M-pt    1100 of 3000 (36.7%)
+     Gemma3-1B-pt      1124 of 2998 (37.5%)
+     Gemma3-4B-pt      1281 of 3000 (42.7%)
+     Gemma3-12B-pt     1008 of 2998 (33.6%)
+     Gemma3-27B-pt      973 of 2995 (32.5%)
+
+2. WHICH PART OF THE RULE CUTS (records with words removed; one record can count in several)
+   main instruct (18)       {'lead-in joined': 0, 'cut inside the first line': 7, 'later lines dropped': 1}
+   main base (5)            {'lead-in joined': 216, 'cut inside the first line': 3751, 'later lines dropped': 1905}
+   E4 8-word cap (18)       {'lead-in joined': 0, 'cut inside the first line': 154, 'later lines dropped': 1}
+   E5 no template (18)      {'lead-in joined': 52, 'cut inside the first line': 6151, 'later lines dropped': 2958}
+
+3. CHECKS: idempotent on every stored text: True; extracted texts ending in ':' (lead-in without a next line): 611; extracted texts of 60+ words: 269 {'Gemma3-270M': 210, 'Gemma3-270M-pt': 28, 'Gemma3-12B-pt': 8, 'Gemma3-4B-pt': 7, 'Qwen2.5-0.5B': 3}
+
+4. GRAPH EDGES BEFORE -> AFTER (same vocabulary, nothing filtered)
+   base Gemma3-270M-pt              5952 ->   4215  (-29%)
+   base Gemma3-1B-pt                7040 ->   4950  (-30%)
+   base Gemma3-4B-pt                8624 ->   5298  (-39%)
+   base Gemma3-12B-pt               7719 ->   5402  (-30%)
+   base Gemma3-27B-pt               7108 ->   5006  (-30%)
+   E5 Qwen2.5-0.5B                 12499 ->   8342  (-33%)
+   E5 Qwen2.5-1.5B                 16211 ->   7522  (-54%)
+   E5 Qwen2.5-3B                    5126 ->   5089  (-1%)
+   E5 Qwen2.5-7B                    5197 ->   4994  (-4%)
+   E5 Qwen2.5-14B                   7574 ->   4956  (-35%)
+   E5 Qwen2.5-32B                   7034 ->   5593  (-20%)
+   E5 Qwen2.5-72B                   5307 ->   5225  (-2%)
+   E5 Qwen3-0.6B                    5907 ->   3754  (-36%)
+   E5 Qwen3-1.7B                    5716 ->   3449  (-40%)
+   E5 Qwen3-4B                      7323 ->   3749  (-49%)
+   E5 Qwen3-8B                      6730 ->   5641  (-16%)
+   E5 Qwen3-14B                     5841 ->   3227  (-45%)
+   E5 Gemma3-270M                   6433 ->   5927  (-8%)
+   E5 Gemma3-1B                     5037 ->   5037  (+0%)
+   E5 Gemma3-4B                     5596 ->   5572  (-0%)
+   E5 Gemma3-12B                    6434 ->   6432  (-0%)
+   E5 Gemma3-27B                    6522 ->   6457  (-1%)
+   E5 Qwen3-4B-Instruct-2507        6827 ->   5633  (-17%)
+
+5. LABELED ROWS WHOSE CONTENT THE RULE CUTS (the second pass)
+   rows: 180; by tab: {'Gemma3-270M-pt': 36, 'Gemma3-1B-pt': 33, 'Gemma3-4B-pt': 41, 'Gemma3-12B-pt': 34, 'Gemma3-27B-pt': 36}
+   first-pass label of these rows: {'definition': 56, 'echo': 73, 'offtopic': 39, 'restatement': 2, 'question': 7, 'unclear': 2, 'refusal': 1}
+   rows whose extracted text is empty: 0
+   wrote research\audit_scripts\outputs\7_second_pass_rows.csv
+
+6. TEN RANDOM CUTS IN BASE-MODEL OUTPUTS (stored text shortened)
+   [Gemma3-4B-pt] 'Define the adjective "intercontinental" in one short sentence. Use only common English words. Do not use the w'
+        -> 'Define the adjective "intercontinental" in one short sentence.'
+   [Gemma3-1B-pt] 'Define the adjective "crimson" in one short sentence. Use only common English words. Do not use the word itsel'
+        -> 'Define the adjective "crimson" in one short sentence.'
+   [Gemma3-4B-pt] 'The adjective "black" can be defined as a color that is associated with darkness, absence of light, and a lack'
+        -> 'The adjective "black" can be defined as a color that is associated with darkness, absence of light, and a lack'
+   [Gemma3-27B-pt] 'What is the name of the part of a sentence that contains the subject and the predicate?\n\nWhat is the name of t'
+        -> 'What is the name of the part of a sentence that contains the subject and the predicate?'
+   [Gemma3-270M-pt] '<strong>Answer:</strong>\n\n<strong>The verb "operate" is a transitive verb.</strong>\n\n<strong>Explanation:</str'
+        -> 'Answer: The verb "operate" is a transitive verb.'
+   [Gemma3-270M-pt] 'A. prospect\nB. prospector\nC. prospector\nD. prospect\nE. prospector\n\n1. The prospector is a person who searches '
+        -> 'prospect'
+   [Gemma3-12B-pt] 'Define the noun "cold" in one short sentence. Use only common English words. Do not use the word itself in the'
+        -> 'Define the noun "cold" in one short sentence.'
+   [Gemma3-270M-pt] 'The graph of a function is a line that passes through the point (x, y). The graph of a function is a straight '
+        -> 'The graph of a function is a line that passes through the point (x, y).'
+   [Gemma3-4B-pt] 'Define the adjective "backward" in one short sentence. Use only common English words. Do not use the word itse'
+        -> 'Define the adjective "backward" in one short sentence.'
+   [Gemma3-27B-pt] 'Define the adjective "unaware" in one short sentence. Use only common English words. Do not use the word itsel'
+        -> 'Define the adjective "unaware" in one short sentence.'

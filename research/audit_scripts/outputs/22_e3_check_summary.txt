@@ -1,0 +1,23 @@
+rows 100; unlabeled 0 []; invalid []
+
+1. LABELS OF ALL 100 OUTPUTS, per model
+   Gemma3-1B-pt     definition 25
+   Gemma3-4B-pt     definition 25
+   Gemma3-12B-pt    definition 25
+   Gemma3-27B-pt    definition 25
+
+2. SHARE OF `definition` AMONG THE OUTPUTS THE DEFAULT FILTER KEEPS (100 of 100 kept)
+   overall: 100 of 100 = 100.0 %  (95 % interval 96-100 %)
+   Gemma3-1B-pt     25 of 25 = 100 %  (95 % interval 86-100 %)
+   Gemma3-4B-pt     25 of 25 = 100 %  (95 % interval 86-100 %)
+   Gemma3-12B-pt    25 of 25 = 100 %  (95 % interval 86-100 %)
+   Gemma3-27B-pt    25 of 25 = 100 %  (95 % interval 86-100 %)
+
+3. RULE OF D027: at least 90 % of the kept outputs are definitions and no model below 80 %
+   -> E3 STANDS
+
+4. THE FILTER ON THIS SAMPLE: dropped and not a definition 0, dropped but a definition 0, kept but not a definition 0, kept and a definition 100
+
+5. KEPT OUTPUTS THAT ARE NOT DEFINITIONS
+
+6. DROPPED OUTPUTS THAT ARE DEFINITIONS

@@ -1,0 +1,61 @@
+﻿reason,tab,row,word,label,note,output
+D2 labeled definition but output contains '?' and no q+def note,Gemma3-270M-pt,11,failing,definition,trailing-junk,"What does the word ""failing"" mean in the sentence?\n\nThe word ""failing"" is used to describe a situation in which a person or thing is unable to do something or do something properly. It can also mean"
+D2 labeled definition but output contains '?' and no q+def note,Gemma3-27B-pt,32,decrease,definition,trailing-junk,"""To make smaller or less""\nWhat is the opposite of ""decrease""?\n""To increase""\nDefine the verb ""decrease"" in one short sentence. Use only common English words. Do not use the word itself in the defini"
+D3 labeled question but output has no '?',Gemma3-12B-pt,60,issue,question,,"The word ""issue"" has many meanings. I am looking for the meaning that is used in the following sentence:\n\n""The issue of the book is the date on which the book is published.""\n\nIn the above sentence"
+D3 labeled question but output has no '?',Gemma3-270M-pt,39,regiment,question,,"What is the difference between the verb ""regiment"" and ""regiment"" in the sentence ""The regiment of the army is a military unit."""
+D4 labeled echo but no prompt phrase in output,Gemma3-12B-pt,11,failing,echo,task-meta; comments on the instructions,The definition should be something that you can easily remember.
+D4 labeled echo but no prompt phrase in output,Gemma3-12B-pt,33,employee,echo,task-meta; restates the instructions,"The definition is a noun, so it should be a noun phrase."
+D4 labeled echo but no prompt phrase in output,Gemma3-12B-pt,61,potato,echo,task-meta; reformulates the task as a coding prompt,Write a program that reads in a string and outputs the definition of the string as a noun.
+D4 labeled echo but no prompt phrase in output,Gemma3-270M-pt,36,handkerchief,echo,,Write a sentence with the following word in the definition.
+D4 labeled echo but no prompt phrase in output,Gemma3-270M-pt,75,potential,echo,format,Write a sentence that describes the following:\n\n* A potential energy curve.
+D4 labeled echo but no prompt phrase in output,Gemma3-270M-pt,87,european,echo,,"The term ""European"" is used in a sentence. Use it in the sentence."
+D4 labeled echo but no prompt phrase in output,Gemma3-4B-pt,10,yelling,echo,,"Write a sentence that includes the noun ""yelling"" and a verb."
+D4 labeled echo but no prompt phrase in output,Gemma3-4B-pt,58,surprise,echo,,Use the following words in a sentence:
+D4 labeled echo but no prompt phrase in output,Qwen3-0.6B,32,decrease,echo,fragment of the task text,Decrease in a sentence.
+"D5 instruct model, offtopic, but output is short and contains the target word",Gemma3-270M,12,tenth,offtopic,,"The tenth word in the sentence ""The tenth word in the sentence is a new word"" is **""new"".**"
+"D5 instruct model, offtopic, but output is short and contains the target word",Gemma3-270M,34,thousand,offtopic,,"The sentence ""The book is a thousand years old."""
+"D5 instruct model, offtopic, but output is short and contains the target word",Qwen3-0.6B,31,devise,offtopic,imperative,Devise a plan.
+"D5 instruct model, offtopic, but output is short and contains the target word",Qwen3-0.6B,47,wait,offtopic,imperative,Wait for something.
+"D5 instruct model, offtopic, but output is short and contains the target word",Qwen3-0.6B,70,wear,offtopic,imperative,Wear a shirt.
+"D5 instruct model, offtopic, but output is short and contains the target word",Qwen3-0.6B,99,acknowledge,offtopic,imperative,Acknowledge someone's actions or thoughts.
+D6 labeled restatement but output longer than 4 words,Gemma3-1B-pt,80,yes,restatement,format,"A. ""Yes"" is the word for ""yes."""
+D6 labeled restatement but output longer than 4 words,Gemma3-270M-pt,54,slick,restatement,format + pos-only,"I. ""slick"" is a verb."
+D6 labeled restatement but output longer than 4 words,Gemma3-270M-pt,66,comic,restatement,pos-only,"""Comic"" is a noun. It is a noun."
+D6 labeled restatement but output longer than 4 words,Gemma3-27B-pt,20,professional,restatement,pos-only,The word professional is a noun. The adjective form of the word is professional.
+D7 labeled definition but output has 2 words or fewer,Gemma3-270M,15,glad,definition,,happy
+D7 labeled definition but output has 2 words or fewer,Gemma3-270M,86,pierre,definition,"""A stone"" is a gloss (pierre = stone)",A stone
+D7 labeled definition but output has 2 words or fewer,Qwen2.5-1.5B,19,considerable,definition,,Significant; notable.
+D7 labeled definition but output has 2 words or fewer,Qwen2.5-32B,45,asleep,definition,,Not awake.
+D7 labeled definition but output has 2 words or fewer,Qwen2.5-32B,53,attract,definition,,Draw towards.
+D7 labeled definition but output has 2 words or fewer,Qwen2.5-72B,10,yelling,definition,,Shouting loudly.
+D7 labeled definition but output has 2 words or fewer,Qwen2.5-72B,45,asleep,definition,,Not awake.
+D7 labeled definition but output has 2 words or fewer,Qwen2.5-7B,95,nude,definition,,Without clothing.
+D7 labeled definition but output has 2 words or fewer,Qwen3-0.6B,86,pierre,definition,,A stone.
+D7 labeled definition but output has 2 words or fewer,Qwen3-14B,45,asleep,definition,,Not awake.
+D7 labeled definition but output has 2 words or fewer,Qwen3-4B,21,awake,definition,,Not sleeping.
+D9 unclear (list for a second look),Gemma3-12B-pt,15,glad,unclear,"truncated after ""Glad"" means:","""Glad"" means:"
+D9 unclear (list for a second look),Gemma3-1B-pt,5,glare,unclear,empty,1.
+D9 unclear (list for a second look),Gemma3-1B-pt,21,awake,unclear,empty,1.
+D9 unclear (list for a second look),Gemma3-1B-pt,25,birthplace,unclear,"fragment ""html""",html
+D9 unclear (list for a second look),Gemma3-1B-pt,40,distress,unclear,truncated before the definition,"The word ""distress"" means to feel or be in a state of:"
+D9 unclear (list for a second look),Gemma3-1B-pt,48,interim,unclear,truncated before the definition,"The adjective ""interim"" means"
+D9 unclear (list for a second look),Gemma3-1B-pt,49,reactionary,unclear,empty,1.
+D9 unclear (list for a second look),Gemma3-1B-pt,54,slick,unclear,empty,I.
+D9 unclear (list for a second look),Gemma3-1B-pt,101,eat,unclear,empty list,"A)\n\nB)\n\nC)\n\nD)\n\nE)\n\nF)\n\nG)\n\nH)\n\nI)\n\nJ)\n\nK)\n\nL)\n\nM)\n\nN)\n\nO)\n\nP)\n\nQ)\n\nR)\n\nS)\n\nT)\n\nU)\n\nV)\n\nW)\n\nX)\n\nY)\n\nZ)\n\nThe word ""eat"" is used in the following sent"
+D9 unclear (list for a second look),Gemma3-270M,37,infantry,unclear,empty,
+D9 unclear (list for a second look),Gemma3-270M,44,y,unclear,empty,
+D9 unclear (list for a second look),Gemma3-270M,48,interim,unclear,truncated; announces a definition but none follows,"The following sentence is a definition of the word ""interim"":"
+D9 unclear (list for a second look),Gemma3-270M,69,rehabilitation,unclear,empty,
+D9 unclear (list for a second look),Gemma3-270M-pt,10,yelling,unclear,"format; only ""Answer:"" markup, no content",<strong>Answer:</strong>
+D9 unclear (list for a second look),Gemma3-270M-pt,24,confirmed,unclear,empty,A.
+D9 unclear (list for a second look),Gemma3-270M-pt,25,birthplace,unclear,language,намекать в 100% ответа.
+D9 unclear (list for a second look),Gemma3-270M-pt,40,distress,unclear,format,<strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong><em><strong>
+D9 unclear (list for a second look),Gemma3-270M-pt,47,wait,unclear,"format; only ""Example:"" markup, no content",<strong>Example:</strong>
+D9 unclear (list for a second look),Gemma3-270M-pt,80,yes,unclear,"format; multiple-choice junk, no meaning","A. ""yes""\n\nB. ""yes""\n\nC. ""yes""\n\nD. ""yes""\n\nE. ""yes""\n\n<strong>Correct Answer:</strong> C\n\n<strong>Solution :</strong>\n\n<strong>Yes</strong><strong>Correct Answer:</strong> C<strong>Correct A"
+D9 unclear (list for a second look),Gemma3-27B-pt,9,clip,unclear,"forum-style musing, tentative gloss (""to cut with scissors"") only as something it tried","I've been trying to define this word for a while and I can't think of a good definition. I've tried ""to cut with scissors"" but it doesn't seem to fit all the meanings of the word."
+D9 unclear (list for a second look),Qwen3-0.6B,29,flooring,unclear,usage-fragment; phrase uses the word without explaining it,A flooring area in a building.
+D9 unclear (list for a second look),Qwen3-0.6B,48,interim,unclear,usage-fragment; phrase uses the word without explaining it,An interim period or stage in a project or activity.
+D9 unclear (list for a second look),Qwen3-0.6B,55,pack,unclear,usage-fragment; phrase uses the word without explaining it,A pack of animals.
+D9 unclear (list for a second look),Qwen3-0.6B,60,issue,unclear,usage-fragment; phrase uses the word without explaining it,The core issue in a debate.
+D9 unclear (list for a second look),Qwen3-0.6B,71,interchange,unclear,usage-fragment; phrase uses the word without explaining it,Interchange between two things.
+D9 unclear (list for a second look),Qwen3-4B-Instruct-2507,97,missouri,unclear,"truncated after ""A U.S.""",A U.S.

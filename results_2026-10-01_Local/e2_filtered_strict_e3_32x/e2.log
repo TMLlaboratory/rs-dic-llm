@@ -1,0 +1,9 @@
+[e1] collecting graphs for sets ['e3'], filter strict ...
+[e1] 5 graphs x 100 replicates, 12 workers
+[e1] 500 replicates to run (0 already done)
+[e1]     139s  e3__Gemma3-12B-pt                  E=  6195 obs= 114 null=  3.86 R= 29.53 [ 27.21, 32.11] swap_fail=0/100
+[e1]     296s  e3__Gemma3-1B-pt                   E=  5465 obs=  29 null=  1.30 R= 22.31 [ 18.95, 27.36] swap_fail=0/100
+[e1]     586s  e3__Gemma3-270M-pt                 E=  4472 obs=  10 null=  2.39 R=  4.18 [  3.86,  4.52] swap_fail=0/100
+[e1]     701s  e3__Gemma3-27B-pt                  E=  6070 obs=  78 null=  2.49 R= 31.33 [ 28.16, 35.14] swap_fail=0/100
+[e1]     824s  e3__Gemma3-4B-pt                   E=  5868 obs=  92 null=  3.92 R= 23.47 [ 21.85, 25.34] swap_fail=0/100
+[e1] done in 825s -> results_2026-10-01_Local\e2_filtered_strict_e3_32x

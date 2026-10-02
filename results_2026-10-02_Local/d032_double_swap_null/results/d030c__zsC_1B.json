@@ -1,0 +1,32 @@
+{
+ "key": "d030c__zsC_1B",
+ "n_nodes": 1506,
+ "n_edges": 1809,
+ "snapshot_sha256": "dc9a2710714b184ae804e457d4f65d4d52c3f7dc2bb91b9c341b8248c7c29f68",
+ "observed": {
+  "cycles_2": 3
+ },
+ "null_mean": {
+  "cycles_2": 0.29
+ },
+ "null_sd": {
+  "cycles_2": 0.49588305072869754
+ },
+ "reciprocity_excess": 6.0,
+ "R_prime": 10.344827586206897,
+ "R_floor_applied": true,
+ "R_ci95": [
+  6.0,
+  6.0
+ ],
+ "R_poisson_range": [
+  1.237344245791203,
+  17.534546139484647
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0,
+ "accepted_mean": 115776,
+ "tries_mean": 131067.64
+}

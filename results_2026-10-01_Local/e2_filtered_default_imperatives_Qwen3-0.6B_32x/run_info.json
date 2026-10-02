@@ -1,0 +1,33 @@
+{
+ "started": "2026-10-01T17:35:29",
+ "finished": "2026-10-01T17:39:54",
+ "args": {
+  "out": "results_2026-10-01_Local/e2_filtered_default_imperatives_Qwen3-0.6B_32x",
+  "sets": [
+   "main"
+  ],
+  "reps": 100,
+  "workers": 12,
+  "nswap_mult": 32,
+  "tries_mult": 9600,
+  "only": [
+   "main__Qwen3-0.6B"
+  ],
+  "filter": "default",
+  "unit": "first_sentence",
+  "drop_imperatives": true,
+  "smoke": false
+ },
+ "git_head": "f6561effa971a3989726f55ad468f3ea13947787",
+ "python": "3.11.4",
+ "networkx": "3.6.1",
+ "cycle_bound": 7,
+ "filter": {
+  "variant": "default",
+  "unit": "first_sentence",
+  "drop_imperatives": true,
+  "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+  "quality_filter_strict_sha256": null
+ },
+ "note": "filtered graphs (default filter, unit first_sentence, fixed 2,750-lemma vocabulary); replicate seeds = sha256('e1|key|idx')[:4]"
+}

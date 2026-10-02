@@ -1,0 +1,45 @@
+{
+ "started": "2026-10-01T09:21:11",
+ "finished": "2026-10-01T10:39:45",
+ "args": {
+  "out": "results_2026-10-01_Local/e1d_null_unfiltered_32x",
+  "sets": [
+   "main"
+  ],
+  "reps": 100,
+  "workers": 12,
+  "nswap_mult": 32,
+  "tries_mult": 9600,
+  "only": [
+   "main__Qwen2.5-0.5B",
+   "main__Qwen2.5-1.5B",
+   "main__Qwen2.5-3B",
+   "main__Qwen2.5-7B",
+   "main__Qwen2.5-14B",
+   "main__Qwen2.5-32B",
+   "main__Qwen2.5-72B",
+   "main__Qwen3-0.6B",
+   "main__Qwen3-1.7B",
+   "main__Qwen3-4B",
+   "main__Qwen3-8B",
+   "main__Qwen3-14B",
+   "main__Gemma3-1B",
+   "main__Gemma3-4B",
+   "main__Gemma3-12B",
+   "main__Gemma3-27B",
+   "main__Gemma3-270M-pt",
+   "main__Gemma3-1B-pt",
+   "main__Gemma3-4B-pt",
+   "main__Gemma3-12B-pt",
+   "main__Gemma3-27B-pt",
+   "main__Qwen3-4B-Instruct-2507",
+   "main__wordnet"
+  ],
+  "smoke": false
+ },
+ "git_head": "f6561effa971a3989726f55ad468f3ea13947787",
+ "python": "3.11.4",
+ "networkx": "3.6.1",
+ "cycle_bound": 7,
+ "note": "unfiltered graphs; replicate seeds = sha256('e1|key|idx')[:4]"
+}

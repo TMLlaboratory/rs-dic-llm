@@ -1,0 +1,113 @@
+{
+ "key": "main__Gemma3-27B-pt",
+ "meta": {
+  "dataset": "main",
+  "model": "Gemma3-27B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-27B-pt_42.jsonl",
+  "source_sha256": "1dc5d42da79dd24454985e0afeba25d07b291716eb249f2a46a2dae3851308a7",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 2995,
+   "n_dropped": 1699,
+   "dropped_share": 0.5673,
+   "by_reason": {
+    "question": 1061,
+    "echo": 376,
+    "refusal": 79,
+    "offtopic": 131,
+    "fragment": 52
+   },
+   "by_rule": {
+    "question": 1061,
+    "task_start": 362,
+    "first_person": 159,
+    "meta_usage": 46,
+    "task_phrase": 7,
+    "headword_only": 39,
+    "task_rule": 3,
+    "lead_in": 8,
+    "blank": 5,
+    "prompt_span": 4,
+    "exam_marker": 5
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "2e62fc540a2493b550587a45142ded3234c78f34d67a202ecaac46d76d653b1f",
+  "n_nodes": 2750,
+  "n_edges": 2812
+ },
+ "n_nodes": 2750,
+ "n_edges": 2812,
+ "observed": {
+  "kernel_ratio": 0.03272727272727273,
+  "circulation_rate": 0.009818181818181818,
+  "cycles_total": 14,
+  "cycles_2": 14,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.015472727272727273,
+  "circulation_rate": 0.003872727272727273,
+  "cycles_total": 4.09,
+  "cycles_2": 2.85,
+  "cycles_long": 0.41
+ },
+ "null_sd": {
+  "kernel_ratio": 0.010817356729421945,
+  "circulation_rate": 0.002191719955568312,
+  "cycles_total": 1.5817395487247576,
+  "cycles_2": 1.061838029079765,
+  "cycles_long": 0.8728688332160794
+ },
+ "z": {
+  "kernel_ratio": 1.595079637857843,
+  "circulation_rate": 2.7126889684740276,
+  "cycles_total": 6.265253978121567,
+  "cycles_2": 10.500659888460648,
+  "cycles_long": -0.4697154765961315
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 4.912280701754386,
+ "R_ci95": [
+  4.57516339869281,
+  5.303030303030303
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 14,
+   "null_mean": 2.85
+  },
+  "3": {
+   "observed": 0,
+   "null_mean": 0.63
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.2
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.15
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.14
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.12
+  }
+ },
+ "R_analytic_rs_dic_llm": 18.142970179419084,
+ "R_complete_replicates_only": 4.912280701754386
+}

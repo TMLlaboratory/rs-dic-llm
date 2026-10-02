@@ -1,0 +1,61 @@
+{
+ "key": "main__Qwen2.5-32B",
+ "n_nodes": 2750,
+ "n_edges": 5104,
+ "replicates": 20,
+ "observed": {
+  "kernel_ratio": 0.06981818181818182,
+  "circulation_rate": 0.029454545454545455,
+  "cycles_total": 46,
+  "cycles_2": 36,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.04870909090909091,
+  "circulation_rate": 0.02449090909090909,
+  "cycles_total": 7.35,
+  "cycles_2": 1.5,
+  "cycles_long": 4
+ },
+ "null_sd": {
+  "kernel_ratio": 0.011778941848671304,
+  "circulation_rate": 0.008506506989183328,
+  "cycles_total": 2.4140215409146624,
+  "cycles_2": 0.9746794344808964,
+  "cycles_long": 2.5495097567963922
+ },
+ "z": {
+  "kernel_ratio": 1.7921041788207888,
+  "circulation_rate": 0.5835105255245199,
+  "cycles_total": 16.010627637297585,
+  "cycles_2": 35.396253146937816,
+  "cycles_long": -1.5689290811054724
+ },
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 36,
+   "null_mean": 1.5
+  },
+  "3": {
+   "observed": 7,
+   "null_mean": 0.7
+  },
+  "4": {
+   "observed": 3,
+   "null_mean": 1.15
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 1.35
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 1.15
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 1.5
+  }
+ },
+ "budget_not_met": 0
+}

@@ -1,0 +1,118 @@
+{
+ "key": "main__Gemma3-27B-pt",
+ "meta": {
+  "dataset": "main",
+  "model": "Gemma3-27B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-27B-pt_42.jsonl",
+  "source_sha256": "1dc5d42da79dd24454985e0afeba25d07b291716eb249f2a46a2dae3851308a7",
+  "n_records": 3000,
+  "filter": {
+   "variant": "strict",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": "c601b95bac98188ef86b884e61b2e08d4b1b2fd0a53d0836124e062df156ac20",
+   "n_records": 3000,
+   "n_valid_status": 2995,
+   "n_dropped": 1743,
+   "dropped_share": 0.582,
+   "by_reason": {
+    "question": 1061,
+    "echo": 385,
+    "offtopic": 165,
+    "refusal": 79,
+    "fragment": 53
+   },
+   "by_rule": {
+    "question": 1061,
+    "task_start": 362,
+    "strict_own_subject": 31,
+    "first_person": 159,
+    "meta_usage": 46,
+    "strict_exam_marker": 3,
+    "strict_in_sentence": 8,
+    "task_phrase": 7,
+    "headword_only": 39,
+    "task_rule": 3,
+    "lead_in": 8,
+    "blank": 5,
+    "prompt_span": 4,
+    "exam_marker": 5,
+    "strict_task_start": 1,
+    "strict_truncated": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "307b66d0396c0028225eab9f343edf8c113b302f66a7cab0dc62e713df231cb2",
+  "n_nodes": 2750,
+  "n_edges": 2700
+ },
+ "n_nodes": 2750,
+ "n_edges": 2700,
+ "observed": {
+  "kernel_ratio": 0.031636363636363636,
+  "circulation_rate": 0.009818181818181818,
+  "cycles_total": 14,
+  "cycles_2": 14,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.016698181818181817,
+  "circulation_rate": 0.004112727272727273,
+  "cycles_total": 4.01,
+  "cycles_2": 2.49,
+  "cycles_long": 0.45
+ },
+ "null_sd": {
+  "kernel_ratio": 0.010871532923151801,
+  "circulation_rate": 0.0025895888183134178,
+  "cycles_total": 2.0469245223016896,
+  "cycles_2": 0.9949371839468057,
+  "cycles_long": 0.8760707733967616
+ },
+ "z": {
+  "kernel_ratio": 1.3740639819403724,
+  "circulation_rate": 2.203227981641684,
+  "cycles_total": 4.880492607888942,
+  "cycles_2": 11.568569539577467,
+  "cycles_long": -0.5136571309818146
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 5.622489959839357,
+ "R_ci95": [
+  5.204460966542751,
+  6.086956521739131
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 14,
+   "null_mean": 2.49
+  },
+  "3": {
+   "observed": 0,
+   "null_mean": 0.68
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.39
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.17
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.18
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.1
+  }
+ },
+ "R_analytic_rs_dic_llm": 20.149874315010884,
+ "R_complete_replicates_only": 5.622489959839357
+}

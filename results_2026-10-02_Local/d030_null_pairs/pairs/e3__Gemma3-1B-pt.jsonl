@@ -1,0 +1,40 @@
+{"key": "e3__Gemma3-1B-pt", "idx": 0, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 1, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 5, "swap_failure": null, "pairs": [["measure", "small"], ["quality", "remove"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 3, "swap_failure": null, "pairs": [["idea", "leather"], ["number", "position"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 2, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 4, "swap_failure": null, "pairs": [["color", "surface"], ["drop", "object"], ["public", "tan"]], "n_pairs": 3, "stored_cycles_2": 3, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 7, "swap_failure": null, "pairs": [["age", "spray"], ["hold", "object"], ["mouth", "small"], ["place", "small"]], "n_pairs": 4, "stored_cycles_2": 4, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 6, "swap_failure": null, "pairs": [["compete", "polish"], ["destination", "mind"], ["less", "whole"], ["send", "solid"]], "n_pairs": 4, "stored_cycles_2": 4, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 8, "swap_failure": null, "pairs": [["grasp", "position"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 9, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 10, "swap_failure": null, "pairs": [["cloud", "liquid"], ["ground", "world"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 11, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 12, "swap_failure": null, "pairs": [["color", "valuable"], ["device", "search"], ["flat", "place"]], "n_pairs": 3, "stored_cycles_2": 3, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 13, "swap_failure": null, "pairs": [["apply", "element"], ["average", "forward"], ["conservative", "roof"]], "n_pairs": 3, "stored_cycles_2": 3, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 14, "swap_failure": null, "pairs": [["back", "flat"], ["circle", "forward"], ["fabric", "object"], ["ride", "top"]], "n_pairs": 4, "stored_cycles_2": 4, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 15, "swap_failure": null, "pairs": [["color", "service"], ["seed", "turn"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 17, "swap_failure": null, "pairs": [["build", "remove"], ["picture", "substance"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 18, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 16, "swap_failure": null, "pairs": [["communicate", "item"], ["gravity", "tool"], ["pale", "position"], ["small", "surface"]], "n_pairs": 4, "stored_cycles_2": 4, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 19, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 23, "swap_failure": null, "pairs": [["cold", "top"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 20, "swap_failure": null, "pairs": [["behave", "god"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 22, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 21, "swap_failure": null, "pairs": [["material", "turn"], ["phrase", "place"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 24, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 26, "swap_failure": null, "pairs": [["allow", "heart"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 25, "swap_failure": null, "pairs": [["processed", "warrior"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 27, "swap_failure": null, "pairs": [["jersey", "place"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 28, "swap_failure": null, "pairs": [["place", "position"], ["time", "valid"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 31, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 29, "swap_failure": null, "pairs": [["big", "substance"], ["people", "place"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 30, "swap_failure": null, "pairs": [["emotional", "substance"], ["neck", "tan"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 32, "swap_failure": null, "pairs": [["open", "wash"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 33, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 34, "swap_failure": null, "pairs": [["color", "people"], ["element", "true"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 35, "swap_failure": null, "pairs": [["process", "start"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 37, "swap_failure": null, "pairs": [["crack", "curve"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 36, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 38, "swap_failure": null, "pairs": [["light", "well"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "e3__Gemma3-1B-pt", "idx": 39, "swap_failure": null, "pairs": [["divide", "top"], ["front", "place"], ["house", "variety"], ["star", "water"]], "n_pairs": 4, "stored_cycles_2": 4, "matches_stored": true}

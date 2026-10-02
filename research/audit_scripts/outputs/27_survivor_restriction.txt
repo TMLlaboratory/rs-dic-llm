@@ -1,0 +1,105 @@
+1. R OF THE RESTRICTED GRAPHS (default filter, first sentence; 100 replicates, 32 x edges swaps)
+   R = observed mutual pairs / max(null mean, 0.5); range = exact 95 % Poisson range of the observed count over the same denominator
+
+   size graph                   edges  obs   null      R           range
+     1B zero-shot (primary)      3249    3   0.45    6.0     [1.2, 17.5]  (floor)
+     1B whole E3 (primary)       5465   29   1.30   22.3    [14.9, 32.0]
+     1B whole instruct (primary)   4448   34   0.80   42.5    [29.4, 59.4]
+     1B fsS: E3 in S             2968    6   1.11    5.4     [2.0, 11.8]
+     1B fsR1: E3, random set     2913    9   1.44    6.2     [2.9, 11.9]
+     1B fsR2: E3, random set     2908    7   1.05    6.7     [2.7, 13.7]
+     1B fsR3: E3, random set     2954    8   0.71   11.3     [4.9, 22.2]
+     1B fsR4: E3, random set     2891    4   0.87    4.6     [1.3, 11.8]
+     1B fsR5: E3, random set     2919   10   0.93   10.8     [5.2, 19.8]
+     1B itS: instruct in S       2417    9   3.05    3.0      [1.3, 5.6]
+
+     4B zero-shot (primary)      2904   11   1.31    8.4     [4.2, 15.0]
+     4B whole E3 (primary)       5868   92   3.92   23.5    [18.9, 28.8]
+     4B whole instruct (primary)   5842   47   1.68   28.0    [20.6, 37.2]
+     4B fsS: E3 in S             2658   18   2.91    6.2      [3.7, 9.8]
+     4B fsR1: E3, random set     2569   15   6.00    2.5      [1.4, 4.1]
+     4B fsR2: E3, random set     2580   23   6.21    3.7      [2.3, 5.6]
+     4B fsR3: E3, random set     2712   16   1.84    8.7     [5.0, 14.1]
+     4B fsR4: E3, random set     2624   18   4.91    3.7      [2.2, 5.8]
+     4B fsR5: E3, random set     2640   12   4.50    2.7      [1.4, 4.7]
+     4B itS: instruct in S       2640   12   2.66    4.5      [2.3, 7.9]
+
+    12B zero-shot (primary)      3268    7   3.33    2.1      [0.8, 4.3]
+    12B whole E3 (primary)       6201  114   3.69   30.9    [25.5, 37.1]
+    12B whole instruct (primary)   7052   78   3.04   25.7    [20.3, 32.0]
+    12B fsS: E3 in S             3240   21   6.29    3.3      [2.1, 5.1]
+    12B fsR1: E3, random set     3191   22   3.50    6.3      [3.9, 9.5]
+    12B fsR2: E3, random set     3115   26   5.48    4.7      [3.1, 7.0]
+    12B fsR3: E3, random set     3131   27   7.29    3.7      [2.4, 5.4]
+    12B fsR4: E3, random set     3161   25   5.61    4.5      [2.9, 6.6]
+    12B fsR5: E3, random set     3171   40   6.45    6.2      [4.4, 8.4]
+    12B itS: instruct in S       3690   17   2.68    6.3     [3.7, 10.2]
+
+    27B zero-shot (primary)      2812   14   2.85    4.9      [2.7, 8.2]
+    27B whole E3 (primary)       6076   78   2.74   28.5    [22.5, 35.5]
+    27B whole instruct (primary)   7896   71   2.79   25.4    [19.9, 32.1]
+    27B fsS: E3 in S             2795   21   3.71    5.7      [3.5, 8.7]
+    27B fsR1: E3, random set     2656   13   1.32    9.8     [5.2, 16.8]
+    27B fsR2: E3, random set     2672   12   6.34    1.9      [1.0, 3.3]
+    27B fsR3: E3, random set     2655   12   5.04    2.4      [1.2, 4.2]
+    27B fsR4: E3, random set     2658   12   1.20   10.0     [5.2, 17.5]
+    27B fsR5: E3, random set     2697   16   2.33    6.9     [3.9, 11.2]
+    27B itS: instruct in S       3494   15   1.70    8.8     [4.9, 14.6]
+
+2. THE READING OF D029 (b), applied to the point estimates
+   size  R zero-shot  R whole E3   g(s)   R fsS  smallest fsRk    range of fsS  <= g  < min fsRk  g in range   per-size reading
+     1B          6.0        22.3   11.6     5.4            4.6     [2.0, 11.8]   yes          no         yes   neither
+     4B          8.4        23.5   14.0     6.2            2.5      [3.7, 9.8]   yes          no          no   neither
+    12B          2.1        30.9    8.1     3.3            3.7      [2.1, 5.1]   yes         yes          no   explains
+    27B          4.9        28.5   11.8     5.7            1.9      [3.5, 8.7]   yes          no          no   neither
+   sizes that satisfy 'explains' (R fsS <= g and below the smallest fsRk): 1 of 4; 'does not explain' (R fsS > g and not below it): 0 of 4
+   sizes at which the exact range of R(fsS) contains g(s): 1 of 4 (the reading itself uses the point estimates)
+   -> MIXED
+
+3. WHAT A RESTRICTION TO THE SURVIVORS DOES TO THE OTHER GRAPHS (no reading of its own)
+   size  R whole instruct   R itS  itS / whole  R whole E3   R fsS  fsS / whole  fsR mean  fsR / whole
+     1B              42.5     3.0         0.07        22.3     5.4         0.24       7.9         0.35
+     4B              28.0     4.5         0.16        23.5     6.2         0.26       4.2         0.18
+    12B              25.7     6.3         0.25        30.9     3.3         0.11       5.1         0.16
+    27B              25.4     8.8         0.35        28.5     5.7         0.20       6.2         0.22
+
+4. FLAGS
+   graphs with null mean below the floor of 0.5, swap failures, or other than 100 replicates: none
+
+5. AT EQUAL COVERAGE (added after sections 1-4 had been read; not part of D029)
+   The zero-shot graph, fsS and itS are built from the same entries of the word list (the survivors S), so their R can be compared directly.
+   size  entries    with text: zero-shot / fsS / itS
+     1B     1580                  1580 / 1580 / 1580
+     4B     1322                  1322 / 1322 / 1322
+    12B     1503                  1503 / 1503 / 1503
+    27B     1296                  1296 / 1295 / 1294
+
+   size   zero-shot R (obs)     fsS R (obs)     itS R (obs)              itS / zero-shot           fsS / zero-shot                 itS / fsS
+     1B             6.0 (3)         5.4 (6)         3.0 (9)         0.49 [ 0.12,   2.82]      0.90 [ 0.19,   5.57]      0.55 [ 0.17,   1.86]
+     4B            8.4 (11)        6.2 (18)        4.5 (12)         0.54 [ 0.22,   1.34]      0.74 [ 0.33,   1.73]      0.73 [ 0.32,   1.60]
+    12B             2.1 (7)        3.3 (21)        6.3 (17)         3.02 [ 1.19,   8.61]      1.59 [ 0.65,   4.42]      1.90 [ 0.94,   3.78]
+    27B            4.9 (14)        5.7 (21)        8.8 (15)         1.80 [ 0.81,   4.02]      1.15 [ 0.56,   2.45]      1.56 [ 0.75,   3.17]
+   exact ranges that include 1: itS / zero-shot 3 of 4, fsS / zero-shot 4 of 4, itS / fsS 4 of 4
+
+   For comparison, the whole graphs (Table 4 and Table 5 of the draft): instruct R / zero-shot R, and whole instruct R / whole E3 R
+     1B  whole instruct / zero-shot  7.08 [ 2.23,  36.05]    whole instruct / whole E3  1.91 [ 1.13,  3.24]
+     4B  whole instruct / zero-shot  3.33 [ 1.70,   7.12]    whole instruct / whole E3  1.19 [ 0.82,  1.71]
+    12B  whole instruct / zero-shot 12.21 [ 5.65,  31.36]    whole instruct / whole E3  0.83 [ 0.61,  1.12]
+    27B  whole instruct / zero-shot  5.18 [ 2.89,   9.95]    whole instruct / whole E3  0.89 [ 0.64,  1.25]
+
+   Share of the whole graph's mutual pairs and null mean that remain in fsS (the observed pairs need both words defined):
+     1B  entries kept 0.527 (squared 0.277); observed pairs 29 -> 6 (x0.21); null mean 1.30 -> 1.11 (x0.85); R 22.3 -> 5.4
+     4B  entries kept 0.441 (squared 0.194); observed pairs 92 -> 18 (x0.20); null mean 3.92 -> 2.91 (x0.74); R 23.5 -> 6.2
+    12B  entries kept 0.501 (squared 0.251); observed pairs 114 -> 21 (x0.18); null mean 3.69 -> 6.29 (x1.70); R 30.9 -> 3.3
+    27B  entries kept 0.432 (squared 0.187); observed pairs 78 -> 21 (x0.27); null mean 2.74 -> 3.71 (x1.35); R 28.5 -> 5.7
+
+6. RATIOS TO THE WHOLE-LIST R USED IN THE DRAFT (added after an outside review of draft v1; descriptive, not part of D029)
+   v1 said 'between 0.07 and 0.35 of its whole-list value, whichever half'; the figures below are the ones the draft v2 states
+
+   size  whole few-shot R  survivors    single random halves (5)  max / min of the halves  instruct survivors / whole
+     1B              22.3       0.24                0.21 to 0.51                      2.5                        0.07
+     4B              23.5       0.26                0.11 to 0.37                      3.5                        0.16
+    12B              30.9       0.11                0.12 to 0.20                      1.7                        0.25
+    27B              28.5       0.20                0.07 to 0.35                      5.3                        0.35
+
+   few-shot graph on the survivors: 0.11-0.26 of its whole-list R; mean of the five random halves: 0.16-0.35; instruct graph on the survivors: 0.07-0.35; the 20 single random halves: 0.07-0.51

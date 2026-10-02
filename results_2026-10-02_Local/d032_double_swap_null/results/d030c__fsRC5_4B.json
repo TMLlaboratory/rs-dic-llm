@@ -1,0 +1,32 @@
+{
+ "key": "d030c__fsRC5_4B",
+ "n_nodes": 1265,
+ "n_edges": 1109,
+ "snapshot_sha256": "015dd5ccd3f7b2a38cdff3ea37658fff532afd57d2756fe3c63c2a9fc2d044d4",
+ "observed": {
+  "cycles_2": 21
+ },
+ "null_mean": {
+  "cycles_2": 0.39
+ },
+ "null_sd": {
+  "cycles_2": 0.6617401302626281
+ },
+ "reciprocity_excess": 42.0,
+ "R_prime": 53.84615384615385,
+ "R_floor_applied": true,
+ "R_ci95": [
+  39.62264150943396,
+  42.0
+ ],
+ "R_poisson_range": [
+  25.998661968152376,
+  64.20146146988681
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0,
+ "accepted_mean": 70976,
+ "tries_mean": 73754.72
+}

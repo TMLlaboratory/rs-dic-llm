@@ -1,0 +1,13 @@
+# Recorded output of 4_analytic_factor_check.py, 2026-10-01
+# analytic_code = expected mutual pairs as coded; analytic_half = with the missing factor 1/2 (unordered pairs)
+graph                   obs null_emp analytic_code analytic_half  R_emp R_code   R_2x
+main__Gemma3-27B         71     3.35          6.31          3.16   21.2   11.2   22.5
+main__Gemma3-27B-pt      25     3.65          4.83          2.41    6.8    5.2   10.4
+main__Gemma3-4B-pt       19     2.85          5.74          2.87    6.7    3.3    6.6
+main__Gemma3-4B          47     2.20          3.23          1.62   21.4   14.5   29.1
+main__Qwen2.5-72B        82     7.30          3.04          1.52   11.2   27.0   54.0
+main__wordnet            27     2.50          2.87          1.44   10.8    9.4   18.8
+e3__Gemma3-27B-pt        78     5.40          4.28          2.14   14.4   18.2   36.4
+e4__Gemma3-27B           74     2.20          3.31          1.65   33.6   22.4   44.8
+e5__Qwen3-0.6B            4     3.15          5.74          2.87    1.3    0.7    1.4
+# Reading: doubling R_code does not recover R_emp (Qwen2.5-72B: 54 vs 11; E3 27B-pt: 36 vs 14).

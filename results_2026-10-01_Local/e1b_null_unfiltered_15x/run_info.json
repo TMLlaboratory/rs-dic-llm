@@ -1,0 +1,21 @@
+{
+ "started": "2026-10-01T07:09:34",
+ "finished": "2026-10-01T08:27:36",
+ "args": {
+  "out": "results_2026-10-01_Local/e1b_null_unfiltered_15x",
+  "sets": [
+   "main"
+  ],
+  "reps": 100,
+  "workers": 6,
+  "nswap_mult": 15,
+  "tries_mult": 300,
+  "only": null,
+  "smoke": false
+ },
+ "git_head": "f6561effa971a3989726f55ad468f3ea13947787",
+ "python": "3.11.4",
+ "networkx": "3.6.1",
+ "cycle_bound": 7,
+ "note": "unfiltered graphs; replicate seeds = sha256('e1|key|idx')[:4]"
+}

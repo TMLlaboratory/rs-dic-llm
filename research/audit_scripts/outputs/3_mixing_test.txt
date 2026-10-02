@@ -1,0 +1,10 @@
+# Recorded output of 3_mixing_test.py, 2026-10-01 (12 replicates per cell)
+graph, nswap_mult, K, observed_pairs, null_mean, null_sd, swap_failures, seconds
+main__Gemma3-27B 2 12 71 4.83 2.15 0 29
+main__Gemma3-27B 5 12 71 3.42 1.44 0 73
+main__Gemma3-27B 15 12 71 3 1.78 0 222
+main__Qwen2.5-72B 2 12 82 11.92 1.5 0 20
+main__Qwen2.5-72B 5 12 82 7.33 1.65 0 51
+main__Qwen2.5-72B 15 12 82 6.67 1.11 0 150
+# Reading: the null mean keeps falling from 2E to 5E to 15E. From 5E to 15E the drop is ~12% (Gemma3-27B) and ~9% (Qwen2.5-72B),
+# about 1-1.5 standard errors at K=12, so unconfirmed. If real, R at 5E is slightly understated (conservative).

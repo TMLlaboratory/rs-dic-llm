@@ -1,0 +1,32 @@
+{
+ "key": "d029__fsR2_1B",
+ "n_nodes": 2750,
+ "n_edges": 2908,
+ "snapshot_sha256": "5bb6fe0f0d56f78bcdfa74eed54856b44a0782115cb9a871d070fd174538ddc3",
+ "observed": {
+  "cycles_2": 7
+ },
+ "null_mean": {
+  "cycles_2": 0.31
+ },
+ "null_sd": {
+  "cycles_2": 0.542125446737192
+ },
+ "reciprocity_excess": 14.0,
+ "R_prime": 22.580645161290324,
+ "R_floor_applied": true,
+ "R_ci95": [
+  14.0,
+  14.0
+ ],
+ "R_poisson_range": [
+  5.628726103039734,
+  28.845350723404753
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0,
+ "accepted_mean": 186112,
+ "tries_mean": 194049.9
+}

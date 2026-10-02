@@ -1,0 +1,47 @@
+second-pass rows 58; unlabeled 0 []; invalid []
+
+1. ROWS LABELED `definition` IN THE FIRST PASS AND CUT BY THE RULE (n=56)
+   still `definition` on the first sentence alone: 39 (69.6%); changed: 17
+   where they went: {'question': 12, 'offtopic': 2, 'restatement': 3}
+   by first-pass note tag (rows / still definition):
+     (no note)                   25 /  25
+     q+def                        8 /   0
+     format                       7 /   4
+     trailing-junk                5 /   4
+     q+def + format               3 /   0
+     format + trailing-junk       3 /   2
+     wrong-pos                    2 /   2
+     trailing-junk + wrong-pos    1 /   0
+     echo+def                     1 /   1
+     several senses given         1 /   1
+   by model (rows / still definition):
+     Gemma3-12B-pt     16 /   9
+     Gemma3-1B-pt      15 /  12
+     Gemma3-270M-pt    11 /   9
+     Gemma3-27B-pt      8 /   4
+     Gemma3-4B-pt       6 /   5
+   changed rows:
+     id  2 [Gemma3-12B-pt row 79, humanism] -> question: 'What is the best way to define humanism?'
+     id  3 [Gemma3-1B-pt row 56, take] -> offtopic: 'The noun "take" can mean a number of things.'
+     id  9 [Gemma3-27B-pt row 37, infantry] -> question: 'Which of the following is the best definition of "infantry"?'
+     id 10 [Gemma3-27B-pt row 79, humanism] -> question: 'What is the meaning of the word "humanism" in this context?'
+     id 11 [Gemma3-12B-pt row 4, pinpoint] -> question: 'What is the definition of the word "pinpoint"?'
+     id 14 [Gemma3-1B-pt row 13, bobby] -> question: 'What is the meaning of the word "bobby"?'
+     id 18 [Gemma3-270M-pt row 9, clip] -> restatement: '"clip"'
+     id 20 [Gemma3-12B-pt row 81, counterpoint] -> question: 'What is the meaning of the word "counterpoint" as it is used in paragraph 1?'
+     id 21 [Gemma3-270M-pt row 11, failing] -> question: 'What does the word "failing" mean in the sentence?'
+     id 26 [Gemma3-4B-pt row 54, slick] -> question: 'In one sentence, describe how you would define the word "slick."'
+     id 33 [Gemma3-1B-pt row 51, contest] -> question: 'What is the correct spelling of the word "contest"?'
+     id 38 [Gemma3-27B-pt row 12, tenth] -> question: 'What is the meaning of the word "tenth"?'
+     id 40 [Gemma3-12B-pt row 62, string] -> question: 'What is a string?'
+     id 46 [Gemma3-12B-pt row 74, midnight] -> restatement: 'midnight'
+     id 53 [Gemma3-12B-pt row 9, clip] -> restatement: 'Clip (verb)'
+     id 54 [Gemma3-12B-pt row 7, send] -> offtopic: 'The answer is "to transport."'
+     id 57 [Gemma3-27B-pt row 62, string] -> question: 'What is the definition of the word "string"?'
+   first-pass `unclear` rows now: {'Gemma3-27B-pt clip': 'refusal', 'Gemma3-270M-pt yes': 'restatement'}
+
+2. VALIDATION SET FOR THE FIRST-SENTENCE UNIT
+   2300 rows by source: {'first_pass': 2120, 'second_pass': 58, 'inferred': 122}
+   share `definition`, base models: whole output 42.0% -> first sentence 38.6%
+   share `definition`, all others: whole output 95.1% -> first sentence 95.1%
+   wrote research\audit_scripts\outputs\11_unit_a_validation_set.csv

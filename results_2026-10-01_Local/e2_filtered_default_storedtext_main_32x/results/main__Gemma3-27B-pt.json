@@ -1,0 +1,113 @@
+{
+ "key": "main__Gemma3-27B-pt",
+ "meta": {
+  "dataset": "main",
+  "model": "Gemma3-27B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-27B-pt_42.jsonl",
+  "source_sha256": "1dc5d42da79dd24454985e0afeba25d07b291716eb249f2a46a2dae3851308a7",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "stored",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 2995,
+   "n_dropped": 1699,
+   "dropped_share": 0.5673,
+   "by_reason": {
+    "question": 1061,
+    "echo": 376,
+    "refusal": 79,
+    "offtopic": 131,
+    "fragment": 52
+   },
+   "by_rule": {
+    "question": 1061,
+    "task_start": 362,
+    "first_person": 159,
+    "meta_usage": 46,
+    "task_phrase": 7,
+    "headword_only": 39,
+    "task_rule": 3,
+    "lead_in": 8,
+    "blank": 5,
+    "prompt_span": 4,
+    "exam_marker": 5
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "5f64740a28a6be75f02e56e64b80ff3ab149b79cbe21a57aa9a86b75b2a4a4d4",
+  "n_nodes": 2750,
+  "n_edges": 3440
+ },
+ "n_nodes": 2750,
+ "n_edges": 3440,
+ "observed": {
+  "kernel_ratio": 0.040363636363636365,
+  "circulation_rate": 0.010545454545454545,
+  "cycles_total": 15,
+  "cycles_2": 15,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.02438181818181818,
+  "circulation_rate": 0.004850909090909091,
+  "cycles_total": 4.05,
+  "cycles_2": 2.34,
+  "cycles_long": 0.68
+ },
+ "null_sd": {
+  "kernel_ratio": 0.01654744243802254,
+  "circulation_rate": 0.0031835195451284538,
+  "cycles_total": 1.8674849396983098,
+  "cycles_2": 0.9921693403849969,
+  "cycles_long": 1.0759182125050213
+ },
+ "z": {
+  "kernel_ratio": 0.9658180254548177,
+  "circulation_rate": 1.7887578115420937,
+  "cycles_total": 5.863501100988242,
+  "cycles_2": 12.759918579108149,
+  "cycles_long": -0.6320183003657692
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 6.410256410256411,
+ "R_ci95": [
+  5.905511811023622,
+  6.976744186046512
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 15,
+   "null_mean": 2.34
+  },
+  "3": {
+   "observed": 0,
+   "null_mean": 0.7
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.33
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.24
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.2
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.24
+  }
+ },
+ "R_analytic_rs_dic_llm": 12.302705439114902,
+ "R_complete_replicates_only": 6.410256410256411
+}

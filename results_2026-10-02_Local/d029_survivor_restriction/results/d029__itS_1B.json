@@ -1,0 +1,89 @@
+{
+ "key": "d029__itS_1B",
+ "meta": {
+  "dataset": "d029",
+  "model": "itS_1B",
+  "kind": "itS",
+  "size": "1B",
+  "records_from": "it",
+  "source": "data/definitions/Gemma3-1B_42.jsonl",
+  "n_entries_in_set": 1580,
+  "set_sha256": "d4f7eba7beccdfb0d054a354a8a18a54dc0a352bed8f31e29fe2a2fd0d652646",
+  "n_records_with_text": 1580,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "3e87d5bc5d93bd91ea2e92866c4e46105bf7b88230d46abef00d400bb3016a0b",
+  "n_nodes": 2750,
+  "n_edges": 2417
+ },
+ "n_nodes": 2750,
+ "n_edges": 2417,
+ "observed": {
+  "kernel_ratio": 0.015272727272727273,
+  "circulation_rate": 0.007272727272727273,
+  "cycles_total": 11,
+  "cycles_2": 9,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.007450909090909091,
+  "circulation_rate": 0.0034981818181818182,
+  "cycles_total": 4.22,
+  "cycles_2": 3.05,
+  "cycles_long": 0.18
+ },
+ "null_sd": {
+  "kernel_ratio": 0.003990565733831866,
+  "circulation_rate": 0.00130279293116274,
+  "cycles_total": 1.3753544997563356,
+  "cycles_2": 1.0805091392487154,
+  "cycles_long": 0.3841874542459709
+ },
+ "z": {
+  "kernel_ratio": 1.9600775187099668,
+  "circulation_rate": 2.897271979497679,
+  "cycles_total": 4.9296381414400265,
+  "cycles_2": 5.506663279254696,
+  "cycles_long": -0.4685212856658182
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 2.9508196721311477,
+ "R_ci95": [
+  2.7522935779816513,
+  3.1690140845070425
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 9,
+   "null_mean": 3.05
+  },
+  "3": {
+   "observed": 2,
+   "null_mean": 0.73
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.26
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.14
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.02
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.02
+  }
+ },
+ "R_analytic_rs_dic_llm": 15.199240804050435,
+ "R_complete_replicates_only": 2.9508196721311477
+}

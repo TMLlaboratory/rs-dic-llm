@@ -1,0 +1,32 @@
+{
+ "key": "d030c__itC_12B",
+ "n_nodes": 1434,
+ "n_edges": 1572,
+ "snapshot_sha256": "3f6223d81cda22b31a1fbef28425f6807b05feffb2f9015aed73d666e7c88845",
+ "observed": {
+  "cycles_2": 19
+ },
+ "null_mean": {
+  "cycles_2": 0.5
+ },
+ "null_sd": {
+  "cycles_2": 0.6557438524302001
+ },
+ "reciprocity_excess": 38.0,
+ "R_prime": 38.0,
+ "R_floor_applied": false,
+ "R_ci95": [
+  30.158730158730158,
+  38.0
+ ],
+ "R_poisson_range": [
+  22.87848232873347,
+  59.34170714317118
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0.02,
+ "accepted_mean": 100608,
+ "tries_mean": 105014.56
+}

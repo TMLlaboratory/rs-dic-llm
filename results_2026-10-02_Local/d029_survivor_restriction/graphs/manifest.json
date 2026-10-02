@@ -1,0 +1,534 @@
+{
+ "d029__fsS_1B": {
+  "dataset": "d029",
+  "model": "fsS_1B",
+  "kind": "fsS",
+  "size": "1B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-1B-pt_42.jsonl",
+  "n_entries_in_set": 1580,
+  "set_sha256": "d4f7eba7beccdfb0d054a354a8a18a54dc0a352bed8f31e29fe2a2fd0d652646",
+  "n_records_with_text": 1580,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "595329f05f9de154920dc8e34c8265e2a70017a73d5ef40a49afdbc17795c097",
+  "n_nodes": 2750,
+  "n_edges": 2968
+ },
+ "d029__itS_1B": {
+  "dataset": "d029",
+  "model": "itS_1B",
+  "kind": "itS",
+  "size": "1B",
+  "records_from": "it",
+  "source": "data/definitions/Gemma3-1B_42.jsonl",
+  "n_entries_in_set": 1580,
+  "set_sha256": "d4f7eba7beccdfb0d054a354a8a18a54dc0a352bed8f31e29fe2a2fd0d652646",
+  "n_records_with_text": 1580,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "3e87d5bc5d93bd91ea2e92866c4e46105bf7b88230d46abef00d400bb3016a0b",
+  "n_nodes": 2750,
+  "n_edges": 2417
+ },
+ "d029__fsR1_1B": {
+  "dataset": "d029",
+  "model": "fsR1_1B",
+  "kind": "fsR1",
+  "size": "1B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-1B-pt_42.jsonl",
+  "n_entries_in_set": 1580,
+  "set_sha256": "6c516ad3db59f57b46433093aa45b48626c302b6fa5d6b941b3d9ac9dd0564b8",
+  "n_records_with_text": 1580,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "8be75663407a733c20fffb5ace3d4dd07d1777ce5ec86ce05e126cd38f73ec60",
+  "n_nodes": 2750,
+  "n_edges": 2913
+ },
+ "d029__fsR2_1B": {
+  "dataset": "d029",
+  "model": "fsR2_1B",
+  "kind": "fsR2",
+  "size": "1B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-1B-pt_42.jsonl",
+  "n_entries_in_set": 1580,
+  "set_sha256": "edc12e4196fa121f104a5a1d215d8bfbacd4f480ca668c88b0922e26f8b89e4f",
+  "n_records_with_text": 1580,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "5bb6fe0f0d56f78bcdfa74eed54856b44a0782115cb9a871d070fd174538ddc3",
+  "n_nodes": 2750,
+  "n_edges": 2908
+ },
+ "d029__fsR3_1B": {
+  "dataset": "d029",
+  "model": "fsR3_1B",
+  "kind": "fsR3",
+  "size": "1B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-1B-pt_42.jsonl",
+  "n_entries_in_set": 1580,
+  "set_sha256": "fe9dbc46e2b7470e58cd0c32dd8af0347bd19f08723fca2c243cbf49bb9f567e",
+  "n_records_with_text": 1580,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "9d31c0198cf0ab57fbb3c04db720eb4623f534ffbf46c8c99be8debfda5806ad",
+  "n_nodes": 2750,
+  "n_edges": 2954
+ },
+ "d029__fsR4_1B": {
+  "dataset": "d029",
+  "model": "fsR4_1B",
+  "kind": "fsR4",
+  "size": "1B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-1B-pt_42.jsonl",
+  "n_entries_in_set": 1580,
+  "set_sha256": "609eca4c1066009e204d47ed7f2668b7a7bd89e87058af560f4f001030e5b30a",
+  "n_records_with_text": 1580,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "9e6582105601209f1fe61bcdd9be85e260a41b9a2f28eb6ec88a62f47f0d62a5",
+  "n_nodes": 2750,
+  "n_edges": 2891
+ },
+ "d029__fsR5_1B": {
+  "dataset": "d029",
+  "model": "fsR5_1B",
+  "kind": "fsR5",
+  "size": "1B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-1B-pt_42.jsonl",
+  "n_entries_in_set": 1580,
+  "set_sha256": "3f6f932eaa0957fc704072875dbbdec8c0ff9da595aff172e448b98f1e61f0a0",
+  "n_records_with_text": 1580,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "e09c00c3b0094f4a1ed7b8317a52df6fbe9d9c169161a749259992a3de44f0b0",
+  "n_nodes": 2750,
+  "n_edges": 2919
+ },
+ "d029__fsS_4B": {
+  "dataset": "d029",
+  "model": "fsS_4B",
+  "kind": "fsS",
+  "size": "4B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-4B-pt_42.jsonl",
+  "n_entries_in_set": 1322,
+  "set_sha256": "8c2e18ffc13abce70756a7861870d6f01d12c74106f98be6bbdbe25b7fc0ac8b",
+  "n_records_with_text": 1322,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "5442fed105d02cbb4dfc2883af1f3ce45251e0d6a41a1f21c3906545d54b0407",
+  "n_nodes": 2750,
+  "n_edges": 2658
+ },
+ "d029__itS_4B": {
+  "dataset": "d029",
+  "model": "itS_4B",
+  "kind": "itS",
+  "size": "4B",
+  "records_from": "it",
+  "source": "data/definitions/Gemma3-4B_42.jsonl",
+  "n_entries_in_set": 1322,
+  "set_sha256": "8c2e18ffc13abce70756a7861870d6f01d12c74106f98be6bbdbe25b7fc0ac8b",
+  "n_records_with_text": 1322,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "3bcce18b525dd028958fd9ff9e77b9d1883c285dde8d665e004c85460fd70416",
+  "n_nodes": 2750,
+  "n_edges": 2640
+ },
+ "d029__fsR1_4B": {
+  "dataset": "d029",
+  "model": "fsR1_4B",
+  "kind": "fsR1",
+  "size": "4B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-4B-pt_42.jsonl",
+  "n_entries_in_set": 1322,
+  "set_sha256": "30a1d9a0ccef4199fa029b919da1478f254bb59cd4347bde109b683a8983bc70",
+  "n_records_with_text": 1322,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "375677772da94c8d5c3a70b2bcd75f789a0b6fc01f17eab7a68b0f7167b41eaa",
+  "n_nodes": 2750,
+  "n_edges": 2569
+ },
+ "d029__fsR2_4B": {
+  "dataset": "d029",
+  "model": "fsR2_4B",
+  "kind": "fsR2",
+  "size": "4B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-4B-pt_42.jsonl",
+  "n_entries_in_set": 1322,
+  "set_sha256": "27bea8f357b4e8d7bbf725358e442745ea5f1bbc0387427610a0dff7f3790d81",
+  "n_records_with_text": 1322,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "b6f68038af8247aa9597ffdf23ec891a5966179d59c53303ad85d9285567d142",
+  "n_nodes": 2750,
+  "n_edges": 2580
+ },
+ "d029__fsR3_4B": {
+  "dataset": "d029",
+  "model": "fsR3_4B",
+  "kind": "fsR3",
+  "size": "4B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-4B-pt_42.jsonl",
+  "n_entries_in_set": 1322,
+  "set_sha256": "d409e13095ef440aa139da37e4a05f0f03d3455b890878630c32785c28d89b8b",
+  "n_records_with_text": 1322,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "72601e94a5a11b0608af1b47e21f2072f36fef8e56bbe3bbcd82f4fd208f36e8",
+  "n_nodes": 2750,
+  "n_edges": 2712
+ },
+ "d029__fsR4_4B": {
+  "dataset": "d029",
+  "model": "fsR4_4B",
+  "kind": "fsR4",
+  "size": "4B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-4B-pt_42.jsonl",
+  "n_entries_in_set": 1322,
+  "set_sha256": "2a2ae550c1054227e1d2961b61101d54f34153f4f8aa1dffa452987cbe01cce9",
+  "n_records_with_text": 1322,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "712167c6620761f447e8af6fa5eac5c74b506e32765a1e512d69bf3100c2492d",
+  "n_nodes": 2750,
+  "n_edges": 2624
+ },
+ "d029__fsR5_4B": {
+  "dataset": "d029",
+  "model": "fsR5_4B",
+  "kind": "fsR5",
+  "size": "4B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-4B-pt_42.jsonl",
+  "n_entries_in_set": 1322,
+  "set_sha256": "b732adfe5b51c4f4a4edd0144c4a34cbfa13e045b12446b98f3fdccdd2d729ff",
+  "n_records_with_text": 1322,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "39a36365f8c163c7c8388035c8f1522e60ad14da2e81152e577499290eab2561",
+  "n_nodes": 2750,
+  "n_edges": 2640
+ },
+ "d029__fsS_12B": {
+  "dataset": "d029",
+  "model": "fsS_12B",
+  "kind": "fsS",
+  "size": "12B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-12B-pt_42.jsonl",
+  "n_entries_in_set": 1503,
+  "set_sha256": "f1d277f9ba51dac6a7b1a6fc826c627666060143606168d86d6d637d53846955",
+  "n_records_with_text": 1503,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "96dc7730f78bdc4bb93a5580e883a0f8454bc829a22731a6e334d6d6a452fe83",
+  "n_nodes": 2750,
+  "n_edges": 3240
+ },
+ "d029__itS_12B": {
+  "dataset": "d029",
+  "model": "itS_12B",
+  "kind": "itS",
+  "size": "12B",
+  "records_from": "it",
+  "source": "data/definitions/Gemma3-12B_42.jsonl",
+  "n_entries_in_set": 1503,
+  "set_sha256": "f1d277f9ba51dac6a7b1a6fc826c627666060143606168d86d6d637d53846955",
+  "n_records_with_text": 1503,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "81f3f09ce2eda3af2d2efff1ef42813831486675d45103a76bdeb6dc1a035572",
+  "n_nodes": 2750,
+  "n_edges": 3690
+ },
+ "d029__fsR1_12B": {
+  "dataset": "d029",
+  "model": "fsR1_12B",
+  "kind": "fsR1",
+  "size": "12B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-12B-pt_42.jsonl",
+  "n_entries_in_set": 1503,
+  "set_sha256": "af1a6269f7a1142852d3c6326efa06f391005544461cf3e9cbb06b8b2545957e",
+  "n_records_with_text": 1503,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "7fe393e8a676bcd5eca4cc5649cf8fe081a19d310b0d9d52cff881b22815649e",
+  "n_nodes": 2750,
+  "n_edges": 3191
+ },
+ "d029__fsR2_12B": {
+  "dataset": "d029",
+  "model": "fsR2_12B",
+  "kind": "fsR2",
+  "size": "12B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-12B-pt_42.jsonl",
+  "n_entries_in_set": 1503,
+  "set_sha256": "da0c62d7c8b537f8ec64f4b37fffd9dedaf84793ce9cbff5027d5e1371e895fb",
+  "n_records_with_text": 1503,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "587ff88cc213c976786952371cd97d71552ca54e4f4126ee26df9c903a1a7551",
+  "n_nodes": 2750,
+  "n_edges": 3115
+ },
+ "d029__fsR3_12B": {
+  "dataset": "d029",
+  "model": "fsR3_12B",
+  "kind": "fsR3",
+  "size": "12B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-12B-pt_42.jsonl",
+  "n_entries_in_set": 1503,
+  "set_sha256": "7393558ad3c3adc7d0eb47b7a52619bd8b1d7d0920f20c23e4d8fdbc519e3f27",
+  "n_records_with_text": 1503,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "77cf1a11794b11d1a19c574f768136cfc8cf7758e34365171d2b5049180d4621",
+  "n_nodes": 2750,
+  "n_edges": 3131
+ },
+ "d029__fsR4_12B": {
+  "dataset": "d029",
+  "model": "fsR4_12B",
+  "kind": "fsR4",
+  "size": "12B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-12B-pt_42.jsonl",
+  "n_entries_in_set": 1503,
+  "set_sha256": "62b0c8df4a9042280bb9bbdb7333f25cfb4b71aca6049620bcc06569aedc9d7e",
+  "n_records_with_text": 1503,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "a423f02a00d0ad420431eb015d13573f88ef1f8d3bb2ef3bb831239bfbd4cc94",
+  "n_nodes": 2750,
+  "n_edges": 3161
+ },
+ "d029__fsR5_12B": {
+  "dataset": "d029",
+  "model": "fsR5_12B",
+  "kind": "fsR5",
+  "size": "12B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-12B-pt_42.jsonl",
+  "n_entries_in_set": 1503,
+  "set_sha256": "05dfd50ba31a78a81713d0d04b24b6468738ffb485bb5a077ff2f72ac22217a1",
+  "n_records_with_text": 1503,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "8b1629c87a11b5161716cc2f5d478cd8cbdcccdee645871cc2e665c5b3db0e3c",
+  "n_nodes": 2750,
+  "n_edges": 3171
+ },
+ "d029__fsS_27B": {
+  "dataset": "d029",
+  "model": "fsS_27B",
+  "kind": "fsS",
+  "size": "27B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-27B-pt_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "738d5a63efaee5103bc1e781335c7f8f42d8e7be51548aee63e8bac1091c8f9f",
+  "n_records_with_text": 1295,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "ce25ecc4d572d566cb5f519fc6da948d9932d1db23a2a2f640aa182a46c7e3b2",
+  "n_nodes": 2750,
+  "n_edges": 2795
+ },
+ "d029__itS_27B": {
+  "dataset": "d029",
+  "model": "itS_27B",
+  "kind": "itS",
+  "size": "27B",
+  "records_from": "it",
+  "source": "data/definitions/Gemma3-27B_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "738d5a63efaee5103bc1e781335c7f8f42d8e7be51548aee63e8bac1091c8f9f",
+  "n_records_with_text": 1294,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "fb23f2e03522df47edb72acf6e4488ee06584132fbe21c06d0c5427dc63a6c92",
+  "n_nodes": 2750,
+  "n_edges": 3494
+ },
+ "d029__fsR1_27B": {
+  "dataset": "d029",
+  "model": "fsR1_27B",
+  "kind": "fsR1",
+  "size": "27B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-27B-pt_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "0b16da7db86ed8fe796a1ad49099a0d042dbeac7bd3de64886978ab93a6bbc8f",
+  "n_records_with_text": 1296,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "f118d2fdb8a232fe0273957d61d1e7ff197a52959fdc6fb878398bb4353ee4eb",
+  "n_nodes": 2750,
+  "n_edges": 2656
+ },
+ "d029__fsR2_27B": {
+  "dataset": "d029",
+  "model": "fsR2_27B",
+  "kind": "fsR2",
+  "size": "27B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-27B-pt_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "0979d2000e386053d68b088b7fc79ab72bc93556a70e13b5c603b797fbfbb459",
+  "n_records_with_text": 1296,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "2f22321d44e3a62d54f86c81f2c2685c40e11d84ac20afd4a7912c2d2b3435d1",
+  "n_nodes": 2750,
+  "n_edges": 2672
+ },
+ "d029__fsR3_27B": {
+  "dataset": "d029",
+  "model": "fsR3_27B",
+  "kind": "fsR3",
+  "size": "27B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-27B-pt_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "4b0cd937662b35137c3affb397d325edcb4c876295bb84f5b8f4b091c27fb399",
+  "n_records_with_text": 1295,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "2330ff38bfc4d544b0bf3a791fa67b4891bde0a4839a79986b10876fdb22e4cd",
+  "n_nodes": 2750,
+  "n_edges": 2655
+ },
+ "d029__fsR4_27B": {
+  "dataset": "d029",
+  "model": "fsR4_27B",
+  "kind": "fsR4",
+  "size": "27B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-27B-pt_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "9a427047275bb192faa1942b23275552dbeac034e707ecefa9c8e77fa5f61211",
+  "n_records_with_text": 1296,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "9b3e4dabe83c69f0bc04446fc42b6422ae9705dcd6624098994125dea48aad74",
+  "n_nodes": 2750,
+  "n_edges": 2658
+ },
+ "d029__fsR5_27B": {
+  "dataset": "d029",
+  "model": "fsR5_27B",
+  "kind": "fsR5",
+  "size": "27B",
+  "records_from": "fs",
+  "source": "results_2026-09-09_Runpod/results_e3 (fewshot)/definitions/Gemma3-27B-pt_42.jsonl",
+  "n_entries_in_set": 1296,
+  "set_sha256": "ad45e357570305b4dbd3afe9e68e9cc0120a8958418d85a5b96b6976265cf617",
+  "n_records_with_text": 1295,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b"
+  },
+  "graph_sha256": "bfc493ceb1163d7e7c815110cec759f7140441efc06043463a16f0b4429745f6",
+  "n_nodes": 2750,
+  "n_edges": 2697
+ }
+}

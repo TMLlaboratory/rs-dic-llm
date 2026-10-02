@@ -1,0 +1,71 @@
+1. TYPES OF MUTUAL PAIRS (WordNet relation, all senses, no part of speech)
+   WordNet graph                      n=  27  synonym 2 (7 %)  derived form 3 (11 %)  hypernym 9 (33 %)  coordinate 1 (4 %)  other 12 (44 %)
+   instruct models: distinct pairs    n= 363  synonym 98 (27 %)  antonym 6 (2 %)  derived form 3 (1 %)  hypernym 84 (23 %)  coordinate 36 (10 %)  other 136 (37 %)
+   instruct models: occurrences       n= 881  synonym 339 (38 %)  antonym 14 (2 %)  derived form 7 (1 %)  hypernym 192 (22 %)  coordinate 77 (9 %)  other 252 (29 %)
+   pairs found in 5+ instruct models  n=  49  synonym 24 (49 %)  antonym 1 (2 %)  hypernym 11 (22 %)  coordinate 4 (8 %)  other 9 (18 %)
+   zero-shot base: occurrences        n=  39  synonym 9 (23 %)  derived form 1 (3 %)  hypernym 11 (28 %)  other 18 (46 %)
+   few-shot base (E3): occurrences    n= 324  synonym 106 (33 %)  antonym 3 (1 %)  derived form 5 (2 %)  hypernym 69 (21 %)  coordinate 35 (11 %)  other 106 (33 %)
+
+   examples (most widely shared instruct pairs of each type):
+   synonym       begin-start (17), collect-gather (13), complete-finish (13), correct-right (12), get-obtain (11), image-picture (11)
+   antonym       rough-smooth (7), general-specific (2), tame-wild (2), alive-dead (1), asleep-awake (1), new-old (1)
+   derived form  king-kingdom (4), europe-european (2), agree-agreement (1)
+   hypernym      flavor-taste (13), grasp-understand (9), shock-surprise (8), female-woman (7), size-small (7), assign-task (6)
+   coordinate    eleven-ten (8), fifteen-fourteen (7), fifteen-sixteen (7), indication-sign (5), even-smooth (4), eighteenth-seventeenth (3)
+   other         location-place (12), big-size (10), greet-hello (10), eat-mouth (8), first-initial (6), measure-size (6)
+   WordNet's own pairs by type:
+   synonym       accent-stress, begin-start
+   antonym       
+   derived form  condition-conditioner, europe-european, pursue-pursuit
+   hypernym      apartment-suite, articulate-express, bench-seat, campaign-war, clash-conflict, floor-room, guard-watch, knot-tie, past-time
+   coordinate    fifteenth-sixteenth
+   other         baseball-bat, brief-summary, buddha-buddhism, desperate-desperation, eden-eve, establishment-residence, fear-frighten, fill-plug, inference-reason, like-resemble, misfortune-unfortunate, open-public
+
+2. OVERLAP OF PAIR SETS
+   yardstick: Jaccard index between two instruct models, median 0.14 (range 0.03-0.33, 136 pairs of models)
+   few-shot base (E3)     pairs    in an instruct model   in the matched instruct  Jaccard matched  median Jaccard, 17 instruct
+   Gemma3-1B-pt              29               16 (55 %)                  8 (28 %)             0.15                         0.09
+   Gemma3-4B-pt              92               63 (68 %)                 20 (22 %)             0.17                         0.13
+   Gemma3-12B-pt            114               79 (69 %)                 34 (30 %)             0.22                         0.15
+   Gemma3-27B-pt             78               59 (76 %)                 25 (32 %)             0.20                         0.15
+
+   zero-shot base         pairs    in an instruct model    in WordNet
+   Gemma3-12B-pt              7                6 (86 %)             0
+   Gemma3-1B-pt               3                 0 (0 %)             0
+   Gemma3-270M-pt             4                1 (25 %)             0
+   Gemma3-27B-pt             14                9 (64 %)             2
+   Gemma3-4B-pt              11                4 (36 %)             0
+
+   few-shot base pairs that are WordNet pairs: -12B-pt 6 of 114, -1B-pt 1 of 29, -270M-pt 0 of 11, -27B-pt 7 of 78, -4B-pt 3 of 92
+
+3. WORDNET AGAINST EACH INSTRUCT MODEL (mutual pairs shared with WordNet's pairs)
+   Qwen3-14B          pairs  50  shared with WordNet 4  Jaccard 0.055
+   Qwen2.5-0.5B       pairs  52  shared with WordNet 4  Jaccard 0.053
+   Qwen3-1.7B         pairs  53  shared with WordNet 3  Jaccard 0.039
+   Qwen2.5-7B         pairs  80  shared with WordNet 4  Jaccard 0.039
+   Qwen3-4B           pairs  43  shared with WordNet 2  Jaccard 0.029
+   Gemma3-12B         pairs  78  shared with WordNet 3  Jaccard 0.029
+   Qwen2.5-1.5B       pairs  46  shared with WordNet 2  Jaccard 0.028
+   Qwen3-0.6B         pairs  17  shared with WordNet 1  Jaccard 0.023
+   Qwen2.5-3B         pairs  61  shared with WordNet 2  Jaccard 0.023
+   Qwen2.5-72B        pairs  82  shared with WordNet 2  Jaccard 0.019
+   Qwen3-4B-Instruct-2507 pairs  33  shared with WordNet 1  Jaccard 0.017
+   Gemma3-1B          pairs  34  shared with WordNet 1  Jaccard 0.017
+   Qwen2.5-32B        pairs  36  shared with WordNet 1  Jaccard 0.016
+   Qwen2.5-14B        pairs  47  shared with WordNet 1  Jaccard 0.014
+   Gemma3-4B          pairs  47  shared with WordNet 1  Jaccard 0.014
+   Qwen3-8B           pairs  51  shared with WordNet 1  Jaccard 0.013
+   Gemma3-27B         pairs  71  shared with WordNet 1  Jaccard 0.010
+   Jaccard index with WordNet: 0.010-0.055; shared pairs 1-4 of WordNet's 27
+
+4. YARDSTICKS BY FAMILY: Jaccard index between two instruct models
+   within Gemma3     6 pairs of models  median 0.21  range 0.12-0.28
+   within Qwen2.5   21 pairs of models  median 0.13  range 0.03-0.24
+   within Qwen3     15 pairs of models  median 0.14  range 0.04-0.33
+   across families  94 pairs of models  median 0.14  range 0.04-0.27
+
+   few-shot base (E3) against the instruct models: its matched Gemma3 instruct model, the other Gemma3 instruct models, the non-Gemma instruct models
+   Gemma3-1B-pt  matched 0.15 | other Gemma3 instruct: median 0.09 (range 0.06-0.12) | non-Gemma instruct: median 0.08 (range 0.04-0.12)
+   Gemma3-4B-pt  matched 0.17 | other Gemma3 instruct: median 0.17 (range 0.11-0.19) | non-Gemma instruct: median 0.12 (range 0.05-0.19)
+   Gemma3-12B-pt  matched 0.22 | other Gemma3 instruct: median 0.16 (range 0.11-0.19) | non-Gemma instruct: median 0.15 (range 0.05-0.19)
+   Gemma3-27B-pt  matched 0.20 | other Gemma3 instruct: median 0.19 (range 0.12-0.19) | non-Gemma instruct: median 0.14 (range 0.06-0.20)

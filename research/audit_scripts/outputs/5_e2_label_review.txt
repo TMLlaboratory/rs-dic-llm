@@ -1,0 +1,58 @@
+A. COMPLETENESS AND INTEGRITY
+  model tabs 23; rows 2300; labeled 2300; invalid []
+  rows whose output is not a stored record of that word: 0
+  same 100 words in the same order in every tab: True
+
+B. LABELS PER MODEL (counts of 100)
+  model                     defini    echo  questi  offtop  restat  refusa  unclea
+  Gemma3-270M                   27       0       0       8      61       0       4
+  Gemma3-270M-pt (base)         21      15       8      45       5       0       6
+  Gemma3-1B                     99       0       0       1       0       0       0
+  Gemma3-1B-pt (base)           54      13       6      15       3       1       8
+  Gemma3-4B                    100       0       0       0       0       0       0
+  Gemma3-4B-pt (base)           39      21       6      34       0       0       0
+  Gemma3-12B                   100       0       0       0       0       0       0
+  Gemma3-12B-pt (base)          53      14       8      21       0       3       1
+  Gemma3-27B                   100       0       0       0       0       0       0
+  Gemma3-27B-pt (base)          43      18      20      17       1       0       1
+  Qwen2.5-0.5B                 100       0       0       0       0       0       0
+  Qwen2.5-1.5B                 100       0       0       0       0       0       0
+  Qwen2.5-3B                   100       0       0       0       0       0       0
+  Qwen2.5-7B                   100       0       0       0       0       0       0
+  Qwen2.5-14B                  100       0       0       0       0       0       0
+  Qwen2.5-32B                  100       0       0       0       0       0       0
+  Qwen2.5-72B                  100       0       0       0       0       0       0
+  Qwen3-0.6B                    87       1       0       5       2       0       5
+  Qwen3-1.7B                   100       0       0       0       0       0       0
+  Qwen3-4B                     100       0       0       0       0       0       0
+  Qwen3-4B-Instruct-2507        99       0       0       0       0       0       1
+  Qwen3-8B                     100       0       0       0       0       0       0
+  Qwen3-14B                    100       0       0       0       0       0       0
+
+  group totals (percent of rows)
+  Gemma3 instruct (5)         defini    echo  questi  offtop  restat  refusa  unclea   n=500
+                               85.2%    0.0%    0.0%    1.8%   12.2%    0.0%    0.8%
+  Gemma3 instruct, no 270M    defini    echo  questi  offtop  restat  refusa  unclea   n=400
+                               99.8%    0.0%    0.0%    0.2%    0.0%    0.0%    0.0%
+  Gemma3 base (5)             defini    echo  questi  offtop  restat  refusa  unclea   n=500
+                               42.0%   16.2%    9.6%   26.4%    1.8%    0.8%    3.2%
+  Qwen2.5 (7)                 defini    echo  questi  offtop  restat  refusa  unclea   n=700
+                              100.0%    0.0%    0.0%    0.0%    0.0%    0.0%    0.0%
+  Qwen3 (6)                   defini    echo  questi  offtop  restat  refusa  unclea   n=600
+                               97.7%    0.2%    0.0%    0.8%    0.3%    0.0%    1.0%
+
+C. NOTES
+  rows with a note: 218
+  tags (split on + and ;), 6 or more uses: wrong-pos 72, format 63, trailing-junk 12, def 12, wrong-word 11, q 11, task-meta 11, empty 8, imperative 8
+
+D. CONSISTENCY FLAGS (crude surface checks; 60 flags)
+     2  D2 labeled definition but output contains '?' and no q+def note
+     2  D3 labeled question but output has no '?'
+     9  D4 labeled echo but no prompt phrase in output
+     6  D5 instruct model, offtopic, but output is short and contains the target word
+     4  D6 labeled restatement but output longer than 4 words
+    11  D7 labeled definition but output has 2 words or fewer
+    26  D9 unclear (list for a second look)
+  (D1 groups with conflicting labels: 0; total identical-output groups over several models: 68)
+
+wrote research\audit_scripts\outputs\5_e2_label_flags.csv

@@ -1,0 +1,706 @@
+{
+ "main__Qwen2.5-0.5B": {
+  "dataset": "main",
+  "model": "Qwen2.5-0.5B",
+  "is_base": false,
+  "source": "data/definitions/Qwen2.5-0.5B_42.jsonl",
+  "source_sha256": "b93265598c210ce0875a85383ab3ec5817e6ec8368bc8c4cd01ee0bafa7d73cc",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 2,
+   "dropped_share": 0.0007,
+   "by_reason": {
+    "fragment": 1,
+    "question": 1
+   },
+   "by_rule": {
+    "non_latin_text": 1,
+    "question": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "45358684bb02c3bd30085f3769bcd87540e6df88cbb5e6820ba15cca1b73a9d9",
+  "n_nodes": 2750,
+  "n_edges": 6999
+ },
+ "main__Qwen2.5-1.5B": {
+  "dataset": "main",
+  "model": "Qwen2.5-1.5B",
+  "is_base": false,
+  "source": "data/definitions/Qwen2.5-1.5B_42.jsonl",
+  "source_sha256": "92472729685c6a42ee107686a08014b3d217aac312773ab5aace8d3ec5a8171b",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 1,
+   "dropped_share": 0.0003,
+   "by_reason": {
+    "question": 1
+   },
+   "by_rule": {
+    "question": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "e5167e4ae109709fd1f891f27246ce37dbbb989f8e70ba9393bb04841e712378",
+  "n_nodes": 2750,
+  "n_edges": 5074
+ },
+ "main__Qwen2.5-3B": {
+  "dataset": "main",
+  "model": "Qwen2.5-3B",
+  "is_base": false,
+  "source": "data/definitions/Qwen2.5-3B_42.jsonl",
+  "source_sha256": "eb3251210b372c655d139ec72b2f7a7c26ab3f252a4600d41100caab02030525",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 1,
+   "dropped_share": 0.0003,
+   "by_reason": {
+    "echo": 1
+   },
+   "by_rule": {
+    "instruction": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "28fe86a1eb52b137c4231b1513f16d0d75313e8aefb7a0d400b4f9791416810e",
+  "n_nodes": 2750,
+  "n_edges": 4880
+ },
+ "main__Qwen2.5-7B": {
+  "dataset": "main",
+  "model": "Qwen2.5-7B",
+  "is_base": false,
+  "source": "data/definitions/Qwen2.5-7B_42.jsonl",
+  "source_sha256": "025b1b39921e81469190456311a9257aaf2387b7654ee3c7d0fd6802522cfa2d",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 9,
+   "dropped_share": 0.003,
+   "by_reason": {
+    "fragment": 9
+   },
+   "by_rule": {
+    "non_latin_text": 9
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "faf6ab2eb1714967f77d2a1550e05d439d3e40f4e4d979eb7025ac3344e295d2",
+  "n_nodes": 2750,
+  "n_edges": 5054
+ },
+ "main__Qwen2.5-14B": {
+  "dataset": "main",
+  "model": "Qwen2.5-14B",
+  "is_base": false,
+  "source": "data/definitions/Qwen2.5-14B_42.jsonl",
+  "source_sha256": "198b3bd551b2548e8076d55730af02f19eced2ee1bd73bc00957552a59edd140",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 2,
+   "dropped_share": 0.0007,
+   "by_reason": {
+    "fragment": 2
+   },
+   "by_rule": {
+    "non_latin_text": 2
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "c91b8351b1ea5780ac2f980c81f49e46af0260bf083d1d21a6e457a74b4a374f",
+  "n_nodes": 2750,
+  "n_edges": 5343
+ },
+ "main__Qwen2.5-32B": {
+  "dataset": "main",
+  "model": "Qwen2.5-32B",
+  "is_base": false,
+  "source": "data/definitions/Qwen2.5-32B_42.jsonl",
+  "source_sha256": "30dc279a9d6ff6a1f0d5e35e374f50e6c1e05936236e089295f9d890eaf6ba05",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 0,
+   "dropped_share": 0.0,
+   "by_reason": {},
+   "by_rule": {},
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "538f34bca17d8411b15cbc0487e488d5a738b18270c62e162bdf0064c710182e",
+  "n_nodes": 2750,
+  "n_edges": 5104
+ },
+ "main__Qwen2.5-72B": {
+  "dataset": "main",
+  "model": "Qwen2.5-72B",
+  "is_base": false,
+  "source": "data/definitions/Qwen2.5-72B_42.jsonl",
+  "source_sha256": "f8f44126c5dd14174c45bbbec98aeaaf8b09f6f0e8915ff8de6f24d24aa31d24",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 0,
+   "dropped_share": 0.0,
+   "by_reason": {},
+   "by_rule": {},
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "d41e22a925351aba05cbde27427dd3c8a3307ba6f498a6d7ee329443c574b011",
+  "n_nodes": 2750,
+  "n_edges": 5085
+ },
+ "main__Qwen3-0.6B": {
+  "dataset": "main",
+  "model": "Qwen3-0.6B",
+  "is_base": false,
+  "source": "data/definitions/Qwen3-0.6B_42.jsonl",
+  "source_sha256": "da7fe2c9ac6f60eaf2c1e81d7ea3e0d0cec6803c801765cf4a6211f8e7774e0e",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 22,
+   "dropped_share": 0.0073,
+   "by_reason": {
+    "fragment": 21,
+    "echo": 1
+   },
+   "by_rule": {
+    "headword_only": 21,
+    "task_phrase": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "06dce1b8cd808336e3e46932b615d06bf0cd4706804a956f8692a33af55a4ee0",
+  "n_nodes": 2750,
+  "n_edges": 4939
+ },
+ "main__Qwen3-1.7B": {
+  "dataset": "main",
+  "model": "Qwen3-1.7B",
+  "is_base": false,
+  "source": "data/definitions/Qwen3-1.7B_42.jsonl",
+  "source_sha256": "d00cea8d58f73fa2a43ec8a115ee575791f56e724b3d834ddc66c667794c2a2e",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 1,
+   "dropped_share": 0.0003,
+   "by_reason": {
+    "echo": 1
+   },
+   "by_rule": {
+    "task_phrase": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "2f512d3cace0ab61427ea07dd43a84ad41ac1db44d60f1cbbf9302c77c7dc07a",
+  "n_nodes": 2750,
+  "n_edges": 7087
+ },
+ "main__Qwen3-4B": {
+  "dataset": "main",
+  "model": "Qwen3-4B",
+  "is_base": false,
+  "source": "data/definitions/Qwen3-4B_42.jsonl",
+  "source_sha256": "eb52178b26b0b7c472a37e2305991eb8e271e3ccc5a7e6af8c61ec20dba0da16",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 0,
+   "dropped_share": 0.0,
+   "by_reason": {},
+   "by_rule": {},
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "bf94cde312728d63ef473b32afaf0f277f4bceb63ee9c6fb54cb1ab84bd2ef59",
+  "n_nodes": 2750,
+  "n_edges": 5113
+ },
+ "main__Qwen3-8B": {
+  "dataset": "main",
+  "model": "Qwen3-8B",
+  "is_base": false,
+  "source": "data/definitions/Qwen3-8B_42.jsonl",
+  "source_sha256": "f36af25389150ac4655056d53cf75da7b72b82353c25e1c3de7ac268f41bf235",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 1,
+   "dropped_share": 0.0003,
+   "by_reason": {
+    "echo": 1
+   },
+   "by_rule": {
+    "task_phrase": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "91c89feb03431d0bcd601b862333b8591e9b98b9d6927132e6ee828dfe467ec5",
+  "n_nodes": 2750,
+  "n_edges": 6220
+ },
+ "main__Qwen3-14B": {
+  "dataset": "main",
+  "model": "Qwen3-14B",
+  "is_base": false,
+  "source": "data/definitions/Qwen3-14B_42.jsonl",
+  "source_sha256": "4018e9621d41a259aed852c59e38e16abdf2174415f0610033abbfa9eee4dc03",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 2,
+   "dropped_share": 0.0007,
+   "by_reason": {
+    "echo": 2
+   },
+   "by_rule": {
+    "task_phrase": 2
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "082db6c5488dc06d9c4269ab75963b0dbe8c2c625e758d78b74b5e9e60545d5e",
+  "n_nodes": 2750,
+  "n_edges": 5869
+ },
+ "main__Gemma3-1B": {
+  "dataset": "main",
+  "model": "Gemma3-1B",
+  "is_base": false,
+  "source": "data/definitions/Gemma3-1B_42.jsonl",
+  "source_sha256": "5e58d3367ca6257773065d4a2fa16ad5538a67aff441fd5d23260372267cec7b",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 0,
+   "dropped_share": 0.0,
+   "by_reason": {},
+   "by_rule": {},
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "43b7e845002006042a1f8328f0a4ea691bf297def743af825107e16a63fff59c",
+  "n_nodes": 2750,
+  "n_edges": 4448
+ },
+ "main__Gemma3-4B": {
+  "dataset": "main",
+  "model": "Gemma3-4B",
+  "is_base": false,
+  "source": "data/definitions/Gemma3-4B_42.jsonl",
+  "source_sha256": "e5ec5abe36eed678d17020d05685b68060ea36642d6e05cf159335683d47d582",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 0,
+   "dropped_share": 0.0,
+   "by_reason": {},
+   "by_rule": {},
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "6bf3b2bb5a343cf186a16a464b27ccd7da9c4ba8992537b4087e3d3f5cd649e5",
+  "n_nodes": 2750,
+  "n_edges": 5842
+ },
+ "main__Gemma3-12B": {
+  "dataset": "main",
+  "model": "Gemma3-12B",
+  "is_base": false,
+  "source": "data/definitions/Gemma3-12B_42.jsonl",
+  "source_sha256": "a322ee624614491892947cace80a7738f702cac9fe24d24cbb0bebc12aca0853",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 0,
+   "dropped_share": 0.0,
+   "by_reason": {},
+   "by_rule": {},
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "2c8fe9f537c347ea636eef9794f9ea11a8359c24f5ea56b3582c9d5a0fc7a2de",
+  "n_nodes": 2750,
+  "n_edges": 7052
+ },
+ "main__Gemma3-27B": {
+  "dataset": "main",
+  "model": "Gemma3-27B",
+  "is_base": false,
+  "source": "data/definitions/Gemma3-27B_42.jsonl",
+  "source_sha256": "f26c1728bedb95c95855bc44c008e169f9e01b031d3a10f9ad7a5c4fceb22522",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 2,
+   "dropped_share": 0.0007,
+   "by_reason": {
+    "offtopic": 1,
+    "fragment": 1
+   },
+   "by_rule": {
+    "first_person": 1,
+    "lead_in": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "ccf526dc851a5fffbe43bfd64686d53907d9cc528ae82110fe630d63adb85f58",
+  "n_nodes": 2750,
+  "n_edges": 7896
+ },
+ "main__Gemma3-270M-pt": {
+  "dataset": "main",
+  "model": "Gemma3-270M-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-270M-pt_42.jsonl",
+  "source_sha256": "c0a4fd406e70258ee05ba78ce84d3c285b0667a6288ed6d3e398afdaae2c525a",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 1727,
+   "dropped_share": 0.5757,
+   "by_reason": {
+    "question": 460,
+    "offtopic": 357,
+    "fragment": 432,
+    "echo": 458,
+    "refusal": 20
+   },
+   "by_rule": {
+    "question": 460,
+    "first_person": 256,
+    "headword_only": 261,
+    "task_phrase": 74,
+    "meta_usage": 87,
+    "task_start": 372,
+    "lead_in": 124,
+    "blank": 32,
+    "exam_marker": 34,
+    "truncated": 9,
+    "prompt_span": 10,
+    "no_text": 5,
+    "non_latin_text": 1,
+    "task_rule": 2
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "8c3548f8f184144aa3cc1ede4a4b9d28f92a456fe75bf3e3e4d3aa69cd964cc0",
+  "n_nodes": 2750,
+  "n_edges": 2358
+ },
+ "main__Gemma3-1B-pt": {
+  "dataset": "main",
+  "model": "Gemma3-1B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-1B-pt_42.jsonl",
+  "source_sha256": "9d39ff6e517e0ea42400528f3e564b139b714bbbf721363bb28c44581eebf47a",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 2998,
+   "n_dropped": 1418,
+   "dropped_share": 0.473,
+   "by_reason": {
+    "question": 329,
+    "echo": 461,
+    "fragment": 354,
+    "offtopic": 262,
+    "refusal": 12
+   },
+   "by_rule": {
+    "question": 329,
+    "task_phrase": 29,
+    "headword_only": 260,
+    "task_start": 399,
+    "exam_marker": 10,
+    "lead_in": 13,
+    "first_person": 100,
+    "instruction": 2,
+    "meta_usage": 164,
+    "blank": 76,
+    "task_rule": 6,
+    "prompt_span": 25,
+    "truncated": 5
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "41b387027280d78588798322897b89ef4d7c3ce373a02935c6f4edb56ceb76c3",
+  "n_nodes": 2750,
+  "n_edges": 3249
+ },
+ "main__Gemma3-4B-pt": {
+  "dataset": "main",
+  "model": "Gemma3-4B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-4B-pt_42.jsonl",
+  "source_sha256": "8c7d3364b4a476e0c2341b3f5a85060f800b1fd14fa43d50c1e555ec2aca71ed",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 1678,
+   "dropped_share": 0.5593,
+   "by_reason": {
+    "question": 946,
+    "echo": 559,
+    "offtopic": 73,
+    "refusal": 38,
+    "fragment": 62
+   },
+   "by_rule": {
+    "question": 946,
+    "task_start": 531,
+    "first_person": 86,
+    "exam_marker": 15,
+    "task_phrase": 13,
+    "headword_only": 25,
+    "instruction": 12,
+    "blank": 21,
+    "no_text": 1,
+    "task_rule": 3,
+    "lead_in": 15,
+    "meta_usage": 10
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "780d2727a8f4212ef799b689f525d625d6ed9791f66c2e80c61a73454f4e0431",
+  "n_nodes": 2750,
+  "n_edges": 2904
+ },
+ "main__Gemma3-12B-pt": {
+  "dataset": "main",
+  "model": "Gemma3-12B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-12B-pt_42.jsonl",
+  "source_sha256": "83edf94900f72b11fc2594f984608a2338febd82b1bb13b9bd1edb45c957eea4",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 2998,
+   "n_dropped": 1495,
+   "dropped_share": 0.4987,
+   "by_reason": {
+    "question": 537,
+    "echo": 341,
+    "offtopic": 375,
+    "refusal": 124,
+    "fragment": 118
+   },
+   "by_rule": {
+    "question": 537,
+    "task_start": 293,
+    "meta_usage": 144,
+    "first_person": 338,
+    "task_phrase": 34,
+    "exam_marker": 17,
+    "headword_only": 72,
+    "lead_in": 29,
+    "truncated": 1,
+    "blank": 16,
+    "prompt_span": 6,
+    "task_rule": 8
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "75e363edad583465bba2c16c690803340fcdf8f60ce8f5a39f4ae15f91866ba4",
+  "n_nodes": 2750,
+  "n_edges": 3268
+ },
+ "main__Gemma3-27B-pt": {
+  "dataset": "main",
+  "model": "Gemma3-27B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-27B-pt_42.jsonl",
+  "source_sha256": "1dc5d42da79dd24454985e0afeba25d07b291716eb249f2a46a2dae3851308a7",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 2995,
+   "n_dropped": 1699,
+   "dropped_share": 0.5673,
+   "by_reason": {
+    "question": 1061,
+    "echo": 376,
+    "refusal": 79,
+    "offtopic": 131,
+    "fragment": 52
+   },
+   "by_rule": {
+    "question": 1061,
+    "task_start": 362,
+    "first_person": 159,
+    "meta_usage": 46,
+    "task_phrase": 7,
+    "headword_only": 39,
+    "task_rule": 3,
+    "lead_in": 8,
+    "blank": 5,
+    "prompt_span": 4,
+    "exam_marker": 5
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "2e62fc540a2493b550587a45142ded3234c78f34d67a202ecaac46d76d653b1f",
+  "n_nodes": 2750,
+  "n_edges": 2812
+ },
+ "main__Qwen3-4B-Instruct-2507": {
+  "dataset": "main",
+  "model": "Qwen3-4B-Instruct-2507",
+  "is_base": false,
+  "source": "data/definitions/Qwen3-4B-Instruct-2507_42.jsonl",
+  "source_sha256": "cf4e9c33b29bfed00ef10d800de4c8290da8391b74581d039b32fcd8c0ffee78",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 0,
+   "dropped_share": 0.0,
+   "by_reason": {},
+   "by_rule": {},
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "dc9bcc40fd7ac62f581105ed3ec7087bb077fd23475050295176f92419e2858b",
+  "n_nodes": 2750,
+  "n_edges": 5904
+ },
+ "main__wordnet": {
+  "dataset": "main",
+  "model": "wordnet",
+  "is_base": false,
+  "source": "data/sample_words/word_list_3k_v1.json",
+  "source_sha256": "bd4de5c671630c5b900039bc07e0064d56938def900c0d21941005c79e359363",
+  "n_records": 2750,
+  "graph_sha256": "96f0bbb111ce88fd70c462244b9ba3b76a4a28ebce9ccc87aa229d34d5dc34c1",
+  "n_nodes": 2750,
+  "n_edges": 4599
+ }
+}

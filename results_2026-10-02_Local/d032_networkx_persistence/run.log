@@ -1,0 +1,19 @@
+[d032p]    243s  20/160
+[d032p]    596s  40/160
+[d032p]    914s  60/160
+[d032p]   1063s  80/160
+[d032p]   1336s  100/160
+[d032p]   1515s  120/160
+[d032p]   1629s  140/160
+[d032p]   1810s  160/160
+D032 validation: observed mutual pairs still present in a replicate of the paper's null (networkx directed_edge_swap, 32 x edges; stored seeds; 20 replicates per graph; 160 of 160 equal the stored replicate)
+
+graph                   observed pairs  null pairs (mean)  observed pairs kept (mean)  kept / null mean
+e3__Gemma3-4B-pt                    92               4.05                        1.60              0.40
+main__Gemma3-1B                     34               0.70                        0.00              0.00
+main__Gemma3-12B                    78               3.10                        0.15              0.05
+main__wordnet                       27               2.00                        0.10              0.05
+main__Gemma3-12B-pt                  7               3.10                        1.00              0.32
+d029__fsS_4B                        18               2.95                        2.20              0.75
+d030c__fsRC3_4B                     14              12.40                       10.40              0.84
+d030c__itC_1B                       12               2.85                        1.05              0.37

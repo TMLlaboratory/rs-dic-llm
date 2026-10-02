@@ -1,0 +1,61 @@
+{
+ "key": "main__wordnet",
+ "n_nodes": 2750,
+ "n_edges": 4599,
+ "replicates": 20,
+ "observed": {
+  "kernel_ratio": 0.15890909090909092,
+  "circulation_rate": 0.07890909090909091,
+  "cycles_total": 41,
+  "cycles_2": 27,
+  "cycles_long": 8
+ },
+ "null_mean": {
+  "kernel_ratio": 0.16252727272727274,
+  "circulation_rate": 0.09767272727272727,
+  "cycles_total": 17.8,
+  "cycles_2": 1.6,
+  "cycles_long": 12.7
+ },
+ "null_sd": {
+  "kernel_ratio": 0.014114748162913832,
+  "circulation_rate": 0.012466099484748082,
+  "cycles_total": 4.589117562233507,
+  "cycles_2": 1.2,
+  "cycles_long": 3.75632799419859
+ },
+ "z": {
+  "kernel_ratio": -0.2563405153546071,
+  "circulation_rate": -1.5051730003112147,
+  "cycles_total": 5.055438150228744,
+  "cycles_2": 21.166666666666668,
+  "cycles_long": -1.2512219399527547
+ },
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 27,
+   "null_mean": 1.6
+  },
+  "3": {
+   "observed": 2,
+   "null_mean": 1.75
+  },
+  "4": {
+   "observed": 4,
+   "null_mean": 1.75
+  },
+  "5": {
+   "observed": 3,
+   "null_mean": 3
+  },
+  "6": {
+   "observed": 3,
+   "null_mean": 4.4
+  },
+  "7": {
+   "observed": 2,
+   "null_mean": 5.3
+  }
+ },
+ "budget_not_met": 0
+}

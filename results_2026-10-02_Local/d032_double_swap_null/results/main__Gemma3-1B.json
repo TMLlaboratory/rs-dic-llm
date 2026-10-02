@@ -1,0 +1,32 @@
+{
+ "key": "main__Gemma3-1B",
+ "n_nodes": 2750,
+ "n_edges": 4448,
+ "snapshot_sha256": "43b7e845002006042a1f8328f0a4ea691bf297def743af825107e16a63fff59c",
+ "observed": {
+  "cycles_2": 34
+ },
+ "null_mean": {
+  "cycles_2": 0.88
+ },
+ "null_sd": {
+  "cycles_2": 0.897552226892675
+ },
+ "reciprocity_excess": 38.63636363636363,
+ "R_prime": 38.63636363636363,
+ "R_floor_applied": false,
+ "R_ci95": [
+  32.075471698113205,
+  47.887323943661976
+ ],
+ "R_poisson_range": [
+  26.75680498246849,
+  53.99044556273078
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0,
+ "accepted_mean": 284672,
+ "tries_mean": 292947.1
+}

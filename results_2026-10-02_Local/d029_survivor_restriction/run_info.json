@@ -1,0 +1,24 @@
+{
+ "started": "2026-10-02T03:23:37",
+ "finished": "2026-10-02T04:23:01",
+ "args": {
+  "out": "results_2026-10-02_Local/d029_survivor_restriction",
+  "reps": 100,
+  "workers": 12,
+  "nswap_mult": 32,
+  "tries_mult": 9600,
+  "sizes": [
+   "1B",
+   "4B",
+   "12B",
+   "27B"
+  ],
+  "smoke": false
+ },
+ "python": "3.11.4",
+ "networkx": "3.6.1",
+ "cycle_bound": 7,
+ "script_sha256": "7eeea36213c855971404e243ec24d8363536969487c34497f996270bb803e859",
+ "e1_full_null_sha256": "73be2346a0820dc5a1b582f0c76b1a0a4712f35fd28bbace9632991479a3d911",
+ "note": "D029 (b): E3 and instruct graphs restricted to the zero-shot survivors, and five random restrictions of the same size; default filter, first sentence, fixed 2,750-lemma vocabulary; replicate seeds = sha256('e1|key|idx')[:4]"
+}

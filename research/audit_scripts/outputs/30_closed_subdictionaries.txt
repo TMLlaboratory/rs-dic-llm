@@ -1,0 +1,68 @@
+1. CLOSED SUB-DICTIONARIES (induced on the lemmas that have a surviving zero-shot entry; 100 replicates, 32 x edges)
+   R' = observed pairs / null mean without the floor; R = with the floor of 0.5; range = exact Poisson 95 % range of R'
+
+   size graph                      nodes  edges  obs   null      R  R_prime   range of R_prime
+     1B zsC                         1506   1809    3   0.33    6.0      9.1        [1.9, 26.6]  (floor)
+     1B fsC                         1506   1789    8   0.68   11.8     11.8        [5.1, 23.2]
+     1B itC                         1506   1433   12   3.09    3.9      3.9         [2.0, 6.8]
+     1B fsRC1                       1506   1743    9   0.68   13.2     13.2        [6.1, 25.1]
+     1B fsRC2                       1506   1857   10   2.75    3.6      3.6         [1.7, 6.7]
+     1B fsRC3                       1506   1683    7   2.69    2.6      2.6         [1.0, 5.4]
+     1B fsRC4                       1506   1401   10   1.82    5.5      5.5        [2.6, 10.1]
+     1B fsRC5                       1506   1508    7   1.57    4.5      4.5         [1.8, 9.2]
+     1B whole few-shot (2750 nodes)  2750   5465   29   1.30   22.3     22.3
+
+     4B zsC                         1265   1382   11   2.01    5.5      5.5         [2.7, 9.8]
+     4B fsC                         1265   1216   22   5.52    4.0      4.0         [2.5, 6.0]
+     4B itC                         1265   1262   12   4.12    2.9      2.9         [1.5, 5.1]
+     4B fsRC1                       1265   1136   17   3.59    4.7      4.7         [2.8, 7.6]
+     4B fsRC2                       1265   1124   26   7.78    3.3      3.3         [2.2, 4.9]
+     4B fsRC3                       1265   1094   14  12.65    1.1      1.1         [0.6, 1.9]
+     4B fsRC4                       1265   1098   19   5.59    3.4      3.4         [2.0, 5.3]
+     4B fsRC5                       1265   1109   21   9.33    2.3      2.3         [1.4, 3.4]
+     4B whole few-shot (2750 nodes)  2750   5868   92   3.92   23.5     23.5
+
+    12B zsC                         1434   1213    7   4.20    1.7      1.7         [0.7, 3.4]
+    12B fsC                         1434   1414   24   8.50    2.8      2.8         [1.8, 4.2]
+    12B itC                         1434   1572   19   4.72    4.0      4.0         [2.4, 6.3]
+    12B fsRC1                       1434   1842   34   1.87   18.2     18.2       [12.6, 25.4]
+    12B fsRC2                       1434   1949   34   6.26    5.4      5.4         [3.8, 7.6]
+    12B fsRC3                       1434   1782   29   3.34    8.7      8.7        [5.8, 12.5]
+    12B fsRC4                       1434   1969   33   2.81   11.7     11.7        [8.1, 16.5]
+    12B fsRC5                       1434   1817   32   7.96    4.0      4.0         [2.7, 5.7]
+    12B whole few-shot (2750 nodes)  2750   6201  114   3.69   30.9     30.9
+
+    27B zsC                         1251   1356   14   2.41    5.8      5.8         [3.2, 9.7]
+    27B fsC                         1251   1303   22   4.62    4.8      4.8         [3.0, 7.2]
+    27B itC                         1251   1791   19   2.19    8.7      8.7        [5.2, 13.5]
+    27B fsRC1                       1251   1060   17   5.49    3.1      3.1         [1.8, 5.0]
+    27B fsRC2                       1251   1406   18   0.82   22.0     22.0       [13.0, 34.7]
+    27B fsRC3                       1251   1228   17   6.25    2.7      2.7         [1.6, 4.4]
+    27B fsRC4                       1251   1337   20   2.57    7.8      7.8        [4.8, 12.0]
+    27B fsRC5                       1251   1233   15   2.88    5.2      5.2         [2.9, 8.6]
+    27B whole few-shot (2750 nodes)  2750   6076   78   2.74   28.5     28.5
+
+2. READING (b1): is R' invariant under random closed restriction?  rho_k = R'(fsRCk) / R'(whole few-shot graph)
+   size whole R_prime                                    rho_1..5   median  label
+     1B          22.3                0.59  0.16  0.12  0.25  0.20     0.20  falls
+     4B          23.5                0.20  0.14  0.05  0.14  0.10     0.14  falls
+    12B          30.9                0.59  0.18  0.28  0.38  0.13     0.28  falls
+    27B          28.5                0.11  0.77  0.10  0.27  0.18     0.18  falls
+   sizes invariant: 0 of 4; sizes where it falls: 4 of 4  ->  R FALLS WITH RANDOM CLOSED RESTRICTION
+
+3. READING (b2): equal coverage on closed dictionaries, exact conditional range of the ratio of R'
+   size                   itC / zsC  includes 1                   fsC / zsC  includes 1
+     1B           0.43 [0.12, 2.36]         yes           1.29 [0.31, 7.57]         yes
+     4B           0.53 [0.21, 1.33]         yes           0.73 [0.34, 1.66]         yes
+    12B           2.42 [0.97, 6.80]         yes           1.69 [0.71, 4.66]         yes
+    27B           1.49 [0.71, 3.22]         yes           0.82 [0.40, 1.73]         yes
+   instruct / zero-shot range excludes 1 at 0 of 4 sizes, includes 1 at 4 of 4  ->  A DIFFERENCE IS NOT SHOWN
+
+4. DESCRIPTIVE (b3): spread of R' over the five random halves, closed (this entry) against the entry-level halves of D029
+   size  closed: smallest  largest  max/min    null range     D029 entry-level: smallest  largest  max/min    null range
+     1B               2.6     13.2      5.1     0.68-2.75                            4.6     11.3      2.5     0.71-1.44
+     4B               1.1      4.7      4.3    3.59-12.65                            2.5      8.7      3.5     1.84-6.21
+    12B               4.0     18.2      4.5     1.87-7.96                            3.7      6.3      1.7     3.50-7.29
+    27B               2.7     22.0      8.1     0.82-6.25                            1.9     10.0      5.3     1.20-6.34
+
+5. FLAGS: graphs with a null mean below the floor of 0.5 or swap failures: d030c__zsC_1B

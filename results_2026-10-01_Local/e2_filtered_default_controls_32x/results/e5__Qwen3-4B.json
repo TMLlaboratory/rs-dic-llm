@@ -1,0 +1,108 @@
+{
+ "key": "e5__Qwen3-4B",
+ "meta": {
+  "dataset": "e5",
+  "model": "Qwen3-4B",
+  "is_base": false,
+  "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen3-4B_42.jsonl",
+  "source_sha256": "dd609860f9b60268206328ad3f6993a7fe2350fa6036ac31c7827632feec2a63",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 3000,
+   "n_dropped": 1865,
+   "dropped_share": 0.6217,
+   "by_reason": {
+    "echo": 1855,
+    "fragment": 9,
+    "offtopic": 1
+   },
+   "by_rule": {
+    "instruction": 488,
+    "task_start": 1196,
+    "task_rule": 158,
+    "task_phrase": 4,
+    "prompt_span": 9,
+    "headword_only": 8,
+    "lead_in": 1,
+    "exam_marker": 1
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "9c1c379b9cb10366020663473d5bf5158ec924af15aafca0a13b05b68fe0e995",
+  "n_nodes": 2750,
+  "n_edges": 2098
+ },
+ "n_nodes": 2750,
+ "n_edges": 2098,
+ "observed": {
+  "kernel_ratio": 0.0014545454545454545,
+  "circulation_rate": 0.0007272727272727272,
+  "cycles_total": 1,
+  "cycles_2": 1,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.0022618181818181817,
+  "circulation_rate": 0.0007418181818181818,
+  "cycles_total": 0.89,
+  "cycles_2": 0.5,
+  "cycles_long": 0.03
+ },
+ "null_sd": {
+  "kernel_ratio": 0.0023925946357268905,
+  "circulation_rate": 0.0007234810248986698,
+  "cycles_total": 0.8472897969408105,
+  "cycles_2": 0.5916079783099616,
+  "cycles_long": 0.1705872210923198
+ },
+ "z": {
+  "kernel_ratio": -0.3374047217269092,
+  "circulation_rate": -0.02010481829498128,
+  "cycles_total": 0.12982571063308143,
+  "cycles_2": 0.8451542547285166,
+  "cycles_long": -0.17586311452816475
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 2.0,
+ "R_ci95": [
+  1.6129032258064517,
+  2.0
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 1,
+   "null_mean": 0.5
+  },
+  "3": {
+   "observed": 0,
+   "null_mean": 0.24
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.12
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.01
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.01
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.01
+  }
+ },
+ "R_analytic_rs_dic_llm": 6.170363329996944,
+ "R_complete_replicates_only": 2.0
+}

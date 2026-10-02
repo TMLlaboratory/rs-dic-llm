@@ -1,0 +1,77 @@
+1. (c1) DEFINING-WORD SETS OF THE SAME ENTRY IN TWO CONDITIONS: Jaccard index (E = entries kept in all three conditions)
+   size    |S|    |E|   pair                    mean J  median J  both empty
+     1B   1580   1580   zero-shot / instruct     0.114     0.000          32
+     1B   1580   1580   few-shot / instruct      0.167     0.000          58
+     1B   1580   1580   zero-shot / few-shot     0.139     0.000          34
+     4B   1322   1322   zero-shot / instruct     0.134     0.000          23
+     4B   1322   1322   few-shot / instruct      0.199     0.000          38
+     4B   1322   1322   zero-shot / few-shot     0.173     0.000          27
+    12B   1503   1503   zero-shot / instruct     0.152     0.000          27
+    12B   1503   1503   few-shot / instruct      0.250     0.200          32
+    12B   1503   1503   zero-shot / few-shot     0.168     0.000          40
+    27B   1296   1293   zero-shot / instruct     0.173     0.000           9
+    27B   1296   1293   few-shot / instruct      0.247     0.200          20
+    27B   1296   1293   zero-shot / few-shot     0.223     0.000          32
+
+2. (c2) DESCRIPTORS OF THE DEFINING WORDS PER CONDITION (on E, no reading)
+   size condition  words/record  median  no word  distinct  top-5 share  frame word
+     1B zero-shot          2.07       2    0.104       635        0.301       0.430
+     1B few-shot           1.90       2    0.144       639        0.151       0.070
+     1B instruct           1.55       1    0.155       595        0.143       0.059
+     4B zero-shot          2.21       2    0.098       691        0.225       0.352
+     4B few-shot           2.04       2    0.115       718        0.124       0.089
+     4B instruct           2.03       2    0.103       634        0.138       0.132
+    12B zero-shot          2.19       2    0.130       757        0.218       0.320
+    12B few-shot           2.20       2    0.098       797        0.125       0.098
+    12B instruct           2.50       2    0.071       751        0.171       0.271
+    27B zero-shot          2.17       2    0.106       714        0.209       0.299
+    27B few-shot           2.18       2    0.106       746        0.121       0.087
+    27B instruct           2.73       3    0.045       681        0.128       0.198
+   (words/record = defining words per kept record; no word = share of records with none; top-5 share = share of all defining-word occurrences carried by the five most used words;
+    frame word = share of records containing one of define, mean, refer, describe, phrase, use)
+
+   Overlap coefficient |A and B| / min(|A|, |B|), mean over the entries where both sets are non-empty
+     1B: zero-shot/instruct 0.278 (n 1202); few-shot/instruct 0.387 (n 1165); zero-shot/few-shot 0.329 (n 1221)
+     4B: zero-shot/instruct 0.313 (n 1079); few-shot/instruct 0.431 (n 1072); zero-shot/few-shot 0.374 (n 1067)
+    12B: zero-shot/instruct 0.354 (n 1227); few-shot/instruct 0.506 (n 1281); zero-shot/few-shot 0.391 (n 1200)
+    27B: zero-shot/instruct 0.388 (n 1107); few-shot/instruct 0.507 (n 1118); zero-shot/few-shot 0.473 (n 1051)
+
+   The ten most used defining words per condition (number of records)
+     1B zero-shot mean 296, person 229, define 200, use 166, describe 96, people 72, place 66, group 50, large 45, two 45
+     1B few-shot  person 158, use 95, place 83, people 62, large 54, small 54, group 51, quality 50, piece 45, material 35
+     1B instruct  person 108, small 63, use 62, place 61, people 57, feel 43, group 41, large 40, time 31, cover 28
+     4B zero-shot mean 219, use 136, person 130, define 112, place 61, people 54, describe 50, group 44, process 33, follow 31
+     4B few-shot  use 107, person 85, group 50, place 50, people 41, small 37, time 33, quality 32, large 30, process 30
+     4B instruct  mean 106, people 93, use 66, feel 55, group 51, place 51, small 50, large 41, time 38, like 37
+    12B zero-shot mean 279, use 161, person 156, place 68, people 55, define 51, group 49, describe 43, number 33, time 33
+    12B few-shot  use 130, person 109, group 59, place 59, people 57, small 52, process 39, object 35, position 35, take 35
+    12B instruct  mean 244, use 119, like 112, people 95, group 73, place 70, person 58, small 58, feel 54, large 54
+    27B zero-shot mean 227, person 140, use 116, describe 53, place 51, people 39, define 38, group 37, small 30, action 28
+    27B few-shot  person 99, use 98, people 58, place 44, group 42, small 40, position 30, cover 29, quality 29, large 28
+    27B instruct  use 105, people 102, mean 84, person 82, place 77, describe 73, like 59, feel 57, group 51, time 47
+
+3. (c3) RECOVERY OF THE INSTRUCT MUTUAL PAIRS AT EQUAL COVERAGE
+   T = mutual pairs of the instruct graph (whole word list) whose two words both have a surviving zero-shot entry.
+   zero-shot graph vs fsS graph (E3 limited to S, the same entries); sensitivity: the whole E3 graph.
+   size  instruct pairs   |T|   zs    r_zs         95 % CP   fsS    r_fs         95 % CP  only fsS  only zs  McNemar p  whole E3      r
+     1B              34    12    0   0.000  [0.000, 0.265]     0   0.000  [0.000, 0.265]         0        0     1.0000         2  0.167
+        mutual pairs in the graph: zero-shot 3, fsS 6, whole E3 29; of the zero-shot / fsS pairs, instruct pairs: 0 / 0
+     4B              47    12    1   0.083  [0.002, 0.385]     6   0.500  [0.211, 0.789]         5        0     0.0625         6  0.500
+        mutual pairs in the graph: zero-shot 11, fsS 18, whole E3 92; of the zero-shot / fsS pairs, instruct pairs: 1 / 6
+    12B              78    19    2   0.105  [0.013, 0.331]     8   0.421  [0.203, 0.665]         7        1     0.0703         8  0.421
+        mutual pairs in the graph: zero-shot 7, fsS 21, whole E3 114; of the zero-shot / fsS pairs, instruct pairs: 2 / 8
+    27B              71    19    2   0.105  [0.013, 0.331]     6   0.316  [0.126, 0.566]         4        0     0.1250         7  0.368
+        mutual pairs in the graph: zero-shot 14, fsS 21, whole E3 78; of the zero-shot / fsS pairs, instruct pairs: 2 / 6
+   pooled (descriptive: pairs recur across sizes) |T| 62: zero-shot 5 = 0.081 [0.027, 0.178]; fsS 20 = 0.323 [0.209, 0.453]; only fsS 16, only zero-shot 1, exact McNemar p 2.75e-04; whole E3 23 = 0.371
+
+4. THE READINGS OF D029, APPLIED
+   (c1) mean J(few-shot, instruct) / mean J(zero-shot, instruct): 1B 1.46, 4B 1.48, 12B 1.65, 27B 1.43; sizes at 1.5 or more: 1, below 1.25: 0
+        -> mixed
+   (c3) pooled r_fs / r_zs = 4.00 (r_fs 0.323, r_zs 0.081), exact McNemar p 2.75e-04
+        -> content differs
+
+5. RECURRENCE OF PAIRS ACROSS SIZES (added after sections 1-4 had been read; not part of D029; a check on the pooled test of section 3)
+   62 pair-instances in the four T(s) are 52 different pairs; recovered in a zero-shot graph at some size: 4; in an fsS graph at some size: 17
+   each different pair counted once: recovered only by fsS 14, only by zero-shot 1, exact McNemar p 0.0010
+   different pairs recovered only by fsS: [('asleep', 'awake'), ('correct', 'right'), ('eleven', 'ten'), ('enclosure', 'fence'), ('grasp', 'hold'), ('greet', 'welcome'), ('help', 'support'), ('identify', 'recognize'), ('image', 'picture'), ('initiate', 'start'), ('location', 'place'), ('mark', 'sign'), ('mention', 'refer'), ('reality', 'true')]
+   different pairs recovered in a zero-shot graph: [('allow', 'permission'), ('assign', 'task'), ('remove', 'take'), ('rip', 'tear')]

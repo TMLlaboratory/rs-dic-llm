@@ -1,0 +1,123 @@
+{
+ "key": "main__Gemma3-1B-pt",
+ "meta": {
+  "dataset": "main",
+  "model": "Gemma3-1B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-1B-pt_42.jsonl",
+  "source_sha256": "9d39ff6e517e0ea42400528f3e564b139b714bbbf721363bb28c44581eebf47a",
+  "n_records": 3000,
+  "filter": {
+   "variant": "default",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": null,
+   "n_records": 3000,
+   "n_valid_status": 2998,
+   "n_dropped": 1418,
+   "dropped_share": 0.473,
+   "by_reason": {
+    "question": 329,
+    "echo": 461,
+    "fragment": 354,
+    "offtopic": 262,
+    "refusal": 12
+   },
+   "by_rule": {
+    "question": 329,
+    "task_phrase": 29,
+    "headword_only": 260,
+    "task_start": 399,
+    "exam_marker": 10,
+    "lead_in": 13,
+    "first_person": 100,
+    "instruction": 2,
+    "meta_usage": 164,
+    "blank": 76,
+    "task_rule": 6,
+    "prompt_span": 25,
+    "truncated": 5
+   },
+   "vocabulary_size": 2750
+  },
+  "removed_nodes": [
+   "define",
+   "mean",
+   "refer",
+   "describe",
+   "phrase",
+   "use"
+  ],
+  "graph_sha256": "24f7b8376850674c556344946130fd4485df5e975c226a3aad2f9c32699abcb2",
+  "n_nodes": 2744,
+  "n_edges": 2487
+ },
+ "n_nodes": 2744,
+ "n_edges": 2487,
+ "observed": {
+  "kernel_ratio": 0.009839650145772596,
+  "circulation_rate": 0.0032798833819241984,
+  "cycles_total": 4,
+  "cycles_2": 3,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.0011807580174927113,
+  "circulation_rate": 0.00030247813411078716,
+  "cycles_total": 0.31,
+  "cycles_2": 0.15,
+  "cycles_long": 0.01
+ },
+ "null_sd": {
+  "kernel_ratio": 0.0026476493034817195,
+  "circulation_rate": 0.0006376093127825299,
+  "cycles_total": 0.6114736298484179,
+  "cycles_2": 0.3570714214271425,
+  "cycles_long": 0.099498743710662
+ },
+ "z": {
+  "kernel_ratio": 3.2704074957711518,
+  "circulation_rate": 4.6696388966152345,
+  "cycles_total": 6.034602016958176,
+  "cycles_2": 7.9815964789596565,
+  "cycles_long": -0.10050378152592121
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 6.0,
+ "R_ci95": [
+  6.0,
+  6.0
+ ],
+ "R_floor_applied": true,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 3,
+   "null_mean": 0.15
+  },
+  "3": {
+   "observed": 1,
+   "null_mean": 0.09
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.06
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.01
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0
+  }
+ },
+ "R_analytic_rs_dic_llm": 5.779303898673241,
+ "R_complete_replicates_only": 6.0
+}

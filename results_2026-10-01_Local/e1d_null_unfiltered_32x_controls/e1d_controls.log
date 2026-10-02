@@ -1,0 +1,44 @@
+[e1] collecting graphs for sets ['e3', 'e4', 'e5'] ...
+[e1] 40 graphs x 100 replicates, 12 workers
+[e1] 4000 replicates to run (0 already done)
+[e1]     147s  e3__Gemma3-12B-pt                  E=  6201 obs= 114 null=  3.69 R= 30.89 [ 28.43, 33.63] swap_fail=0/100
+[e1]     303s  e3__Gemma3-1B-pt                   E=  5465 obs=  29 null=  1.30 R= 22.31 [ 18.95, 27.36] swap_fail=0/100
+[e1]     591s  e3__Gemma3-270M-pt                 E=  4477 obs=  11 null=  2.32 R=  4.74 [  4.35,  5.19] swap_fail=0/100
+[e1]     714s  e3__Gemma3-27B-pt                  E=  6080 obs=  78 null=  2.79 R= 27.96 [ 25.08, 31.58] swap_fail=0/100
+[e1]     837s  e3__Gemma3-4B-pt                   E=  5868 obs=  92 null=  3.92 R= 23.47 [ 21.85, 25.34] swap_fail=0/100
+[e1]     942s  e4__Gemma3-12B                     E=  4855 obs= 101 null=  1.90 R= 53.16 [ 46.12, 62.35] swap_fail=0/100
+[e1]    1046s  e4__Gemma3-1B                      E=  4406 obs= 115 null=  4.31 R= 26.68 [ 24.95, 28.61] swap_fail=0/100
+[e1]    1158s  e4__Gemma3-27B                     E=  5059 obs=  74 null=  1.73 R= 42.77 [ 37.19, 50.00] swap_fail=0/100
+[e1]    1254s  e4__Gemma3-4B                      E=  4551 obs=  89 null=  2.47 R= 36.03 [ 32.72, 39.73] swap_fail=0/100
+[e1]    1330s  e4__Qwen2.5-0.5B                   E=  4982 obs=  70 null=  3.41 R= 20.53 [ 19.18, 22.01] swap_fail=0/100
+[e1]    1424s  e4__Qwen2.5-1.5B                   E=  4046 obs=  31 null=  2.34 R= 13.25 [ 12.02, 14.69] swap_fail=0/100
+[e1]    1544s  e4__Qwen2.5-14B                    E=  4624 obs=  67 null=  3.48 R= 19.25 [ 17.87, 20.74] swap_fail=0/100
+[e1]    1645s  e4__Qwen2.5-32B                    E=  4187 obs=  68 null=  4.70 R= 14.47 [ 13.77, 15.25] swap_fail=0/100
+[e1]    1736s  e4__Qwen2.5-3B                     E=  3709 obs=  46 null=  3.59 R= 12.81 [ 12.20, 13.49] swap_fail=0/100
+[e1]    1825s  e4__Qwen2.5-72B                    E=  4935 obs= 169 null=  7.04 R= 24.01 [ 22.84, 25.22] swap_fail=0/100
+[e1]    1905s  e4__Qwen2.5-7B                     E=  4003 obs=  76 null=  4.28 R= 17.76 [ 16.74, 18.86] swap_fail=0/100
+[e1]    2118s  e4__Qwen3-0.6B                     E=  3805 obs=  17 null=  0.62 R= 27.42 [ 21.52, 34.00] swap_fail=0/100
+[e1]    2215s  e4__Qwen3-1.7B                     E=  5268 obs=  94 null=  3.92 R= 23.98 [ 22.43, 25.76] swap_fail=0/100
+[e1]    2322s  e4__Qwen3-14B                      E=  4620 obs=  86 null=  3.66 R= 23.50 [ 22.11, 25.00] swap_fail=0/100
+[e1]    2453s  e4__Qwen3-4B-Instruct-2507         E=  4755 obs=  70 null=  3.73 R= 18.77 [ 17.41, 20.29] swap_fail=0/100
+[e1]    2550s  e4__Qwen3-4B                       E=  3986 obs=  55 null=  8.64 R=  6.37 [  6.13,  6.61] swap_fail=0/100
+[e1]    2667s  e4__Qwen3-8B                       E=  5251 obs=  69 null=  2.64 R= 26.14 [ 23.87, 28.75] swap_fail=0/100
+[e1]    2891s  e5__Gemma3-12B                     E=  6434 obs=  56 null=  2.12 R= 26.42 [ 23.33, 30.11] swap_fail=0/100
+[e1]    3067s  e5__Gemma3-1B                      E=  5037 obs=  25 null=  1.12 R= 22.32 [ 19.08, 26.88] swap_fail=0/100
+[e1]    3417s  e5__Gemma3-270M                    E=  6433 obs=   7 null=  1.54 R=  4.55 [  3.98,  5.30] swap_fail=0/100
+[e1]    3619s  e5__Gemma3-27B                     E=  6522 obs=  38 null=  1.85 R= 20.54 [ 18.10, 23.60] swap_fail=0/100
+[e1]    3800s  e5__Gemma3-4B                      E=  5596 obs=  49 null=  1.37 R= 35.77 [ 31.01, 42.24] swap_fail=0/100
+[e1]    4049s  e5__Qwen2.5-0.5B                   E= 12499 obs=  68 null=  6.53 R= 10.41 [  9.80, 11.11] swap_fail=0/100
+[e1]    4423s  e5__Qwen2.5-1.5B                   E= 16211 obs= 115 null= 14.64 R=  7.86 [  7.49,  8.26] swap_fail=0/100
+[e1]    4612s  e5__Qwen2.5-14B                    E=  7574 obs=  50 null=  8.14 R=  6.14 [  5.83,  6.49] swap_fail=0/100
+[e1]    4886s  e5__Qwen2.5-32B                    E=  7034 obs=  63 null=  3.01 R= 20.93 [ 18.98, 23.33] swap_fail=0/100
+[e1]    5001s  e5__Qwen2.5-3B                     E=  5126 obs=  44 null=  1.59 R= 27.67 [ 24.44, 32.12] swap_fail=0/100
+[e1]    5135s  e5__Qwen2.5-72B                    E=  5307 obs=  72 null=  2.49 R= 28.92 [ 26.18, 32.00] swap_fail=0/100
+[e1]    5243s  e5__Qwen2.5-7B                     E=  5197 obs=  84 null=  1.58 R= 53.16 [ 44.68, 65.12] swap_fail=0/100
+[e1]    6775s  e5__Qwen3-0.6B                     E=  5907 obs=   4 null=  3.65 R=  1.10 [  1.02,  1.19] swap_fail=0/100
+[e1]    7334s  e5__Qwen3-1.7B                     E=  5716 obs=   2 null=  0.92 R=  2.17 [  1.85,  2.63] swap_fail=0/100
+[e1]    7689s  e5__Qwen3-14B                      E=  5841 obs=   6 null=  0.99 R=  6.06 [  5.08,  7.50] swap_fail=0/100
+[e1]    7927s  e5__Qwen3-4B-Instruct-2507         E=  6827 obs=  37 null=  3.45 R= 10.72 [  9.74, 11.90] swap_fail=0/100
+[e1]    8416s  e5__Qwen3-4B                       E=  7323 obs=  18 null=  3.25 R=  5.54 [  5.14,  5.98] swap_fail=0/100
+[e1]    8572s  e5__Qwen3-8B                       E=  6730 obs=  27 null=  1.70 R= 15.88 [ 13.78, 18.62] swap_fail=0/100
+[e1] done in 8572s -> results_2026-10-01_Local\e1d_null_unfiltered_32x_controls

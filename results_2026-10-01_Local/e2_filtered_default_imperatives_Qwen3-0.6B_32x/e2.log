@@ -1,0 +1,5 @@
+[e1] collecting graphs for sets ['main'], filter default ...
+[e1] 1 graphs x 100 replicates, 12 workers
+[e1] 100 replicates to run (0 already done)
+[e1]     259s  main__Qwen3-0.6B                   E=  4761 obs=  13 null=  1.75 R=  7.43 [  6.84,  8.12] swap_fail=0/100
+[e1] done in 259s -> results_2026-10-01_Local\e2_filtered_default_imperatives_Qwen3-0.6B_32x

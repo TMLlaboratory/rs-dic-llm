@@ -1,0 +1,58 @@
+1. R PER GRAPH, 5 x (E1) AND 32 x (E1d); 95 % CI of E1d
+   graph                      null 5x null 32x   R 5x  R 32x          CI 32x  change
+   Gemma3-1B                     1.35     0.80   25.2   42.5    [35.1, 54.0]    +69%
+   Qwen2.5-32B                   1.50     1.10   24.0   32.7    [27.7, 39.1]    +36%
+   Gemma3-4B                     1.44     1.68   32.6   28.0    [24.6, 32.2]    -14%
+   Gemma3-12B                    3.42     3.04   22.8   25.7    [23.2, 28.7]    +12%
+   Qwen3-8B                      2.62     2.15   19.5   23.7    [20.8, 27.4]    +22%
+   Gemma3-27B                    3.50     3.19   20.3   22.3    [20.1, 24.8]    +10%
+   Qwen2.5-7B                    4.66     3.92   17.2   20.4    [19.0, 22.0]    +19%
+   Qwen3-14B                     3.37     2.71   14.8   18.5    [16.8, 20.2]    +24%
+   Qwen3-1.7B                    3.04     2.90   17.4   18.3    [16.7, 20.2]     +5%
+   Qwen2.5-1.5B                  3.19     2.62   14.7   17.9    [16.6, 19.6]    +22%
+   Qwen2.5-0.5B                  2.69     2.97   19.3   17.5    [15.7, 19.7]     -9%
+   Qwen3-4B-Instruct-2507        2.64     1.94   12.5   17.0    [15.0, 19.5]    +36%
+   wordnet                       2.97     1.72    9.1   15.7    [13.9, 17.9]    +73%
+   Qwen2.5-3B                    4.80     3.95   12.7   15.4    [14.6, 16.4]    +22%
+   Qwen2.5-14B                   3.62     3.27   13.0   14.4    [13.2, 15.7]    +11%
+   Qwen3-4B                      4.06     3.42   10.6   12.6    [11.7, 13.7]    +19%
+   Qwen2.5-72B                   7.48     6.65   11.0   12.3    [11.9, 12.7]    +12%
+   Qwen3-0.6B                    2.19     1.81    7.8    9.4     [8.4, 10.6]    +21%
+   Gemma3-27B-pt                 3.34     2.79    7.5    9.0      [8.2, 9.9]    +20%
+   Gemma3-4B-pt                  3.21     2.92    5.9    6.5      [5.9, 7.3]    +10%
+   Gemma3-12B-pt                 3.08     3.08    5.2    5.2      [4.7, 5.8]     +0%
+   Gemma3-1B-pt                  4.55     4.24    2.9    3.1      [2.8, 3.4]     +7%
+   Gemma3-270M-pt                1.90     1.94    2.1    2.1      [1.8, 2.4]     -2%
+   change 5x -> 32x, all 23      : median +19%, mean +18%, range -14% to +73%, higher on 19 of 23
+   change 5x -> 32x, instruct 17 : median +19%, mean +19%, range -14% to +69%, higher on 15 of 17
+   change 5x -> 32x, base 5      : median +7%, mean +7%, range -2% to +20%, higher on 3 of 5
+
+2. RANGES AT 32 x (report: instruct 8.9-23.5, base 1.5-7.3, WordNet 10.0)
+   instruct (17): 9.4-42.5, median 18.3;  base (5): 2.1-9.0, median 5.2;  WordNet 15.7 13.9-17.9
+   lowest instruct Qwen3-0.6B 9.4 ['8.4', '10.6']; highest base Gemma3-27B-pt 9.0 ['8.2', '9.9']; intervals overlap: True
+   instruct graphs above WordNet (15.7): 12 of 17; WordNet rank among the 18: 13
+
+3. MATCHED GEMMA PAIRS AT 32 x (instruct vs base)
+   1B   instruct  42.5 ['35.1', '54.0']   base  3.1 ['2.8', '3.4']   ratio 13.9
+   4B   instruct  28.0 ['24.6', '32.2']   base  6.5 ['5.9', '7.3']   ratio 4.3
+   12B  instruct  25.7 ['23.2', '28.7']   base  5.2 ['4.7', '5.8']   ratio 4.9
+   27B  instruct  22.3 ['20.1', '24.8']   base  9.0 ['8.2', '9.9']   ratio 2.5
+   270M base 2.1 (the instruct 270M has no cycle and is not in E1d)
+
+4. CLAIM 1 AT 32 x: z-scores against the converged null (22 models + WordNet)
+   kernel ratio      E1d: median -0.08, mean -0.50, range -4.29..+2.06, below -2: 4, above +2: 1   | E1 (same graphs): median -0.08, below -2: 5, above +2: 1
+   circulation rate  E1d: median -1.51, mean -1.90, range -6.03..+0.69, below -2: 8, above +2: 0   | E1 (same graphs): median -1.70, below -2: 10, above +2: 0
+   WordNet: kernel z -0.08, circulation z -1.89
+   graphs with kernel z above +2: [('Qwen2.5-32B', 2.06)]
+   graphs with kernel z below -2: [('Qwen2.5-0.5B', -4.29), ('Qwen3-1.7B', -2.2), ('Gemma3-4B-pt', -2.08), ('Gemma3-12B-pt', -2.99)]
+
+5. CYCLE-LENGTH PROFILE AT 32 x (observed / null mean, summed over the graphs of a group)
+   instruct       L2: 882/48 = 18.33x  L3: 93/41 = 2.29x  L4: 56/58 = 0.96x  L5: 59/99 = 0.60x  L6: 88/168 = 0.52x  L7: 139/303 = 0.46x
+   base zero-shot L2: 77/15 = 5.14x  L3: 24/23 = 1.03x  L4: 30/40 = 0.75x  L5: 54/74 = 0.73x  L6: 94/137 = 0.69x  L7: 142/259 = 0.55x
+   WordNet        L2: 27/2 = 15.70x  L3: 2/2 = 1.00x  L4: 4/3 = 1.57x  L5: 3/3 = 0.88x  L6: 3/4 = 0.69x  L7: 2/6 = 0.34x
+   long cycles (5-7), observed / null per base graph:
+     Gemma3-270M-pt        2 /   12.8 = 0.16x
+     Gemma3-1B-pt        128 /  155.6 = 0.82x
+     Gemma3-4B-pt         49 /  117.9 = 0.42x
+     Gemma3-12B-pt        33 /  133.7 = 0.25x
+     Gemma3-27B-pt        78 /   49.8 = 1.57x

@@ -1,0 +1,36 @@
+{
+ "started": "2026-10-01T08:47:28",
+ "finished": "2026-10-01T09:16:10",
+ "args": {
+  "out": "results_2026-10-01_Local/e1c_null_convergence",
+  "graphs": [
+   "main__wordnet",
+   "main__Gemma3-1B",
+   "main__Qwen2.5-32B",
+   "main__Qwen3-14B",
+   "main__Gemma3-27B-pt",
+   "main__Qwen2.5-72B"
+  ],
+  "graph_dir": "results_2026-10-01_Local/e1_null_unfiltered/graphs",
+  "reps": 30,
+  "workers": 12,
+  "checkpoints": [
+   1,
+   2,
+   4,
+   8,
+   16,
+   24,
+   32,
+   48,
+   64,
+   96,
+   128
+  ],
+  "summary_only": false,
+  "smoke": false
+ },
+ "tries_per_swap_limit": 1000,
+ "git_head": "f6561effa971a3989726f55ad468f3ea13947787",
+ "networkx": "3.6.1"
+}

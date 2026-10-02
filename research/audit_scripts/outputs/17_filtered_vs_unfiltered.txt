@@ -1,0 +1,201 @@
+variants with results: {'unfiltered': 63, 'extract': 0, 'default': 63, 'strict': 28, 'stored': 23, 'frame': 23} | imperatives run: 1 graphs
+
+1. R PER MAIN GRAPH (swap failures flagged with *; 100 replicates, 32 x edges swaps)
+   graph                      unfilt. extract default   default 95 % interval  strict  stored   frame   edges unf/def
+   Gemma3-1B                     42.5      --    42.5            [35.1, 54.0]    34.9    42.5    42.3       4448/4448
+   Qwen2.5-32B                   32.7      --    32.7            [27.7, 39.1]    32.4    32.7    33.3       5104/5104
+   Gemma3-4B                     28.0      --    28.0            [24.6, 32.2]    26.9    28.0    39.0       5842/5842
+   Gemma3-12B                    25.7      --    25.7            [23.2, 28.7]    25.7    25.7    24.7       7052/7052
+   Qwen3-8B                      23.7      --    29.3            [25.5, 34.2]    26.7    29.3    25.9       6224/6220
+   Gemma3-27B                    22.3      --    25.4            [22.8, 28.7]    21.4    21.8    21.9       7911/7896
+   Qwen2.5-7B                    20.4      --    20.6            [19.3, 22.0]    19.3    20.6    20.5       5058/5054
+   Qwen3-14B                     18.5      --    19.4            [17.7, 21.3]    18.7    19.4    19.5       5880/5869
+   Qwen3-1.7B                    18.3      --    17.4            [15.7, 19.5]    19.5    17.4    20.0       7090/7087
+   Qwen2.5-1.5B                  17.9      --    17.2            [15.6, 19.0]    16.9    17.2    16.8       5075/5074
+   Qwen2.5-0.5B                  17.5      --    19.3            [17.3, 21.7]    19.7    19.3    19.0       7002/6999
+   Qwen3-4B-Instruct-2507        17.0      --    18.3            [16.0, 21.3]    17.1    17.0    16.3       5906/5904
+   wordnet                       15.7      --    15.7            [13.9, 17.9]    15.7    15.7    19.7       4599/4599
+   Qwen2.5-3B                    15.4      --    15.5            [14.5, 16.7]    15.2    15.5    14.6       4881/4880
+   Qwen2.5-14B                   14.4      --    15.6            [14.2, 17.2]    15.2    15.6    12.0       5344/5343
+   Qwen3-4B                      12.6      --    12.6            [11.7, 13.7]    12.9    12.6    14.0       5113/5113
+   Qwen2.5-72B                   12.3      --    12.3            [11.9, 12.7]    12.5    12.3    12.7       5085/5085
+   Qwen3-0.6B                     9.4      --     8.8              [7.9, 9.8]     8.9     8.8     8.2       4942/4939
+   Gemma3-27B-pt                  9.0      --     4.9              [4.6, 5.3]     5.6     6.4     3.3       7108/2812
+   Gemma3-4B-pt                   6.5      --     8.4              [7.7, 9.1]     5.6    12.5     4.0       8624/2904
+   Gemma3-12B-pt                  5.2      --     2.1              [2.0, 2.2]     2.2     2.6     1.9       7719/3268
+   Gemma3-1B-pt                   3.1      --     6.0              [5.1, 6.0]     6.0     6.0     6.0       7040/3249
+   Gemma3-270M-pt                 2.1      --     3.0              [2.8, 3.3]     1.8     2.6     3.0       5952/2358
+
+2. GROUP RANGES (R)
+   unfiltered  instruct (17)   9.4- 42.5 median  18.3 | base (5)   2.1-  9.0 median   5.2 | WordNet  15.7 | lowest instruct Qwen3-0.6B 9.4, highest base Gemma3-27B-pt 9.0, intervals overlap: True
+   default     instruct (17)   8.8- 42.5 median  19.3 | base (5)   2.1-  8.4 median   4.9 | WordNet  15.7 | lowest instruct Qwen3-0.6B 8.8, highest base Gemma3-4B-pt 8.4, intervals overlap: True
+   strict      instruct (17)   8.9- 34.9 median  19.3 | base (5)   1.8-  6.0 median   5.6 | WordNet  15.7 | lowest instruct Qwen3-0.6B 8.9, highest base Gemma3-1B-pt 6.0, intervals overlap: False
+   stored      instruct (17)   8.8- 42.5 median  19.3 | base (5)   2.6- 12.5 median   6.0 | WordNet  15.7 | lowest instruct Qwen3-0.6B 8.8, highest base Gemma3-4B-pt 12.5, intervals overlap: True
+   frame       instruct (17)   8.2- 42.3 median  19.5 | base (5)   1.9-  6.0 median   3.3 | WordNet  19.7 | lowest instruct Qwen3-0.6B 8.2, highest base Gemma3-1B-pt 6.0, intervals overlap: False
+
+3. MATCHED GEMMA3 PAIRS: instruct R / base R (ratio)
+   size                  unfiltered                   default                    strict                    stored                     frame
+   1B         42.5 /   3.1 =  13.9x     42.5 /   6.0 =   7.1x     34.9 /   6.0 =   5.8x     42.5 /   6.0 =   7.1x     42.3 /   6.0 =   7.1x
+   4B         28.0 /   6.5 =   4.3x     28.0 /   8.4 =   3.3x     26.9 /   5.6 =   4.8x     28.0 /  12.5 =   2.2x     39.0 /   4.0 =   9.7x
+   12B        25.7 /   5.2 =   4.9x     25.7 /   2.1 =  12.2x     25.7 /   2.2 =  11.7x     25.7 /   2.6 =  10.0x     24.7 /   1.9 =  12.9x
+   27B        22.3 /   9.0 =   2.5x     25.4 /   4.9 =   5.2x     21.4 /   5.6 =   3.8x     21.8 /   6.4 =   3.4x     21.9 /   3.3 =   6.7x
+   pre-registered reading (D024): pairs with r_d >= 2 and r_s >= 2: 4 of 4; r_d >= 2: 4; r_d < 2: 0; r_s < 2: 0  ->  (i) the pt/it contrast survives filtering and is not explained by leaked junk
+   pre-registered reading (D025): pairs with r_f >= 2: 4 of 4; r_f < 2: 0  ->  (B) the gap does not depend on the frame words
+   R before / after removing the frame words (default filter):
+     Gemma3-1B                   42.5 ->   42.3  (  -0 %)
+     Qwen2.5-32B                 32.7 ->   33.3  (  +2 %)
+     Gemma3-4B                   28.0 ->   39.0  ( +39 %)
+     Gemma3-12B                  25.7 ->   24.7  (  -4 %)
+     Qwen3-8B                    29.3 ->   25.9  ( -12 %)
+     Gemma3-27B                  25.4 ->   21.9  ( -14 %)
+     Qwen2.5-7B                  20.6 ->   20.5  (  -1 %)
+     Qwen3-14B                   19.4 ->   19.5  (  +1 %)
+     Qwen3-1.7B                  17.4 ->   20.0  ( +15 %)
+     Qwen2.5-1.5B                17.2 ->   16.8  (  -2 %)
+     Qwen2.5-0.5B                19.3 ->   19.0  (  -1 %)
+     Qwen3-4B-Instruct-2507      18.3 ->   16.3  ( -11 %)
+     wordnet                     15.7 ->   19.7  ( +26 %)
+     Qwen2.5-3B                  15.5 ->   14.6  (  -6 %)
+     Qwen2.5-14B                 15.6 ->   12.0  ( -23 %)
+     Qwen3-4B                    12.6 ->   14.0  ( +12 %)
+     Qwen2.5-72B                 12.3 ->   12.7  (  +3 %)
+     Qwen3-0.6B                   8.8 ->    8.2  (  -6 %)
+     Gemma3-27B-pt                4.9 ->    3.3  ( -34 %)
+     Gemma3-4B-pt                 8.4 ->    4.0  ( -52 %)
+     Gemma3-12B-pt                2.1 ->    1.9  (  -9 %)
+     Gemma3-1B-pt                 6.0 ->    6.0  (  +0 %)
+     Gemma3-270M-pt               3.0 ->    3.0  (  +0 %)
+
+4. E3: FEW-SHOT BASE R AGAINST THE INSTRUCT MODEL OF THE SAME SIZE
+   size  unfiltered few-shot  instruct  factordefault few-shot  instruct  factor strict few-shot  instruct  factor
+   1B                22.3      42.5    1.91            22.3      42.5    1.91            22.3      34.9    1.57
+   4B                23.5      28.0    1.19            23.5      28.0    1.19            23.5      26.9    1.14
+   12B               30.9      25.7    1.20            30.9      25.7    1.20            29.5      25.7    1.15
+   27B               28.0      22.3    1.26            28.5      25.4    1.12            31.3      21.4    1.46
+   unfiltered: few-shot base within a factor 2 of the instruct model at 4 of 4 sizes (reaches the instruct range by the D024 reading)
+   default: few-shot base within a factor 2 of the instruct model at 4 of 4 sizes (reaches the instruct range by the D024 reading)
+   strict: few-shot base within a factor 2 of the instruct model at 4 of 4 sizes (reaches the instruct range by the D024 reading)
+
+5. E4 AND E5 AGAINST THE MAIN RUN (R of the control / R of the same model in the main run)
+   e4 unfiltered  n=17 median ratio  1.17 range 0.44-2.92; median size of the change x1.34, largest x2.92
+   e4 default     n=17 median ratio  1.11 range 0.46-2.98; median size of the change x1.28, largest x2.98
+   e5 unfiltered  n=17 median ratio  0.63 range 0.12-2.61; median size of the change x1.90, largest x8.57
+   e5 default     n=15 median ratio  0.76 range 0.10-2.52; median size of the change x1.94, largest x9.69
+   E5 per model, default filter (ratio to the main run):
+     Gemma3-12B               R   30.4 (unfiltered  26.4)  ratio  1.19
+     Gemma3-1B                R   22.7 (unfiltered  22.3)  ratio  0.53
+     Gemma3-27B               R   19.3 (unfiltered  20.5)  ratio  0.76
+     Gemma3-4B                R   33.1 (unfiltered  35.8)  ratio  1.18
+     Qwen2.5-0.5B             R   13.7 (unfiltered  10.4)  ratio  0.71
+     Qwen2.5-1.5B             R   16.1 (unfiltered   7.9)  ratio  0.94
+     Qwen2.5-14B              R    7.5 (unfiltered   6.1)  ratio  0.48
+     Qwen2.5-32B              R   37.9 (unfiltered  20.9)  ratio  1.16
+     Qwen2.5-3B               R   30.1 (unfiltered  27.7)  ratio  1.94
+     Qwen2.5-72B              R   26.3 (unfiltered  28.9)  ratio  2.14
+     Qwen2.5-7B               R   51.9 (unfiltered  53.2)  ratio  2.52
+     Qwen3-0.6B               R    0.0 (unfiltered   1.1)  ratio  0.00
+     Qwen3-1.7B               R    0.0 (unfiltered   2.2)  ratio  0.00
+     Qwen3-14B                R    2.0 (unfiltered   6.1)  ratio  0.10
+     Qwen3-4B                 R    2.0 (unfiltered   5.5)  ratio  0.16
+     Qwen3-4B-Instruct-2507   R    8.1 (unfiltered  10.7)  ratio  0.44
+     Qwen3-8B                 R   10.3 (unfiltered  15.9)  ratio  0.35
+
+6. CLAIM 1: z-SCORES AGAINST THE NULL (all 23 main graphs pooled: 17 instruct, 5 base, WordNet; section 14 gives the groups)
+   unfiltered  kernel ratio  n=23 median -0.08 range -4.29..+2.06 below -2: 4, above +2: 1
+   unfiltered  circulation   n=23 median -1.51 range -6.03..+0.69 below -2: 8, above +2: 0
+   default     kernel ratio  n=23 median +0.52 range -4.39..+3.25 below -2: 2, above +2: 3
+   default     circulation   n=23 median -1.10 range -6.11..+4.33 below -2: 6, above +2: 2
+   strict      kernel ratio  n=23 median +0.43 range -4.67..+3.38 below -2: 3, above +2: 3
+   strict      circulation   n=23 median -1.21 range -6.24..+5.27 below -2: 6, above +2: 3
+
+7. CYCLE-LENGTH PROFILE, default filter (observed / null, summed over the graphs of a group)
+   instruct L2: 881/47 = 18.83x  L3: 93/41 = 2.24x  L4: 56/58 = 0.97x  L5: 58/98 = 0.59x  L6: 86/167 = 0.52x  L7: 138/302 = 0.46x
+   base     L2: 39/9 = 4.21x  L3: 2/3 = 0.76x  L4: 0/1 = 0.00x  L5: 0/1 = 0.00x  L6: 0/0 = 0.00x  L7: 0/0 = 0.00x
+   WordNet  L2: 27/2 = 15.70x  L3: 2/2 = 1.00x  L4: 4/3 = 1.57x  L5: 3/3 = 0.88x  L6: 3/4 = 0.69x  L7: 2/6 = 0.34x
+
+8. IMPERATIVES DROPPED (sensitivity, D023 item 4), Qwen3-0.6B
+   R default   8.8 [7.9, 9.8]; unfiltered   9.4; imperatives dropped 7.4 [6.8, 8.1]; dropped 251 of 3000 records; edges 4761
+
+9. RECORDS DROPPED (default filter, share of records with a valid status)
+   e5__Gemma3-270M                      7.2 %  (215 of 3000)  edges 5701  swap failures 0
+   e5__Qwen2.5-14B                      6.7 %  (200 of 3000)  edges 4839  swap failures 0
+   e5__Qwen3-0.6B                      86.5 %  (2595 of 3000)  edges 556  swap failures 100
+   e5__Qwen3-1.7B                      85.2 %  (2557 of 3000)  edges 1033  swap failures 100
+   e5__Qwen3-14B                       73.4 %  (2203 of 3000)  edges 1770  swap failures 0
+   e5__Qwen3-4B                        62.2 %  (1865 of 3000)  edges 2098  swap failures 0
+   e5__Qwen3-8B                        32.9 %  (987 of 3000)  edges 4796  swap failures 0
+   main__Gemma3-12B-pt                 49.9 %  (1495 of 2998)  edges 3268  swap failures 0
+   main__Gemma3-1B-pt                  47.3 %  (1418 of 2998)  edges 3249  swap failures 0
+   main__Gemma3-270M-pt                57.6 %  (1727 of 3000)  edges 2358  swap failures 0
+   main__Gemma3-27B-pt                 56.7 %  (1699 of 2995)  edges 2812  swap failures 0
+   main__Gemma3-4B-pt                  55.9 %  (1678 of 3000)  edges 2904  swap failures 0
+
+swap failures (graph not fully randomised): [('default', 'e5__Qwen3-0.6B'), ('default', 'e5__Qwen3-1.7B')]
+graphs with no mutual pair (R = 0): [('default', 'e5__Qwen3-0.6B'), ('default', 'e5__Qwen3-1.7B')]
+
+10. BASE GRAPHS AND THE LOWEST INSTRUCT GRAPH IN DETAIL (observed mutual pairs, null mean of mutual pairs, edges, R)
+   graph                                   unfiltered                       default                        strict                        stored                         frame
+   Gemma3-27B-pt       obs  25 null  2.79 E  7108 R   9.0obs  14 null  2.85 E  2812 R   4.9obs  14 null  2.49 E  2700 R   5.6obs  15 null  2.34 E  3440 R   6.4obs  14 null  4.29 E  2357 R   3.3
+   Gemma3-4B-pt        obs  19 null  2.92 E  8624 R   6.5obs  11 null  1.31 E  2904 R   8.4obs  10 null  1.80 E  2764 R   5.6obs  13 null  1.04 E  4234 R  12.5obs  11 null  2.73 E  2376 R   4.0
+   Gemma3-12B-pt       obs  16 null  3.08 E  7719 R   5.2obs   7 null  3.33 E  3268 R   2.1obs   7 null  3.18 E  3100 R   2.2obs   8 null  3.11 E  4192 R   2.6obs   7 null  3.65 E  2734 R   1.9
+   Gemma3-1B-pt        obs  13 null  4.24 E  7040 R   3.1obs   3 null  0.45 E  3249 R   6.0obs   3 null  0.34 E  3074 R   6.0obs   6 null  1.00 E  4360 R   6.0obs   3 null  0.15 E  2487 R   6.0
+   Gemma3-270M-pt      obs   4 null  1.94 E  5952 R   2.1obs   4 null  1.32 E  2358 R   3.0obs   3 null  1.65 E  1852 R   1.8obs   4 null  1.56 E  3137 R   2.6obs   4 null  1.32 E  1973 R   3.0
+   Qwen3-0.6B          obs  17 null  1.81 E  4942 R   9.4obs  17 null  1.94 E  4939 R   8.8obs  17 null  1.90 E  4917 R   8.9obs  17 null  1.94 E  4939 R   8.8obs  16 null  1.94 E  4138 R   8.2
+
+11. GRAPHS BEYOND |z| = 2 (claim 1)
+   unfiltered  kernel       [('Qwen2.5-32B', 2.1), ('Qwen3-1.7B', -2.2), ('Qwen2.5-0.5B', -4.3), ('Gemma3-4B-pt', -2.1), ('Gemma3-12B-pt', -3.0)]
+   unfiltered  circulation  [('Gemma3-12B', -3.0), ('Qwen3-8B', -3.8), ('Gemma3-27B', -2.5), ('Qwen3-1.7B', -5.7), ('Qwen2.5-1.5B', -2.1), ('Qwen2.5-0.5B', -6.0), ('Gemma3-12B-pt', -4.6), ('Gemma3-1B-pt', -2.5)]
+   default     kernel       [('Qwen2.5-32B', 2.1), ('Qwen2.5-1.5B', -2.1), ('Qwen2.5-0.5B', -4.4), ('Gemma3-4B-pt', 3.2), ('Gemma3-1B-pt', 2.5)]
+   default     circulation  [('Gemma3-12B', -3.0), ('Qwen3-8B', -3.8), ('Gemma3-27B', -2.4), ('Qwen3-1.7B', -4.4), ('Qwen2.5-1.5B', -2.2), ('Qwen2.5-0.5B', -6.1), ('Gemma3-27B-pt', 2.7), ('Gemma3-4B-pt', 4.3)]
+   strict      kernel       [('Qwen2.5-32B', 2.2), ('Qwen3-1.7B', -2.0), ('Qwen2.5-1.5B', -2.3), ('Qwen2.5-0.5B', -4.7), ('Gemma3-4B-pt', 3.4), ('Gemma3-1B-pt', 3.0)]
+   strict      circulation  [('Gemma3-12B', -3.0), ('Qwen3-8B', -3.1), ('Gemma3-27B', -2.8), ('Qwen3-1.7B', -4.8), ('Qwen2.5-1.5B', -2.6), ('Qwen2.5-0.5B', -6.2), ('Gemma3-27B-pt', 2.2), ('Gemma3-4B-pt', 5.3), ('Gemma3-1B-pt', 2.4)]
+   stored      kernel       [('Qwen2.5-32B', 2.1), ('Qwen2.5-1.5B', -2.1), ('Qwen2.5-0.5B', -4.4)]
+   stored      circulation  [('Gemma3-12B', -3.0), ('Qwen3-8B', -3.8), ('Gemma3-27B', -2.5), ('Qwen3-1.7B', -4.4), ('Qwen2.5-1.5B', -2.2), ('Qwen2.5-0.5B', -6.1)]
+   frame       kernel       [('Gemma3-1B', 2.3), ('Qwen2.5-32B', 2.4), ('Qwen3-1.7B', -2.2), ('Qwen2.5-0.5B', -3.5), ('Gemma3-4B-pt', 3.1), ('Gemma3-1B-pt', 3.3)]
+   frame       circulation  [('Gemma3-12B', -4.0), ('Qwen3-8B', -3.4), ('Gemma3-27B', -2.6), ('Qwen2.5-7B', -2.0), ('Qwen3-1.7B', -5.6), ('Qwen2.5-1.5B', -2.1), ('Qwen2.5-0.5B', -5.3), ('Gemma3-27B-pt', 2.3), ('Gemma3-4B-pt', 4.6), ('Gemma3-1B-pt', 4.7)]
+
+12. HUBS IN THE FILTERED GRAPHS (default filter): words used in the most definitions, share of edges, words without incoming edges
+   Gemma3-270M-pt     edges  2358; top out-degree [('person', 203), ('use', 196), ('follow', 89), ('describe', 77), ('mean', 76), ('first', 75)]; top-5 hubs carry 27 % of the edges; 1730 of 2750 words have no incoming edge
+   Gemma3-1B-pt       edges  3249; top out-degree [('mean', 292), ('person', 226), ('define', 198), ('use', 166), ('describe', 96), ('people', 72)]; top-5 hubs carry 30 % of the edges; 1396 of 2750 words have no incoming edge
+   Gemma3-4B-pt       edges  2904; top out-degree [('mean', 217), ('use', 135), ('person', 129), ('define', 112), ('place', 60), ('people', 53)]; top-5 hubs carry 22 % of the edges; 1607 of 2750 words have no incoming edge
+   Gemma3-12B-pt      edges  3268; top out-degree [('mean', 276), ('use', 159), ('person', 156), ('place', 67), ('people', 54), ('define', 51)]; top-5 hubs carry 22 % of the edges; 1496 of 2750 words have no incoming edge
+   Gemma3-27B-pt      edges  2812; top out-degree [('mean', 227), ('person', 142), ('use', 118), ('describe', 54), ('place', 50), ('define', 39)]; top-5 hubs carry 21 % of the edges; 1625 of 2750 words have no incoming edge
+   Gemma3-27B         edges  7896; top out-degree [('use', 231), ('people', 218), ('mean', 213), ('person', 193), ('describe', 182), ('like', 164)]; top-5 hubs carry 13 % of the edges; 118 of 2750 words have no incoming edge
+   Qwen2.5-72B        edges  5085; top out-degree [('use', 184), ('person', 155), ('place', 128), ('people', 116), ('small', 80), ('group', 75)]; top-5 hubs carry 13 % of the edges; 372 of 2750 words have no incoming edge
+   Qwen3-0.6B         edges  4939; top out-degree [('use', 366), ('describe', 245), ('person', 209), ('mean', 173), ('place', 132), ('people', 118)]; top-5 hubs carry 23 % of the edges; 430 of 2750 words have no incoming edge
+
+13. E3 270M AND THE E5 GRAPHS THE FILTER CHANGES MOST (unfiltered -> default: edges, observed mutual pairs, null mean, R, share dropped)
+   E3 Gemma3-270M-pt, unfiltered: R 4.7
+   E3 Gemma3-270M-pt, default: R 4.6
+   E3 Gemma3-270M-pt, strict: R 4.2
+   e5__Qwen3-0.6B               edges  5907 ->   556; pairs   4 ->   0; null  3.65 ->  0.00; R   1.1 ->   0.0; dropped  86 %; swap failures 100/100; null mean below the floor of 0.5
+   e5__Qwen3-1.7B               edges  5716 ->  1033; pairs   2 ->   0; null  0.92 ->  0.00; R   2.2 ->   0.0; dropped  85 %; swap failures 100/100; null mean below the floor of 0.5
+   e5__Qwen3-14B                edges  5841 ->  1770; pairs   6 ->   1; null  0.99 ->  0.11; R   6.1 ->   2.0; dropped  73 %; swap failures 0/100; null mean below the floor of 0.5
+   e5__Qwen3-4B                 edges  7323 ->  2098; pairs  18 ->   1; null  3.25 ->  0.50; R   5.5 ->   2.0; dropped  62 %; swap failures 0/100
+   e5__Qwen3-8B                 edges  6730 ->  4796; pairs  27 ->  22; null  1.70 ->  2.14; R  15.9 ->  10.3; dropped  33 %; swap failures 0/100
+
+14. CLAIM 1 BY GROUP: z-scores against the null, instruct models only (17), base models only (5) and WordNet (section 6 pools all 23)
+   circulation   instruct  unfiltered  n=17 median -1.34 range -6.03..+0.69 below 0: 15, below -2: 6, above +2: 0
+   circulation   instruct  default     n=17 median -1.51 range -6.11..+0.69 below 0: 15, below -2: 6, above +2: 0
+   circulation   instruct  strict      n=17 median -1.37 range -6.24..+0.82 below 0: 15, below -2: 6, above +2: 0
+   circulation   base      unfiltered  n= 5 median -1.81 range -4.57..-1.01 below 0:  5, below -2: 2, above +2: 0
+   circulation   base      default     n= 5 median +1.90 range +0.65..+4.33 below 0:  0, below -2: 0, above +2: 2
+   circulation   base      strict      n= 5 median +2.20 range +0.98..+5.27 below 0:  0, below -2: 0, above +2: 3
+   circulation   WordNet   unfiltered  n= 1 median -1.89 range -1.89..-1.89 below 0:  1, below -2: 0, above +2: 0
+   circulation   WordNet   default     n= 1 median -1.89 range -1.89..-1.89 below 0:  1, below -2: 0, above +2: 0
+   circulation   WordNet   strict      n= 1 median -1.89 range -1.89..-1.89 below 0:  1, below -2: 0, above +2: 0
+   kernel ratio  instruct  unfiltered  n=17 median +0.16 range -4.29..+2.06 below 0:  7, below -2: 2, above +2: 1
+   kernel ratio  instruct  default     n=17 median +0.31 range -4.39..+2.06 below 0:  7, below -2: 2, above +2: 1
+   kernel ratio  instruct  strict      n=17 median +0.10 range -4.67..+2.19 below 0:  7, below -2: 3, above +2: 1
+   kernel ratio  base      unfiltered  n= 5 median -1.67 range -2.99..-0.49 below 0:  5, below -2: 2, above +2: 0
+   kernel ratio  base      default     n= 5 median +1.68 range +0.26..+3.25 below 0:  0, below -2: 0, above +2: 2
+   kernel ratio  base      strict      n= 5 median +1.37 range +0.09..+3.38 below 0:  0, below -2: 0, above +2: 2
+   kernel ratio  WordNet   unfiltered  n= 1 median -0.08 range -0.08..-0.08 below 0:  1, below -2: 0, above +2: 0
+   kernel ratio  WordNet   default     n= 1 median -0.08 range -0.08..-0.08 below 0:  1, below -2: 0, above +2: 0
+   kernel ratio  WordNet   strict      n= 1 median -0.08 range -0.08..-0.08 below 0:  1, below -2: 0, above +2: 0
+
+15. R AGAINST MODEL SIZE, instruct models, default filter (descriptive; Spearman rank correlation of R with the size in billions of parameters)
+   Gemma3   1B 42.5  4B 28.0  12B 25.7  27B 25.4   rho -1.00 (n=4, p=0.00)
+   Qwen2.5  0.5B 19.3  1.5B 17.2  3B 15.5  7B 20.6  14B 15.6  32B 32.7  72B 12.3   rho -0.18 (n=7, p=0.70)
+   Qwen3    0.6B 8.8  1.7B 17.4  4B 12.6  4B-Instruct-2507 18.3  8B 29.3  14B 19.4   rho +0.84 (n=6, p=0.04)
+   all 17 instruct models: rho +0.18 (p=0.50)

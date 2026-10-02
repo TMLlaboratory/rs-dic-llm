@@ -1,0 +1,25 @@
+[d033] 23 graphs x 20 replicates, 460 to run, 12 workers
+[d033]     20s  main__Gemma3-12B             kernel z  -0.51  circulation z  -3.45  2-cycles obs 78 null 2.65
+[d033]     23s  main__Gemma3-12B-pt          kernel z  +1.49  circulation z  +4.00  2-cycles obs 7 null 0.70
+[d033]     31s  main__Gemma3-1B              kernel z  +1.40  circulation z  +0.38  2-cycles obs 34 null 0.60
+[d033]     34s  main__Gemma3-1B-pt           kernel z  +1.70  circulation z  +1.43  2-cycles obs 3 null 0.35
+[d033]     37s  main__Gemma3-270M-pt         kernel z  +1.10  circulation z  +1.18  2-cycles obs 4 null 0.40
+[d033]     60s  main__Gemma3-27B             kernel z  -1.40  circulation z  -2.45  2-cycles obs 71 null 2.85
+[d033]     61s  main__Gemma3-27B-pt          kernel z  +2.88  circulation z  +8.52  2-cycles obs 14 null 0.50
+[d033]     71s  main__Gemma3-4B              kernel z  -0.20  circulation z  -1.20  2-cycles obs 47 null 1.75
+[d033]     73s  main__Gemma3-4B-pt           kernel z  +3.30  circulation z  +4.43  2-cycles obs 11 null 0.15
+[d033]     95s  main__Qwen2.5-0.5B           kernel z  -3.94  circulation z  -5.15  2-cycles obs 52 null 2.60
+[d033]     99s  main__Qwen2.5-1.5B           kernel z  -2.07  circulation z  -2.05  2-cycles obs 46 null 1.20
+[d033]    108s  main__Qwen2.5-14B            kernel z  +1.88  circulation z  +0.36  2-cycles obs 47 null 1.35
+[d033]    117s  main__Qwen2.5-32B            kernel z  +1.79  circulation z  +0.58  2-cycles obs 36 null 1.50
+[d033]    122s  main__Qwen2.5-3B             kernel z  +1.18  circulation z  -0.81  2-cycles obs 61 null 1.15
+[d033]    132s  main__Qwen2.5-72B            kernel z  +1.43  circulation z  +0.46  2-cycles obs 82 null 1.20
+[d033]    143s  main__Qwen2.5-7B             kernel z  +1.15  circulation z  -1.32  2-cycles obs 80 null 2.05
+[d033]    148s  main__Qwen3-0.6B             kernel z  +0.92  circulation z  +0.20  2-cycles obs 17 null 1.00
+[d033]    167s  main__Qwen3-1.7B             kernel z  -2.33  circulation z  -5.25  2-cycles obs 53 null 3.30
+[d033]    175s  main__Qwen3-14B              kernel z  +0.61  circulation z  -1.18  2-cycles obs 50 null 1.75
+[d033]    182s  main__Qwen3-4B               kernel z  -0.15  circulation z  -1.84  2-cycles obs 43 null 1.40
+[d033]    192s  main__Qwen3-4B-Instruct-2507 kernel z  +0.19  circulation z  -1.31  2-cycles obs 33 null 2.05
+[d033]    205s  main__Qwen3-8B               kernel z  -1.94  circulation z  -3.30  2-cycles obs 51 null 1.40
+[d033]    209s  main__wordnet                kernel z  -0.26  circulation z  -1.51  2-cycles obs 27 null 1.60
+[d033] done in 209s -> results_2026-10-02_Local\d033_double_swap_full_stats

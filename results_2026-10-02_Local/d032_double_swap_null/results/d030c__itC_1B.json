@@ -1,0 +1,32 @@
+{
+ "key": "d030c__itC_1B",
+ "n_nodes": 1506,
+ "n_edges": 1433,
+ "snapshot_sha256": "fb661c1e3d49973665de83cdf0cf9d60e80b810989c1d93d5662c269d50bf4c1",
+ "observed": {
+  "cycles_2": 12
+ },
+ "null_mean": {
+  "cycles_2": 0.44
+ },
+ "null_sd": {
+  "cycles_2": 0.6216108107168021
+ },
+ "reciprocity_excess": 24.0,
+ "R_prime": 27.272727272727273,
+ "R_floor_applied": true,
+ "R_ci95": [
+  21.05263157894737,
+  24.0
+ ],
+ "R_poisson_range": [
+  12.401150217444439,
+  41.92317009635392
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0,
+ "accepted_mean": 91712,
+ "tries_mean": 95478.53
+}

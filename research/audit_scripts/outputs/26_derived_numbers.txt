@@ -1,0 +1,14 @@
+1. WHAT THE DEFAULT FILTER KEEPS ON THE 50 TEST WORDS (first sentence), four matched pretrained models
+   Gemma3-1B-pt    n 50  dropped 19  kept 31  of which not definitions (missed) 5  definitions 26
+   Gemma3-4B-pt    n 50  dropped 29  kept 21  of which not definitions (missed) 3  definitions 18
+   Gemma3-12B-pt   n 50  dropped 21  kept 29  of which not definitions (missed) 6  definitions 23
+   Gemma3-27B-pt   n 50  dropped 33  kept 17  of which not definitions (missed) 2  definitions 15
+   total kept 98: definitions 82 (83.7 %), not definitions 16 (16.3 %, about 1 in 6.1)
+
+2. FEW-SHOT MUTUAL PAIRS THAT INVOLVE ONE OF THE 12 EXAMPLE WORDS (share of each model's mutual-pair count)
+   Gemma3-270M  2 of 11 = 18.2 %
+   Gemma3-1B    4 of 29 = 13.8 %
+   Gemma3-4B    6 of 92 = 6.5 %
+   Gemma3-12B   6 of 114 = 5.3 %
+   Gemma3-27B   5 of 78 = 6.4 %
+   at 1B-27B the reduction would be at most 13.8 % (1B) and 5.3-6.5 % (4B-27B)

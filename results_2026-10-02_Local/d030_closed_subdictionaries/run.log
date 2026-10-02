@@ -1,0 +1,39 @@
+[d030c] 1B: 1506 covered lemmas of 2750; edges of the whole graphs zs/fs/it 3249/5465/4448; closed zsC/fsC/itC 1809/1789/1433
+[d030c] 4B: 1265 covered lemmas of 2750; edges of the whole graphs zs/fs/it 2904/5868/5842; closed zsC/fsC/itC 1382/1216/1262
+[d030c] 12B: 1434 covered lemmas of 2750; edges of the whole graphs zs/fs/it 3268/6201/7052; closed zsC/fsC/itC 1213/1414/1572
+[d030c] 27B: 1251 covered lemmas of 2750; edges of the whole graphs zs/fs/it 2812/6076/7896; closed zsC/fsC/itC 1356/1303/1791
+[d030c] 32 graphs x 100 replicates, 12 workers
+[d030c] 3200 replicates to run (0 already done)
+[d030c]     144s  d030c__zsC_1B          N= 1506 E=  1809 obs=   3 null=  0.33 R=  6.00 [  6.00,  6.00] swap_fail=0/100
+[d030c]     236s  d030c__fsC_1B          N= 1506 E=  1789 obs=   8 null=  0.68 R= 11.76 [  9.64, 15.09] swap_fail=0/100
+[d030c]     364s  d030c__itC_1B          N= 1506 E=  1433 obs=  12 null=  3.09 R=  3.88 [  3.60,  4.21] swap_fail=0/100
+[d030c]     463s  d030c__fsRC1_1B        N= 1506 E=  1743 obs=   9 null=  0.68 R= 13.24 [ 10.71, 17.31] swap_fail=0/100
+[d030c]     591s  d030c__fsRC2_1B        N= 1506 E=  1857 obs=  10 null=  2.75 R=  3.64 [  3.37,  3.94] swap_fail=0/100
+[d030c]     727s  d030c__fsRC3_1B        N= 1506 E=  1683 obs=   7 null=  2.69 R=  2.60 [  2.41,  2.82] swap_fail=0/100
+[d030c]     826s  d030c__fsRC4_1B        N= 1506 E=  1401 obs=  10 null=  1.82 R=  5.49 [  4.98,  6.13] swap_fail=0/100
+[d030c]     928s  d030c__fsRC5_1B        N= 1506 E=  1508 obs=   7 null=  1.57 R=  4.46 [  3.98,  5.07] swap_fail=0/100
+[d030c]    1006s  d030c__zsC_4B          N= 1265 E=  1382 obs=  11 null=  2.01 R=  5.47 [  5.02,  5.98] swap_fail=0/100
+[d030c]    1058s  d030c__fsC_4B          N= 1265 E=  1216 obs=  22 null=  5.52 R=  3.99 [  3.83,  4.14] swap_fail=0/100
+[d030c]    1161s  d030c__itC_4B          N= 1265 E=  1262 obs=  12 null=  4.12 R=  2.91 [  2.79,  3.05] swap_fail=0/100
+[d030c]    1214s  d030c__fsRC1_4B        N= 1265 E=  1136 obs=  17 null=  3.59 R=  4.74 [  4.53,  4.94] swap_fail=0/100
+[d030c]    1275s  d030c__fsRC2_4B        N= 1265 E=  1124 obs=  26 null=  7.78 R=  3.34 [  3.25,  3.44] swap_fail=0/100
+[d030c]    1404s  d030c__fsRC3_4B        N= 1265 E=  1094 obs=  14 null= 12.65 R=  1.11 [  1.09,  1.12] swap_fail=0/100
+[d030c]    1489s  d030c__fsRC4_4B        N= 1265 E=  1098 obs=  19 null=  5.59 R=  3.40 [  3.25,  3.56] swap_fail=0/100
+[d030c]    1612s  d030c__fsRC5_4B        N= 1265 E=  1109 obs=  21 null=  9.33 R=  2.25 [  2.19,  2.31] swap_fail=0/100
+[d030c]    1734s  d030c__zsC_12B         N= 1434 E=  1213 obs=   7 null=  4.20 R=  1.67 [  1.61,  1.73] swap_fail=0/100
+[d030c]    1886s  d030c__fsC_12B         N= 1434 E=  1414 obs=  24 null=  8.50 R=  2.82 [  2.75,  2.90] swap_fail=0/100
+[d030c]    2122s  d030c__itC_12B         N= 1434 E=  1572 obs=  19 null=  4.72 R=  4.03 [  3.89,  4.17] swap_fail=0/100
+[d030c]    2391s  d030c__fsRC1_12B       N= 1434 E=  1842 obs=  34 null=  1.87 R= 18.18 [ 16.59, 20.00] swap_fail=0/100
+[d030c]    2658s  d030c__fsRC2_12B       N= 1434 E=  1949 obs=  34 null=  6.26 R=  5.43 [  5.23,  5.63] swap_fail=0/100
+[d030c]    2872s  d030c__fsRC3_12B       N= 1434 E=  1782 obs=  29 null=  3.34 R=  8.68 [  8.22,  9.24] swap_fail=0/100
+[d030c]    3124s  d030c__fsRC4_12B       N= 1434 E=  1969 obs=  33 null=  2.81 R= 11.74 [ 11.04, 12.50] swap_fail=0/100
+[d030c]    3399s  d030c__fsRC5_12B       N= 1434 E=  1817 obs=  32 null=  7.96 R=  4.02 [  3.91,  4.13] swap_fail=0/100
+[d030c]    3595s  d030c__zsC_27B         N= 1251 E=  1356 obs=  14 null=  2.41 R=  5.81 [  5.32,  6.36] swap_fail=0/100
+[d030c]    3755s  d030c__fsC_27B         N= 1251 E=  1303 obs=  22 null=  4.62 R=  4.76 [  4.57,  4.97] swap_fail=0/100
+[d030c]    4066s  d030c__itC_27B         N= 1251 E=  1791 obs=  19 null=  2.19 R=  8.68 [  7.88,  9.60] swap_fail=0/100
+[d030c]    4205s  d030c__fsRC1_27B       N= 1251 E=  1060 obs=  17 null=  5.49 R=  3.10 [  2.95,  3.25] swap_fail=0/100
+[d030c]    4357s  d030c__fsRC2_27B       N= 1251 E=  1406 obs=  18 null=  0.82 R= 21.95 [ 17.65, 28.57] swap_fail=0/100
+[d030c]    4555s  d030c__fsRC3_27B       N= 1251 E=  1228 obs=  17 null=  6.25 R=  2.72 [  2.61,  2.83] swap_fail=0/100
+[d030c]    4739s  d030c__fsRC4_27B       N= 1251 E=  1337 obs=  20 null=  2.57 R=  7.78 [  7.33,  8.26] swap_fail=0/100
+[d030c]    4898s  d030c__fsRC5_27B       N= 1251 E=  1233 obs=  15 null=  2.88 R=  5.21 [  4.81,  5.68] swap_fail=0/100
+[d030c] done in 4898s -> results_2026-10-02_Local\d030_closed_subdictionaries

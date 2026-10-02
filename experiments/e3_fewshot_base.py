@@ -3,6 +3,10 @@
 Research question: Does few-shot prompting push base model reciprocity excess R
 into the instruction-tuned range (>= 8.9), or does it stay in the base range (1.5–7.3)?
 
+Note (2026-10-01): R in the question is the paper's rewiring-null R (computed by
+experiments/e1_full_null.py). The value this script prints and stores is R_analytic,
+an approximation that is not comparable to those thresholds (research/RESEARCH_AUDIT.md F1).
+
 Both outcomes make a publishable claim:
   - R rises  → format compliance, not training, creates the structure.
   - R stays low → instruction tuning causes a qualitative change, not just format.
@@ -85,12 +89,12 @@ DEF_DIR = "data/definitions/e3_fewshot"
 
 def _print_row(m: dict) -> None:
     display = m.get("display", m.get("model", "?"))
-    R = m.get("reciprocity_excess", 0.0)
+    R = m.get("R_analytic", m.get("reciprocity_excess", 0.0))  # old JSONs use the old key
     sr = m.get("sr_rate", 0.0)
     print(
         f"  {display:22}  "
         f"edges={m.get('n_edges', 0):6}  "
-        f"R={R:6.2f}  "
+        f"R_anal={R:6.2f}  "
         f"kern={m.get('kernel_ratio', 0) * 100:.1f}%  "
         f"circ={m.get('circulation_rate', 0) * 100:.1f}%  "
         f"sr={sr:.0%}"
@@ -154,18 +158,19 @@ def run(smoke: bool = False, model_filter: str | None = None) -> None:
 
     # Summary
     print("\n" + "=" * 70)
-    print("E3 SUMMARY — Few-shot base models   (reference: instruct R ≥ 8.9)")
+    print("E3 SUMMARY — Few-shot base models")
+    print("R_anal is an analytic approximation, NOT the paper's R and not comparable to 8.9 / 23.5;")
+    print("compute R with: python -m experiments.e1_full_null  (research/RESEARCH_AUDIT.md F1)")
     print("=" * 70)
-    print(f"  {'model':22}  {'R':>6}  {'kern%':>6}  {'circ%':>6}  {'edges':>6}")
+    print(f"  {'model':22}  {'R_anal':>6}  {'kern%':>6}  {'circ%':>6}  {'edges':>6}")
     print("  " + "-" * 60)
     for m in all_metrics:
-        R = m.get("reciprocity_excess", 0.0)
-        tag = " ← IN INSTRUCT RANGE" if R >= 8.9 else ""
+        R = m.get("R_analytic", m.get("reciprocity_excess", 0.0))
         print(
             f"  {m.get('display', '?'):22}  {R:6.2f}  "
             f"{m.get('kernel_ratio', 0) * 100:6.1f}  "
             f"{m.get('circulation_rate', 0) * 100:6.1f}  "
-            f"{m.get('n_edges', 0):6}{tag}"
+            f"{m.get('n_edges', 0):6}"
         )
 
     if not smoke:

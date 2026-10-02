@@ -4,6 +4,10 @@ Research question: Is reciprocity excess R caused by the chat template wrapping
 (system prompts, special tokens, generation hints), or by the underlying
 instruction-tuning of the weights?
 
+Note (2026-10-01): R in the question is the paper's rewiring-null R (computed by
+experiments/e1_full_null.py). The value this script prints and stores is R_analytic,
+an approximation that is not comparable to the 8.9 threshold (research/RESEARCH_AUDIT.md F1).
+
 Design:
   - Models: all instruct models (same 17 as main experiment)
   - Same prompt text as main experiment (_PROMPT_TEMPLATE)
@@ -48,13 +52,13 @@ DEF_DIR = "data/definitions/e5_notemplate"
 
 def _print_row(m: dict) -> None:
     display = m.get("display", m.get("model", "?"))
-    R = m.get("reciprocity_excess", 0.0)
+    R = m.get("R_analytic", m.get("reciprocity_excess", 0.0))  # old JSONs use the old key
     sr = m.get("sr_rate", 0.0)
     ok_rate = m.get("ok_rate", 0.0)
     print(
         f"  {display:22}  "
         f"edges={m.get('n_edges', 0):6}  "
-        f"R={R:6.2f}  "
+        f"R_anal={R:6.2f}  "
         f"kern={m.get('kernel_ratio', 0) * 100:.1f}%  "
         f"ok={ok_rate:.0%}  "
         f"sr={sr:.0%}"
@@ -120,18 +124,18 @@ def run(smoke: bool = False, model_filter: str | None = None) -> None:
     # Summary
     print("\n" + "=" * 76)
     print("E5 SUMMARY — Instruct models WITHOUT chat template")
-    print("Reference: main experiment R (same models, with template)")
+    print("R_anal is an analytic approximation, NOT the paper's R and not comparable to 8.9 / 23.5;")
+    print("compute R with: python -m experiments.e1_full_null  (research/RESEARCH_AUDIT.md F1)")
     print("=" * 76)
-    print(f"  {'model':22}  {'R':>6}  {'kern%':>6}  {'ok%':>6}  {'edges':>6}")
+    print(f"  {'model':22}  {'R_anal':>6}  {'kern%':>6}  {'ok%':>6}  {'edges':>6}")
     print("  " + "-" * 62)
     for m in sorted(all_metrics, key=lambda x: (x.get("family", ""), x.get("param_b", 0))):
-        R = m.get("reciprocity_excess", 0.0)
-        tag = " ← ≥8.9" if R >= 8.9 else ""
+        R = m.get("R_analytic", m.get("reciprocity_excess", 0.0))
         print(
             f"  {m.get('display', '?'):22}  {R:6.2f}  "
             f"{m.get('kernel_ratio', 0) * 100:6.1f}  "
             f"{m.get('ok_rate', 0) * 100:6.1f}  "
-            f"{m.get('n_edges', 0):6}{tag}"
+            f"{m.get('n_edges', 0):6}"
         )
 
     if not smoke:

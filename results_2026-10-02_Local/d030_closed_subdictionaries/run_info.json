@@ -1,0 +1,18 @@
+{
+ "started": "2026-10-02T05:29:04",
+ "finished": "2026-10-02T06:50:43",
+ "args": {
+  "out": "results_2026-10-02_Local/d030_closed_subdictionaries",
+  "reps": 100,
+  "workers": 12,
+  "nswap_mult": 32,
+  "tries_mult": 9600,
+  "smoke": false
+ },
+ "python": "3.11.4",
+ "networkx": "3.6.1",
+ "cycle_bound": 7,
+ "script_sha256": "1d7febfb68347cc71bb42b6d2b514627974888255628406d32aa73f31fd2bfc7",
+ "e1_full_null_sha256": "73be2346a0820dc5a1b582f0c76b1a0a4712f35fd28bbace9632991479a3d911",
+ "note": "D030 (b): graphs induced on the covered lemmas W(s) and on five random lemma sets of the same size; snapshots of the primary run (default filter, first sentence); replicate seeds = sha256('e1|key|idx')[:4]"
+}

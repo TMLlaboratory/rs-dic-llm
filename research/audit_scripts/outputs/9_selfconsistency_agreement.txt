@@ -1,0 +1,65 @@
+rows 118; unlabeled 0 []; invalid labels []
+
+RANDOM SAMPLE (n=110)
+  all seven labels: agreement 97/110 = 88.2%, Cohen's kappa = 0.79
+  definition vs not: agreement 105/110 = 95.5%, Cohen's kappa = 0.90
+  base models (5)      n= 50  agreement  80.0%  kappa 0.73
+  Gemma3-270M          n= 10  agreement 100.0%  kappa 1.00
+  other instruct (5)   n= 50  agreement  94.0%  kappa 0.00
+
+  by first-pass class (how often the same label came back):
+    definition   first-pass n= 72  same again  68 ( 94.4%)
+    echo         first-pass n=  8  same again   8 (100.0%)
+    question     first-pass n=  5  same again   5 (100.0%)
+    offtopic     first-pass n= 18  same again  11 ( 61.1%)
+    restatement  first-pass n=  4  same again   4 (100.0%)
+    refusal      first-pass n=  1  same again   0 (  0.0%)
+    unclear      first-pass n=  2  same again   1 ( 50.0%)
+
+  confusion (rows = first pass, columns = second pass)
+                  defini    echo  questi  offtop  restat  refusa  unclea
+    definition        68       0       0       4       0       0       0
+    echo               0       8       0       0       0       0       0
+    question           0       0       5       0       0       0       0
+    offtopic           1       0       6      11       0       0       0
+    restatement        0       0       0       0       4       0       0
+    refusal            0       0       0       1       0       0       0
+    unclear            0       0       0       1       0       0       1
+
+  disagreements (random sample):
+    id   6 [Gemma3-12B-pt row 59, pink] first=refusal (says it cannot define the word without using it) second=offtopic (-)
+        'I am trying to make a computer program that defines words, but I can\'t find any way to define the word "pink" that does not use the word its'
+    id   7 [Gemma3-270M-pt row 86, pierre] first=offtopic (-) second=question (-)
+        'What is the main idea of the passage?'
+    id  12 [Gemma3-270M-pt row 4, pinpoint] first=offtopic (imperative) second=definition (imperative)
+        'A) Pinpoint the location of a point.'
+    id  24 [Gemma3-4B row 63, three] first=definition (-) second=offtopic (-)
+        'It describes a quantity of items or events that is equal to a number counted as one, two, and a single unit.'
+    id  30 [Qwen2.5-0.5B row 76, draped] first=definition (circular) second=offtopic (-)
+        'A draping garment is draped.'
+    id  38 [Gemma3-27B-pt row 13, bobby] first=offtopic (-) second=question (-)
+        'Which of the following is a common English word?'
+    id  39 [Gemma3-4B-pt row 94, climate] first=offtopic (-) second=question (-)
+        'Which of the following is NOT a greenhouse gas?'
+    id  45 [Gemma3-12B-pt row 75, potential] first=offtopic (-) second=question (-)
+        'What is the potential of a point charge of 1.0C at a distance of 1.0m?'
+    id  63 [Gemma3-12B-pt row 15, glad] first=unclear (truncated after "Glad" means:) second=offtopic (-)
+        '"Glad" means:'
+    id  88 [Gemma3-1B row 6, sunlight] first=definition (-) second=offtopic (-)
+        'The bright light from the sun warms the earth.'
+    id  92 [Gemma3-12B-pt row 44, y] first=definition (hedged) second=offtopic (-)
+        "I think it's a unit of measure."
+    id 108 [Gemma3-4B-pt row 49, reactionary] first=offtopic (-) second=question (-)
+        'What are the main points of the "New Right" movement?'
+    id 115 [Gemma3-1B-pt row 75, potential] first=offtopic (-) second=question (-)
+        'What is the difference between the following pairs of words?'
+
+TARGETED ROWS (borderline in the first pass)
+    id  11 [Qwen3-0.6B row 4, pinpoint] first=definition  second=definition  same  'Pinpoint the specific location.'
+    id  53 [Qwen3-0.6B row 31, devise] first=offtopic    second=offtopic    same  'Devise a plan.'
+    id  69 [Qwen3-0.6B row 47, wait] first=offtopic    second=offtopic    same  'Wait for something.'
+    id  82 [Gemma3-270M-pt row 31, devise] first=offtopic    second=offtopic    same  '1. To devise a plan for a project.'
+    id  97 [Qwen3-0.6B row 14, bury] first=definition  second=offtopic    CHANGED  'Bury something in the ground.'
+    id 102 [Qwen3-0.6B row 99, acknowledge] first=offtopic    second=offtopic    same  "Acknowledge someone's actions or thoughts."
+    id 109 [Gemma3-270M-pt row 22, branch] first=offtopic    second=offtopic    same  '1. branch of a tree'
+    id 116 [Qwen3-0.6B row 85, group] first=definition  second=offtopic    CHANGED  'Group people together.'

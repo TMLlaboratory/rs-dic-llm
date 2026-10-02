@@ -1,0 +1,121 @@
+{
+ "key": "main__Gemma3-1B-pt",
+ "meta": {
+  "dataset": "main",
+  "model": "Gemma3-1B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-1B-pt_42.jsonl",
+  "source_sha256": "9d39ff6e517e0ea42400528f3e564b139b714bbbf721363bb28c44581eebf47a",
+  "n_records": 3000,
+  "filter": {
+   "variant": "strict",
+   "unit": "first_sentence",
+   "drop_imperatives": false,
+   "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+   "quality_filter_strict_sha256": "c601b95bac98188ef86b884e61b2e08d4b1b2fd0a53d0836124e062df156ac20",
+   "n_records": 3000,
+   "n_valid_status": 2998,
+   "n_dropped": 1514,
+   "dropped_share": 0.505,
+   "by_reason": {
+    "question": 329,
+    "echo": 491,
+    "fragment": 364,
+    "offtopic": 318,
+    "refusal": 12
+   },
+   "by_rule": {
+    "question": 329,
+    "task_phrase": 29,
+    "headword_only": 260,
+    "task_start": 399,
+    "exam_marker": 10,
+    "lead_in": 13,
+    "first_person": 100,
+    "instruction": 2,
+    "meta_usage": 164,
+    "blank": 76,
+    "task_rule": 6,
+    "prompt_span": 25,
+    "strict_task_start": 4,
+    "strict_own_subject": 54,
+    "strict_truncated": 6,
+    "strict_unfinished": 4,
+    "strict_exam_marker": 2,
+    "truncated": 5,
+    "strict_in_sentence": 26
+   },
+   "vocabulary_size": 2750
+  },
+  "graph_sha256": "d41ba8bd38a038f351d9f0ba6d0701149831b5d3139590b03667fe688faa8936",
+  "n_nodes": 2750,
+  "n_edges": 3074
+ },
+ "n_nodes": 2750,
+ "n_edges": 3074,
+ "observed": {
+  "kernel_ratio": 0.01309090909090909,
+  "circulation_rate": 0.0032727272727272726,
+  "cycles_total": 4,
+  "cycles_2": 3,
+  "cycles_long": 0
+ },
+ "null_mean": {
+  "kernel_ratio": 0.002541818181818182,
+  "circulation_rate": 0.0007745454545454545,
+  "cycles_total": 0.73,
+  "cycles_2": 0.34,
+  "cycles_long": 0.12
+ },
+ "null_sd": {
+  "kernel_ratio": 0.003532889623369104,
+  "circulation_rate": 0.0010534853605810941,
+  "cycles_total": 0.9365361712181757,
+  "cycles_2": 0.5517245689653488,
+  "cycles_long": 0.43081318457076034
+ },
+ "z": {
+  "kernel_ratio": 2.9859667393262277,
+  "circulation_rate": 2.3713493434819455,
+  "cycles_total": 3.4915896475697576,
+  "cycles_2": 4.821246233402852,
+  "cycles_long": -0.2785430072655778
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 6.0,
+ "R_ci95": [
+  6.0,
+  6.0
+ ],
+ "R_floor_applied": true,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 3,
+   "null_mean": 0.34
+  },
+  "3": {
+   "observed": 1,
+   "null_mean": 0.13
+  },
+  "4": {
+   "observed": 0,
+   "null_mean": 0.14
+  },
+  "5": {
+   "observed": 0,
+   "null_mean": 0.05
+  },
+  "6": {
+   "observed": 0,
+   "null_mean": 0.03
+  },
+  "7": {
+   "observed": 0,
+   "null_mean": 0.04
+  }
+ },
+ "R_analytic_rs_dic_llm": 4.959839344782012,
+ "R_complete_replicates_only": 6.0
+}

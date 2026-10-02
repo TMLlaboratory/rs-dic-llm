@@ -1,0 +1,27 @@
+{
+ "started": "2026-10-02T03:34:40",
+ "finished": "2026-10-02T03:47:48",
+ "args": {
+  "out": "C:/Users/josel/AppData/Local/Temp/claude/S--Documents-ZZZ------/c44cb6fe-2e8a-4cd0-8d8a-177e8373a5a0/scratchpad/conv_probe",
+  "graphs": [
+   "d029__fsS_1B",
+   "d029__itS_1B",
+   "d029__fsR1_1B"
+  ],
+  "graph_dir": "results_2026-10-02_Local/d029_survivor_restriction/graphs",
+  "reps": 8,
+  "workers": 6,
+  "checkpoints": [
+   8,
+   32,
+   64,
+   128,
+   256
+  ],
+  "summary_only": false,
+  "smoke": false
+ },
+ "tries_per_swap_limit": 1000,
+ "git_head": "f6561effa971a3989726f55ad468f3ea13947787",
+ "networkx": "3.6.1"
+}

@@ -23,7 +23,8 @@ def compute_all_metrics(
     core = compute_core(G, kernel)
     scc = scc_summary(G)
     cycle_dist = cycle_length_distribution(G)
-    R = reciprocity_excess(G)
+    # Analytic approximation, NOT the paper's R (see research/RESEARCH_AUDIT.md F1).
+    R_analytic = reciprocity_excess(G)
 
     n_nodes = G.number_of_nodes() or 1  # avoid division by zero
     kernel_ratio = len(kernel) / n_nodes
@@ -53,7 +54,7 @@ def compute_all_metrics(
         "kernel_ratio": kernel_ratio,
         "core_size": len(core),
         "core_kernel_ratio": core_kernel_ratio,
-        "reciprocity_excess": R,
+        "R_analytic": R_analytic,  # was "reciprocity_excess" in runs up to 2026-09-09
         "cycle_length_dist": cycle_dist,
         "minset_size": minset_result.get("size"),
         "minset_ratio": minset_result.get("minset_ratio"),

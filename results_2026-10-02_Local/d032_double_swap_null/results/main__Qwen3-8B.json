@@ -1,0 +1,32 @@
+{
+ "key": "main__Qwen3-8B",
+ "n_nodes": 2750,
+ "n_edges": 6220,
+ "snapshot_sha256": "91c89feb03431d0bcd601b862333b8591e9b98b9d6927132e6ee828dfe467ec5",
+ "observed": {
+  "cycles_2": 51
+ },
+ "null_mean": {
+  "cycles_2": 1.95
+ },
+ "null_sd": {
+  "cycles_2": 1.4239030865898141
+ },
+ "reciprocity_excess": 26.153846153846153,
+ "R_prime": 26.153846153846153,
+ "R_floor_applied": false,
+ "R_ci95": [
+  22.869955156950674,
+  30.538922155688624
+ ],
+ "R_poisson_range": [
+  19.473256327328595,
+  34.38747762902758
+ ],
+ "replicates": 100,
+ "swap_mult": 64,
+ "budget_not_met": 0,
+ "kept_observed_pairs_mean": 0.02,
+ "accepted_mean": 398080,
+ "tries_mean": 413601.04
+}

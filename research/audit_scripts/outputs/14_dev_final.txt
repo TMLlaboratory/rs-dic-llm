@@ -1,0 +1,86 @@
+split (seed 'e2-filter-split-2026-10-01'): 50 development words = 1150 rows, 50 test words = 1150 rows
+
+====================================================================================================
+DEVELOPMENT WORDS: 1150 rows, 50 words
+====================================================================================================
+
+FIRST SENTENCE (primary): dropped 177 of 1150; true non-definitions 193
+   precision of a drop  97.7%   recall of non-definitions  89.6%   definitions wrongly dropped   0.4% (4 of 957)   kappa vs labels 0.92
+   base models      n= 250  non-def  150  dropped  139  precision  97.1%  recall  90.0%  false drops   4  kappa 0.84
+   instruct models  n= 900  non-def   43  dropped   38  precision 100.0%  recall  88.4%  false drops   0  kappa 0.94
+
+STORED TEXT (sensitivity): dropped 177 of 1150; true non-definitions 185
+   precision of a drop  93.2%   recall of non-definitions  89.2%   definitions wrongly dropped   1.2% (12 of 965)   kappa vs labels 0.90
+   base models      n= 250  non-def  142  dropped  139  precision  91.4%  recall  89.4%  false drops  12  kappa 0.78
+   instruct models  n= 900  non-def   43  dropped   38  precision 100.0%  recall  88.4%  false drops   0  kappa 0.94
+
+PER CLASS, first sentence (rows whose class was labeled; `inferred` rows are only in the binary tables)
+   label           n  dropped   recall   dropped with the matching reason
+   definition    957        4     0.4%   (= false drops)
+   echo            5        5   100.0%   5 of 5
+   question       21       21   100.0%   20 of 21
+   offtopic       48       36    75.0%   9 of 36
+   restatement    41       41   100.0%   41 of 41
+   refusal         2        2   100.0%   2 of 2
+   unclear        13       10    76.9%   0 of 10
+
+PER REASON CODE, first sentence (precision: share of drops with this code that are truly non-definitions)
+   reason      drops  non-def  of the class   rules that fired
+   fragment       58       57            41   [('headword_only', 45), ('blank', 6), ('lead_in', 5), ('truncated', 2)]
+   question       54       54            20   [('question', 54)]
+   echo           42       41             5   [('task_start', 37), ('task_phrase', 5)]
+   refusal         4        4             2   [('first_person', 4)]
+   offtopic       19       17             9   [('meta_usage', 12), ('first_person', 5), ('exam_marker', 2)]
+
+PER MODEL, first sentence: n / non-definitions / dropped / correct drops / false drops / missed
+   Gemma3-270M               50   38   36   36    0    2   precision 100.0%  recall  94.7%
+   Gemma3-270M-pt            50   38   33   32    1    6   precision  97.0%  recall  84.2%
+   Gemma3-1B                 50    0    0    0    0    0   precision    n/a  recall    n/a
+   Gemma3-1B-pt              50   26   24   23    1    3   precision  95.8%  recall  88.5%
+   Gemma3-4B                 50    0    0    0    0    0   precision    n/a  recall    n/a
+   Gemma3-4B-pt              50   30   28   28    0    2   precision 100.0%  recall  93.3%
+   Gemma3-12B                50    0    0    0    0    0   precision    n/a  recall    n/a
+   Gemma3-12B-pt             50   28   27   25    2    3   precision  92.6%  recall  89.3%
+   Gemma3-27B                50    0    0    0    0    0   precision    n/a  recall    n/a
+   Gemma3-27B-pt             50   28   27   27    0    1   precision 100.0%  recall  96.4%
+   Qwen2.5-0.5B              50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-1.5B              50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-3B                50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-7B                50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-14B               50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-32B               50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen2.5-72B               50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-0.6B                50    5    2    2    0    3   precision 100.0%  recall  40.0%
+   Qwen3-1.7B                50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-4B                  50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-4B-Instruct-2507    50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-8B                  50    0    0    0    0    0   precision    n/a  recall    n/a
+   Qwen3-14B                 50    0    0    0    0    0   precision    n/a  recall    n/a
+
+FALSE DROPS (first sentence; dropped, labeled definition): 4
+   [Gemma3-270M-pt frame       ] fragment/headword_only: 'Frame is a verb.'
+   [Gemma3-1B-pt   bias        ] echo/task_phrase: 'The verb "bias" is defined as "to favor one side over another" in one short sentence.'
+   [Gemma3-12B-pt  directory   ] offtopic/first_person: 'I would say "a directory is a list of things"'
+   [Gemma3-12B-pt  y           ] offtopic/first_person: "I think it's a unit of measure."
+
+MISSED (first sentence; kept, labeled non-definition): 20
+   [Gemma3-270M    tenth       ] offtopic                        'The tenth word in the sentence "The tenth word in the sentence is a new word" is "new".'
+   [Gemma3-270M    parish      ] offtopic                        'The town was a peaceful, quiet place.'
+   [Gemma3-270M-pt pinpoint    ] offtopic     imperative         'Pinpoint the location of a point.'
+   [Gemma3-270M-pt sunlight    ] offtopic     format + wrong-wor 'The sun is a star.'
+   [Gemma3-270M-pt interim     ] offtopic     wrong-word         'The government is the body of the government.'
+   [Gemma3-270M-pt port        ] offtopic                        'The "port" in the sentence is "the port".'
+   [Gemma3-270M-pt interchange ] non-definiti                    '"The man was a very good swimmer.'
+   [Gemma3-270M-pt draped      ] offtopic     format             "The queen's dress is draped over the king's shoulder."
+   [Gemma3-1B-pt   confirmed   ] offtopic                        'The weather is confirmed to be sunny.'
+   [Gemma3-1B-pt   biography   ] non-definiti                    'The biography of the American writer James Fenimore Cooper, written by the American historian James Fenim'
+   [Gemma3-1B-pt   eat         ] unclear      empty list         'The word "eat" is used in the following sentences: I ate my breakfast.'
+   [Gemma3-4B-pt   pinpoint    ] non-definiti                    'What is the value of $f(x)=2(x-3)^{2}-1$ when $x=-1 ?$'
+   [Gemma3-4B-pt   pink        ] offtopic                        'A noun is a person, place, thing, or idea.'
+   [Gemma3-12B-pt  awake       ] non-definiti                    'The word "awake" is an adjective, so it is used to describe a noun.'
+   [Gemma3-12B-pt  interchange ] non-definiti                    'In a 2009 interview with the New York Times, the writer and activist Naomi Klein said, “I think there’s a'
+   [Gemma3-12B-pt  nude        ] offtopic     task-meta          'Scroll down for a clue and further down for the answer.'
+   [Gemma3-27B-pt  slick       ] offtopic                        'The answer to this question is a sentence that is 10 words long.'
+   [Qwen3-0.6B     interim     ] unclear      usage-fragment; ph 'An interim period or stage in a project or activity.'
+   [Qwen3-0.6B     wear        ] offtopic     imperative         'Wear a shirt.'
+   [Qwen3-0.6B     interchange ] unclear      usage-fragment; ph 'Interchange between two things.'

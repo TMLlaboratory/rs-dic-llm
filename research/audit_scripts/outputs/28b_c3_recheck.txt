@@ -1,0 +1,5 @@
+  1B  survivors 1580  instruct pairs 34  at risk 12  zero-shot 0  few-shot (same entries) 0   (mutual pairs in the graphs: zero-shot 3, few-shot same entries 6, instruct 34)
+  4B  survivors 1322  instruct pairs 47  at risk 12  zero-shot 1  few-shot (same entries) 6   (mutual pairs in the graphs: zero-shot 11, few-shot same entries 18, instruct 47)
+ 12B  survivors 1503  instruct pairs 78  at risk 19  zero-shot 2  few-shot (same entries) 8   (mutual pairs in the graphs: zero-shot 7, few-shot same entries 21, instruct 78)
+ 27B  survivors 1296  instruct pairs 71  at risk 19  zero-shot 2  few-shot (same entries) 6   (mutual pairs in the graphs: zero-shot 14, few-shot same entries 21, instruct 71)
+pooled: at risk 62, zero-shot 5, few-shot (same entries) 20

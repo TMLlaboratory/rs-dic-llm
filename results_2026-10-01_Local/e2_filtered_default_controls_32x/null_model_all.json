@@ -1,0 +1,4093 @@
+[
+ {
+  "key": "e3__Gemma3-12B-pt",
+  "meta": {
+   "dataset": "e3",
+   "model": "Gemma3-12B-pt",
+   "is_base": true,
+   "source": "results_2026-09-09_Runpod\\results_e3 (fewshot)\\definitions\\Gemma3-12B-pt_42.jsonl",
+   "source_sha256": "9327e7f1311f412804a7fe7b9f858073ae8de5fc4d49d51c72c2d7c3dd81e1dd",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 0,
+    "dropped_share": 0.0,
+    "by_reason": {},
+    "by_rule": {},
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "05111bebb214b761bde5bd82820cfab06500f273816ae0202cd608cb8e542204",
+   "n_nodes": 2750,
+   "n_edges": 6201
+  },
+  "n_nodes": 2750,
+  "n_edges": 6201,
+  "observed": {
+   "kernel_ratio": 0.1690909090909091,
+   "circulation_rate": 0.12,
+   "cycles_total": 173,
+   "cycles_2": 114,
+   "cycles_long": 30
+  },
+  "null_mean": {
+   "kernel_ratio": 0.14787636363636364,
+   "circulation_rate": 0.12856727272727272,
+   "cycles_total": 85.03,
+   "cycles_2": 3.69,
+   "cycles_long": 70.74
+  },
+  "null_sd": {
+   "kernel_ratio": 0.01109302155739036,
+   "circulation_rate": 0.010585418943758251,
+   "cycles_total": 18.14907986648359,
+   "cycles_2": 1.5664928981645592,
+   "cycles_long": 17.1123464200559
+  },
+  "z": {
+   "kernel_ratio": 1.9124226293792757,
+   "circulation_rate": -0.8093465901342022,
+   "cycles_total": 4.8470776836712615,
+   "cycles_2": 70.41844883513286,
+   "cycles_long": -2.380737217442733
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 30.89430894308943,
+  "R_ci95": [
+   28.428927680798008,
+   33.6283185840708
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 114,
+    "null_mean": 3.69
+   },
+   "3": {
+    "observed": 20,
+    "null_mean": 3.76
+   },
+   "4": {
+    "observed": 9,
+    "null_mean": 6.84
+   },
+   "5": {
+    "observed": 10,
+    "null_mean": 11.16
+   },
+   "6": {
+    "observed": 5,
+    "null_mean": 20.55
+   },
+   "7": {
+    "observed": 15,
+    "null_mean": 39.03
+   }
+  },
+  "R_analytic_rs_dic_llm": 23.07774228118438,
+  "R_complete_replicates_only": 30.89430894308943
+ },
+ {
+  "key": "e3__Gemma3-1B-pt",
+  "meta": {
+   "dataset": "e3",
+   "model": "Gemma3-1B-pt",
+   "is_base": true,
+   "source": "results_2026-09-09_Runpod\\results_e3 (fewshot)\\definitions\\Gemma3-1B-pt_42.jsonl",
+   "source_sha256": "8db84587547be6320f0d0ba652655e00d17aca03c8d1c16d6bc61226fdcf88ca",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 0,
+    "dropped_share": 0.0,
+    "by_reason": {},
+    "by_rule": {},
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "53ff3297ef108b07a656cde4031e1f684f78681a7955c74aaa64a29dfd7e7a82",
+   "n_nodes": 2750,
+   "n_edges": 5465
+  },
+  "n_nodes": 2750,
+  "n_edges": 5465,
+  "observed": {
+   "kernel_ratio": 0.07054545454545455,
+   "circulation_rate": 0.03709090909090909,
+   "cycles_total": 43,
+   "cycles_2": 29,
+   "cycles_long": 7
+  },
+  "null_mean": {
+   "kernel_ratio": 0.08180727272727273,
+   "circulation_rate": 0.054352727272727275,
+   "cycles_total": 18.43,
+   "cycles_2": 1.3,
+   "cycles_long": 13.19
+  },
+  "null_sd": {
+   "kernel_ratio": 0.012111488160195074,
+   "circulation_rate": 0.011310371748572594,
+   "cycles_total": 7.033142967407957,
+   "cycles_2": 1.1789826122551597,
+   "cycles_long": 6.226869197277232
+  },
+  "z": {
+   "kernel_ratio": -0.9298459473238497,
+   "circulation_rate": -1.5261937065858762,
+   "cycles_total": 3.4934594837413346,
+   "cycles_2": 23.494833352135192,
+   "cycles_long": -0.994079015294981
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 22.307692307692307,
+  "R_ci95": [
+   18.954248366013072,
+   27.358490566037734
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 29,
+    "null_mean": 1.3
+   },
+   "3": {
+    "observed": 6,
+    "null_mean": 1.61
+   },
+   "4": {
+    "observed": 1,
+    "null_mean": 2.33
+   },
+   "5": {
+    "observed": 1,
+    "null_mean": 3.07
+   },
+   "6": {
+    "observed": 1,
+    "null_mean": 4.3
+   },
+   "7": {
+    "observed": 5,
+    "null_mean": 5.82
+   }
+  },
+  "R_analytic_rs_dic_llm": 10.036880344517922,
+  "R_complete_replicates_only": 22.307692307692307
+ },
+ {
+  "key": "e3__Gemma3-270M-pt",
+  "meta": {
+   "dataset": "e3",
+   "model": "Gemma3-270M-pt",
+   "is_base": true,
+   "source": "results_2026-09-09_Runpod\\results_e3 (fewshot)\\definitions\\Gemma3-270M-pt_42.jsonl",
+   "source_sha256": "0cf4d098e6e0b964d35be0f781299f1a9fc38e13db12231e8db2e88146ec265d",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 24,
+    "dropped_share": 0.008,
+    "by_reason": {
+     "fragment": 24
+    },
+    "by_rule": {
+     "headword_only": 24
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "379d8ac47c1191c84fbc022a26f607007ac6db50ef944c70cc8fea721a722147",
+   "n_nodes": 2750,
+   "n_edges": 4475
+  },
+  "n_nodes": 2750,
+  "n_edges": 4475,
+  "observed": {
+   "kernel_ratio": 0.028363636363636365,
+   "circulation_rate": 0.010545454545454545,
+   "cycles_total": 15,
+   "cycles_2": 11,
+   "cycles_long": 1
+  },
+  "null_mean": {
+   "kernel_ratio": 0.018247272727272727,
+   "circulation_rate": 0.007043636363636364,
+   "cycles_total": 5.31,
+   "cycles_2": 2.37,
+   "cycles_long": 1.51
+  },
+  "null_sd": {
+   "kernel_ratio": 0.008622151751531996,
+   "circulation_rate": 0.0037876371316854407,
+   "cycles_total": 2.591119449195656,
+   "cycles_2": 1.0455142275454696,
+   "cycles_long": 2.002473470485939
+  },
+  "z": {
+   "kernel_ratio": 1.1732991865477371,
+   "circulation_rate": 0.9245389830308074,
+   "cycles_total": 3.7396963706200435,
+   "cycles_2": 8.254311393026622,
+   "cycles_long": -0.2546850220573652
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 4.641350210970464,
+  "R_ci95": [
+   4.263565891472868,
+   5.0691244239631335
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 11,
+    "null_mean": 2.37
+   },
+   "3": {
+    "observed": 2,
+    "null_mean": 0.94
+   },
+   "4": {
+    "observed": 1,
+    "null_mean": 0.49
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 0.46
+   },
+   "6": {
+    "observed": 1,
+    "null_mean": 0.6
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 0.45
+   }
+  },
+  "R_analytic_rs_dic_llm": 8.998682276995286,
+  "R_complete_replicates_only": 4.641350210970464
+ },
+ {
+  "key": "e3__Gemma3-27B-pt",
+  "meta": {
+   "dataset": "e3",
+   "model": "Gemma3-27B-pt",
+   "is_base": true,
+   "source": "results_2026-09-09_Runpod\\results_e3 (fewshot)\\definitions\\Gemma3-27B-pt_42.jsonl",
+   "source_sha256": "94934e43e3021e233121b43610c434b5cf3635ed5eb1c44077ceb4aa025151b0",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 1,
+    "dropped_share": 0.0003,
+    "by_reason": {
+     "question": 1
+    },
+    "by_rule": {
+     "question": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "b2ac9ac121a57c9469be1966c1bae0d04cbbaae2c26858fccf9a08287f85683b",
+   "n_nodes": 2750,
+   "n_edges": 6076
+  },
+  "n_nodes": 2750,
+  "n_edges": 6076,
+  "observed": {
+   "kernel_ratio": 0.12727272727272726,
+   "circulation_rate": 0.096,
+   "cycles_total": 111,
+   "cycles_2": 78,
+   "cycles_long": 12
+  },
+  "null_mean": {
+   "kernel_ratio": 0.14245454545454544,
+   "circulation_rate": 0.1187090909090909,
+   "cycles_total": 57.69,
+   "cycles_2": 2.74,
+   "cycles_long": 46.47
+  },
+  "null_sd": {
+   "kernel_ratio": 0.012190593853967768,
+   "circulation_rate": 0.01126420498968244,
+   "cycles_total": 15.199141423119926,
+   "cycles_2": 1.5402597183592124,
+   "cycles_long": 14.452304314537527
+  },
+  "z": {
+   "kernel_ratio": -1.2453715022978016,
+   "circulation_rate": -2.016040273582691,
+   "cycles_total": 3.5074349606951065,
+   "cycles_2": 48.86188939627142,
+   "cycles_long": -2.385086782688816
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 28.467153284671532,
+  "R_ci95": [
+   25.657894736842106,
+   31.83673469387755
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 78,
+    "null_mean": 2.74
+   },
+   "3": {
+    "observed": 13,
+    "null_mean": 3.6
+   },
+   "4": {
+    "observed": 8,
+    "null_mean": 4.88
+   },
+   "5": {
+    "observed": 4,
+    "null_mean": 7.97
+   },
+   "6": {
+    "observed": 1,
+    "null_mean": 14.24
+   },
+   "7": {
+    "observed": 7,
+    "null_mean": 24.26
+   }
+  },
+  "R_analytic_rs_dic_llm": 18.207559946281503,
+  "R_complete_replicates_only": 28.467153284671532
+ },
+ {
+  "key": "e3__Gemma3-4B-pt",
+  "meta": {
+   "dataset": "e3",
+   "model": "Gemma3-4B-pt",
+   "is_base": true,
+   "source": "results_2026-09-09_Runpod\\results_e3 (fewshot)\\definitions\\Gemma3-4B-pt_42.jsonl",
+   "source_sha256": "9291c31e1c7ceceeabc3675bf309cfbd4b0963d40f27e763824d379c16da8f11",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 0,
+    "dropped_share": 0.0,
+    "by_reason": {},
+    "by_rule": {},
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "da3b117364616e81fa2a5c505e7f0fa67068d4b6a88e6c8594fa93e2e8847fe0",
+   "n_nodes": 2750,
+   "n_edges": 5868
+  },
+  "n_nodes": 2750,
+  "n_edges": 5868,
+  "observed": {
+   "kernel_ratio": 0.1509090909090909,
+   "circulation_rate": 0.08218181818181818,
+   "cycles_total": 134,
+   "cycles_2": 92,
+   "cycles_long": 25
+  },
+  "null_mean": {
+   "kernel_ratio": 0.13544727272727272,
+   "circulation_rate": 0.11597818181818181,
+   "cycles_total": 50.38,
+   "cycles_2": 3.92,
+   "cycles_long": 39
+  },
+  "null_sd": {
+   "kernel_ratio": 0.010294889047283014,
+   "circulation_rate": 0.009986016007521685,
+   "cycles_total": 12.643401441067985,
+   "cycles_2": 1.4810806865258894,
+   "cycles_long": 11.70128198104806
+  },
+  "z": {
+   "kernel_ratio": 1.5018926489449451,
+   "circulation_rate": -3.384369062788151,
+   "cycles_total": 6.6137265663643,
+   "cycles_2": 59.470088835339325,
+   "cycles_long": -1.1964501003116625
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 23.46938775510204,
+  "R_ci95": [
+   21.852731591448933,
+   25.344352617079892
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 92,
+    "null_mean": 3.92
+   },
+   "3": {
+    "observed": 12,
+    "null_mean": 3.08
+   },
+   "4": {
+    "observed": 5,
+    "null_mean": 4.38
+   },
+   "5": {
+    "observed": 2,
+    "null_mean": 7.28
+   },
+   "6": {
+    "observed": 10,
+    "null_mean": 11.89
+   },
+   "7": {
+    "observed": 13,
+    "null_mean": 19.83
+   }
+  },
+  "R_analytic_rs_dic_llm": 22.88812489051307,
+  "R_complete_replicates_only": 23.46938775510204
+ },
+ {
+  "key": "e4__Gemma3-12B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Gemma3-12B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Gemma3-12B_42.jsonl",
+   "source_sha256": "bd127ff7fff4b79940f0d7a56f4a7c40f3eb7cc46feeb6402dcd341d94943308",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 1,
+    "dropped_share": 0.0003,
+    "by_reason": {
+     "echo": 1
+    },
+    "by_rule": {
+     "task_phrase": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "bc35f4fbcf6c73913b77eac46af8101766b938264cd362c9a37da4063fa6aede",
+   "n_nodes": 2750,
+   "n_edges": 4854
+  },
+  "n_nodes": 2750,
+  "n_edges": 4854,
+  "observed": {
+   "kernel_ratio": 0.12945454545454546,
+   "circulation_rate": 0.09018181818181818,
+   "cycles_total": 140,
+   "cycles_2": 101,
+   "cycles_long": 18
+  },
+  "null_mean": {
+   "kernel_ratio": 0.12728,
+   "circulation_rate": 0.10671272727272728,
+   "cycles_total": 33.02,
+   "cycles_2": 1.72,
+   "cycles_long": 25.74
+  },
+  "null_sd": {
+   "kernel_ratio": 0.010084860431228356,
+   "circulation_rate": 0.009104632550756648,
+   "cycles_total": 8.269195849657933,
+   "cycles_2": 1.2967652061957862,
+   "cycles_long": 7.657179637438317
+  },
+  "z": {
+   "kernel_ratio": 0.21562474457374248,
+   "circulation_rate": -1.8156591162523392,
+   "cycles_total": 12.937170910569904,
+   "cycles_2": 76.5597345808264,
+   "cycles_long": -1.01081604017186
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 58.72093023255814,
+  "R_ci95": [
+   51.26903553299493,
+   68.24324324324324
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 101,
+    "null_mean": 1.72
+   },
+   "3": {
+    "observed": 11,
+    "null_mean": 2.42
+   },
+   "4": {
+    "observed": 10,
+    "null_mean": 3.14
+   },
+   "5": {
+    "observed": 6,
+    "null_mean": 5.32
+   },
+   "6": {
+    "observed": 6,
+    "null_mean": 7.62
+   },
+   "7": {
+    "observed": 6,
+    "null_mean": 12.8
+   }
+  },
+  "R_analytic_rs_dic_llm": 28.173359697529662,
+  "R_complete_replicates_only": 58.72093023255814
+ },
+ {
+  "key": "e4__Gemma3-1B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Gemma3-1B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Gemma3-1B_42.jsonl",
+   "source_sha256": "eaf460c41ff728b93c4fb2540922edfcfe7b629a33544e048045f5a365140033",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 1,
+    "dropped_share": 0.0003,
+    "by_reason": {
+     "question": 1
+    },
+    "by_rule": {
+     "question": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "79d40e3ef50899f8476e78474c331b60e21dccbc713ebb621cbdc5bcdbd7e54a",
+   "n_nodes": 2750,
+   "n_edges": 4406
+  },
+  "n_nodes": 2750,
+  "n_edges": 4406,
+  "observed": {
+   "kernel_ratio": 0.12872727272727272,
+   "circulation_rate": 0.08145454545454546,
+   "cycles_total": 208,
+   "cycles_2": 115,
+   "cycles_long": 45
+  },
+  "null_mean": {
+   "kernel_ratio": 0.12162181818181818,
+   "circulation_rate": 0.09858545454545455,
+   "cycles_total": 34.41,
+   "cycles_2": 4.31,
+   "cycles_long": 24.6
+  },
+  "null_sd": {
+   "kernel_ratio": 0.008968251808232625,
+   "circulation_rate": 0.008767014814652167,
+   "cycles_total": 8.077245817727723,
+   "cycles_2": 1.4946236984605858,
+   "cycles_long": 7.532595834106593
+  },
+  "z": {
+   "kernel_ratio": 0.792289812707078,
+   "circulation_rate": -1.954018494673749,
+   "cycles_total": 21.49123648298648,
+   "cycles_2": 74.05877487022795,
+   "cycles_long": 2.7082297323893987
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 26.682134570765665,
+  "R_ci95": [
+   24.94577006507592,
+   28.606965174129357
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 115,
+    "null_mean": 4.31
+   },
+   "3": {
+    "observed": 33,
+    "null_mean": 2.48
+   },
+   "4": {
+    "observed": 15,
+    "null_mean": 3.02
+   },
+   "5": {
+    "observed": 15,
+    "null_mean": 4.87
+   },
+   "6": {
+    "observed": 12,
+    "null_mean": 7.64
+   },
+   "7": {
+    "observed": 18,
+    "null_mean": 12.09
+   }
+  },
+  "R_analytic_rs_dic_llm": 33.11625854935205,
+  "R_complete_replicates_only": 26.682134570765665
+ },
+ {
+  "key": "e4__Gemma3-27B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Gemma3-27B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Gemma3-27B_42.jsonl",
+   "source_sha256": "c4cbea4485be707f295d516340c229cc017a7d2e4d1e652cd150d056afb785b9",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 73,
+    "dropped_share": 0.0243,
+    "by_reason": {
+     "fragment": 70,
+     "echo": 3
+    },
+    "by_rule": {
+     "lead_in": 70,
+     "task_phrase": 3
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "272b58176a059ef30abf13d3f0f030de9359be6a47a4ed5c59466188a0e847db",
+   "n_nodes": 2750,
+   "n_edges": 5007
+  },
+  "n_nodes": 2750,
+  "n_edges": 5007,
+  "observed": {
+   "kernel_ratio": 0.11127272727272727,
+   "circulation_rate": 0.06872727272727273,
+   "cycles_total": 96,
+   "cycles_2": 74,
+   "cycles_long": 11
+  },
+  "null_mean": {
+   "kernel_ratio": 0.12006545454545454,
+   "circulation_rate": 0.09312,
+   "cycles_total": 24.3,
+   "cycles_2": 1.55,
+   "cycles_long": 17.82
+  },
+  "null_sd": {
+   "kernel_ratio": 0.009826310439809242,
+   "circulation_rate": 0.009258196100824519,
+   "cycles_total": 7.0844901016234045,
+   "cycles_2": 1.243985530462473,
+   "cycles_long": 6.125977473024203
+  },
+  "z": {
+   "kernel_ratio": -0.89481472487429,
+   "circulation_rate": -2.634717066595175,
+   "cycles_total": 10.120700145176293,
+   "cycles_2": 58.2402272581623,
+   "cycles_long": -1.1132917203877963
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 47.74193548387097,
+  "R_ci95": [
+   41.11111111111111,
+   56.48854961832061
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 74,
+    "null_mean": 1.55
+   },
+   "3": {
+    "observed": 7,
+    "null_mean": 2.04
+   },
+   "4": {
+    "observed": 4,
+    "null_mean": 2.89
+   },
+   "5": {
+    "observed": 4,
+    "null_mean": 3.59
+   },
+   "6": {
+    "observed": 4,
+    "null_mean": 5.59
+   },
+   "7": {
+    "observed": 3,
+    "null_mean": 8.64
+   }
+  },
+  "R_analytic_rs_dic_llm": 23.19486224265691,
+  "R_complete_replicates_only": 47.74193548387097
+ },
+ {
+  "key": "e4__Gemma3-4B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Gemma3-4B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Gemma3-4B_42.jsonl",
+   "source_sha256": "bd3c946414872bd389d60e35bd2d8d8d63feb4f35608ffb47e378fc7189a3935",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 0,
+    "dropped_share": 0.0,
+    "by_reason": {},
+    "by_rule": {},
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "f2985ea58c5c013ce49ffbda6185f9c9f298984b46e63533b9545cc3617b3558",
+   "n_nodes": 2750,
+   "n_edges": 4548
+  },
+  "n_nodes": 2750,
+  "n_edges": 4548,
+  "observed": {
+   "kernel_ratio": 0.12763636363636363,
+   "circulation_rate": 0.07381818181818182,
+   "cycles_total": 110,
+   "cycles_2": 89,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.12917454545454546,
+   "circulation_rate": 0.09668,
+   "cycles_total": 23.22,
+   "cycles_2": 2.53,
+   "cycles_long": 15.92
+  },
+  "null_sd": {
+   "kernel_ratio": 0.008597651803191709,
+   "circulation_rate": 0.007872312397214611,
+   "cycles_total": 6.285825323694574,
+   "cycles_2": 1.2605950975630518,
+   "cycles_long": 5.210911628496496
+  },
+  "z": {
+   "kernel_ratio": -0.17890720087208087,
+   "circulation_rate": -2.9040791356180384,
+   "cycles_total": 13.805665211993825,
+   "cycles_2": 68.59458692736585,
+   "cycles_long": -3.0551276120169777
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 35.177865612648226,
+  "R_ci95": [
+   32.014388489208635,
+   38.8646288209607
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 89,
+    "null_mean": 2.53
+   },
+   "3": {
+    "observed": 19,
+    "null_mean": 2.44
+   },
+   "4": {
+    "observed": 2,
+    "null_mean": 2.33
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 3.51
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 4.82
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 7.59
+   }
+  },
+  "R_analytic_rs_dic_llm": 27.985876376058652,
+  "R_complete_replicates_only": 35.177865612648226
+ },
+ {
+  "key": "e4__Qwen2.5-0.5B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen2.5-0.5B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen2.5-0.5B_42.jsonl",
+   "source_sha256": "7fc33a3d44bed2e448afa600648a7273215f99a2de44fd2d29689eb8032fbf4a",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 28,
+    "dropped_share": 0.0093,
+    "by_reason": {
+     "fragment": 18,
+     "echo": 9,
+     "question": 1
+    },
+    "by_rule": {
+     "headword_only": 11,
+     "prompt_span": 8,
+     "non_latin_text": 7,
+     "task_phrase": 1,
+     "question": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "06b456383c44b2b335b1d044f58c6b6c72d689731724e663c1e58dbda10e0253",
+   "n_nodes": 2750,
+   "n_edges": 4952
+  },
+  "n_nodes": 2750,
+  "n_edges": 4952,
+  "observed": {
+   "kernel_ratio": 0.13272727272727272,
+   "circulation_rate": 0.08072727272727273,
+   "cycles_total": 122,
+   "cycles_2": 70,
+   "cycles_long": 28
+  },
+  "null_mean": {
+   "kernel_ratio": 0.16868,
+   "circulation_rate": 0.11889818181818182,
+   "cycles_total": 31.16,
+   "cycles_2": 3.26,
+   "cycles_long": 22.01
+  },
+  "null_sd": {
+   "kernel_ratio": 0.012529545116501489,
+   "circulation_rate": 0.01104346993019737,
+   "cycles_total": 9.055075924585061,
+   "cycles_2": 1.1629273408085306,
+   "cycles_long": 8.470531270233291
+  },
+  "z": {
+   "kernel_ratio": -2.869435956248508,
+   "circulation_rate": -3.4564235092934137,
+   "cycles_total": 10.031942388618088,
+   "cycles_2": 57.38965596388739,
+   "cycles_long": 0.7071575334418221
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 21.472392638036812,
+  "R_ci95": [
+   20.057306590257877,
+   23.102310231023104
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 70,
+    "null_mean": 3.26
+   },
+   "3": {
+    "observed": 16,
+    "null_mean": 2.66
+   },
+   "4": {
+    "observed": 8,
+    "null_mean": 3.23
+   },
+   "5": {
+    "observed": 8,
+    "null_mean": 4.69
+   },
+   "6": {
+    "observed": 9,
+    "null_mean": 6.7
+   },
+   "7": {
+    "observed": 11,
+    "null_mean": 10.62
+   }
+  },
+  "R_analytic_rs_dic_llm": 21.865569241524813,
+  "R_complete_replicates_only": 21.472392638036812
+ },
+ {
+  "key": "e4__Qwen2.5-1.5B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen2.5-1.5B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen2.5-1.5B_42.jsonl",
+   "source_sha256": "7bee3553afaa98477a9e0cf43af2e04246ab1ad6e213fb6e1ac8836ad1ed8ac6",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 5,
+    "dropped_share": 0.0017,
+    "by_reason": {
+     "fragment": 3,
+     "question": 2
+    },
+    "by_rule": {
+     "non_latin_text": 2,
+     "question": 2,
+     "headword_only": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "5204197874fdf5665d349de26084e55ef845e69d0985054e7f70385d8f2803e2",
+   "n_nodes": 2750,
+   "n_edges": 4044
+  },
+  "n_nodes": 2750,
+  "n_edges": 4044,
+  "observed": {
+   "kernel_ratio": 0.0669090909090909,
+   "circulation_rate": 0.03490909090909091,
+   "cycles_total": 36,
+   "cycles_2": 30,
+   "cycles_long": 1
+  },
+  "null_mean": {
+   "kernel_ratio": 0.08322181818181819,
+   "circulation_rate": 0.047305454545454546,
+   "cycles_total": 8.38,
+   "cycles_2": 2.51,
+   "cycles_long": 3.97
+  },
+  "null_sd": {
+   "kernel_ratio": 0.01133344585910756,
+   "circulation_rate": 0.010405223735784615,
+   "cycles_total": 2.7812946625627424,
+   "cycles_2": 1.1789402020458883,
+   "cycles_long": 2.0902392207591936
+  },
+  "z": {
+   "kernel_ratio": -1.439343997890842,
+   "circulation_rate": -1.1913596431118814,
+   "cycles_total": 9.930627046380753,
+   "cycles_2": 23.31755245286817,
+   "cycles_long": -1.4208899969455504
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 11.952191235059763,
+  "R_ci95": [
+   10.94890510948905,
+   13.100436681222707
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 30,
+    "null_mean": 2.51
+   },
+   "3": {
+    "observed": 4,
+    "null_mean": 0.93
+   },
+   "4": {
+    "observed": 1,
+    "null_mean": 0.97
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 1.12
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 1.46
+   },
+   "7": {
+    "observed": 1,
+    "null_mean": 1.39
+   }
+  },
+  "R_analytic_rs_dic_llm": 15.99366796660687,
+  "R_complete_replicates_only": 11.952191235059763
+ },
+ {
+  "key": "e4__Qwen2.5-14B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen2.5-14B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen2.5-14B_42.jsonl",
+   "source_sha256": "6d52f34f4b778ee93e36a37a6fc3408d0720cf807501d343b7304441898bbea5",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 7,
+    "dropped_share": 0.0023,
+    "by_reason": {
+     "fragment": 7
+    },
+    "by_rule": {
+     "non_latin_text": 7
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "2b2337e91c0f2bc1e8eacc6bc6721f82e9aa04c7bfb72a5c454d4be0c9af1d95",
+   "n_nodes": 2750,
+   "n_edges": 4615
+  },
+  "n_nodes": 2750,
+  "n_edges": 4615,
+  "observed": {
+   "kernel_ratio": 0.09927272727272728,
+   "circulation_rate": 0.056,
+   "cycles_total": 79,
+   "cycles_2": 67,
+   "cycles_long": 1
+  },
+  "null_mean": {
+   "kernel_ratio": 0.09303272727272727,
+   "circulation_rate": 0.06845090909090909,
+   "cycles_total": 20.7,
+   "cycles_2": 3.59,
+   "cycles_long": 12.95
+  },
+  "null_sd": {
+   "kernel_ratio": 0.009075145605917023,
+   "circulation_rate": 0.008949019245400328,
+   "cycles_total": 6.20403094769844,
+   "cycles_2": 1.2336531116971254,
+   "cycles_long": 5.385861119635374
+  },
+  "z": {
+   "kernel_ratio": 0.6875922735533312,
+   "circulation_rate": -1.39131548938267,
+   "cycles_total": 9.397116244500364,
+   "cycles_2": 51.400186485784026,
+   "cycles_long": -2.2187723995395228
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 18.662952646239557,
+  "R_ci95": [
+   17.447916666666668,
+   19.94047619047619
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 67,
+    "null_mean": 3.59
+   },
+   "3": {
+    "observed": 8,
+    "null_mean": 1.96
+   },
+   "4": {
+    "observed": 3,
+    "null_mean": 2.2
+   },
+   "5": {
+    "observed": 1,
+    "null_mean": 2.85
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 4.2
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 5.9
+   }
+  },
+  "R_analytic_rs_dic_llm": 24.01750643608702,
+  "R_complete_replicates_only": 18.662952646239557
+ },
+ {
+  "key": "e4__Qwen2.5-32B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen2.5-32B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen2.5-32B_42.jsonl",
+   "source_sha256": "12aaa6e3d85453d394d8ae744d14d24832dfda2b9ef68ede00044b7a828616b1",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 3,
+    "dropped_share": 0.001,
+    "by_reason": {
+     "fragment": 3
+    },
+    "by_rule": {
+     "non_latin_text": 3
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "563476bc2836a43af022c69a99b1892e981e23e2c70f962b2f4d739841c49b03",
+   "n_nodes": 2750,
+   "n_edges": 4185
+  },
+  "n_nodes": 2750,
+  "n_edges": 4185,
+  "observed": {
+   "kernel_ratio": 0.10545454545454545,
+   "circulation_rate": 0.058545454545454546,
+   "cycles_total": 81,
+   "cycles_2": 68,
+   "cycles_long": 3
+  },
+  "null_mean": {
+   "kernel_ratio": 0.08821454545454545,
+   "circulation_rate": 0.0656509090909091,
+   "cycles_total": 16.57,
+   "cycles_2": 4.52,
+   "cycles_long": 8.51
+  },
+  "null_sd": {
+   "kernel_ratio": 0.010272723411101447,
+   "circulation_rate": 0.010402087520944459,
+   "cycles_total": 4.769182319853163,
+   "cycles_2": 1.2367699866992246,
+   "cycles_long": 3.8794200597511996
+  },
+  "z": {
+   "kernel_ratio": 1.6782307193600887,
+   "circulation_rate": -0.683079673300942,
+   "cycles_total": 13.509653370094629,
+   "cycles_2": 51.32724814047253,
+   "cycles_long": -1.4203153860975226
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 15.04424778761062,
+  "R_ci95": [
+   14.255765199161427,
+   15.887850467289718
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 68,
+    "null_mean": 4.52
+   },
+   "3": {
+    "observed": 8,
+    "null_mean": 1.69
+   },
+   "4": {
+    "observed": 2,
+    "null_mean": 1.85
+   },
+   "5": {
+    "observed": 1,
+    "null_mean": 2.12
+   },
+   "6": {
+    "observed": 1,
+    "null_mean": 2.73
+   },
+   "7": {
+    "observed": 1,
+    "null_mean": 3.66
+   }
+  },
+  "R_analytic_rs_dic_llm": 29.249042270177014,
+  "R_complete_replicates_only": 15.04424778761062
+ },
+ {
+  "key": "e4__Qwen2.5-3B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen2.5-3B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen2.5-3B_42.jsonl",
+   "source_sha256": "06ffdab815fa55981306c9fc97baf1ee352ce5b27059edae5a94d84b2c18f626",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 5,
+    "dropped_share": 0.0017,
+    "by_reason": {
+     "fragment": 5
+    },
+    "by_rule": {
+     "non_latin_text": 5
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "8d7a025ded22f157b7d0fa8f95908efd845772872029437891b20f7ec61a5138",
+   "n_nodes": 2750,
+   "n_edges": 3706
+  },
+  "n_nodes": 2750,
+  "n_edges": 3706,
+  "observed": {
+   "kernel_ratio": 0.08690909090909091,
+   "circulation_rate": 0.03309090909090909,
+   "cycles_total": 49,
+   "cycles_2": 45,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.0648290909090909,
+   "circulation_rate": 0.034723636363636366,
+   "cycles_total": 9.82,
+   "cycles_2": 3.58,
+   "cycles_long": 3.88
+  },
+  "null_sd": {
+   "kernel_ratio": 0.013959950271052112,
+   "circulation_rate": 0.011758618572936263,
+   "cycles_total": 3.3207830401879614,
+   "cycles_2": 1.0017983829094554,
+   "cycles_long": 2.511095378515121
+  },
+  "z": {
+   "kernel_ratio": 1.5816675254055839,
+   "circulation_rate": -0.1388536640252264,
+   "cycles_total": 11.798422096790265,
+   "cycles_2": 41.345644699192555,
+   "cycles_long": -1.5451424239784748
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 12.569832402234637,
+  "R_ci95": [
+   11.904761904761905,
+   13.274336283185841
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 45,
+    "null_mean": 3.58
+   },
+   "3": {
+    "observed": 4,
+    "null_mean": 1.25
+   },
+   "4": {
+    "observed": 0,
+    "null_mean": 1.11
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 1.02
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 1.33
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 1.53
+   }
+  },
+  "R_analytic_rs_dic_llm": 23.467684024270774,
+  "R_complete_replicates_only": 12.569832402234637
+ },
+ {
+  "key": "e4__Qwen2.5-72B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen2.5-72B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen2.5-72B_42.jsonl",
+   "source_sha256": "e4d45ba36df0b61dd8c26b541280a260632915593c593f13edc431b1318fc918",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 0,
+    "dropped_share": 0.0,
+    "by_reason": {},
+    "by_rule": {},
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "4cee38ad53be7181189ebeafdf8bf0bded44fdf5fe13ef45867eac53814c6867",
+   "n_nodes": 2750,
+   "n_edges": 4935
+  },
+  "n_nodes": 2750,
+  "n_edges": 4935,
+  "observed": {
+   "kernel_ratio": 0.1930909090909091,
+   "circulation_rate": 0.15563636363636363,
+   "cycles_total": 232,
+   "cycles_2": 169,
+   "cycles_long": 23
+  },
+  "null_mean": {
+   "kernel_ratio": 0.17927272727272728,
+   "circulation_rate": 0.15577818181818182,
+   "cycles_total": 72.1,
+   "cycles_2": 7.04,
+   "cycles_long": 55.05
+  },
+  "null_sd": {
+   "kernel_ratio": 0.008908126107313574,
+   "circulation_rate": 0.008290254360112957,
+   "cycles_total": 15.065523555456014,
+   "cycles_2": 1.7884071124886525,
+   "cycles_long": 13.850902497671406
+  },
+  "z": {
+   "kernel_ratio": 1.5511883926785772,
+   "circulation_rate": -0.01710661406247312,
+   "cycles_total": 10.613637117316898,
+   "cycles_2": 90.56103549858123,
+   "cycles_long": -2.3139286415010285
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 24.005681818181817,
+  "R_ci95": [
+   22.837837837837835,
+   25.223880597014926
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 169,
+    "null_mean": 7.04
+   },
+   "3": {
+    "observed": 29,
+    "null_mean": 4.31
+   },
+   "4": {
+    "observed": 11,
+    "null_mean": 5.7
+   },
+   "5": {
+    "observed": 8,
+    "null_mean": 9.11
+   },
+   "6": {
+    "observed": 6,
+    "null_mean": 16.75
+   },
+   "7": {
+    "observed": 9,
+    "null_mean": 29.19
+   }
+  },
+  "R_analytic_rs_dic_llm": 38.70529797114532,
+  "R_complete_replicates_only": 24.005681818181817
+ },
+ {
+  "key": "e4__Qwen2.5-7B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen2.5-7B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen2.5-7B_42.jsonl",
+   "source_sha256": "a81af2518cc5ba26b6150a090843c58b5f3aae90cddf2e526a013eeefb861957",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 14,
+    "dropped_share": 0.0047,
+    "by_reason": {
+     "fragment": 14
+    },
+    "by_rule": {
+     "non_latin_text": 14
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "a97c30afd5804f0456b49b55029710eaf63029797351a294ec7c9ddcd05ea4c0",
+   "n_nodes": 2750,
+   "n_edges": 4002
+  },
+  "n_nodes": 2750,
+  "n_edges": 4002,
+  "observed": {
+   "kernel_ratio": 0.11309090909090909,
+   "circulation_rate": 0.05672727272727273,
+   "cycles_total": 82,
+   "cycles_2": 76,
+   "cycles_long": 2
+  },
+  "null_mean": {
+   "kernel_ratio": 0.0931490909090909,
+   "circulation_rate": 0.06460727272727272,
+   "cycles_total": 14.68,
+   "cycles_2": 4.5,
+   "cycles_long": 6.58
+  },
+  "null_sd": {
+   "kernel_ratio": 0.012436652840869103,
+   "circulation_rate": 0.012867184733857154,
+   "cycles_total": 3.9137705604697883,
+   "cycles_2": 1.2124355652982142,
+   "cycles_long": 3.200562450570212
+  },
+  "z": {
+   "kernel_ratio": 1.603471483604153,
+   "circulation_rate": -0.6124105748839924,
+   "cycles_total": 17.200803920380874,
+   "cycles_2": 58.972206067226054,
+   "cycles_long": -1.4309984794029023
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 16.88888888888889,
+  "R_ci95": [
+   16.0337552742616,
+   17.84037558685446
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 76,
+    "null_mean": 4.5
+   },
+   "3": {
+    "observed": 4,
+    "null_mean": 1.78
+   },
+   "4": {
+    "observed": 0,
+    "null_mean": 1.82
+   },
+   "5": {
+    "observed": 2,
+    "null_mean": 1.72
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 2
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 2.86
+   }
+  },
+  "R_analytic_rs_dic_llm": 33.9307911449515,
+  "R_complete_replicates_only": 16.88888888888889
+ },
+ {
+  "key": "e4__Qwen3-0.6B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen3-0.6B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen3-0.6B_42.jsonl",
+   "source_sha256": "63e81016c6138261b62bceb2a91a9d88dd14d6322efde9f06147a520b6e7db96",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 77,
+    "dropped_share": 0.0257,
+    "by_reason": {
+     "fragment": 76,
+     "question": 1
+    },
+    "by_rule": {
+     "headword_only": 72,
+     "blank": 4,
+     "question": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "d410ff42001c84f6d0586dc68cdd7099ab05401bc5afa7d2d23f32d34a31cc28",
+   "n_nodes": 2750,
+   "n_edges": 3796
+  },
+  "n_nodes": 2750,
+  "n_edges": 3796,
+  "observed": {
+   "kernel_ratio": 0.018545454545454546,
+   "circulation_rate": 0.011636363636363636,
+   "cycles_total": 20,
+   "cycles_2": 17,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.01305090909090909,
+   "circulation_rate": 0.005083636363636364,
+   "cycles_total": 2.45,
+   "cycles_2": 0.65,
+   "cycles_long": 0.99
+  },
+  "null_sd": {
+   "kernel_ratio": 0.009612786938618412,
+   "circulation_rate": 0.004814572919449265,
+   "cycles_total": 2.06579282601136,
+   "cycles_2": 0.7664854858377946,
+   "cycles_long": 1.4594176920950355
+  },
+  "z": {
+   "kernel_ratio": 0.5715871463323157,
+   "circulation_rate": 1.3610194263039292,
+   "cycles_total": 8.495527614879757,
+   "cycles_2": 21.33112798884756,
+   "cycles_long": -0.6783527466895559
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 26.153846153846153,
+  "R_ci95": [
+   21.243441358024697,
+   33.333333333333336
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 17,
+    "null_mean": 0.65
+   },
+   "3": {
+    "observed": 2,
+    "null_mean": 0.46
+   },
+   "4": {
+    "observed": 1,
+    "null_mean": 0.35
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 0.47
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 0.25
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 0.27
+   }
+  },
+  "R_analytic_rs_dic_llm": 13.81494752074948,
+  "R_complete_replicates_only": 26.153846153846153
+ },
+ {
+  "key": "e4__Qwen3-1.7B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen3-1.7B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen3-1.7B_42.jsonl",
+   "source_sha256": "80b10bca9752a05a04d547bb979577a8d67f84575ae165a9e972189b3475838b",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 3,
+    "dropped_share": 0.001,
+    "by_reason": {
+     "fragment": 3
+    },
+    "by_rule": {
+     "non_latin_text": 2,
+     "blank": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "fc87fefabb6d4e564f7a788f5142eb50accb7fa4cc6c6879477a961a7ba31074",
+   "n_nodes": 2750,
+   "n_edges": 5266
+  },
+  "n_nodes": 2750,
+  "n_edges": 5266,
+  "observed": {
+   "kernel_ratio": 0.14145454545454544,
+   "circulation_rate": 0.10981818181818181,
+   "cycles_total": 140,
+   "cycles_2": 94,
+   "cycles_long": 19
+  },
+  "null_mean": {
+   "kernel_ratio": 0.1482,
+   "circulation_rate": 0.12138181818181819,
+   "cycles_total": 49.56,
+   "cycles_2": 4.2,
+   "cycles_long": 38.7
+  },
+  "null_sd": {
+   "kernel_ratio": 0.011116854897403192,
+   "circulation_rate": 0.010510663613053977,
+   "cycles_total": 12.538197637619213,
+   "cycles_2": 1.5491933384829668,
+   "cycles_long": 11.688028062936878
+  },
+  "z": {
+   "kernel_ratio": -0.6067772411988789,
+   "circulation_rate": -1.1001813766805961,
+   "cycles_total": 7.213157952515174,
+   "cycles_2": 57.96565074823767,
+   "cycles_long": -1.6854853439708406
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 22.38095238095238,
+  "R_ci95": [
+   20.88888888888889,
+   24.102564102564102
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 94,
+    "null_mean": 4.2
+   },
+   "3": {
+    "observed": 22,
+    "null_mean": 2.85
+   },
+   "4": {
+    "observed": 5,
+    "null_mean": 3.81
+   },
+   "5": {
+    "observed": 5,
+    "null_mean": 7.2
+   },
+   "6": {
+    "observed": 8,
+    "null_mean": 12.01
+   },
+   "7": {
+    "observed": 6,
+    "null_mean": 19.49
+   }
+  },
+  "R_analytic_rs_dic_llm": 23.54036600061962,
+  "R_complete_replicates_only": 22.38095238095238
+ },
+ {
+  "key": "e4__Qwen3-14B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen3-14B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen3-14B_42.jsonl",
+   "source_sha256": "19015bc89b676d2bd6223349fa66af83f213f88496e412b1e7aa2d9c935b91af",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 1,
+    "dropped_share": 0.0003,
+    "by_reason": {
+     "fragment": 1
+    },
+    "by_rule": {
+     "lead_in": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "a4bcc6874a7b0a8a4c066ce8b1bc4214f55f853eec692b098382b99d6324511b",
+   "n_nodes": 2750,
+   "n_edges": 4618
+  },
+  "n_nodes": 2750,
+  "n_edges": 4618,
+  "observed": {
+   "kernel_ratio": 0.11672727272727272,
+   "circulation_rate": 0.07890909090909091,
+   "cycles_total": 110,
+   "cycles_2": 86,
+   "cycles_long": 12
+  },
+  "null_mean": {
+   "kernel_ratio": 0.11248727272727273,
+   "circulation_rate": 0.08472,
+   "cycles_total": 30.79,
+   "cycles_2": 3.71,
+   "cycles_long": 21.84
+  },
+  "null_sd": {
+   "kernel_ratio": 0.010558640032638815,
+   "circulation_rate": 0.009286332977299987,
+   "cycles_total": 8.899769659940644,
+   "cycles_2": 1.380543371285379,
+   "cycles_long": 8.276134363336546
+  },
+  "z": {
+   "kernel_ratio": 0.40156686721900997,
+   "circulation_rate": -0.6257485172148779,
+   "cycles_total": 8.900230346020921,
+   "cycles_2": 59.606964700705106,
+   "cycles_long": -1.1889608805279204
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 23.18059299191375,
+  "R_ci95": [
+   21.553884711779446,
+   24.927536231884055
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 86,
+    "null_mean": 3.71
+   },
+   "3": {
+    "observed": 8,
+    "null_mean": 2.25
+   },
+   "4": {
+    "observed": 4,
+    "null_mean": 2.99
+   },
+   "5": {
+    "observed": 3,
+    "null_mean": 4.72
+   },
+   "6": {
+    "observed": 2,
+    "null_mean": 6.65
+   },
+   "7": {
+    "observed": 7,
+    "null_mean": 10.47
+   }
+  },
+  "R_analytic_rs_dic_llm": 24.813927138117755,
+  "R_complete_replicates_only": 23.18059299191375
+ },
+ {
+  "key": "e4__Qwen3-4B-Instruct-2507",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen3-4B-Instruct-2507",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen3-4B-Instruct-2507_42.jsonl",
+   "source_sha256": "89eedeeb69d988d54e5b6dcb2f8e13faab0447c35d175d09a2255af82323de45",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 1,
+    "dropped_share": 0.0003,
+    "by_reason": {
+     "echo": 1
+    },
+    "by_rule": {
+     "task_phrase": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "1f602229746d8f3b8b7aeb9f8b5bd6832a15f010be29f848c2067c2b3e8bd27a",
+   "n_nodes": 2750,
+   "n_edges": 4754
+  },
+  "n_nodes": 2750,
+  "n_edges": 4754,
+  "observed": {
+   "kernel_ratio": 0.10290909090909091,
+   "circulation_rate": 0.06072727272727273,
+   "cycles_total": 109,
+   "cycles_2": 70,
+   "cycles_long": 18
+  },
+  "null_mean": {
+   "kernel_ratio": 0.09785454545454546,
+   "circulation_rate": 0.07695272727272727,
+   "cycles_total": 40.91,
+   "cycles_2": 3.89,
+   "cycles_long": 30.49
+  },
+  "null_sd": {
+   "kernel_ratio": 0.008623550303367561,
+   "circulation_rate": 0.008087092869157628,
+   "cycles_total": 10.359628371712954,
+   "cycles_2": 1.4345382532369082,
+   "cycles_long": 9.658669680654784
+  },
+  "z": {
+   "kernel_ratio": 0.5861327732467233,
+   "circulation_rate": -2.00633958431896,
+   "cycles_total": 6.572629592188874,
+   "cycles_2": 46.08451524442005,
+   "cycles_long": -1.2931387461169779
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 17.994858611825194,
+  "R_ci95": [
+   16.74641148325359,
+   19.337016574585636
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 70,
+    "null_mean": 3.89
+   },
+   "3": {
+    "observed": 13,
+    "null_mean": 2.98
+   },
+   "4": {
+    "observed": 8,
+    "null_mean": 3.55
+   },
+   "5": {
+    "observed": 7,
+    "null_mean": 5.85
+   },
+   "6": {
+    "observed": 4,
+    "null_mean": 9.28
+   },
+   "7": {
+    "observed": 7,
+    "null_mean": 15.36
+   }
+  },
+  "R_analytic_rs_dic_llm": 18.327853484321125,
+  "R_complete_replicates_only": 17.994858611825194
+ },
+ {
+  "key": "e4__Qwen3-4B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen3-4B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen3-4B_42.jsonl",
+   "source_sha256": "d285275b0f53c085a8d17fe3ea206dd04452747990b9a2d3d3afd52095a98a8f",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 4,
+    "dropped_share": 0.0013,
+    "by_reason": {
+     "fragment": 3,
+     "echo": 1
+    },
+    "by_rule": {
+     "non_latin_text": 3,
+     "task_phrase": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "df72805b879dbbdb36de674e19dd3feb82b4f81e62ecacfee4afa250b98d3073",
+   "n_nodes": 2750,
+   "n_edges": 3978
+  },
+  "n_nodes": 2750,
+  "n_edges": 3978,
+  "observed": {
+   "kernel_ratio": 0.10436363636363637,
+   "circulation_rate": 0.04,
+   "cycles_total": 68,
+   "cycles_2": 55,
+   "cycles_long": 3
+  },
+  "null_mean": {
+   "kernel_ratio": 0.07824,
+   "circulation_rate": 0.05017090909090909,
+   "cycles_total": 18.73,
+   "cycles_2": 8.71,
+   "cycles_long": 6.14
+  },
+  "null_sd": {
+   "kernel_ratio": 0.011836206674004644,
+   "circulation_rate": 0.011003885714893911,
+   "cycles_total": 4.687973976036983,
+   "cycles_2": 1.5250901612691625,
+   "cycles_long": 3.4438931458452657
+  },
+  "z": {
+   "kernel_ratio": 2.2070953205819386,
+   "circulation_rate": -0.9243015925858468,
+   "cycles_total": 10.50987062894295,
+   "cycles_2": 30.352303867384464,
+   "cycles_long": -0.9117588342681641
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 6.3145809414466125,
+  "R_ci95": [
+   6.1043285238623755,
+   6.532066508313539
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 55,
+    "null_mean": 8.71
+   },
+   "3": {
+    "observed": 6,
+    "null_mean": 2.29
+   },
+   "4": {
+    "observed": 4,
+    "null_mean": 1.59
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 1.73
+   },
+   "6": {
+    "observed": 2,
+    "null_mean": 1.94
+   },
+   "7": {
+    "observed": 1,
+    "null_mean": 2.47
+   }
+  },
+  "R_analytic_rs_dic_llm": 25.285163189075302,
+  "R_complete_replicates_only": 6.3145809414466125
+ },
+ {
+  "key": "e4__Qwen3-8B",
+  "meta": {
+   "dataset": "e4",
+   "model": "Qwen3-8B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e4 (lenght)\\definitions\\Qwen3-8B_42.jsonl",
+   "source_sha256": "338b688070f968a0ed15cb840c7c9185748f966f7933bd620f5fc9a39834e3cd",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 1,
+    "dropped_share": 0.0003,
+    "by_reason": {
+     "echo": 1
+    },
+    "by_rule": {
+     "task_phrase": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "99da2a6f9558886c75ea331a9900d7fdca51d85a3ec2d265fea968eb3cc83c35",
+   "n_nodes": 2750,
+   "n_edges": 5242
+  },
+  "n_nodes": 2750,
+  "n_edges": 5242,
+  "observed": {
+   "kernel_ratio": 0.10909090909090909,
+   "circulation_rate": 0.05672727272727273,
+   "cycles_total": 98,
+   "cycles_2": 69,
+   "cycles_long": 13
+  },
+  "null_mean": {
+   "kernel_ratio": 0.12508,
+   "circulation_rate": 0.10063272727272728,
+   "cycles_total": 30.83,
+   "cycles_2": 2.66,
+   "cycles_long": 23.05
+  },
+  "null_sd": {
+   "kernel_ratio": 0.010192780462352703,
+   "circulation_rate": 0.009193403312310949,
+   "cycles_total": 8.217122367349777,
+   "cycles_2": 1.2427389106324787,
+   "cycles_long": 7.346257550617185
+  },
+  "z": {
+   "kernel_ratio": -1.568668232200922,
+   "circulation_rate": -4.775756382477037,
+   "cycles_total": 8.174394513935415,
+   "cycles_2": 53.38208969914442,
+   "cycles_long": -1.368043514776536
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 25.939849624060148,
+  "R_ci95": [
+   23.79310344827586,
+   28.51239669421488
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 69,
+    "null_mean": 2.66
+   },
+   "3": {
+    "observed": 11,
+    "null_mean": 2.17
+   },
+   "4": {
+    "observed": 5,
+    "null_mean": 2.95
+   },
+   "5": {
+    "observed": 6,
+    "null_mean": 4.64
+   },
+   "6": {
+    "observed": 5,
+    "null_mean": 7.07
+   },
+   "7": {
+    "observed": 2,
+    "null_mean": 11.34
+   }
+  },
+  "R_analytic_rs_dic_llm": 20.12341328212137,
+  "R_complete_replicates_only": 25.939849624060148
+ },
+ {
+  "key": "e5__Gemma3-12B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Gemma3-12B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Gemma3-12B_42.jsonl",
+   "source_sha256": "1cef75084b0f7e34ffe0f5de85c263a5a578205e0884232c8f027aec4aa38845",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 2991,
+    "n_dropped": 29,
+    "dropped_share": 0.0097,
+    "by_reason": {
+     "fragment": 5,
+     "echo": 19,
+     "offtopic": 1,
+     "question": 4
+    },
+    "by_rule": {
+     "blank": 2,
+     "instruction": 17,
+     "meta_usage": 1,
+     "task_start": 2,
+     "lead_in": 1,
+     "question": 4,
+     "non_latin_text": 2
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "0b560aaa401f73da896f15d59fd8a8bc6e52d2043f1fc8046db32e73891ea5ed",
+   "n_nodes": 2750,
+   "n_edges": 6403
+  },
+  "n_nodes": 2750,
+  "n_edges": 6403,
+  "observed": {
+   "kernel_ratio": 0.10872727272727273,
+   "circulation_rate": 0.05781818181818182,
+   "cycles_total": 83,
+   "cycles_2": 56,
+   "cycles_long": 16
+  },
+  "null_mean": {
+   "kernel_ratio": 0.0982109090909091,
+   "circulation_rate": 0.0795309090909091,
+   "cycles_total": 41.92,
+   "cycles_2": 1.84,
+   "cycles_long": 33.34
+  },
+  "null_sd": {
+   "kernel_ratio": 0.008307269344793278,
+   "circulation_rate": 0.008125510486188363,
+   "cycles_total": 12.027202500997479,
+   "cycles_2": 1.383618444514238,
+   "cycles_long": 10.9573902002256
+  },
+  "z": {
+   "kernel_ratio": 1.2659230367864427,
+   "circulation_rate": -2.67216777452128,
+   "cycles_total": 3.415590616071611,
+   "cycles_2": 39.143739529299594,
+   "cycles_long": -1.5824936123606326
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 30.434782608695652,
+  "R_ci95": [
+   26.41509433962264,
+   35.44303797468354
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 56,
+    "null_mean": 1.84
+   },
+   "3": {
+    "observed": 6,
+    "null_mean": 2.64
+   },
+   "4": {
+    "observed": 5,
+    "null_mean": 4.1
+   },
+   "5": {
+    "observed": 5,
+    "null_mean": 6.39
+   },
+   "6": {
+    "observed": 5,
+    "null_mean": 10.74
+   },
+   "7": {
+    "observed": 6,
+    "null_mean": 16.21
+   }
+  },
+  "R_analytic_rs_dic_llm": 14.41427296426248,
+  "R_complete_replicates_only": 30.434782608695652
+ },
+ {
+  "key": "e5__Gemma3-1B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Gemma3-1B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Gemma3-1B_42.jsonl",
+   "source_sha256": "9da382189d87859b172eaebe1708ba230979526e812a6b331ccde14a678a5e59",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 16,
+    "dropped_share": 0.0053,
+    "by_reason": {
+     "echo": 13,
+     "offtopic": 3
+    },
+    "by_rule": {
+     "task_start": 10,
+     "meta_usage": 2,
+     "task_rule": 3,
+     "first_person": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "f6c40810f565760babe3ce874c104f25514ede26bf96924b4bc2bd88a5b97182",
+   "n_nodes": 2750,
+   "n_edges": 5024
+  },
+  "n_nodes": 2750,
+  "n_edges": 5024,
+  "observed": {
+   "kernel_ratio": 0.046181818181818185,
+   "circulation_rate": 0.02509090909090909,
+   "cycles_total": 39,
+   "cycles_2": 25,
+   "cycles_long": 5
+  },
+  "null_mean": {
+   "kernel_ratio": 0.05461090909090909,
+   "circulation_rate": 0.033534545454545456,
+   "cycles_total": 7.52,
+   "cycles_2": 1.1,
+   "cycles_long": 4.25
+  },
+  "null_sd": {
+   "kernel_ratio": 0.010902589577899933,
+   "circulation_rate": 0.011168974737826874,
+   "cycles_total": 3.7748642359692886,
+   "cycles_2": 1.014889156509222,
+   "cycles_long": 2.9098969053902923
+  },
+  "z": {
+   "kernel_ratio": -0.7731274160936108,
+   "circulation_rate": -0.755990282173315,
+   "cycles_total": 8.339372764731165,
+   "cycles_2": 23.549369748126605,
+   "cycles_long": 0.2577410899371384
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 22.727272727272727,
+  "R_ci95": [
+   19.23076923076923,
+   27.47252747252747
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 25,
+    "null_mean": 1.1
+   },
+   "3": {
+    "observed": 8,
+    "null_mean": 0.97
+   },
+   "4": {
+    "observed": 1,
+    "null_mean": 1.2
+   },
+   "5": {
+    "observed": 2,
+    "null_mean": 1.26
+   },
+   "6": {
+    "observed": 2,
+    "null_mean": 1.47
+   },
+   "7": {
+    "observed": 1,
+    "null_mean": 1.52
+   }
+  },
+  "R_analytic_rs_dic_llm": 11.359046291035598,
+  "R_complete_replicates_only": 22.727272727272727
+ },
+ {
+  "key": "e5__Gemma3-270M",
+  "meta": {
+   "dataset": "e5",
+   "model": "Gemma3-270M",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Gemma3-270M_42.jsonl",
+   "source_sha256": "46fd7578c65c56d79d0e3e8c87509daa534081d3129ebbb5ebc081e48526cac1",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 215,
+    "dropped_share": 0.0717,
+    "by_reason": {
+     "fragment": 154,
+     "echo": 46,
+     "offtopic": 7,
+     "question": 8
+    },
+    "by_rule": {
+     "headword_only": 120,
+     "blank": 13,
+     "task_phrase": 36,
+     "exam_marker": 7,
+     "lead_in": 20,
+     "prompt_span": 10,
+     "question": 8,
+     "truncated": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "8549752292c291310de1778b03fe7b6ad073d6f3d1d1a104364333978ab914ec",
+   "n_nodes": 2750,
+   "n_edges": 5701
+  },
+  "n_nodes": 2750,
+  "n_edges": 5701,
+  "observed": {
+   "kernel_ratio": 0.01781818181818182,
+   "circulation_rate": 0.008727272727272728,
+   "cycles_total": 24,
+   "cycles_2": 6,
+   "cycles_long": 14
+  },
+  "null_mean": {
+   "kernel_ratio": 0.027625454545454547,
+   "circulation_rate": 0.013749090909090909,
+   "cycles_total": 9.25,
+   "cycles_2": 1.45,
+   "cycles_long": 5.26
+  },
+  "null_sd": {
+   "kernel_ratio": 0.010645351913176563,
+   "circulation_rate": 0.007809245632925879,
+   "cycles_total": 6.626273462512697,
+   "cycles_2": 1.243985530462473,
+   "cycles_long": 4.955037840420595
+  },
+  "z": {
+   "kernel_ratio": -0.9212727589713139,
+   "circulation_rate": -0.6430605999438468,
+   "cycles_total": 2.225987213393208,
+   "cycles_2": 3.6575988133145403,
+   "cycles_long": 1.76386140358075
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 4.137931034482759,
+  "R_ci95": [
+   3.5294117647058822,
+   4.918032786885246
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 6,
+    "null_mean": 1.45
+   },
+   "3": {
+    "observed": 1,
+    "null_mean": 1.14
+   },
+   "4": {
+    "observed": 3,
+    "null_mean": 1.4
+   },
+   "5": {
+    "observed": 6,
+    "null_mean": 1.39
+   },
+   "6": {
+    "observed": 5,
+    "null_mean": 1.77
+   },
+   "7": {
+    "observed": 3,
+    "null_mean": 2.1
+   }
+  },
+  "R_analytic_rs_dic_llm": 2.4973666851711425,
+  "R_complete_replicates_only": 4.137931034482759
+ },
+ {
+  "key": "e5__Gemma3-27B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Gemma3-27B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Gemma3-27B_42.jsonl",
+   "source_sha256": "b7b632db0d14f53c912785e64e6aebb7bf1602672dd19f33795b4dd5c3dd6244",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 21,
+    "dropped_share": 0.007,
+    "by_reason": {
+     "offtopic": 1,
+     "fragment": 20
+    },
+    "by_rule": {
+     "meta_usage": 1,
+     "lead_in": 14,
+     "blank": 4,
+     "truncated": 2
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "3882f66ed3bd8b3bfaee4897cc82f5cd0a401fb816cf13dfe7c4fc89b4ed1b94",
+   "n_nodes": 2750,
+   "n_edges": 6448
+  },
+  "n_nodes": 2750,
+  "n_edges": 6448,
+  "observed": {
+   "kernel_ratio": 0.08618181818181818,
+   "circulation_rate": 0.05272727272727273,
+   "cycles_total": 53,
+   "cycles_2": 37,
+   "cycles_long": 10
+  },
+  "null_mean": {
+   "kernel_ratio": 0.09065818181818182,
+   "circulation_rate": 0.07355636363636364,
+   "cycles_total": 33.43,
+   "cycles_2": 1.92,
+   "cycles_long": 25.87
+  },
+  "null_sd": {
+   "kernel_ratio": 0.008710695619858278,
+   "circulation_rate": 0.008198702578270671,
+   "cycles_total": 10.126455450946299,
+   "cycles_2": 1.460684770920817,
+   "cycles_long": 9.169138454620478
+  },
+  "z": {
+   "kernel_ratio": -0.5138927855725567,
+   "circulation_rate": -2.540535006635688,
+   "cycles_total": 1.9325617038261123,
+   "cycles_2": 24.01613318518104,
+   "cycles_long": -1.730806016131521
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 19.270833333333336,
+  "R_ci95": [
+   16.742081447963802,
+   22.5609756097561
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 37,
+    "null_mean": 1.92
+   },
+   "3": {
+    "observed": 3,
+    "null_mean": 2.27
+   },
+   "4": {
+    "observed": 3,
+    "null_mean": 3.37
+   },
+   "5": {
+    "observed": 3,
+    "null_mean": 5.16
+   },
+   "6": {
+    "observed": 2,
+    "null_mean": 8.26
+   },
+   "7": {
+    "observed": 5,
+    "null_mean": 12.45
+   }
+  },
+  "R_analytic_rs_dic_llm": 10.17390208335965,
+  "R_complete_replicates_only": 19.270833333333336
+ },
+ {
+  "key": "e5__Gemma3-4B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Gemma3-4B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Gemma3-4B_42.jsonl",
+   "source_sha256": "61a32842d9cb904c7f77f34542ea3055103b7b468cbeb9b6c88414eeceb3132d",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 84,
+    "dropped_share": 0.028,
+    "by_reason": {
+     "fragment": 69,
+     "echo": 14,
+     "offtopic": 1
+    },
+    "by_rule": {
+     "lead_in": 69,
+     "task_start": 14,
+     "meta_usage": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "bc4543a707824db4cea11682578fda530db699dea6401b7812d5001cec86d8ab",
+   "n_nodes": 2750,
+   "n_edges": 5514
+  },
+  "n_nodes": 2750,
+  "n_edges": 5514,
+  "observed": {
+   "kernel_ratio": 0.08218181818181818,
+   "circulation_rate": 0.038181818181818185,
+   "cycles_total": 56,
+   "cycles_2": 49,
+   "cycles_long": 1
+  },
+  "null_mean": {
+   "kernel_ratio": 0.061352727272727274,
+   "circulation_rate": 0.04354909090909091,
+   "cycles_total": 13.9,
+   "cycles_2": 1.48,
+   "cycles_long": 9.32
+  },
+  "null_sd": {
+   "kernel_ratio": 0.012840955140705844,
+   "circulation_rate": 0.011268165645960011,
+   "cycles_total": 5.038849074937649,
+   "cycles_2": 1.19565881421081,
+   "cycles_long": 4.5494615065961375
+  },
+  "z": {
+   "kernel_ratio": 1.6220826784966063,
+   "circulation_rate": -0.476321780839019,
+   "cycles_total": 8.355082554347184,
+   "cycles_2": 39.7437792748305,
+   "cycles_long": -1.8287878659786578
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 33.108108108108105,
+  "R_ci95": [
+   28.488372093023255,
+   39.2
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 49,
+    "null_mean": 1.48
+   },
+   "3": {
+    "observed": 3,
+    "null_mean": 1.21
+   },
+   "4": {
+    "observed": 3,
+    "null_mean": 1.89
+   },
+   "5": {
+    "observed": 1,
+    "null_mean": 2.32
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 3
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 4
+   }
+  },
+  "R_analytic_rs_dic_llm": 18.40721483997966,
+  "R_complete_replicates_only": 33.108108108108105
+ },
+ {
+  "key": "e5__Qwen2.5-0.5B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen2.5-0.5B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen2.5-0.5B_42.jsonl",
+   "source_sha256": "04243af3deca0de89dbea028ef4199144fc3cb1d79c1cf3da4e47b0a64414032",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 11,
+    "dropped_share": 0.0037,
+    "by_reason": {
+     "echo": 9,
+     "fragment": 1,
+     "question": 1
+    },
+    "by_rule": {
+     "task_phrase": 6,
+     "prompt_span": 2,
+     "headword_only": 1,
+     "task_start": 1,
+     "question": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "cce9bf9b5f745befcaf2a2197d6b67661c6b0f5ff7d856dac7554affed621513",
+   "n_nodes": 2750,
+   "n_edges": 8311
+  },
+  "n_nodes": 2750,
+  "n_edges": 8311,
+  "observed": {
+   "kernel_ratio": 0.1690909090909091,
+   "circulation_rate": 0.11927272727272727,
+   "cycles_total": 97,
+   "cycles_2": 44,
+   "cycles_long": 40
+  },
+  "null_mean": {
+   "kernel_ratio": 0.18287272727272727,
+   "circulation_rate": 0.1682,
+   "cycles_total": 193.82,
+   "cycles_2": 3.22,
+   "cycles_long": 173.45
+  },
+  "null_sd": {
+   "kernel_ratio": 0.010806976626311953,
+   "circulation_rate": 0.010875508917511677,
+   "cycles_total": 46.105396647247275,
+   "cycles_2": 1.9420607611503817,
+   "cycles_long": 44.41201976942728
+  },
+  "z": {
+   "kernel_ratio": -1.2752704718786303,
+   "circulation_rate": -4.498849028434001,
+   "cycles_total": -2.0999710888677634,
+   "cycles_2": 20.998313140235595,
+   "cycles_long": -3.0048171799622905
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 13.664596273291925,
+  "R_ci95": [
+   12.154696132596685,
+   15.384615384615385
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 44,
+    "null_mean": 3.22
+   },
+   "3": {
+    "observed": 6,
+    "null_mean": 5.76
+   },
+   "4": {
+    "observed": 7,
+    "null_mean": 11.39
+   },
+   "5": {
+    "observed": 7,
+    "null_mean": 22.48
+   },
+   "6": {
+    "observed": 9,
+    "null_mean": 47.63
+   },
+   "7": {
+    "observed": 24,
+    "null_mean": 103.34
+   }
+  },
+  "R_analytic_rs_dic_llm": 6.610229019748448,
+  "R_complete_replicates_only": 13.664596273291925
+ },
+ {
+  "key": "e5__Qwen2.5-1.5B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen2.5-1.5B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen2.5-1.5B_42.jsonl",
+   "source_sha256": "b85888c1a01fff5f62369d1a9715d788fe6a8a8b43de818ba6479dfccdc76c6e",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 33,
+    "dropped_share": 0.011,
+    "by_reason": {
+     "echo": 28,
+     "fragment": 5
+    },
+    "by_rule": {
+     "task_rule": 23,
+     "headword_only": 4,
+     "task_start": 5,
+     "lead_in": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "3e6b9c15510d1a927ed8f5e0fe5fef0b5faa142e39fdede09056f95bdfc11e62",
+   "n_nodes": 2750,
+   "n_edges": 7474
+  },
+  "n_nodes": 2750,
+  "n_edges": 7474,
+  "observed": {
+   "kernel_ratio": 0.15054545454545454,
+   "circulation_rate": 0.11018181818181819,
+   "cycles_total": 134,
+   "cycles_2": 65,
+   "cycles_long": 47
+  },
+  "null_mean": {
+   "kernel_ratio": 0.19149454545454545,
+   "circulation_rate": 0.17355636363636365,
+   "cycles_total": 170.31,
+   "cycles_2": 4.04,
+   "cycles_long": 149.6
+  },
+  "null_sd": {
+   "kernel_ratio": 0.012558559163553069,
+   "circulation_rate": 0.012118214417196826,
+   "cycles_total": 47.771057137141106,
+   "cycles_2": 1.821647605877712,
+   "cycles_long": 45.05685297488053
+  },
+  "z": {
+   "kernel_ratio": -3.2606519884806264,
+   "circulation_rate": -5.2296933585043135,
+   "cycles_total": -0.7600836610285029,
+   "cycles_2": 33.464211081938686,
+   "cycles_long": -2.2771230839668304
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 16.08910891089109,
+  "R_ci95": [
+   14.73922902494331,
+   17.615176151761517
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 65,
+    "null_mean": 4.04
+   },
+   "3": {
+    "observed": 14,
+    "null_mean": 5.89
+   },
+   "4": {
+    "observed": 8,
+    "null_mean": 10.78
+   },
+   "5": {
+    "observed": 9,
+    "null_mean": 20.41
+   },
+   "6": {
+    "observed": 14,
+    "null_mean": 41.98
+   },
+   "7": {
+    "observed": 24,
+    "null_mean": 87.21
+   }
+  },
+  "R_analytic_rs_dic_llm": 9.658776364650288,
+  "R_complete_replicates_only": 16.08910891089109
+ },
+ {
+  "key": "e5__Qwen2.5-14B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen2.5-14B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen2.5-14B_42.jsonl",
+   "source_sha256": "76ccfccb77751802e6656862447b0465383e34177f96865529155c4a4c6f380c",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 200,
+    "dropped_share": 0.0667,
+    "by_reason": {
+     "echo": 191,
+     "question": 7,
+     "offtopic": 2
+    },
+    "by_rule": {
+     "task_start": 184,
+     "instruction": 7,
+     "question": 7,
+     "meta_usage": 1,
+     "first_person": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "3b7e903f57b86fa1c548fd5a8f8b8fe559746ce50e39aaadce352011316fd953",
+   "n_nodes": 2750,
+   "n_edges": 4839
+  },
+  "n_nodes": 2750,
+  "n_edges": 4839,
+  "observed": {
+   "kernel_ratio": 0.05709090909090909,
+   "circulation_rate": 0.028,
+   "cycles_total": 43,
+   "cycles_2": 38,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.04164727272727273,
+   "circulation_rate": 0.022014545454545453,
+   "cycles_total": 13.72,
+   "cycles_2": 5.05,
+   "cycles_long": 6.08
+  },
+  "null_sd": {
+   "kernel_ratio": 0.009046941677661478,
+   "circulation_rate": 0.007214021241952289,
+   "cycles_total": 4.565260124023602,
+   "cycles_2": 1.16081867662439,
+   "cycles_long": 3.9791456369426843
+  },
+  "z": {
+   "kernel_ratio": 1.7070560321804074,
+   "circulation_rate": 0.8296973830139067,
+   "cycles_total": 6.413654250701055,
+   "cycles_2": 28.385139439535177,
+   "cycles_long": -1.527966190418573
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 7.524752475247525,
+  "R_ci95": [
+   7.183364839319471,
+   7.867494824016563
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 38,
+    "null_mean": 5.05
+   },
+   "3": {
+    "observed": 5,
+    "null_mean": 1.41
+   },
+   "4": {
+    "observed": 0,
+    "null_mean": 1.18
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 1.69
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 2.11
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 2.28
+   }
+  },
+  "R_analytic_rs_dic_llm": 15.94586718525628,
+  "R_complete_replicates_only": 7.524752475247525
+ },
+ {
+  "key": "e5__Qwen2.5-32B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen2.5-32B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen2.5-32B_42.jsonl",
+   "source_sha256": "dd980458bad4b2e0aca3055b6f66d7938e96fc8c0633ff4001ad18635574e3f3",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 67,
+    "dropped_share": 0.0223,
+    "by_reason": {
+     "echo": 30,
+     "fragment": 32,
+     "offtopic": 4,
+     "question": 1
+    },
+    "by_rule": {
+     "task_start": 18,
+     "headword_only": 27,
+     "instruction": 8,
+     "first_person": 3,
+     "lead_in": 5,
+     "task_phrase": 3,
+     "prompt_span": 1,
+     "meta_usage": 1,
+     "question": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "446cf65156631aca745c413662b4b54fbe5e1edc97147cdf96d228da9b0cd846",
+   "n_nodes": 2750,
+   "n_edges": 5531
+  },
+  "n_nodes": 2750,
+  "n_edges": 5531,
+  "observed": {
+   "kernel_ratio": 0.08363636363636363,
+   "circulation_rate": 0.05163636363636363,
+   "cycles_total": 76,
+   "cycles_2": 58,
+   "cycles_long": 11
+  },
+  "null_mean": {
+   "kernel_ratio": 0.06064,
+   "circulation_rate": 0.047316363636363636,
+   "cycles_total": 25.25,
+   "cycles_2": 1.53,
+   "cycles_long": 18.67
+  },
+  "null_sd": {
+   "kernel_ratio": 0.01031857764559143,
+   "circulation_rate": 0.011414276112551058,
+   "cycles_total": 15.755237224491417,
+   "cycles_2": 1.2037856952132302,
+   "cycles_long": 13.863661132615727
+  },
+  "z": {
+   "kernel_ratio": 2.2286369717040153,
+   "circulation_rate": 0.37847340973728116,
+   "cycles_total": 3.221151117998366,
+   "cycles_2": 46.91034311551385,
+   "cycles_long": -0.5532449132037364
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 37.908496732026144,
+  "R_ci95": [
+   32.76836158192091,
+   44.61538461538461
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 58,
+    "null_mean": 1.53
+   },
+   "3": {
+    "observed": 5,
+    "null_mean": 1.93
+   },
+   "4": {
+    "observed": 2,
+    "null_mean": 3.12
+   },
+   "5": {
+    "observed": 1,
+    "null_mean": 4.16
+   },
+   "6": {
+    "observed": 5,
+    "null_mean": 5.69
+   },
+   "7": {
+    "observed": 5,
+    "null_mean": 8.82
+   }
+  },
+  "R_analytic_rs_dic_llm": 17.93556575176905,
+  "R_complete_replicates_only": 37.908496732026144
+ },
+ {
+  "key": "e5__Qwen2.5-3B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen2.5-3B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen2.5-3B_42.jsonl",
+   "source_sha256": "84058e441f3d45d4b414629305b4a28fd8b0099794349d598a4d63d614f47b1c",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 2777,
+    "n_dropped": 4,
+    "dropped_share": 0.0014,
+    "by_reason": {
+     "echo": 3,
+     "fragment": 1
+    },
+    "by_rule": {
+     "instruction": 1,
+     "task_start": 2,
+     "lead_in": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "045eaaac4aa02fffa24026b565e2a19f6cd7ed9bdd1df347ac0f202d9b15fd0e",
+   "n_nodes": 2750,
+   "n_edges": 5275
+  },
+  "n_nodes": 2750,
+  "n_edges": 5275,
+  "observed": {
+   "kernel_ratio": 0.096,
+   "circulation_rate": 0.04072727272727273,
+   "cycles_total": 52,
+   "cycles_2": 44,
+   "cycles_long": 2
+  },
+  "null_mean": {
+   "kernel_ratio": 0.09596,
+   "circulation_rate": 0.06804,
+   "cycles_total": 17.95,
+   "cycles_2": 1.46,
+   "cycles_long": 12.84
+  },
+  "null_sd": {
+   "kernel_ratio": 0.01266477068599845,
+   "circulation_rate": 0.011206715224172624,
+   "cycles_total": 6.7990808202285695,
+   "cycles_2": 1.2443472184241824,
+   "cycles_long": 5.681056239820197
+  },
+  "z": {
+   "kernel_ratio": 0.003158367489765955,
+   "circulation_rate": -2.4371750978212026,
+   "cycles_total": 5.008029894084317,
+   "cycles_2": 34.186599503852186,
+   "cycles_long": -1.908095879076015
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 30.136986301369863,
+  "R_ci95": [
+   25.730994152046783,
+   36.0655737704918
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 44,
+    "null_mean": 1.46
+   },
+   "3": {
+    "observed": 6,
+    "null_mean": 1.86
+   },
+   "4": {
+    "observed": 0,
+    "null_mean": 1.79
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 2.88
+   },
+   "6": {
+    "observed": 1,
+    "null_mean": 4.1
+   },
+   "7": {
+    "observed": 1,
+    "null_mean": 5.86
+   }
+  },
+  "R_analytic_rs_dic_llm": 14.840813276240254,
+  "R_complete_replicates_only": 30.136986301369863
+ },
+ {
+  "key": "e5__Qwen2.5-72B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen2.5-72B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen2.5-72B_42.jsonl",
+   "source_sha256": "254638dd43af3e40ec70c7c415015a34d4d40d204104ee761270774ca092e286",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 58,
+    "dropped_share": 0.0193,
+    "by_reason": {
+     "echo": 46,
+     "fragment": 10,
+     "offtopic": 2
+    },
+    "by_rule": {
+     "task_rule": 26,
+     "task_start": 8,
+     "headword_only": 5,
+     "instruction": 9,
+     "lead_in": 1,
+     "meta_usage": 2,
+     "blank": 4,
+     "task_phrase": 2,
+     "prompt_span": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "019835b526c81ca3c5094999885eb94abd7984472ab34f9005e95729b14785b8",
+   "n_nodes": 2750,
+   "n_edges": 5168
+  },
+  "n_nodes": 2750,
+  "n_edges": 5168,
+  "observed": {
+   "kernel_ratio": 0.10545454545454545,
+   "circulation_rate": 0.061454545454545456,
+   "cycles_total": 87,
+   "cycles_2": 69,
+   "cycles_long": 8
+  },
+  "null_mean": {
+   "kernel_ratio": 0.08583636363636364,
+   "circulation_rate": 0.06296363636363636,
+   "cycles_total": 19.55,
+   "cycles_2": 2.62,
+   "cycles_long": 13.14
+  },
+  "null_sd": {
+   "kernel_ratio": 0.011990561026032446,
+   "circulation_rate": 0.011225752565470034,
+   "cycles_total": 7.2268596222702435,
+   "cycles_2": 1.398427688513067,
+   "cycles_long": 6.077861466009241
+  },
+  "z": {
+   "kernel_ratio": 1.6361354381658377,
+   "circulation_rate": -0.13443115731348004,
+   "cycles_total": 9.333237882765362,
+   "cycles_2": 47.467595604161076,
+   "cycles_long": -0.8456921943261985
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 26.335877862595417,
+  "R_ci95": [
+   23.79310344827586,
+   29.361702127659573
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 69,
+    "null_mean": 2.62
+   },
+   "3": {
+    "observed": 7,
+    "null_mean": 1.46
+   },
+   "4": {
+    "observed": 3,
+    "null_mean": 2.33
+   },
+   "5": {
+    "observed": 2,
+    "null_mean": 2.88
+   },
+   "6": {
+    "observed": 2,
+    "null_mean": 4.24
+   },
+   "7": {
+    "observed": 4,
+    "null_mean": 6.02
+   }
+  },
+  "R_analytic_rs_dic_llm": 24.312428013942064,
+  "R_complete_replicates_only": 26.335877862595417
+ },
+ {
+  "key": "e5__Qwen2.5-7B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen2.5-7B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen2.5-7B_42.jsonl",
+   "source_sha256": "4626e6dd760f32148b75c83bbfa5da18f1fded4285db748a819f1192f5491a32",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 11,
+    "dropped_share": 0.0037,
+    "by_reason": {
+     "echo": 7,
+     "fragment": 4
+    },
+    "by_rule": {
+     "task_start": 4,
+     "prompt_span": 1,
+     "non_latin_text": 4,
+     "task_phrase": 2
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "1e109940e7a5a795637d69bf15bbcc4a68a778db0e214042807bc2ff7e468e8a",
+   "n_nodes": 2750,
+   "n_edges": 4979
+  },
+  "n_nodes": 2750,
+  "n_edges": 4979,
+  "observed": {
+   "kernel_ratio": 0.12836363636363637,
+   "circulation_rate": 0.08181818181818182,
+   "cycles_total": 98,
+   "cycles_2": 82,
+   "cycles_long": 5
+  },
+  "null_mean": {
+   "kernel_ratio": 0.10624,
+   "circulation_rate": 0.08181454545454546,
+   "cycles_total": 19.53,
+   "cycles_2": 1.58,
+   "cycles_long": 14.11
+  },
+  "null_sd": {
+   "kernel_ratio": 0.011787621466382042,
+   "circulation_rate": 0.010466474774960098,
+   "cycles_total": 7.036270318855011,
+   "cycles_2": 1.250439922587247,
+   "cycles_long": 5.880297611515934
+  },
+  "z": {
+   "kernel_ratio": 1.8768533097819902,
+   "circulation_rate": 0.0003474296469961449,
+   "cycles_total": 11.152215086126645,
+   "cycles_2": 64.31336567822103,
+   "cycles_long": -1.5492413142761752
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 51.89873417721519,
+  "R_ci95": [
+   44.80874316939891,
+   61.19402985074627
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 82,
+    "null_mean": 1.58
+   },
+   "3": {
+    "observed": 10,
+    "null_mean": 1.82
+   },
+   "4": {
+    "observed": 1,
+    "null_mean": 2.02
+   },
+   "5": {
+    "observed": 2,
+    "null_mean": 2.96
+   },
+   "6": {
+    "observed": 3,
+    "null_mean": 4.56
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 6.59
+   }
+  },
+  "R_analytic_rs_dic_llm": 26.482111845648348,
+  "R_complete_replicates_only": 51.89873417721519
+ },
+ {
+  "key": "e5__Qwen3-0.6B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen3-0.6B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen3-0.6B_42.jsonl",
+   "source_sha256": "244373c21b9200a41961f7e2fbd5609c82abedfe36d81232da14102363927a9e",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 2595,
+    "dropped_share": 0.865,
+    "by_reason": {
+     "echo": 2330,
+     "question": 262,
+     "offtopic": 3
+    },
+    "by_rule": {
+     "instruction": 768,
+     "task_start": 1176,
+     "task_phrase": 109,
+     "task_rule": 244,
+     "prompt_span": 33,
+     "question": 262,
+     "meta_usage": 3
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "d116a96da3b4a836447077e7ba9db845195e3ae12e2352a16f4b7016ea87f83f",
+   "n_nodes": 2750,
+   "n_edges": 556
+  },
+  "n_nodes": 2750,
+  "n_edges": 556,
+  "observed": {
+   "kernel_ratio": 0.0,
+   "circulation_rate": 0.0,
+   "cycles_total": 0,
+   "cycles_2": 0,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.0,
+   "circulation_rate": 0.0,
+   "cycles_total": 0,
+   "cycles_2": 0,
+   "cycles_long": 0
+  },
+  "null_sd": {
+   "kernel_ratio": 0.0,
+   "circulation_rate": 0.0,
+   "cycles_total": 0.0,
+   "cycles_2": 0.0,
+   "cycles_long": 0.0
+  },
+  "z": {
+   "kernel_ratio": 0.0,
+   "circulation_rate": 0.0,
+   "cycles_total": 0.0,
+   "cycles_2": 0.0,
+   "cycles_long": 0.0
+  },
+  "replicates": 100,
+  "swap_failures": 100,
+  "nswap_mult": 32,
+  "reciprocity_excess": 0.0,
+  "R_ci95": [
+   0.0,
+   0.0
+  ],
+  "R_floor_applied": true,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "3": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "4": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 0
+   }
+  },
+  "R_analytic_rs_dic_llm": 0.0
+ },
+ {
+  "key": "e5__Qwen3-1.7B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen3-1.7B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen3-1.7B_42.jsonl",
+   "source_sha256": "c433d2022a1a7da03d5d03abfc8f614e93bebf06ad617bbb559b9d751be22840",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 2557,
+    "dropped_share": 0.8523,
+    "by_reason": {
+     "echo": 2539,
+     "question": 7,
+     "offtopic": 1,
+     "fragment": 10
+    },
+    "by_rule": {
+     "instruction": 485,
+     "task_start": 1907,
+     "task_phrase": 63,
+     "question": 7,
+     "task_rule": 74,
+     "meta_usage": 1,
+     "prompt_span": 10,
+     "headword_only": 9,
+     "lead_in": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "51cb3cdf808bc367b7281f2cab0db0e151080f45cc67b119aef186d0a8b978b9",
+   "n_nodes": 2750,
+   "n_edges": 1033
+  },
+  "n_nodes": 2750,
+  "n_edges": 1033,
+  "observed": {
+   "kernel_ratio": 0.0,
+   "circulation_rate": 0.0,
+   "cycles_total": 0,
+   "cycles_2": 0,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.0,
+   "circulation_rate": 0.0,
+   "cycles_total": 0,
+   "cycles_2": 0,
+   "cycles_long": 0
+  },
+  "null_sd": {
+   "kernel_ratio": 0.0,
+   "circulation_rate": 0.0,
+   "cycles_total": 0.0,
+   "cycles_2": 0.0,
+   "cycles_long": 0.0
+  },
+  "z": {
+   "kernel_ratio": 0.0,
+   "circulation_rate": 0.0,
+   "cycles_total": 0.0,
+   "cycles_2": 0.0,
+   "cycles_long": 0.0
+  },
+  "replicates": 100,
+  "swap_failures": 100,
+  "nswap_mult": 32,
+  "reciprocity_excess": 0.0,
+  "R_ci95": [
+   0.0,
+   0.0
+  ],
+  "R_floor_applied": true,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "3": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "4": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 0
+   }
+  },
+  "R_analytic_rs_dic_llm": 0.0
+ },
+ {
+  "key": "e5__Qwen3-14B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen3-14B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen3-14B_42.jsonl",
+   "source_sha256": "51914c6ff3a47c522338adefdf0e1e75d69c844c8b71f9897e2b5e477469649e",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 2203,
+    "dropped_share": 0.7343,
+    "by_reason": {
+     "echo": 2195,
+     "offtopic": 5,
+     "question": 3
+    },
+    "by_rule": {
+     "task_rule": 61,
+     "instruction": 697,
+     "task_start": 1415,
+     "task_phrase": 5,
+     "first_person": 4,
+     "prompt_span": 17,
+     "question": 3,
+     "meta_usage": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "ddc48aa824f8ea6fddaf3415254fd519facdccf54dcc9c8e15d8593e9d37c7bc",
+   "n_nodes": 2750,
+   "n_edges": 1770
+  },
+  "n_nodes": 2750,
+  "n_edges": 1770,
+  "observed": {
+   "kernel_ratio": 0.0007272727272727272,
+   "circulation_rate": 0.0007272727272727272,
+   "cycles_total": 1,
+   "cycles_2": 1,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.0010727272727272727,
+   "circulation_rate": 0.00024727272727272727,
+   "cycles_total": 0.25,
+   "cycles_2": 0.11,
+   "cycles_long": 0.02
+  },
+  "null_sd": {
+   "kernel_ratio": 0.0023433394268482506,
+   "circulation_rate": 0.0005165172626782459,
+   "cycles_total": 0.51720402163943,
+   "cycles_2": 0.3433656942677879,
+   "cycles_long": 0.14
+  },
+  "z": {
+   "kernel_ratio": -0.14741976407539714,
+   "circulation_rate": 0.9293009831096514,
+   "cycles_total": 1.4501047335684953,
+   "cycles_2": 2.591988701427746,
+   "cycles_long": -0.14285714285714285
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 2.0,
+  "R_ci95": [
+   2.0,
+   2.0
+  ],
+  "R_floor_applied": true,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 1,
+    "null_mean": 0.11
+   },
+   "3": {
+    "observed": 0,
+    "null_mean": 0.1
+   },
+   "4": {
+    "observed": 0,
+    "null_mean": 0.02
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 0.02
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 0
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 0
+   }
+  },
+  "R_analytic_rs_dic_llm": 4.466370704919295,
+  "R_complete_replicates_only": 2.0
+ },
+ {
+  "key": "e5__Qwen3-4B-Instruct-2507",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen3-4B-Instruct-2507",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen3-4B-Instruct-2507_42.jsonl",
+   "source_sha256": "65e0e138232c4bff57c92a0685ccb5b0f426f8e475d965bbb57ee7cba3248dd5",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 149,
+    "dropped_share": 0.0497,
+    "by_reason": {
+     "question": 28,
+     "echo": 102,
+     "fragment": 14,
+     "offtopic": 5
+    },
+    "by_rule": {
+     "question": 28,
+     "instruction": 36,
+     "headword_only": 4,
+     "prompt_span": 3,
+     "task_start": 45,
+     "task_phrase": 17,
+     "lead_in": 10,
+     "exam_marker": 1,
+     "first_person": 2,
+     "task_rule": 1,
+     "meta_usage": 2
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "e80a3b5fd366cde88f38567586f5eee35423d0b099851c622267b7d5851b1907",
+   "n_nodes": 2750,
+   "n_edges": 5446
+  },
+  "n_nodes": 2750,
+  "n_edges": 5446,
+  "observed": {
+   "kernel_ratio": 0.05090909090909091,
+   "circulation_rate": 0.024727272727272726,
+   "cycles_total": 38,
+   "cycles_2": 30,
+   "cycles_long": 3
+  },
+  "null_mean": {
+   "kernel_ratio": 0.054654545454545456,
+   "circulation_rate": 0.04028,
+   "cycles_total": 26.89,
+   "cycles_2": 3.71,
+   "cycles_long": 18.26
+  },
+  "null_sd": {
+   "kernel_ratio": 0.009729090739199128,
+   "circulation_rate": 0.009107164376204407,
+   "cycles_total": 11.047076536351145,
+   "cycles_2": 1.1941105476462386,
+   "cycles_long": 10.056460609976057
+  },
+  "z": {
+   "kernel_ratio": -0.38497477779335215,
+   "circulation_rate": -1.707746410437492,
+   "cycles_total": 1.0056959380558106,
+   "cycles_2": 22.016387052121196,
+   "cycles_long": -1.5174324836376338
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 8.086253369272237,
+  "R_ci95": [
+   7.594936708860759,
+   8.620689655172415
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 30,
+    "null_mean": 3.71
+   },
+   "3": {
+    "observed": 4,
+    "null_mean": 2.04
+   },
+   "4": {
+    "observed": 1,
+    "null_mean": 2.88
+   },
+   "5": {
+    "observed": 3,
+    "null_mean": 3.89
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 5.88
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 8.49
+   }
+  },
+  "R_analytic_rs_dic_llm": 9.497355288019266,
+  "R_complete_replicates_only": 8.086253369272237
+ },
+ {
+  "key": "e5__Qwen3-4B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen3-4B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen3-4B_42.jsonl",
+   "source_sha256": "dd609860f9b60268206328ad3f6993a7fe2350fa6036ac31c7827632feec2a63",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 1865,
+    "dropped_share": 0.6217,
+    "by_reason": {
+     "echo": 1855,
+     "fragment": 9,
+     "offtopic": 1
+    },
+    "by_rule": {
+     "instruction": 488,
+     "task_start": 1196,
+     "task_rule": 158,
+     "task_phrase": 4,
+     "prompt_span": 9,
+     "headword_only": 8,
+     "lead_in": 1,
+     "exam_marker": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "9c1c379b9cb10366020663473d5bf5158ec924af15aafca0a13b05b68fe0e995",
+   "n_nodes": 2750,
+   "n_edges": 2098
+  },
+  "n_nodes": 2750,
+  "n_edges": 2098,
+  "observed": {
+   "kernel_ratio": 0.0014545454545454545,
+   "circulation_rate": 0.0007272727272727272,
+   "cycles_total": 1,
+   "cycles_2": 1,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.0022618181818181817,
+   "circulation_rate": 0.0007418181818181818,
+   "cycles_total": 0.89,
+   "cycles_2": 0.5,
+   "cycles_long": 0.03
+  },
+  "null_sd": {
+   "kernel_ratio": 0.0023925946357268905,
+   "circulation_rate": 0.0007234810248986698,
+   "cycles_total": 0.8472897969408105,
+   "cycles_2": 0.5916079783099616,
+   "cycles_long": 0.1705872210923198
+  },
+  "z": {
+   "kernel_ratio": -0.3374047217269092,
+   "circulation_rate": -0.02010481829498128,
+   "cycles_total": 0.12982571063308143,
+   "cycles_2": 0.8451542547285166,
+   "cycles_long": -0.17586311452816475
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 2.0,
+  "R_ci95": [
+   1.6129032258064517,
+   2.0
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 1,
+    "null_mean": 0.5
+   },
+   "3": {
+    "observed": 0,
+    "null_mean": 0.24
+   },
+   "4": {
+    "observed": 0,
+    "null_mean": 0.12
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 0.01
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 0.01
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 0.01
+   }
+  },
+  "R_analytic_rs_dic_llm": 6.170363329996944,
+  "R_complete_replicates_only": 2.0
+ },
+ {
+  "key": "e5__Qwen3-8B",
+  "meta": {
+   "dataset": "e5",
+   "model": "Qwen3-8B",
+   "is_base": false,
+   "source": "results_2026-09-09_Runpod\\results_e5 (no template)\\definitions\\Qwen3-8B_42.jsonl",
+   "source_sha256": "d4006613a5bfdc059440d82b908fbada94454f74a2e023e698287b66c0177a1e",
+   "n_records": 3000,
+   "filter": {
+    "variant": "default",
+    "unit": "first_sentence",
+    "drop_imperatives": false,
+    "quality_filter_sha256": "b400724a83a73d6ffbeaf2ac79fe42c5acc9f1a46d5f99b91343ec1d814d217b",
+    "quality_filter_strict_sha256": null,
+    "n_records": 3000,
+    "n_valid_status": 3000,
+    "n_dropped": 987,
+    "dropped_share": 0.329,
+    "by_reason": {
+     "echo": 961,
+     "fragment": 13,
+     "question": 5,
+     "offtopic": 8
+    },
+    "by_rule": {
+     "task_start": 686,
+     "task_rule": 56,
+     "instruction": 199,
+     "headword_only": 12,
+     "question": 5,
+     "meta_usage": 8,
+     "task_phrase": 11,
+     "prompt_span": 9,
+     "lead_in": 1
+    },
+    "vocabulary_size": 2750
+   },
+   "graph_sha256": "84dfbf29772309c7c9e0366797ce30c4883aba55da013ab68b9ff153e0423635",
+   "n_nodes": 2750,
+   "n_edges": 4796
+  },
+  "n_nodes": 2750,
+  "n_edges": 4796,
+  "observed": {
+   "kernel_ratio": 0.04509090909090909,
+   "circulation_rate": 0.016,
+   "cycles_total": 23,
+   "cycles_2": 22,
+   "cycles_long": 0
+  },
+  "null_mean": {
+   "kernel_ratio": 0.04982545454545455,
+   "circulation_rate": 0.015392727272727273,
+   "cycles_total": 7.11,
+   "cycles_2": 2.14,
+   "cycles_long": 3.13
+  },
+  "null_sd": {
+   "kernel_ratio": 0.0164186533708583,
+   "circulation_rate": 0.00798014975314653,
+   "cycles_total": 3.4637984929842554,
+   "cycles_2": 1.0584894897919392,
+   "cycles_long": 2.7190255607478204
+  },
+  "z": {
+   "kernel_ratio": -0.28836381081951995,
+   "circulation_rate": 0.07609791119938354,
+   "cycles_total": 4.587449308088901,
+   "cycles_2": 18.76258592223127,
+   "cycles_long": -1.151147692461982
+  },
+  "replicates": 100,
+  "swap_failures": 0,
+  "nswap_mult": 32,
+  "reciprocity_excess": 10.2803738317757,
+  "R_ci95": [
+   9.361702127659575,
+   11.34020618556701
+  ],
+  "R_floor_applied": false,
+  "cycle_hist_observed_vs_null": {
+   "2": {
+    "observed": 22,
+    "null_mean": 2.14
+   },
+   "3": {
+    "observed": 0,
+    "null_mean": 0.85
+   },
+   "4": {
+    "observed": 1,
+    "null_mean": 0.99
+   },
+   "5": {
+    "observed": 0,
+    "null_mean": 0.98
+   },
+   "6": {
+    "observed": 0,
+    "null_mean": 1.1
+   },
+   "7": {
+    "observed": 0,
+    "null_mean": 1.05
+   }
+  },
+  "R_analytic_rs_dic_llm": 13.552405666885775,
+  "R_complete_replicates_only": 10.2803738317757
+ }
+]

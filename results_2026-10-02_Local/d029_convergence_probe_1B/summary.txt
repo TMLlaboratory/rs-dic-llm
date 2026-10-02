@@ -1,0 +1,35 @@
+
+d029__fsR1_1B  (E=2913, observed mutual pairs 9, 8 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         8      8       1.75   0.23     5.1      0.65    1.07      3.31
+        32      8       1.38   0.17     6.5      0.88    1.44      3.35
+        64      8       1.75   0.29     5.1      0.15    0.46      3.40
+       128      8       1.62   0.17     5.5      1.26    1.42      3.36
+       256      8       1.50   0.18     6.0      1.75    2.62      3.37
+  reference (mean of swaps/E >= 64): 1.62; mean within 5 % (or 2 SE) of it from swaps/E = 8
+  exponential fit: limit 1.53 +/- 0.11, time constant 1.6 x E  ->  R(limit) = 5.9
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [256]
+
+d029__fsS_1B  (E=2968, observed mutual pairs 6, 8 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         8      8       1.12   0.21     5.3      1.56    2.17      2.88
+        32      8       1.25   0.15     4.8      0.79    1.00      3.05
+        64      8       0.88   0.21     6.9      1.17    1.09      3.05
+       128      8       0.88   0.21     6.9      0.87    1.86      3.08
+       256      8       1.38   0.35     4.4      0.81    0.50      3.05
+  reference (mean of swaps/E >= 64): 1.04; mean within 5 % (or 2 SE) of it from swaps/E = 8
+  exponential fit: limit 1.09 +/- inf, time constant 0.1 x E  ->  R(limit) = 5.5
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [256]
+
+d029__itS_1B  (E=2417, observed mutual pairs 9, 8 chains)
+   swaps/E chains  null mean     SE       R  kernel z  circ z  accept %
+         8      8       2.75   0.23     3.3      1.79    2.75      1.99
+        32      8       2.38   0.35     3.8      2.82    3.93      2.03
+        64      8       2.75   0.39     3.3      3.11    4.24      2.06
+       128      8       2.62   0.30     3.4      8.32   10.97      2.05
+       256      8       2.62   0.35     3.4      3.10    7.00      2.05
+  reference (mean of swaps/E >= 64): 2.67; mean within 5 % (or 2 SE) of it from swaps/E = 8
+  exponential fit: limit 2.59 +/- 0.11, time constant 1.6 x E  ->  R(limit) = 3.5
+  chains stopped early (try limit hit): 0; last checkpoint reached by chains: [256]
+
+RECOMMENDATION (indicative, for the researcher to decide): the null mean has settled by 8 x E on every graph listed; use 16 x E (a factor 2 margin, rounded to a power of 2) and a try limit of 151 x the requested swaps (3 / the lowest measured acceptance of 1.99 %).

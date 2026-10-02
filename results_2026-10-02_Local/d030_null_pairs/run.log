@@ -1,0 +1,18 @@
+[d030a] 40 graphs x 40 replicates, 12 workers
+[d030a] 792 replicates to run (808 already done)
+[d030a]     232s  50/792  mismatches so far 0
+[d030a]     535s  100/792  mismatches so far 0
+[d030a]     941s  150/792  mismatches so far 0
+[d030a]    1239s  200/792  mismatches so far 0
+[d030a]    1518s  250/792  mismatches so far 0
+[d030a]    1809s  300/792  mismatches so far 0
+[d030a]    2059s  350/792  mismatches so far 0
+[d030a]    2195s  400/792  mismatches so far 0
+[d030a]    2441s  450/792  mismatches so far 0
+[d030a]    2578s  500/792  mismatches so far 0
+[d030a]    2808s  550/792  mismatches so far 0
+[d030a]    3125s  600/792  mismatches so far 0
+[d030a]    3392s  650/792  mismatches so far 0
+[d030a]    3694s  700/792  mismatches so far 0
+[d030a]    4168s  750/792  mismatches so far 0
+[d030a] done in 4536s; all 1600 replicates equal the stored ones -> results_2026-10-02_Local\d030_null_pairs

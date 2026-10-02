@@ -1,0 +1,40 @@
+{"key": "main__Gemma3-1B-pt", "idx": 1, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 3, "swap_failure": null, "pairs": [["define", "person"], ["light", "mouth"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 0, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 5, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 6, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 4, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 7, "swap_failure": null, "pairs": [["circle", "describe"], ["conclusion", "light"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 2, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 8, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 9, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 10, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 11, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 15, "swap_failure": null, "pairs": [["design", "pigment"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 12, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 13, "swap_failure": null, "pairs": [["gather", "place"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 14, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 19, "swap_failure": null, "pairs": [["body", "describe"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 16, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 20, "swap_failure": null, "pairs": [["define", "field"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 18, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 17, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 22, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 23, "swap_failure": null, "pairs": [["maximum", "size"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 21, "swap_failure": null, "pairs": [["define", "mask"], ["describe", "person"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 24, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 26, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 27, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 25, "swap_failure": null, "pairs": [["action", "importance"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 29, "swap_failure": null, "pairs": [["dictionary", "substance"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 28, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 31, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 30, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 32, "swap_failure": null, "pairs": [["device", "people"], ["person", "pitch"]], "n_pairs": 2, "stored_cycles_2": 2, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 39, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 35, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 34, "swap_failure": null, "pairs": [["body", "describe"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 36, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 38, "swap_failure": null, "pairs": [["skin", "young"]], "n_pairs": 1, "stored_cycles_2": 1, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 33, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}
+{"key": "main__Gemma3-1B-pt", "idx": 37, "swap_failure": null, "pairs": [], "n_pairs": 0, "stored_cycles_2": 0, "matches_stored": true}

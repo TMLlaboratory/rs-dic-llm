@@ -1,0 +1,14 @@
+{
+ "started": "2026-10-02T07:27:23",
+ "finished": "2026-10-02T07:30:53",
+ "args": {
+  "out": "results_2026-10-02_Local/d033_double_swap_full_stats",
+  "reps": 20,
+  "workers": 12,
+  "swap_mult": 64,
+  "smoke": false
+ },
+ "python": "3.11.4",
+ "networkx": "3.6.1",
+ "script_sha256": "1593218a65028eab4193c60a887dd28cb054dbb9b65d1896bcfcc950c0d54de2"
+}

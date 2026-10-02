@@ -1,0 +1,25 @@
+1. Z-SCORES OF THE KERNEL RATIO AND THE CIRCULATION RATE (default filter): median (graphs below 0 / beyond -2 / beyond +2)
+   measure           group                    three-edge null (paper)   double-edge null (D033)
+   kernel ratio      17 instruct models             +0.31 (7 / 2 / 1)         +0.19 (8 / 3 / 0)
+   kernel ratio      5 pretrained models            +1.68 (0 / 0 / 2)         +1.70 (0 / 0 / 2)
+   kernel ratio      WordNet                        -0.08 (1 / 0 / 0)         -0.26 (1 / 0 / 0)
+   circulation rate  17 instruct models            -1.51 (15 / 6 / 0)        -1.31 (12 / 6 / 0)
+   circulation rate  5 pretrained models            +1.90 (0 / 0 / 2)         +4.00 (0 / 0 / 3)
+   circulation rate  WordNet                        -1.89 (1 / 0 / 0)         -1.51 (1 / 0 / 0)
+
+   instruct models beyond +-2 in the kernel ratio, double-edge null: Qwen2.5-0.5B -3.9, Qwen2.5-1.5B -2.1, Qwen3-1.7B -2.3
+   instruct models beyond +-2 in the kernel ratio, three-edge null:  Qwen2.5-0.5B -4.4, Qwen2.5-1.5B -2.1, Qwen2.5-32B +2.1
+
+2. CYCLE-LENGTH PROFILE (default filter): observed / null, summed over the graphs of a group
+   group                           null                   2                   3                   4                   5                   6                   7
+   17 instruct models        three-edge   881 / 47 = 18.83x     93 / 41 = 2.24x     56 / 58 = 0.97x     58 / 98 = 0.59x    86 / 167 = 0.52x   138 / 302 = 0.46x
+   17 instruct models       double-edge   881 / 30 = 29.56x     93 / 39 = 2.37x     56 / 59 = 0.94x     58 / 99 = 0.59x    86 / 165 = 0.52x   138 / 295 = 0.47x
+   5 pretrained models       three-edge      39 / 9 = 4.21x       2 / 3 = 0.76x       0 / 1 = 0.00x       0 / 1 = 0.00x       0 / 0 = 0.00x       0 / 0 = 0.00x
+   5 pretrained models      double-edge     39 / 2 = 18.57x       2 / 1 = 1.74x       0 / 1 = 0.00x       0 / 1 = 0.00x       0 / 0 = 0.00x       0 / 0 = 0.00x
+   WordNet                   three-edge     27 / 2 = 15.70x       2 / 2 = 1.00x       4 / 3 = 1.57x       3 / 3 = 0.88x       3 / 4 = 0.69x       2 / 6 = 0.34x
+   WordNet                  double-edge     27 / 2 = 16.88x       2 / 2 = 1.14x       4 / 2 = 2.29x       3 / 3 = 1.00x       3 / 4 = 0.68x       2 / 5 = 0.38x
+
+3. THE READINGS OF D033 (double-edge null)
+   (k1) kernel: median z of the 17 instruct models +0.19; beyond +-2: 3 of 17; WordNet z -0.26  ->  CLAIM 1 (KERNEL AT CHANCE) HOLDS
+   (k2) circulation: median z -1.31; below 0: 12 of 17  ->  STAYS BELOW THE NULL
+   (k3) profile: instruct 2-cycles 29.6x the null; cycles of length 5, 6, 7: 0.59x, 0.52x, 0.47x  ->  THE PROFILE OF V1 HOLDS

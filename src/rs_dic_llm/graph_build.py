@@ -14,12 +14,17 @@ from .normalize import normalize
 
 def build_graph(
     definitions: list[dict],
+    vocabulary: set[str] | None = None,
 ) -> nx.DiGraph:
     """Build a directed graph from a list of definition records.
 
     Args:
         definitions: list of dicts with keys "lemma", "definition".
                      Records with status != "ok" are silently skipped.
+        vocabulary: optional fixed node set (decision D010: the 2,750 lemmas of the word list for every
+                    model, so that filtered and unfiltered graphs and their nulls are comparable).
+                    A record that is skipped or whose definition is empty keeps its node and adds no
+                    edge. Default: the lemmas of the records with a valid status.
 
     Returns:
         nx.DiGraph where add_edge(u, v) means u appears in definition of v.
@@ -27,10 +32,13 @@ def build_graph(
     # Include self_referential definitions — they still yield valid edges to
     # OTHER words; only truly failed / empty records are excluded.
     valid_statuses = {"ok", "self_referential"}
-    vocabulary: set[str] = {
-        d["lemma"] for d in definitions
-        if d.get("status", "ok") in valid_statuses
-    }
+    if vocabulary is None:
+        vocabulary = {
+            d["lemma"] for d in definitions
+            if d.get("status", "ok") in valid_statuses
+        }
+    else:
+        vocabulary = set(vocabulary)
 
     G = nx.DiGraph()
     G.add_nodes_from(vocabulary)
@@ -47,3 +55,13 @@ def build_graph(
                 G.add_edge(source, target)
 
     return G
+
+
+def drop_nodes(G: nx.DiGraph, words) -> list[str]:
+    """Remove the given lemmas (those that are nodes of G) with all their edges, in place (decision D025).
+
+    Returns the lemmas that were nodes and are now removed, in the order given.
+    """
+    removed = [w for w in words if w in G]
+    G.remove_nodes_from(removed)
+    return removed

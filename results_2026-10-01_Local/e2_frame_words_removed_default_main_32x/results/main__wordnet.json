@@ -1,0 +1,89 @@
+{
+ "key": "main__wordnet",
+ "meta": {
+  "dataset": "main",
+  "model": "wordnet",
+  "is_base": false,
+  "source": "data/sample_words/word_list_3k_v1.json",
+  "source_sha256": "bd4de5c671630c5b900039bc07e0064d56938def900c0d21941005c79e359363",
+  "n_records": 2744,
+  "removed_nodes": [
+   "define",
+   "mean",
+   "refer",
+   "describe",
+   "phrase",
+   "use"
+  ],
+  "graph_sha256": "a0c67cc31aa2669b71695db42d00d59aaed14e2f19a523f79944ee80f6dbce70",
+  "n_nodes": 2744,
+  "n_edges": 4459
+ },
+ "n_nodes": 2744,
+ "n_edges": 4459,
+ "observed": {
+  "kernel_ratio": 0.15743440233236153,
+  "circulation_rate": 0.07908163265306123,
+  "cycles_total": 41,
+  "cycles_2": 27,
+  "cycles_long": 8
+ },
+ "null_mean": {
+  "kernel_ratio": 0.15389212827988338,
+  "circulation_rate": 0.0982798833819242,
+  "cycles_total": 18.58,
+  "cycles_2": 1.37,
+  "cycles_long": 13.62
+ },
+ "null_sd": {
+  "kernel_ratio": 0.01227404814996842,
+  "circulation_rate": 0.0103081789363532,
+  "cycles_total": 5.856927522174062,
+  "cycles_2": 1.0644716999526103,
+  "cycles_long": 5.110342454278382
+ },
+ "z": {
+  "kernel_ratio": 0.2885986765896188,
+  "circulation_rate": -1.8624289360323112,
+  "cycles_total": 3.827945610581469,
+  "cycles_2": 24.07767158219522,
+  "cycles_long": -1.0997306051955347
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 32,
+ "reciprocity_excess": 19.70802919708029,
+ "R_ci95": [
+  17.088607594936708,
+  23.27586206896552
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 27,
+   "null_mean": 1.37
+  },
+  "3": {
+   "observed": 2,
+   "null_mean": 1.68
+  },
+  "4": {
+   "observed": 4,
+   "null_mean": 1.91
+  },
+  "5": {
+   "observed": 3,
+   "null_mean": 3.13
+  },
+  "6": {
+   "observed": 3,
+   "null_mean": 4.11
+  },
+  "7": {
+   "observed": 2,
+   "null_mean": 6.38
+  }
+ },
+ "R_analytic_rs_dic_llm": 9.407516548291804,
+ "R_complete_replicates_only": 19.70802919708029
+}

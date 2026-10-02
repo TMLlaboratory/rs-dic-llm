@@ -1,0 +1,81 @@
+{
+ "key": "main__Gemma3-4B-pt",
+ "meta": {
+  "dataset": "main",
+  "model": "Gemma3-4B-pt",
+  "is_base": true,
+  "source": "data/definitions/Gemma3-4B-pt_42.jsonl",
+  "source_sha256": "8c7d3364b4a476e0c2341b3f5a85060f800b1fd14fa43d50c1e555ec2aca71ed",
+  "n_records": 3000,
+  "graph_sha256": "69637d1775d15de2a979e9ca693926e8a3b30b28dc6586af20d0599d72c517d2",
+  "n_nodes": 2750,
+  "n_edges": 8624
+ },
+ "n_nodes": 2750,
+ "n_edges": 8624,
+ "observed": {
+  "kernel_ratio": 0.13672727272727273,
+  "circulation_rate": 0.10618181818181818,
+  "cycles_total": 79,
+  "cycles_2": 19,
+  "cycles_long": 49
+ },
+ "null_mean": {
+  "kernel_ratio": 0.15943636363636363,
+  "circulation_rate": 0.12246181818181819,
+  "cycles_total": 131.64,
+  "cycles_2": 3.15,
+  "cycles_long": 114.5
+ },
+ "null_sd": {
+  "kernel_ratio": 0.012574603817099956,
+  "circulation_rate": 0.012602070405786371,
+  "cycles_total": 63.3049002842592,
+  "cycles_2": 1.6874537030686205,
+  "cycles_long": 59.54216993022676
+ },
+ "z": {
+  "kernel_ratio": -1.8059488186983081,
+  "circulation_rate": -1.2918512177590178,
+  "cycles_total": -0.8315312047508107,
+  "cycles_2": 9.392850287493463,
+  "cycles_long": -1.1000606809720705
+ },
+ "replicates": 100,
+ "swap_failures": 0,
+ "nswap_mult": 15,
+ "reciprocity_excess": 6.031746031746032,
+ "R_ci95": [
+  5.444126074498567,
+  6.73758865248227
+ ],
+ "R_floor_applied": false,
+ "cycle_hist_observed_vs_null": {
+  "2": {
+   "observed": 19,
+   "null_mean": 3.15
+  },
+  "3": {
+   "observed": 5,
+   "null_mean": 5.03
+  },
+  "4": {
+   "observed": 6,
+   "null_mean": 8.96
+  },
+  "5": {
+   "observed": 13,
+   "null_mean": 16.11
+  },
+  "6": {
+   "observed": 16,
+   "null_mean": 33.31
+  },
+  "7": {
+   "observed": 20,
+   "null_mean": 65.08
+  }
+ },
+ "R_analytic_rs_dic_llm": 3.3103621624303874,
+ "R_complete_replicates_only": 6.031746031746032
+}
